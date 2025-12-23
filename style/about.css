@@ -1,0 +1,569 @@
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+:root {
+  --defult-color: #fff;
+  --primary-color: #000;
+  --secondary-color: #08119b;
+  --tertiary-color: #6ccdbf;
+  --light-bg-color: #f2f0f4;
+  --input-bg: #212343;
+  --hdr-top: #fe7e0f;
+  --heading-color: #422c9b;
+  --btn-bg: #173433;
+  --btn-bg-2: #097877;
+  --design-bg: #6dcec0;
+  --section-bg: #dbf7f3;
+}
+.sec-top {
+  color: var(--hdr-top);
+  margin-bottom: 21px;
+}
+/* About Section */
+.about-about-hdr {
+  padding-block: 34px 39px;
+  background: var(--input-bg);
+}
+.about-about-hdr .title1 {
+  font-size: 48px;
+  color: var(--defult-color);
+}
+.about-about-wrpr {
+  padding: 38px 0 87.26px;
+  background: var(--section-bg);
+}
+.about-about-img {
+  max-width: 536px;
+  position: relative;
+}
+.about-about-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-about-img-rec1 {
+  max-width: 220px;
+  position: absolute;
+  left: -112px;
+  top: 113px;
+}
+.about-about-img-rec1 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-about-img-rec2 {
+  max-width: 172px;
+  position: absolute;
+  right: -99px;
+  bottom: -32px;
+}
+.about-about-img-rec2 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-about-heading {
+  margin-bottom: 21px;
+}
+
+.about-about-cntn > p {
+  font-size: 20px;
+  line-height: 33px;
+  color: var(--input-bg);
+  margin-bottom: 51px;
+}
+.features-box {
+  max-width: 250.77px;
+  height: 103.37px;
+  background: #d9d9d9;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.features-box:hover {
+  background: #fffbfb;
+}
+.features-box > img {
+  width: 47px;
+  height: 59px;
+  object-fit: cover;
+  margin-right: 35px;
+}
+.features-box2 > img {
+  width: 52px;
+  height: 59px;
+  object-fit: cover;
+  margin-right: 31px;
+}
+.features-box3 > img {
+  width: 69px;
+  height: 54px;
+  object-fit: cover;
+  margin-right: 16px;
+}
+.features-box4,
+.features-box3 {
+  margin-block: 34px 21px;
+}
+.features-box3 > .feature-cntn > p {
+  max-width: 110px;
+}
+.feature-cntn > p {
+  max-width: 119px;
+  letter-spacing: 0.48px;
+  color: var(--primary-color);
+  margin-bottom: 0;
+  line-height: 28px;
+}
+.features-box4 > img {
+  width: 53px;
+  height: 59px;
+  object-fit: cover;
+  margin-right: 32px;
+}
+/* Skill Section */
+.skill-sec {
+  padding: 77px 0 171px;
+}
+.skill-img {
+  max-width: 449px;
+}
+.skill-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.skill-img2 {
+  max-width: 268px;
+  right: -199px;
+  bottom: -80px;
+}
+.skill-img2 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.skill-box {
+  max-width: 259px;
+  padding: 15px 10px;
+  border-radius: 15px;
+  background-color: var(--defult-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  left: -171px;
+  bottom: -41px;
+}
+.skill-box-top > img {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+}
+.skill-box-btm {
+  margin-left: 12px;
+}
+.skill-box-btm > p {
+  font-size: 20px;
+  letter-spacing: 0.2px;
+  margin-bottom: 0;
+}
+.skill-box-btm p:last-child {
+  margin-top: 14px;
+}
+.skill-cntn {
+  max-width: 571px;
+}
+.skill-cntn > .title2 {
+  font-size: 32px;
+  line-height: 55px;
+  letter-spacing: 0.32px;
+}
+.skill-cntn p {
+  font-size: 20px;
+  color: var(--input-bg);
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  margin-bottom: 0;
+}
+.skill-cntn p:nth-child(2) {
+  margin-block: 32px !important;
+}
+.skill-btn {
+  margin-block: 20px 87px;
+}
+/* Tutor Section */
+.tutor-sec {
+  padding: 89px 0 85px;
+  background-color: var(--section-bg);
+}
+.tutor-heading > .sec-top {
+  margin-bottom: 19px;
+}
+.tutor-heading > p {
+  color: var(--input-bg);
+  margin-block: 19px 0;
+}
+.swiper {
+  padding: 50px 4px 70px;
+}
+.tutor-card {
+  max-width: 311.67px;
+  height: 390px;
+  background-color: var(--defult-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+.tutor-img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.tutor-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tutor-btm {
+  padding: 14px 24.97px 35px;
+}
+.name {
+  font-size: 20px;
+  color: var(--input-bg);
+}
+.job-desc > p {
+  color: var(--input-bg);
+  margin-bottom: 0;
+  margin-left: 6.99px;
+}
+.swiper-pagination-bullet-active {
+  width: 20.98px;
+  background-color: var(--hdr-top) !important;
+  border-radius: 15px;
+}
+.swiper-pagination-bullet {
+  background-color: #afacac;
+}
+@media screen and (max-width: 1400px) {
+  /* Skill Section */
+  .skill-box {
+    left: -134px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .title2 {
+    font-size: 33px;
+  }
+  /* About Section */
+  .about-about-hdr .title1 {
+    font-size: 45px;
+  }
+  .about-about-img {
+    max-width: 460px;
+    position: relative;
+  }
+  .about-about-img-rec1 {
+    max-width: 160px;
+    position: absolute;
+    left: -47px;
+    top: 77px;
+  }
+  .about-about-img-rec2 {
+    max-width: 140px;
+    position: absolute;
+    right: -40px;
+    bottom: -24px;
+  }
+  .about-about-cntn > p {
+    font-size: 18px;
+    line-height: 30px;
+
+    margin-bottom: 33px;
+  }
+  .features-box > img {
+    width: 30px;
+    height: 37px;
+    margin-right: 15px;
+  }
+  .features-box2 > img {
+    width: 34px;
+  }
+  .feature-cntn > p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .features-box3 > img {
+    width: 46px;
+  }
+  /* Skill Section */
+  .skill-sec {
+    padding: 55px 0 130px;
+  }
+  .skill-img {
+    max-width: 400px;
+  }
+  .skill-img2 {
+    max-width: 230px;
+    right: -160px;
+    bottom: -90px;
+  }
+  .skill-box {
+    left: -74px;
+    max-width: 232px;
+  }
+  .skill-box-btm > p {
+    font-size: 18px;
+  }
+  .skill-box-btm p:last-child {
+    margin-top: 8px;
+  }
+  .skill-cntn p:nth-child(2) {
+    margin-block: 25px !important;
+  }
+
+  .skill-cntn p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 992px) {
+  /* About Section */
+  .about-about-img {
+    max-width: 350px;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .about-about-top {
+    color: var(--hdr-top);
+    margin-bottom: 10px;
+  }
+  .about-about-img-rec1 {
+    max-width: 130px;
+
+    left: -55px;
+    top: 66px;
+  }
+  .about-about-img-rec2 {
+    max-width: 115px;
+
+    right: -38px;
+    bottom: -42px;
+  }
+  .features-box {
+    margin: 0 auto 20px;
+  }
+  .about-about-btn {
+    text-align: center;
+    margin-top: 20px;
+  }
+  /* Skill Section */
+  .skill-sec {
+    padding: 55px 0;
+  }
+  .skill-img {
+    margin: 0 auto 120px;
+  }
+  .skill-cntn {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .skill-btn {
+    margin-block: 20px 0;
+  }
+  /* Tutor Section */
+  .name {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .title2 {
+    font-size: 26px;
+  }
+  /* About Section */
+  .about-about-hdr .title1 {
+    font-size: 40px;
+  }
+  .about-about-heading {
+    margin-bottom: 16px;
+  }
+  .about-about-cntn > p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+  /* Skill Section */
+  .skill-img {
+    max-width: 310px;
+    margin: 0 auto 98px;
+  }
+  .skill-img2 {
+    max-width: 190px;
+    right: -118px;
+    bottom: -77px;
+  }
+  .skill-box {
+    left: -110px;
+    padding: 10px 7px;
+    max-width: 210px;
+  }
+  .skill-box-btm {
+    margin-left: 9px;
+  }
+  .skill-box-btm > p {
+    font-size: 16px;
+  }
+
+  .skill-cntn > .title2 {
+    font-size: 26px;
+    line-height: 35px;
+    letter-spacing: 0.32px;
+  }
+  .skill-cntn p:nth-child(2) {
+    margin-block: 16px !important;
+  }
+  .skill-cntn p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  /* Tutor Section */
+  .tutor-sec {
+    padding: 50px 0 46px;
+  }
+  .tutor-heading > .sec-top {
+    margin-bottom: 10px;
+  }
+  .swiper {
+    padding: 35px 0 54px;
+  }
+  .name {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .title2 {
+    font-size: 20px;
+    letter-spacing: 0.6px;
+  }
+  /* About Section */
+  .about-about-hdr {
+    padding-block: 24px 20px;
+    background: var(--input-bg);
+  }
+  .about-about-hdr .title1 {
+    font-size: 30px;
+  }
+  .about-about-wrpr {
+    padding: 30px 0 36.26px;
+  }
+  .about-about-img-rec2 {
+    max-width: 93px;
+    right: -27px;
+    bottom: -39px;
+  }
+  .about-about-img-rec1 {
+    max-width: 96px;
+    left: -36px;
+    top: 32px;
+  }
+  .about-about-img {
+    max-width: 240px;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .about-about-heading {
+    margin-bottom: 12px;
+  }
+  .about-about-cntn > p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 18px;
+  }
+  .features-box {
+    width: 150px;
+    height: 80px;
+    padding-inline: 10px;
+  }
+  .features-box > img {
+    width: 22px;
+    height: 27px;
+    margin-right: 9px;
+  }
+  .features-box2 > img {
+    width: 25px;
+    height: 27px;
+  }
+  .features-box3 > img {
+    width: 33px;
+    height: 27px;
+  }
+  .feature-cntn > p {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .about-about-btn {
+    text-align: center;
+    margin-top: 0px;
+  }
+  /* Skill Section */
+  .skill-sec {
+    padding: 30px 0;
+  }
+  .skill-img {
+    max-width: 205px;
+    margin: 0 auto 60px;
+  }
+  .skill-img2 {
+    max-width: 110px;
+    right: -50px;
+    bottom: -24px;
+  }
+  .skill-box {
+    left: -45px;
+    bottom: -35px;
+    padding: 6px 7px;
+    max-width: 141px;
+    border-radius: 10px;
+  }
+  .skill-box-top > img {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+  }
+  .skill-box-btm {
+    margin-left: 5px;
+  }
+  .skill-box-btm p:last-child {
+    margin-top: 0px;
+  }
+  .skill-box-btm > p {
+    font-size: 12px;
+  }
+  .skill-cntn > .title2 {
+    font-size: 20px;
+    line-height: 31px;
+  }
+  .skill-cntn p:nth-child(2) {
+    margin-block: 10px !important;
+  }
+  .skill-cntn p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  /* Tutor Section */
+  .tutor-sec {
+    padding: 32px 0;
+  }
+  .tutor-heading > p {
+    font-size: 14px;
+    margin-block: 12px 0;
+  }
+  .swiper {
+    padding: 25px 0 44px;
+  }
+  .name {
+    font-size: 14px;
+  }
+  .tutor-card{
+    height: 365px;
+  }
+}
