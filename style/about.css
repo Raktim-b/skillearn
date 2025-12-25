@@ -36,7 +36,7 @@ body {
   color: var(--defult-color);
 }
 .about-about-wrpr {
-  padding: 38px 0 87.26px;
+  padding: 64px 0 107px;
   background: var(--section-bg);
 }
 .about-about-img {
@@ -168,7 +168,7 @@ body {
 }
 /* Skill Section */
 .skill-sec {
-  padding: 77px 0 171px;
+  padding: 64px 0 144px;
 }
 .skill-img {
   max-width: 449px;
