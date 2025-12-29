@@ -232,7 +232,7 @@ body {
 }
 /* Tutor Section */
 .tutor-sec {
-  padding: 89px 0 85px;
+  padding: 64px 0 112px;
   background-color: var(--section-bg);
 }
 
@@ -462,6 +462,56 @@ body {
   height: 100%;
   object-fit: cover;
 }
+/* JoinUs Section */
+.joinus-section {
+  padding: 64px 0;
+}
+.joinus-heading {
+  margin-bottom: 64px;
+}
+.joinus-heading > p {
+  color: var(--input-bg);
+  margin-block: 15px 0;
+  line-height: 55px;
+}
+.join-card {
+  max-width: 312px;
+  margin: 0 auto;
+  height: 305px;
+  border-radius: 15px;
+  background-color: var(--defult-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 30px 28px 29px;
+}
+.join-card-img {
+  max-width: 113px;
+}
+.join-card-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.join-card > p {
+  line-height: 28px;
+  color: var(--input-bg);
+  letter-spacing: 0.48px;
+}
+.arrow-1 {
+  max-width: 108px;
+  top: 29px;
+  right: -119px;
+}
+.arrow-2 {
+  max-width: 108px;
+  bottom: 42px;
+  right: -121px;
+}
+.arrow-1 > img,
+.arrow-2 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 @keyframes rightTOLeft {
   0% {
     right: -10%;
@@ -495,6 +545,20 @@ body {
     height: 220px;
     bottom: -32px;
     right: -26px;
+  }
+  /* Join Us Section */
+  .join-card {
+    max-width: 300px;
+    height: 297px;
+    padding: 24px 18px 22px;
+  }
+  .arrow-1 {
+    max-width: 90px;
+    right: -98px;
+  }
+  .arrow-2 {
+    max-width: 90px;
+    right: -98px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -599,6 +663,27 @@ body {
     font-size: 18px;
     line-height: 26px;
     margin-block: 28px;
+  }
+  /* Join Us Section */
+  .joinus-heading {
+    margin-bottom: 44px;
+  }
+  .join-card > p {
+    line-height: 25px;
+    letter-spacing: 0px;
+  }
+  .join-card {
+    max-width: 260px;
+    height: 280px;
+    padding: 22px 15px 22px;
+  }
+  .arrow-1 {
+    max-width: 60px;
+    right: -67px;
+  }
+  .arrow-2 {
+    max-width: 60px;
+    right: -68px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -721,6 +806,27 @@ body {
   .auto-scroll-itms:nth-child(5) {
     width: 37px;
   }
+  /* Join Us Section */
+  .sec-top {
+    margin-bottom: 15px;
+  }
+  .joinus-heading > p {
+    line-height: 35px;
+  }
+  .join-card {
+    max-width: 212px;
+    height: 253px;
+    padding: 18px 12px 17px;
+  }
+  .join-card > p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .arrow-1,
+  .arrow-2 {
+    max-width: 42px;
+    right: -46px;
+  }
 }
 @media screen and (max-width: 768px) {
   .title2 {
@@ -731,6 +837,12 @@ body {
     margin-bottom: 11px;
   }
   /* About Section */
+  .brdcrumb {
+    font-size: 18px;
+  }
+  .about-about-wrpr {
+    padding: 45px 0 64px;
+  }
   .about-about-hdr .title1 {
     font-size: 40px;
   }
@@ -743,6 +855,9 @@ body {
     margin-bottom: 20px;
   }
   /* Skill Section */
+  .skill-sec {
+    padding: 45px 0;
+  }
   .skill-img {
     max-width: 310px;
     margin: 0 auto 98px;
@@ -778,7 +893,7 @@ body {
   }
   /* Tutor Section */
   .tutor-sec {
-    padding: 50px 0 46px;
+    padding: 45px 0;
   }
 
   .swiper {
@@ -838,17 +953,53 @@ body {
     font-size: 14px;
     margin-left: 5.99px;
   }
+  /* Join Us Section */
+  .joinus-section {
+    padding: 45px 0;
+  }
+  .joinus-heading {
+    margin-bottom: 30px;
+  }
+  .joinus-heading > p {
+    line-height: 24px;
+  }
+  .join-card-img {
+    max-width: 80px;
+  }
+  .join-card {
+    max-width: 155px;
+    height: 194px;
+    padding: 17px 9px 17px;
+  }
+  .join-card > p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .arrow-1,
+  .arrow-2 {
+    max-width: 32px;
+    right: -36px;
+  }
 }
 @media screen and (max-width: 576px) {
   .title2 {
     font-size: 24px;
     letter-spacing: 0.6px;
   }
+  .section-btn {
+    padding: 8px 11px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+
   .sec-top {
     font-size: 20px;
     margin-bottom: 8px;
   }
   /* About Section */
+  .brdcrumb {
+    font-size: 16px;
+  }
   .about-about-hdr {
     padding-block: 24px 20px;
     background: var(--input-bg);
@@ -1076,9 +1227,9 @@ body {
     padding: 26px 0;
   }
   .auto-scroll-itms {
-        height: 30px;
-    }
-     .auto-scroll-itms:nth-child(1) {
+    height: 30px;
+  }
+  .auto-scroll-itms:nth-child(1) {
     width: 37px;
   }
   .auto-scroll-itms:nth-child(2) {
@@ -1092,5 +1243,21 @@ body {
   }
   .auto-scroll-itms:nth-child(5) {
     width: 25px;
+  }
+  /* Join Us Section */
+  .joinus-section {
+    padding: 35px 0;
+  }
+  .joinus-heading > p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .join-card {
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+  .arrow-1,
+  .arrow-2 {
+    display: none;
   }
 }
