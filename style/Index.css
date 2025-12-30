@@ -35,13 +35,7 @@ span {
 ul {
   list-style: none;
 }
-.banner-sec,
-.about-sec,
-.course-sec,
-.ftr-sec {
-  position: relative;
-  overflow-x: hidden;
-}
+
 .title1 {
   font-size: 64px;
   color: var(--primary-color);
