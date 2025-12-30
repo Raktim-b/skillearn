@@ -35,6 +35,13 @@ span {
 ul {
   list-style: none;
 }
+.banner-sec,
+.about-sec,
+.course-sec,
+.ftr-sec {
+  position: relative;
+  overflow-x: hidden;
+}
 .title1 {
   font-size: 64px;
   color: var(--primary-color);
@@ -54,13 +61,18 @@ ul {
   color: var(--input-bg);
   font-size: 24px;
   letter-spacing: 0.72px;
-  line-height: 55px;
 }
 .title4 {
   font-size: 18px;
   color: var(--secondary-color);
+  margin-bottom: 0;
 }
-
+.sec-hdr {
+  font-family: "Playfair Display", serif;
+  margin-block: 7px;
+  font-size: 32px;
+  color: var(--input-bg);
+}
 .container {
   max-width: 1340px;
 }
@@ -134,8 +146,6 @@ ul {
 /* Navbar Section */
 .hdr-sec {
   padding: 34px 0 15px;
-
-  background-color: var(--defult-color);
 }
 .navbar {
   padding: 0 !important;
@@ -194,9 +204,40 @@ ul {
 /* Banner Section */
 .banner-sec {
   padding: 48px 0 70px;
+  /* position: relative; */
+}
+.blur-circle-1 {
+  width: 577px;
+  height: 577px;
+  border-radius: 50%;
+  background-color: #09787742;
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  filter: blur(250px);
 }
 .banner-hdr {
   margin-right: -154px;
+  position: relative;
+}
+.banner-gif {
+  max-width: 202px;
+  position: absolute;
+  top: -97px;
+  left: -112px;
+}
+.banner-gif2 {
+  max-width: 362px;
+  position: absolute;
+  bottom: -200px;
+  left: 227px;
+  transform: rotate(-5.47deg);
+}
+.banner-gif > img,
+.banner-gif2 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .banner-sec p {
   max-width: 479px;
@@ -265,6 +306,9 @@ ul {
 .reviews > .rating {
   width: 61px;
   background-color: #b3d2ce;
+}
+.reviews > .rating svg {
+  margin-right: 6px;
 }
 .stats-card {
   max-width: 154px;
@@ -336,6 +380,17 @@ ul {
   left: 0;
   right: 0;
 }
+.banner-img6 {
+  width: 206.88px;
+  position: absolute;
+  left: 122.81px;
+  bottom: 181.51px;
+}
+.banner-img6 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .plus-wrpr {
   position: absolute;
   left: 44%;
@@ -359,71 +414,29 @@ ul {
 }
 /* About Section */
 .about-sec {
-  padding: 71.51px 0 172.82px;
+  padding: 70px 0 70px;
   background: linear-gradient(
-    115deg,
-    #f8f1f1 0%,
-    rgba(108, 205, 191, 0.25) 100%
+    113deg,
+    rgba(108, 205, 191, 0.25) 50%,
+    rgba(108, 205, 191, 0) 100%
   );
   position: relative;
 }
-.about-design1 {
-  max-width: 240px;
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  left: 183px;
-}
-.about-design1 > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.about-design5 {
-  max-width: 240px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-.about-design5 > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.about-design6 {
-  max-width: 240px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-.about-design6 > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 .about-hdr {
   max-width: 571px;
-  position: relative;
-  z-index: 1;
 }
 .about-hdr > .title2 {
-  font-family: "Roboto", sans-serif;
   letter-spacing: 0;
 }
-.sec-hdr {
-  font-family: "Playfair Display", serif;
-  margin-block: 7px;
-  font-size: 32px;
-  color: var(--input-bg);
-}
+
 .about-hdr > p {
-  font-size: 18px;
+  font-size: 20px;
   color: var(--input-bg);
-  line-height: 25px;
-  margin-bottom: 25.21px;
+  line-height: 30px;
+  margin-bottom: 13px;
 }
 .about-btm {
-  margin-bottom: 28.13px;
+  margin-bottom: 30px;
 }
 .feature-item {
   max-width: 423px;
@@ -440,11 +453,12 @@ ul {
 }
 .feature-item > p {
   color: var(--input-bg);
-  margin-block: 8px 0;
+  margin-top: 8px;
+  margin-bottom: 23px;
 }
 .about-img1 {
-  max-width: 521px;
-  margin-left: auto;
+  max-width: 406px;
+  margin: 0 auto;
   position: relative;
   z-index: 2;
 }
@@ -453,23 +467,12 @@ ul {
   height: 100%;
   object-fit: cover;
 }
-.about-design2 {
-  max-width: 205px;
-  position: absolute;
-  left: -104px;
-  top: 24.83px;
-  z-index: -1;
-}
-.about-design2 > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+
 .about-design3 {
-  max-width: 85px;
+  max-width: 66px;
   position: absolute;
-  left: -100px;
-  top: 282px;
+  left: -79px;
+  top: 190.85px;
 }
 .about-design3 > img {
   width: 100%;
@@ -477,10 +480,10 @@ ul {
   object-fit: contain;
 }
 .about-design4 {
-  max-width: 66px;
+  max-width: 51.47px;
   position: absolute;
-  right: -85px;
-  bottom: -55.62px;
+  right: -65.47px;
+  bottom: 0;
 }
 .about-design4 > img {
   width: 100%;
@@ -488,10 +491,10 @@ ul {
   object-fit: contain;
 }
 .about-img2 {
-  max-width: 350px;
+  max-width: 273px;
   position: absolute;
-  left: -127px;
-  bottom: -159.91px;
+  left: -100.48px;
+  bottom: -159px;
 }
 .about-img2 > img {
   width: 100%;
@@ -499,37 +502,37 @@ ul {
   object-fit: cover;
 }
 .enrolled-wrpr {
-  padding: 4.97px 32px 9.93px 24px;
+  padding: 6px 8px;
   border-radius: 50px;
-  max-width: 259px;
+  width: 199px;
   background-color: var(--defult-color);
   position: absolute;
-  right: -210px;
-  bottom: 50.65px;
+  right: -148px;
+  bottom: 18px;
 }
 .enroll-circle {
   width: 50px;
   height: 49.66px;
   border-radius: 50%;
-  margin-right: 11px;
+  margin-right: 7px;
   background-color: var(--design-bg);
 }
 .enroll-num {
-  font-size: 36px;
+  font-size: 20px;
   color: var(--input-bg);
 }
 .enrolled-cntn > p {
-  font-size: 18px;
+  font-size: 14px;
   color: var(--input-bg);
   margin-bottom: 0;
 }
 /* Course Section */
 .course-sec {
-  padding: 37px 0 56px;
+  padding: 70px 0;
 }
 .course-hdr {
-  max-width: 515px;
-  margin-bottom: 32px;
+  max-width: 396px;
+  margin-bottom: 78px;
 }
 .card {
   max-width: 424px;
@@ -748,41 +751,29 @@ ul {
   /* Banner Section */
 
   /* About Section */
-  .about-design1 {
-    left: 40px;
-  }
 }
 @media screen and (max-width: 1400px) {
   /* Banner Section  */
   .banner-hdr {
     margin-right: -110px;
   }
-  /* Stats Section */
-  .about-design4 {
-    right: -29px;
-    bottom: -55.62px;
+  .banner-gif {
+    max-width: 169px;
+    position: absolute;
+    top: -77px;
+    left: -93px;
   }
-  .stats-design1 {
-    max-width: 380px;
-    top: -2px;
-    left: -183px;
+  .banner-img6 {
+    width: 190.88px;
+    left: 117.81px;
+    bottom: 178.51px;
   }
-  .stats-design2 {
-    max-width: 288.09px;
-    bottom: -2px;
-    left: -119px;
-  }
-  .stats-design3 {
-    max-width: 250px;
-    left: -14px;
-  }
-  .stats-design4 {
-    bottom: 98px;
-    left: 88px;
-  }
+
   /* About Section */
-  .about-design1 {
-    left: -14px;
+  .about-img2 {
+    max-width: 273px;
+    left: -85.48px;
+    bottom: -159px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -798,7 +789,32 @@ ul {
   .nav-link {
     font-size: 18px;
   }
-
+  /* Banner Section */
+  .banner-img6 {
+    width: 179.88px;
+    left: 78.81px;
+    bottom: 152.51px;
+  }
+  /* About Section */
+  .about-img1 {
+    max-width: 370px;
+    margin: 0 auto;
+  }
+  .about-design4 {
+    max-width: 44.47px;
+    right: -56.47px;
+    bottom: 9px;
+  }
+  .about-design3 {
+    max-width: 45px;
+    left: -51px;
+    top: 198.85px;
+  }
+  .about-img2 {
+    max-width: 227px;
+    left: -55.48px;
+    bottom: -133px;
+  }
   /* Footer Section */
   .ftr-img-eclipse {
     margin-top: 335px;
@@ -861,12 +877,10 @@ ul {
     margin: 0 auto 30px;
   }
   /* About Section */
-  .about-sec {
-    padding: 50.51px 0 90.82px;
-  }
-  .about-design1 {
-    left: -58px;
-    top: -9px;
+
+  .about-hdr {
+    max-width: 100%;
+    margin-top: 200px;
   }
   .about-img1 {
     max-width: 430px;
@@ -875,20 +889,6 @@ ul {
     max-width: 294px;
     left: -60px;
     bottom: -159.91px;
-  }
-  .enrolled-wrpr {
-    padding: 4.97px 20px 9.93px 15px;
-
-    right: -157px;
-  }
-  .enroll-circle {
-    margin-right: 8px;
-  }
-  .enroll-num {
-    font-size: 26px;
-  }
-  .enrolled-cntn > p {
-    font-size: 17px;
   }
   /* Course Section */
   .card {
@@ -942,6 +942,9 @@ ul {
   .title4 {
     font-size: 17px;
   }
+  .sec-hdr {
+    font-size: 26px;
+  }
   /* Navbar */
   .hdr-sec {
     padding: 11px 0 7px;
@@ -958,8 +961,18 @@ ul {
   .banner-sec {
     padding: 30px 0 60px;
   }
+  .banner-gif {
+    max-width: 100px;
+    top: -46px;
+    left: -55px;
+  }
   .banner-sec p {
     margin-block: 16px 25px;
+  }
+  .banner-img6 {
+    max-width: 158.88px;
+    left: 78.81px;
+    bottom: 152.51px;
   }
   .plus-wrpr {
     left: 45%;
@@ -978,31 +991,20 @@ ul {
   }
 
   /* About Section */
-  .about-design1 {
-    left: -26px;
-    top: -2px;
+  .about-sec {
+    padding: 55px 0 55px;
+  }
+  .about-hdr {
+    margin-top: 170px;
   }
   .about-hdr > p {
     font-size: 16px;
-
     line-height: 23px;
     margin-bottom: 21.21px;
   }
 
-  .sec-hdr {
-    font-size: 26px;
-  }
   .about-btm {
     margin-bottom: 18.13px;
-  }
-  .about-design5 {
-    max-width: 149px;
-    left: -19px;
-  }
-  .about-design6 {
-    max-width: 63px;
-    bottom: -2px;
-    left: -13px;
   }
   .feature-item2 {
     margin-block: 14.82px 10.84px;
@@ -1010,18 +1012,6 @@ ul {
   .feature-item > p {
     font-size: 14px;
     margin-block: 5px 0;
-  }
-  .about-design2 {
-    max-width: 117px;
-
-    left: -63px;
-    top: 14.83px;
-  }
-  .about-design3 {
-    max-width: 57px;
-
-    left: -69px;
-    top: 162px;
   }
   .about-img2 {
     max-width: 200px;
@@ -1031,24 +1021,20 @@ ul {
   .about-img1 {
     max-width: 290px;
   }
-  .about-design4 {
-    max-width: 46px;
-    right: -55px;
-    bottom: 7.38px;
-  }
-  .enrolled-wrpr {
-    padding: 4.97px 13px 6.93px 13px;
-    right: -157px;
-  }
-  .enroll-num {
-    font-size: 22px;
-  }
-  .enrolled-cntn > p {
-    font-size: 14px;
-  }
+
   /* Course Section */
+  .course-sec {
+    padding: 50px 0;
+  }
+  .course-hdr {
+    max-width: 396px;
+    margin-bottom: 50px;
+  }
   .card {
     height: 220px;
+  }
+  .card-img {
+    max-width: 35px;
   }
   .card > .title3 {
     margin-block: 10px 4px;
@@ -1108,6 +1094,12 @@ ul {
   .title3 {
     font-size: 16px;
   }
+  .title4 {
+    font-size: 16px;
+  }
+  .sec-hdr {
+    font-size: 20px;
+  }
   .btn-secondary,
   .btn-tertiary {
     border-radius: 10px;
@@ -1129,6 +1121,11 @@ ul {
   /* Banner Section */
   .banner-sec {
     padding: 20px 0 50px;
+  }
+  .banner-gif {
+    max-width: 70px;
+    top: -31px;
+    left: -41px;
   }
   .banner-sec p {
     font-size: 14px;
@@ -1153,13 +1150,16 @@ ul {
     font-size: 14px;
     margin-block: 8px 5px;
   }
-  .circle {
-    margin: 0 auto;
+
+  .banner-img6 {
+    max-width: 115.88px;
+    left: 52.81px;
+    bottom: 104.51px;
   }
   .plus-wrpr {
     left: 46%;
     top: 41%;
-     width: 60px;
+    width: 60px;
     height: 60px;
     padding: 10px;
   }
@@ -1171,21 +1171,14 @@ ul {
     width: 15px;
     height: 15px;
   }
+
   /* About Section */
   .about-sec {
-    padding: 36.51px 0;
+    padding: 45px 0;
   }
-  .about-design5 {
-    max-width: 119px;
-    left: -19px;
-  }
-  .about-design6 {
-    max-width: 55px;
-    bottom: -6px;
-    left: -24px;
-  }
-  .sec-hdr {
-    font-size: 20px;
+
+  .about-hdr {
+    margin-top: 120px;
   }
   .about-hdr > p {
     font-size: 14px;
@@ -1196,20 +1189,26 @@ ul {
     font-size: 12px;
     margin-block: 2px 0;
   }
-
   .about-img1 {
-    margin: 0 auto 160px;
-    max-width: 237px;
+    max-width: 250px;
   }
   .about-img2 {
-    max-width: 170px;
-    left: -36px;
-    bottom: -129.91px;
+    max-width: 145px;
+    left: -26px;
+    bottom: -91.91px;
+  }
+  .about-design4 {
+    max-width: 24.47px;
+    right: -29.47px;
+    bottom: 9px;
+  }
+  .about-design3 {
+    max-width: 27px;
+    left: -30px;
+    top: 178.85px;
   }
   .enrolled-wrpr {
-    padding: 2.97px 14px 5.93px 9px;
-    right: -128px;
-    border-radius: 26px;
+    width: 166px;
   }
   .enroll-circle {
     width: 40px;
@@ -1218,39 +1217,31 @@ ul {
     margin-right: 6px;
   }
   .enrolled-cntn > p {
-    font-size: 13px;
+    font-size: 12px;
   }
   .enroll-num {
-    font-size: 18px;
+    font-size: 16px;
   }
-  .about-design3 {
-    max-width: 40px;
-    left: -44px;
-    top: 136px;
-  }
-  .about-design4 {
-    max-width: 30px;
-    right: -37px;
-    bottom: 7.38px;
-  }
-  .about-design2 {
-    max-width: 92px;
-    left: -34px;
-    top: 4.83px;
-  }
+
   /* Course Section */
   .course-sec {
     padding: 30px 0;
   }
+  .course-hdr {
+    margin-bottom: 35px;
+    max-width: 100%;
+  }
   .card {
-    max-width: 330px;
+    max-width: 240px;
+    height: 180px;
+  }
+  .card-img {
+    max-width: 30px;
   }
   .blue-card {
     margin-bottom: 24px;
   }
-  .course-hdr {
-    max-width: 100%;
-  }
+
   .card > p {
     font-size: 14px;
   }
@@ -1314,9 +1305,13 @@ ul {
 }
 @media screen and (max-width: 400px) {
   /* Banner Section */
+  .banner-img6 {
+    max-width: 90.88px;
+    left: 37.81px;
+    bottom: 80.51px;
+  }
   .plus-wrpr {
     left: 43%;
     top: 38%;
-   
   }
 }
