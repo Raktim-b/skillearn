@@ -42,6 +42,9 @@ ul {
   position: relative;
   overflow-x: clip;
 }
+.active {
+  font-weight: 600 !important;
+}
 .title1 {
   font-size: 64px;
   color: var(--primary-color);
@@ -132,13 +135,13 @@ ul {
   background: var(--secondary-color);
 }
 .section-btn svg {
-  transition: all 0.4s linear;
+  transition: all 1s linear;
 }
 .section-btn:hover svg {
   transform: rotate(405deg);
 }
 .section-btn path {
-  transition: all 0.4s linear;
+  transition: all 0.8s linear;
 }
 .section-btn:hover path {
   fill: var(--defult-color);
@@ -731,7 +734,7 @@ select:focus {
   border-radius: 30px;
 }
 .brows-card-btn svg {
-  transition: all 0.3s linear;
+  transition: all 0.8s linear;
 }
 .brows-card-btn:hover svg {
   transform: rotate(400deg);
@@ -1427,17 +1430,17 @@ select:focus {
     width: 15px;
     height: 15px;
   }
-@keyframes float {
-  0% {
-    transform: translateY(0);
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
-  50% {
-    transform: translateY(-5px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
   /* About Section */
   .about-sec {
     padding: 45px 0;
