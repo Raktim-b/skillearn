@@ -135,10 +135,10 @@ ul {
   background: var(--secondary-color);
 }
 .section-btn svg {
-  transition: all 1s linear;
+  transition: all 0.3s linear;
 }
 .section-btn:hover svg {
-  transform: rotate(405deg);
+  transform: rotate(45deg);
 }
 .section-btn path {
   transition: all 0.8s linear;
@@ -735,7 +735,7 @@ select:focus {
   border-radius: 30px;
 }
 .brows-card-btn svg {
-  transition: all 0.8s linear;
+  transition: all 0.3s linear;
 }
 .brows-card-btn:hover svg {
   transform: rotate(400deg);
@@ -1648,8 +1648,12 @@ select:focus {
     font-size: 14px;
     line-height: 22px;
   }
+  .search-form{
+    max-width: 350px;
+    margin: 0 auto;
+  }
   .search-wrpr {
-    padding: 5.5px 8px;
+    padding: 5.5px 12px;
   }
   .search-wrpr > input[type="text"] {
     width: 110px;
