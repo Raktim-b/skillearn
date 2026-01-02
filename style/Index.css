@@ -794,6 +794,110 @@ select:focus {
 .view-btn {
   margin-top: 30px;
 }
+/* Blog Section */
+.blog-sec {
+  padding: 70px 0;
+  border: 2px solid #eee9e9;
+}
+.blog-hdr {
+  margin-bottom: 82px;
+}
+.blog-hdr > p {
+  font-size: 20px;
+  color: var(--input-bg);
+  margin: 28px 0 0;
+}
+.blog-big-img {
+  background: url(../assets/LandingPage/Blog-img1.png) no-repeat center/cover;
+  max-width: 672px;
+  height: 426px;
+  border-radius: 30px;
+  padding: 21px 24px;
+  margin-bottom: 20px;
+}
+.badge {
+  color: var(--defult-color);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: normal;
+  font-size: 16px;
+  border: 1px solid var(--defult-color);
+}
+.badge-container .badge:first-child {
+  margin-right: 10px;
+}
+.blog-big-card {
+  max-width: 672px;
+  height: 259px;
+  border-radius: 30px;
+  border: 1px solid var(--input-bg);
+  padding: 25px 29px 27px;
+}
+.green-badge {
+  background-color: var(--secondary-color);
+  padding: 10px 12.5px;
+  border-radius: 30px;
+}
+.green-badge svg {
+  margin-right: 5px;
+}
+.blog-big-card > .title3 {
+  letter-spacing: 0;
+  max-width: 531px;
+  line-height: 26px;
+  margin-block: 14px 15px;
+}
+.blog-big-card > p {
+  max-width: 531px;
+  color: var(--input-bg);
+  line-height: 18px;
+  margin-bottom: 27px;
+}
+.read-more {
+  color: var(--input-bg);
+  position: relative;
+}
+.read-more::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: var(--input-bg);
+  top: 90%;
+  left: 0;
+  width: 0%;
+  transition: all 0.4s ease-in-out;
+}
+.read-more:hover::after {
+  width: 100%;
+}
+.read-more svg {
+  transition: all 0.3s ease-in;
+}
+.read-more:hover svg {
+  transform: rotate(45deg);
+}
+.blog-small-img {
+  background: url(../assets/LandingPage/Blog-img2.png) no-repeat center/cover;
+  max-width: 314px;
+  height: 185px;
+  border-radius: 30px;
+  padding: 21px 17px;
+}
+.blog-small-card {
+  max-width: 290px;
+  height: 185px;
+  border-radius: 30px;
+  padding: 20px 24px;
+  border: 1px solid var(--input-bg);
+}
+.blog-small-card > .green-badge {
+  width: 140px;
+}
+.blog-small-card > p {
+  font-size: 14px;
+  line-height: 16px;
+  margin-block: 9px 15px;
+}
 /* Footer Section */
 .ftr-sec {
   background: linear-gradient(62deg, #6dcec045 37%, #089082a3 71%);
@@ -1648,7 +1752,7 @@ select:focus {
     font-size: 14px;
     line-height: 22px;
   }
-  .search-form{
+  .search-form {
     max-width: 350px;
     margin: 0 auto;
   }
