@@ -108,36 +108,28 @@
             <div class="container">
                 <div class="row">
                     <div class="col-8">
-                        <div class="course-btns">
-                            <ul>
-                                <li class="course-category">
-                                    <a class="course-cat-links active" href="">All</a>
-                                </li>
-                                <li class="course-category">
-                                    <a class="course-cat-links" href="">Popular</a>
-                                </li>
-                                <li class="course-category">
-                                    <a class="course-cat-links" href="">Best Seller</a>
-                                </li>
-                                <li class="course-category">
-                                    <a class="course-cat-links" href="">Free</a>
-                                </li>
-                            </ul>
+                        <div class="course-btns d-flex align-items-center">
+                            <button class="course-category active">All</button>
+                            <button class="course-category">Popular</button>
+                            <button class="course-category">Best Seller</button>
+                            <button class="course-category">Free</button>
                         </div>
                         <div class="course-result d-flex align-items-center mt-4">
                             <p>Showing 1-8 of 15 results</p>
-                            <a href="" class="course-dropdown ms-auto" role="button" data-bs-toggle="dropdown"
+                            <!-- <button href="" class="course-dropdown ms-auto" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 <span>Sort By</span>
                                 <img src="./assets/CoursePage/arrow-down-01.png" alt="">
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </li>
-                            </ul>
+                            </button> -->
+                            <select class="course-dropdown ms-auto">
+                                <span>Sort By</span>
+                                <option value="" selected disabled>Sort By</option>
+                                <option value="latest">Business</option>
+                                <option value="popular">Arts</option>
+                                <option value="rating">Technical</option>
+                                <option value="price_low">History</option>
+                                <option value="price_high">Photography</option>
+                            </select>
                         </div>
                         <div class="course-details mt-4">
                             <div class="row">
@@ -157,15 +149,19 @@
                                                     <img src="./assets/CoursePage/star.png" alt="">
                                                     <span> (15 Reviews) </span>
                                                 </div>
-                                                <div class="bookmark">
-                                                    <a href="">
-                                                        <img src="./assets/CoursePage/bookmark.png" alt="">
-                                                    </a>
-                                                </div>
+                                                <button class="bookmark">
+
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z"
+                                                            stroke="black" stroke-opacity="0.6" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+
+                                                </button>
                                             </div>
-                                            <h2 class="title2">
-                                                <a href="">Angular Zero To Mastery</a>
-                                            </h2>
+                                            <h2 class="title2">Angular Zero To Mastery</h2>
                                             <div class="lessons-students d-flex align-items-center my-3">
                                                 <div class="lessons">
                                                     <a class="d-flex align-items-center" href="">
@@ -190,12 +186,10 @@
                                                     <p>$60</p>
                                                     <del>$120</del>
                                                 </div>
-                                                <div class="cart ms-auto">
-                                                    <a class="d-flex align-items-center" href="">
-                                                        <img src="./assets/CoursePage/shopping-cart.png" alt="">
-                                                        <span>Add to cart</span>
-                                                    </a>
-                                                </div>
+                                                <button class="cart ms-auto d-flex align-items-center">
+                                                    <img src="./assets/CoursePage/shopping-cart.png" alt="">
+                                                    <span>Add to cart</span>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -215,14 +209,20 @@
                                                     <img src="./assets/CoursePage/star.png" alt="">
                                                     <span> (15 Reviews) </span>
                                                 </div>
-                                                <div class="bookmark">
-                                                    <a href="">
-                                                        <img src="./assets/CoursePage/bookmark.png" alt="">
-                                                    </a>
-                                                </div>
+                                                <button class="bookmark">
+
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z"
+                                                            stroke="black" stroke-opacity="0.6" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+
+                                                </button>
                                             </div>
                                             <h2 class="title2">
-                                                <a href="">Business & Banking Studies</a>
+                                                Business & Banking Studies
                                             </h2>
                                             <div class="lessons-students d-flex align-items-center my-3">
                                                 <div class="lessons">
@@ -248,12 +248,10 @@
                                                     <p>$60</p>
                                                     <del>$120</del>
                                                 </div>
-                                                <div class="cart ms-auto">
-                                                    <a class="d-flex align-items-center" href="">
-                                                        <img src="./assets/CoursePage/shopping-cart.png" alt="">
-                                                        <span>Add to cart</span>
-                                                    </a>
-                                                </div>
+                                                <button class="cart ms-auto d-flex align-items-center">
+                                                    <img src="./assets/CoursePage/shopping-cart.png" alt="">
+                                                    <span>Add to cart</span>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -274,14 +272,20 @@
                                                     <img src="./assets/CoursePage/star.png" alt="">
                                                     <span> (15 Reviews) </span>
                                                 </div>
-                                                <div class="bookmark">
-                                                    <a href="">
-                                                        <img src="./assets/CoursePage/bookmark.png" alt="">
-                                                    </a>
-                                                </div>
+                                                <button class="bookmark">
+
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z"
+                                                            stroke="black" stroke-opacity="0.6" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+
+                                                </button>
                                             </div>
                                             <h2 class="title2">
-                                                <a href="">Learn About World History</a>
+                                                Learn About World History
                                             </h2>
                                             <div class="lessons-students d-flex align-items-center my-3">
                                                 <div class="lessons">
@@ -307,12 +311,10 @@
                                                     <p>$60</p>
                                                     <del>$120</del>
                                                 </div>
-                                                <div class="cart ms-auto">
-                                                    <a class="d-flex align-items-center" href="">
-                                                        <img src="./assets/CoursePage/shopping-cart.png" alt="">
-                                                        <span>Add to cart</span>
-                                                    </a>
-                                                </div>
+                                                <button class="cart ms-auto d-flex align-items-center">
+                                                    <img src="./assets/CoursePage/shopping-cart.png" alt="">
+                                                    <span>Add to cart</span>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -333,14 +335,20 @@
                                                     <img src="./assets/CoursePage/star.png" alt="">
                                                     <span> (15 Reviews) </span>
                                                 </div>
-                                                <div class="bookmark">
-                                                    <a href="">
-                                                        <img src="./assets/CoursePage/bookmark.png" alt="">
-                                                    </a>
-                                                </div>
+                                                <button class="bookmark">
+
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z"
+                                                            stroke="black" stroke-opacity="0.6" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+
+                                                </button>
                                             </div>
                                             <h2 class="title2">
-                                                <a href="">Zero to Hero with Advance Nodejs</a>
+                                                Zero to Hero with Advance Nodejs
                                             </h2>
                                             <div class="lessons-students d-flex align-items-center my-3">
                                                 <div class="lessons">
@@ -366,12 +374,10 @@
                                                     <p>$60</p>
                                                     <del>$120</del>
                                                 </div>
-                                                <div class="cart ms-auto">
-                                                    <a class="d-flex align-items-center" href="">
-                                                        <img src="./assets/CoursePage/shopping-cart.png" alt="">
-                                                        <span>Add to cart</span>
-                                                    </a>
-                                                </div>
+                                                <button class="cart ms-auto d-flex align-items-center">
+                                                    <img src="./assets/CoursePage/shopping-cart.png" alt="">
+                                                    <span>Add to cart</span>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -392,14 +398,20 @@
                                                     <img src="./assets/CoursePage/star.png" alt="">
                                                     <span> (15 Reviews) </span>
                                                 </div>
-                                                <div class="bookmark">
-                                                    <a href="">
-                                                        <img src="./assets/CoursePage/bookmark.png" alt="">
-                                                    </a>
-                                                </div>
+                                                <button class="bookmark">
+
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z"
+                                                            stroke="black" stroke-opacity="0.6" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+
+                                                </button>
                                             </div>
                                             <h2 class="title2">
-                                                <a href="">Advance Web Development</a>
+                                                Advance Web Development
                                             </h2>
                                             <div class="lessons-students d-flex align-items-center my-3">
                                                 <div class="lessons">
@@ -425,12 +437,10 @@
                                                     <p>$60</p>
                                                     <del>$120</del>
                                                 </div>
-                                                <div class="cart ms-auto">
-                                                    <a class="d-flex align-items-center" href="">
-                                                        <img src="./assets/CoursePage/shopping-cart.png" alt="">
-                                                        <span>Add to cart</span>
-                                                    </a>
-                                                </div>
+                                                <button class="cart ms-auto d-flex align-items-center">
+                                                    <img src="./assets/CoursePage/shopping-cart.png" alt="">
+                                                    <span>Add to cart</span>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -451,14 +461,20 @@
                                                     <img src="./assets/CoursePage/star.png" alt="">
                                                     <span> (15 Reviews) </span>
                                                 </div>
-                                                <div class="bookmark">
-                                                    <a href="">
-                                                        <img src="./assets/CoursePage/bookmark.png" alt="">
-                                                    </a>
-                                                </div>
+                                                <button class="bookmark">
+
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z"
+                                                            stroke="black" stroke-opacity="0.6" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+
+                                                </button>
                                             </div>
                                             <h2 class="title2">
-                                                <a href="">Graphics Design, (UX/UI)</a>
+                                                Graphics Design, (UX/UI)
                                             </h2>
                                             <div class="lessons-students d-flex align-items-center my-3">
                                                 <div class="lessons">
@@ -484,12 +500,10 @@
                                                     <p>$60</p>
                                                     <del>$120</del>
                                                 </div>
-                                                <div class="cart ms-auto">
-                                                    <a class="d-flex align-items-center" href="">
-                                                        <img src="./assets/CoursePage/shopping-cart.png" alt="">
-                                                        <span>Add to cart</span>
-                                                    </a>
-                                                </div>
+                                                <button class="cart ms-auto d-flex align-items-center">
+                                                    <img src="./assets/CoursePage/shopping-cart.png" alt="">
+                                                    <span>Add to cart</span>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -510,14 +524,20 @@
                                                     <img src="./assets/CoursePage/star.png" alt="">
                                                     <span> (15 Reviews) </span>
                                                 </div>
-                                                <div class="bookmark">
-                                                    <a href="">
-                                                        <img src="./assets/CoursePage/bookmark.png" alt="">
-                                                    </a>
-                                                </div>
+                                                <button class="bookmark">
+
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z"
+                                                            stroke="black" stroke-opacity="0.6" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+
+                                                </button>
                                             </div>
                                             <h2 class="title2">
-                                                <a href="">Art of Black and White Photography</a>
+                                                Art of Black and White Photography
                                             </h2>
                                             <div class="lessons-students d-flex align-items-center my-3">
                                                 <div class="lessons">
@@ -543,12 +563,10 @@
                                                     <p>$60</p>
                                                     <del>$120</del>
                                                 </div>
-                                                <div class="cart ms-auto">
-                                                    <a class="d-flex align-items-center" href="">
-                                                        <img src="./assets/CoursePage/shopping-cart.png" alt="">
-                                                        <span>Add to cart</span>
-                                                    </a>
-                                                </div>
+                                                <button class="cart ms-auto d-flex align-items-center">
+                                                    <img src="./assets/CoursePage/shopping-cart.png" alt="">
+                                                    <span>Add to cart</span>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -569,14 +587,20 @@
                                                     <img src="./assets/CoursePage/star.png" alt="">
                                                     <span> (15 Reviews) </span>
                                                 </div>
-                                                <div class="bookmark">
-                                                    <a href="">
-                                                        <img src="./assets/CoursePage/bookmark.png" alt="">
-                                                    </a>
-                                                </div>
+                                                <button class="bookmark">
+
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z"
+                                                            stroke="black" stroke-opacity="0.6" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+
+                                                </button>
                                             </div>
                                             <h2 class="title2">
-                                                <a href="">Interactive Python Tutorial</a>
+                                                Interactive Python Tutorial
                                             </h2>
                                             <div class="lessons-students d-flex align-items-center my-3">
                                                 <div class="lessons">
@@ -602,12 +626,10 @@
                                                     <p>$60</p>
                                                     <del>$120</del>
                                                 </div>
-                                                <div class="cart ms-auto">
-                                                    <a class="d-flex align-items-center" href="">
-                                                        <img src="./assets/CoursePage/shopping-cart.png" alt="">
-                                                        <span>Add to cart</span>
-                                                    </a>
-                                                </div>
+                                                <button class="cart ms-auto d-flex align-items-center">
+                                                    <img src="./assets/CoursePage/shopping-cart.png" alt="">
+                                                    <span>Add to cart</span>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -615,12 +637,8 @@
                             </div>
                         </div>
                         <div class="page-btns mt-5 d-flex align-items-center justify-content-between">
-                            <div class="prev-btn">
-                                <a href="">PREV</a>
-                            </div>
-                            <div class="next-btn">
-                                <a href="">NEXT</a>
-                            </div>
+                            <button class="course-category">PREV</button>
+                            <button class="course-category">NEXT</button>
                         </div>
                     </div>
                     <div class="col-4">
@@ -629,9 +647,19 @@
                             <div class="search-bar d-flex align-items-center">
                                 <input type="text" id="search" name="search" placeholder="Search Your Course"
                                     required />
-                                <a href="">
-                                    <img src="./assets/CoursePage/search-icon.png" alt="">
-                                </a>
+                                <button class="search-btn ms-auto">
+
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17 17L21 21" stroke="#141B34" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C15.4183 19 19 15.4183 19 11Z"
+                                            stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </button>
                             </div>
                         </div>
                         <div class="category-box">
