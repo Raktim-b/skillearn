@@ -17,10 +17,12 @@ body {
   --design-bg: #6dcec0;
   --section-bg: #dbf7f3;
   --roboto: "Roboto", sans-serif;
+  --playfair: "Playfair Display", serif;
   --sec-hdr-color: #054645;
   --size-48px: clamp(2.2rem, 4.5vw, 4rem);
   --size-24px-h2: clamp(1.3rem, 2vw, 1.71rem);
   --size-24px-p: clamp(1.05rem, 2vw, 1.714rem);
+  --size-22px-h3: clamp(1.25rem, 1.9vw, 1.57rem);
   --size-20px: clamp(1.05rem, 1.2vw, 1.43rem);
   --size-18px: clamp(1.1rem, 1.1vw, 1.29rem);
 
@@ -28,7 +30,7 @@ body {
 
 h1,
 h2 {
-  font-family: "Playfair Display", serif;
+  font-family: var(--playfair);
 }
 
 a,
@@ -160,6 +162,10 @@ Category Section
 ========================
 */
 
+.category-sec {
+  padding: 0 0 113px;
+}
+
 .category-headr {
   font-size: var(--size-24px-h2);
   font-weight: 600;
@@ -199,12 +205,84 @@ Category Section
   display: none;
 }
 
+.grid-card {
+  margin-top: 60px;
+}
 
+.category-card {
+  max-width: 413px;
+  border: 1px solid var(--border-color);
+  margin: 0px auto 40px;
+}
 
+.category-card:last-child {
+  margin: 0 auto;
+}
 
+.cardCategory-cntn {
+  padding: 0 10px;
+}
 
+.cardImg {
+  max-width: 100%;
 
+}
 
+.category-card h3 {
+  font-size: var(--size-22px-h3);
+  font-weight: 500;
+  margin: 15px 0 5px;
+}
+
+.qstn span i {
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+.qstn p {
+  font-size: 18px;
+}
+
+.categoryCard-btn {
+  margin: 29px 0;
+}
+
+/* 
+========================
+Progress Bar Section
+========================
+*/
+.progress-sec {
+  padding: 40px 0;
+  background: url(../assets/QuizPage/progress-bg.png) no-repeat center/cover;
+}
+
+.progress-cntn h2 {
+  font-size: var(--size-24px-h2);
+  font-weight: 600;
+  color: #121313;
+}
+
+.form-label {
+  font-size: var(--size-20px);
+  margin: 10px 0;
+  color: rgba(31, 30, 30, 0.6);
+}
+
+#rangeValue {
+  font-family: var(--playfair);
+  font-size: var(--size-48px);
+  font-weight: 600;
+}
+
+.cmplt {
+  margin-top: 10px;
+}
+
+.cmplt p {
+  font-size: var(--size-20px);
+  color: var(--defult-color);
+}
 
 
 /* 
