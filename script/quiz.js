@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
   const funnelList = document.querySelector(".category-list");
   const filterBtn = document.querySelector(".filter");
+  console.log(filterBtn);
 
   window.funnelBtn = () => {
     funnelList.classList.toggle("show");
-    // filterBtn.style.color = isOpen ? "#097877" : "";
   };
 
   const rangeInput = document.getElementById("range4");
