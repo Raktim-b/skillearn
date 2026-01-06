@@ -133,7 +133,7 @@ ul {
   top: 0;
   width: 0;
   height: 100%;
-  background: var(--border-color);
+  background: var(--secondary-color);
   transform: skewX(45deg);
   z-index: -1;
   transition: width 1000ms;
@@ -143,7 +143,9 @@ ul {
 .btn-secondary::before {
   background: var(--btn-bg);
 }
-
+.btn-tertiary::before{
+  background-color: var(--border-color);
+}
 .btn-primary:hover::before,
 .btn-secondary:hover::before {
   width: 250%;
