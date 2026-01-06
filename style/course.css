@@ -19,23 +19,19 @@ body {
 :root {
   --defult-color: #fff;
   --primary-color: #000;
-  --secondary-color: #08119b;
+  --secondary-color: #097877;
   --tertiary-color: #6ccdbf;
   --light-bg-color: #f2f0f4;
   --input-bg: #212343;
+  --border-color: #7d7878;
   --heading-color: #422c9b;
   --btn-bg: #173433;
-  --btn-bg-2: #097877;
   --design-bg: #6dcec0;
   --section-bg: #dbf7f3;
   --roboto: "Roboto", sans-serif;
-  --course-btn-color: #097877;
-  --free-color: #f8d468;
+  --sec-hdr-color: #054645;
 }
 
-.container {
-  max-width: 1340px;
-}
 
 ul {
   list-style-type: none;
@@ -94,7 +90,7 @@ COURSE CNTN
   transition: 0.5s linear;
 }
 
-.active {
+.active1 {
   background: var(--course-btn-color);
   color: var(--defult-color);
 }
