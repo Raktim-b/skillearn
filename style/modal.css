@@ -1,0 +1,351 @@
+.col-12 {
+  padding: 0 6px !important;
+}
+.col55 {
+  width: 55%;
+  padding: 0 6px;
+}
+
+.col52 {
+  width: 52%;
+  padding: 0 6px;
+}
+.col48 {
+  width: 48%;
+  padding: 0 6px;
+}
+.col45 {
+  width: 45%;
+  padding: 0 6px;
+}
+/* Register Modal */
+
+.register-modal {
+  max-width: 1150px;
+  height: 982px;
+  margin: 40px auto;
+  border-radius: 20px;
+  background-color: #daf8f4;
+  padding: 30px;
+  position: relative;
+}
+.reg-btm-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+.reg-modal-left {
+  max-width: 503px;
+  height: 923px;
+  background: linear-gradient(
+    29deg,
+    rgba(8, 144, 130, 0.27) 27%,
+    rgba(107, 200, 198, 0.32) 77%
+  );
+  border-radius: 20px;
+  padding: 33px 40px;
+  position: relative;
+  z-index: 1;
+}
+.reg-logo {
+  max-width: 356px;
+}
+.reg-logo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.reg-modal-left > h2 {
+  color: #0a24cd;
+  font-size: 36px;
+  margin-block: 121.15px 11px;
+}
+.reg-modal-left > p {
+  color: var(--input-bg);
+  line-height: 24px;
+}
+.teacher-box {
+  padding: 14px 33px 9px 23px;
+  max-width: 293px;
+  margin: 204px auto 0;
+  border-radius: 20px;
+  background-color: #ffffff59;
+}
+.teacher-box > ul li:nth-child(2) {
+  transform: translateX(-8px);
+}
+
+.teacher-box > ul li:nth-child(3) {
+  transform: translateX(-16px);
+}
+.teacher-box-cntn > p {
+  line-height: 24px;
+  color: var(--input-bg);
+  margin-bottom: 0;
+  width: 119px;
+}
+.teacher-box-cntn span {
+  color: #0a24cd !important;
+}
+.reg-right {
+  max-width: 372px;
+  position: relative;
+  z-index: 1;
+}
+.reg-right > h2 {
+  font-size: 36px;
+  color: var(--input-bg);
+  line-height: 40px;
+  margin-bottom: 0;
+}
+.reg-right > p {
+  color: var(--input-bg);
+  margin-block: 11px 30px;
+}
+.reg-right > p > a {
+  color: #0a24cd;
+}
+
+.reg-form label {
+  color: var(--input-bg);
+  line-height: 24px;
+  margin-bottom: 6px;
+}
+
+.reg-form input,
+.pass-wrpr {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #8a8080;
+  padding: 8px 16px;
+  margin-bottom: 25px;
+}
+.reg-form input:focus {
+  outline: none;
+}
+.reg-form input::placeholder {
+  font-size: 14px;
+  line-height: 24px;
+}
+.pass-wrpr {
+  padding: 4px 8px 4px 10px;
+  background-color: #fff;
+}
+.reg-form input[type="password"] {
+  margin-bottom: 0;
+  background: none;
+  border: none;
+}
+.lock-btn {
+  padding: 7.67px 8px 7.67px 0;
+  border-right: 1px solid #8a8080;
+  border-block: 0;
+  border-left: 0;
+  background: none;
+}
+.eye-btn {
+  background: none;
+  border: none;
+}
+
+.terms-label {
+  display: flex;
+
+  cursor: pointer;
+}
+
+.terms-label input {
+  display: none;
+}
+
+.custom-check {
+  width: 16px;
+  margin: 4px 4px 0 0;
+  height: 16px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  flex-shrink: 0;
+  position: relative;
+}
+.custom-check::after {
+  content: "✓";
+  position: absolute;
+  left: 0px;
+  top: -4px;
+  font-size: 18px;
+  display: none;
+}
+.terms-label input:checked + .custom-check::after {
+  display: block;
+}
+
+.terms-text {
+  font-size: 15px;
+  color: var(--input-bg);
+}
+
+.terms-text a {
+  font-weight: bold;
+  color: var(--input-bg);
+}
+
+.terms-text a:hover {
+  text-decoration: underline;
+}
+.reg-form input[type="submit"] {
+  padding-block: 12px;
+  font-size: 14px;
+  background-color: #fff;
+  margin-top: 28px;
+}
+.back-btn > a {
+  font-size: 12px;
+  color: var(--input-bg);
+}
+.back-btn svg {
+  margin-right: 6px;
+}
+
+@media screen and (max-width: 992px) {
+  .reg-modal-left > h2,
+  .reg-right > h2 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .reg-modal-left > p,
+  .teacher-box-cntn > p,
+  .reg-right > p,
+  .reg-form label,
+  .terms-text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .reg-form input::placeholder {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .col45,
+  .col48,
+  .col52,
+  .col55 {
+    width: 100%;
+  }
+  .register-modal {
+    border-radius: 15px;
+    height: 840px;
+    padding: 20px;
+  }
+  .reg-modal-left {
+    border-radius: 15px;
+    height: 800px;
+    padding: 20px 25px;
+  }
+  .teacher-box {
+    padding: 11px 15px 8px 17px;
+    margin: 150px auto 0;
+    border-radius: 15px;
+  }
+  .reg-modal-left > h2,
+  .reg-right > h2 {
+    font-size: 21px;
+    line-height: 26px;
+  }
+  .reg-modal-left > p,
+  .teacher-box-cntn > p,
+  .reg-right > p,
+  .reg-form label,
+  .terms-text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .reg-right > p {
+    margin-block: 10px 20px;
+  }
+  .reg-form input,
+  .pass-wrpr {
+    border-radius: 7px;
+    padding: 3px 10px;
+    margin-bottom: 15px;
+  }
+  .reg-form input::placeholder {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .lock-btn {
+    padding: 0px 5px 0 0;
+  }
+  .lock-btn svg {
+    width: 10px;
+    height: 14px;
+  }
+  .eye-btn svg {
+    width: 14px;
+    height: 11px;
+  }
+  .reg-form input[type="submit"] {
+    padding-block: 8px;
+    font-size: 12px;
+    margin-top: 18px;
+  }
+  .back-btn > a {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .register-modal {
+    border-radius: 8px;
+    height: 720px;
+    padding: 13px;
+  }
+  .reg-modal-left {
+    border-radius: 8px;
+    height: 694px;
+    padding: 12px;
+  }
+  .reg-modal-left > h2,
+  .reg-right > h2 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .reg-modal-left > p,
+  .teacher-box-cntn > p,
+  .reg-right > p,
+  .reg-form label,
+  .terms-text {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .teacher-box {
+    padding: 8px 9px 5px 15px;
+    max-width: 100px;
+    margin: 150px auto 0;
+    border-radius: 15px;
+    align-items: start !important;
+  }
+  .teacher-box img {
+    width: 25px;
+    height: 25px;
+  }
+  .reg-right > p {
+    margin-block: 7px 10px;
+  }
+  .reg-form input,
+  .pass-wrpr {
+    border-radius: 7px;
+    padding: 1px 7px;
+    margin-bottom: 8px;
+  }
+  .reg-form input::placeholder {
+    font-size: 9px;
+    line-height: 12px;
+  }
+  .reg-form input[type="submit"] {
+    padding-block: 6px;
+    font-size: 10px;
+    margin-top: 9px;
+  }
+}
