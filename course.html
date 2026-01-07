@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Course Page</title>
 
+    <!-- Font Awsome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Bootstrap css -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -139,966 +144,703 @@
       </nav>
     </header>
     <main>
-      <!-- Course Content Section -->
-      <section class="course-cntn-sec">
-        <div class="about-about-hdr">
-          <div class="container">
-            <ul class="list-unstyled d-flex">
-              <li><a href="" class="brdcrumb fw-light me-1">Home></a></li>
-              <li class="brdcrumb fw-light">About Us</li>
-            </ul>
-          </div>
-        </div>
-        <div class="about-about-wrpr">
-          <div class="container">
-            <div class="row">
-              <div class="col-8">
-                <div class="course-btns d-flex align-items-center">
-                  <button class="course-category active1">All</button>
-                  <button class="course-category">Popular</button>
-                  <button class="course-category">Best Seller</button>
-                  <button class="course-category">Free</button>
+
+        <!-- Course Content Section -->
+        <section class="course-cntn-sec">
+            <div class="about-about-hdr">
+                <div class="container">
+                    <ul class="list-unstyled d-flex">
+                        <li><a href="" class="brdcrumb fw-light me-1">Home></a></li>
+                        <li class="brdcrumb fw-light">About Us</li>
+                    </ul>
                 </div>
-                <div class="course-result d-flex align-items-center mt-4">
-                  <p>Showing 1-8 of 15 results</p>
-                  <!-- <button href="" class="course-dropdown ms-auto" role="button" data-bs-toggle="dropdown"
+            </div>
+            <div class="about-about-wrpr">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="course-btns d-flex align-items-center">
+                                <button class="course-category active1">All</button>
+                                <button class="course-category">Popular</button>
+                                <button class="course-category">Best Seller</button>
+                                <button class="course-category">Free</button>
+                            </div>
+                            <div class="course-result d-flex align-items-center mt-4">
+                                <p>Showing 1-8 of 15 results</p>
+                                <!-- <button href="" class="course-dropdown ms-auto" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 <span>Sort By</span>
                                 <img src="./assets/CoursePage/arrow-down-01.png" alt="">
                             </button> -->
-                  <select class="course-dropdown ms-auto">
-                    <span>Sort By</span>
-                    <option value="" selected disabled>Sort By</option>
-                    <option value="latest">Business</option>
-                    <option value="popular">Arts</option>
-                    <option value="rating">Technical</option>
-                    <option value="price_low">History</option>
-                    <option value="price_high">Photography</option>
-                  </select>
+                                <select class="course-dropdown ms-auto">
+                                    <span>Sort By</span>
+                                    <option value="" selected disabled>Sort By</option>
+                                    <option value="latest">Business</option>
+                                    <option value="popular">Arts</option>
+                                    <option value="rating">Technical</option>
+                                    <option value="price_low">History</option>
+                                    <option value="price_high">Photography</option>
+                                </select>
+                            </div>
+                            <div class="course-details mt-4">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="course-card mb-4">
+                                            <div class="card-pic position-relative">
+                                                <img src="./assets/CoursePage/1st-card.png" alt="">
+                                                <a class="free position-absolute" href="">Free</a>
+                                            </div>
+                                            <div class="card-cntn">
+                                                <div class="course-review d-flex align-items-center">
+                                                    <div class="reviews me-auto my-3 d-flex align-items-center">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <span> (15 Reviews) </span>
+                                                    </div>
+                                                    <button class="bookmark">
+
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z"
+                                                                stroke="black" stroke-opacity="0.6"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+
+                                                    </button>
+                                                </div>
+                                                <h2 class="title2">Angular Zero To Mastery</h2>
+                                                <div class="lessons-students d-flex align-items-center my-3">
+                                                    <div class="lessons">
+                                                        <a class="d-flex align-items-center" href="">
+                                                            <img src="./assets/CoursePage/book.png" alt="">
+                                                            <span>12 Lessons</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="students d-flex align-items-center">
+                                                        <img src="./assets/CoursePage/students.png" alt="">
+                                                        <span>50 Students</span>
+                                                    </div>
+                                                </div>
+                                                <p>It is a long established fact that a reader will be distracted.</p>
+                                                <div class="course-dev d-flex align-items-center">
+                                                    <a href="">
+                                                        <img src="./assets/CoursePage/round-pic.png" alt="">
+                                                    </a>
+                                                    <span>By <span>Angela</span> In <span>Development</span></span>
+                                                </div>
+                                                <div class="price-cart mt-3 d-flex align-items-center">
+                                                    <div class="price d-flex align-items-center mt-3">
+                                                        <p>$60</p>
+                                                        <del>$120</del>
+                                                    </div>
+                                                    <button class="cart ms-auto d-flex align-items-center">
+                                                        <img src="./assets/CoursePage/shopping-cart.png" alt="">
+                                                        <span>Add to cart</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="course-card mb-4">
+                                            <div class="card-pic position-relative">
+                                                <img src="./assets/CoursePage/2nd-card.png" alt="">
+                                            </div>
+                                            <div class="card-cntn">
+                                                <div class="course-review d-flex align-items-center">
+                                                    <div class="reviews me-auto my-3 d-flex align-items-center">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <span> (15 Reviews) </span>
+                                                    </div>
+                                                    <button class="bookmark">
+
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z"
+                                                                stroke="black" stroke-opacity="0.6"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+
+                                                    </button>
+                                                </div>
+                                                <h2 class="title2">
+                                                    Business & Banking Studies
+                                                </h2>
+                                                <div class="lessons-students d-flex align-items-center my-3">
+                                                    <div class="lessons">
+                                                        <a class="d-flex align-items-center" href="">
+                                                            <img src="./assets/CoursePage/book.png" alt="">
+                                                            <span>12 Lessons</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="students d-flex align-items-center">
+                                                        <img src="./assets/CoursePage/students.png" alt="">
+                                                        <span>50 Students</span>
+                                                    </div>
+                                                </div>
+                                                <p>It is a long established fact that a reader will be distracted.</p>
+                                                <div class="course-dev d-flex align-items-center">
+                                                    <a href="">
+                                                        <img src="./assets/CoursePage/round-pic.png" alt="">
+                                                    </a>
+                                                    <span>By <span>Aaron</span> In <span>Development</span></span>
+                                                </div>
+                                                <div class="price-cart mt-3 d-flex align-items-center">
+                                                    <div class="price d-flex align-items-center mt-3">
+                                                        <p>$60</p>
+                                                        <del>$120</del>
+                                                    </div>
+                                                    <button class="cart ms-auto d-flex align-items-center">
+                                                        <img src="./assets/CoursePage/shopping-cart.png" alt="">
+                                                        <span>Add to cart</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="course-card mb-4">
+                                            <div class="card-pic position-relative">
+                                                <img src="./assets/CoursePage/3rd-card.png" alt="">
+                                                <!-- <a class="free position-absolute" href="">Free</a> -->
+                                            </div>
+                                            <div class="card-cntn">
+                                                <div class="course-review d-flex align-items-center">
+                                                    <div class="reviews me-auto my-3 d-flex align-items-center">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <span> (15 Reviews) </span>
+                                                    </div>
+                                                    <button class="bookmark">
+
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z"
+                                                                stroke="black" stroke-opacity="0.6"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+
+                                                    </button>
+                                                </div>
+                                                <h2 class="title2">
+                                                    Learn About World History
+                                                </h2>
+                                                <div class="lessons-students d-flex align-items-center my-3">
+                                                    <div class="lessons">
+                                                        <a class="d-flex align-items-center" href="">
+                                                            <img src="./assets/CoursePage/book.png" alt="">
+                                                            <span>12 Lessons</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="students d-flex align-items-center">
+                                                        <img src="./assets/CoursePage/students.png" alt="">
+                                                        <span>50 Students</span>
+                                                    </div>
+                                                </div>
+                                                <p>It is a long established fact that a reader will be distracted.</p>
+                                                <div class="course-dev d-flex align-items-center">
+                                                    <a href="">
+                                                        <img src="./assets/CoursePage/round-pic.png" alt="">
+                                                    </a>
+                                                    <span>By <span>Aaron</span> In <span>Development</span></span>
+                                                </div>
+                                                <div class="price-cart mt-3 d-flex align-items-center">
+                                                    <div class="price d-flex align-items-center mt-3">
+                                                        <p>$60</p>
+                                                        <del>$120</del>
+                                                    </div>
+                                                    <button class="cart ms-auto d-flex align-items-center">
+                                                        <img src="./assets/CoursePage/shopping-cart.png" alt="">
+                                                        <span>Add to cart</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="course-card mb-4">
+                                            <div class="card-pic position-relative">
+                                                <img src="./assets/CoursePage/4th-card.png" alt="">
+                                                <a class="free position-absolute" href="">Free</a>
+                                            </div>
+                                            <div class="card-cntn">
+                                                <div class="course-review d-flex align-items-center">
+                                                    <div class="reviews me-auto my-3 d-flex align-items-center">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <span> (15 Reviews) </span>
+                                                    </div>
+                                                    <button class="bookmark">
+
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z"
+                                                                stroke="black" stroke-opacity="0.6"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+
+                                                    </button>
+                                                </div>
+                                                <h2 class="title2">
+                                                    Zero to Hero with Advance Nodejs
+                                                </h2>
+                                                <div class="lessons-students d-flex align-items-center my-3">
+                                                    <div class="lessons">
+                                                        <a class="d-flex align-items-center" href="">
+                                                            <img src="./assets/CoursePage/book.png" alt="">
+                                                            <span>12 Lessons</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="students d-flex align-items-center">
+                                                        <img src="./assets/CoursePage/students.png" alt="">
+                                                        <span>50 Students</span>
+                                                    </div>
+                                                </div>
+                                                <p>It is a long established fact that a reader will be distracted.</p>
+                                                <div class="course-dev d-flex align-items-center">
+                                                    <a href="">
+                                                        <img src="./assets/CoursePage/round-pic.png" alt="">
+                                                    </a>
+                                                    <span>By <span>Aaron</span> In <span>Development</span></span>
+                                                </div>
+                                                <div class="price-cart mt-3 d-flex align-items-center">
+                                                    <div class="price d-flex align-items-center mt-3">
+                                                        <p>$60</p>
+                                                        <del>$120</del>
+                                                    </div>
+                                                    <button class="cart ms-auto d-flex align-items-center">
+                                                        <img src="./assets/CoursePage/shopping-cart.png" alt="">
+                                                        <span>Add to cart</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="course-card mb-4">
+                                            <div class="card-pic position-relative">
+                                                <img src="./assets/CoursePage/5th-card.png" alt="">
+                                                <!-- <a class="free position-absolute" href="">Free</a> -->
+                                            </div>
+                                            <div class="card-cntn">
+                                                <div class="course-review d-flex align-items-center">
+                                                    <div class="reviews me-auto my-3 d-flex align-items-center">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <span> (15 Reviews) </span>
+                                                    </div>
+                                                    <button class="bookmark">
+
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z"
+                                                                stroke="black" stroke-opacity="0.6"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+
+                                                    </button>
+                                                </div>
+                                                <h2 class="title2">
+                                                    Advance Web Development
+                                                </h2>
+                                                <div class="lessons-students d-flex align-items-center my-3">
+                                                    <div class="lessons">
+                                                        <a class="d-flex align-items-center" href="">
+                                                            <img src="./assets/CoursePage/book.png" alt="">
+                                                            <span>12 Lessons</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="students d-flex align-items-center">
+                                                        <img src="./assets/CoursePage/students.png" alt="">
+                                                        <span>50 Students</span>
+                                                    </div>
+                                                </div>
+                                                <p>It is a long established fact that a reader will be distracted.</p>
+                                                <div class="course-dev d-flex align-items-center">
+                                                    <a href="">
+                                                        <img src="./assets/CoursePage/round-pic.png" alt="">
+                                                    </a>
+                                                    <span>By <span>Aaron</span> In <span>Development</span></span>
+                                                </div>
+                                                <div class="price-cart mt-3 d-flex align-items-center">
+                                                    <div class="price d-flex align-items-center mt-3">
+                                                        <p>$60</p>
+                                                        <del>$120</del>
+                                                    </div>
+                                                    <button class="cart ms-auto d-flex align-items-center">
+                                                        <img src="./assets/CoursePage/shopping-cart.png" alt="">
+                                                        <span>Add to cart</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="course-card mb-4">
+                                            <div class="card-pic position-relative">
+                                                <img src="./assets/CoursePage/6th-card.png" alt="">
+                                                <!-- <a class="free position-absolute" href="">Free</a> -->
+                                            </div>
+                                            <div class="card-cntn">
+                                                <div class="course-review d-flex align-items-center">
+                                                    <div class="reviews me-auto my-3 d-flex align-items-center">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <span> (15 Reviews) </span>
+                                                    </div>
+                                                    <button class="bookmark">
+
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z"
+                                                                stroke="black" stroke-opacity="0.6"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+
+                                                    </button>
+                                                </div>
+                                                <h2 class="title2">
+                                                    Graphics Design, (UX/UI)
+                                                </h2>
+                                                <div class="lessons-students d-flex align-items-center my-3">
+                                                    <div class="lessons">
+                                                        <a class="d-flex align-items-center" href="">
+                                                            <img src="./assets/CoursePage/book.png" alt="">
+                                                            <span>12 Lessons</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="students d-flex align-items-center">
+                                                        <img src="./assets/CoursePage/students.png" alt="">
+                                                        <span>50 Students</span>
+                                                    </div>
+                                                </div>
+                                                <p>It is a long established fact that a reader will be distracted.</p>
+                                                <div class="course-dev d-flex align-items-center">
+                                                    <a href="">
+                                                        <img src="./assets/CoursePage/round-pic.png" alt="">
+                                                    </a>
+                                                    <span>By <span>Aaron</span> In <span>Development</span></span>
+                                                </div>
+                                                <div class="price-cart mt-3 d-flex align-items-center">
+                                                    <div class="price d-flex align-items-center mt-3">
+                                                        <p>$60</p>
+                                                        <del>$120</del>
+                                                    </div>
+                                                    <button class="cart ms-auto d-flex align-items-center">
+                                                        <img src="./assets/CoursePage/shopping-cart.png" alt="">
+                                                        <span>Add to cart</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="course-card mb-4">
+                                            <div class="card-pic position-relative">
+                                                <img src="./assets/CoursePage/7th-card.png" alt="">
+                                                <a class="free position-absolute" href="">Free</a>
+                                            </div>
+                                            <div class="card-cntn">
+                                                <div class="course-review d-flex align-items-center">
+                                                    <div class="reviews me-auto my-3 d-flex align-items-center">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <span> (15 Reviews) </span>
+                                                    </div>
+                                                    <button class="bookmark">
+
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z"
+                                                                stroke="black" stroke-opacity="0.6"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+
+                                                    </button>
+                                                </div>
+                                                <h2 class="title2">
+                                                    Art of Black and White Photography
+                                                </h2>
+                                                <div class="lessons-students d-flex align-items-center my-3">
+                                                    <div class="lessons">
+                                                        <a class="d-flex align-items-center" href="">
+                                                            <img src="./assets/CoursePage/book.png" alt="">
+                                                            <span>12 Lessons</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="students d-flex align-items-center">
+                                                        <img src="./assets/CoursePage/students.png" alt="">
+                                                        <span>50 Students</span>
+                                                    </div>
+                                                </div>
+                                                <p>It is a long established fact that a reader will be distracted.</p>
+                                                <div class="course-dev d-flex align-items-center">
+                                                    <a href="">
+                                                        <img src="./assets/CoursePage/round-pic.png" alt="">
+                                                    </a>
+                                                    <span>By <span>Aaron</span> In <span>Development</span></span>
+                                                </div>
+                                                <div class="price-cart mt-3 d-flex align-items-center">
+                                                    <div class="price d-flex align-items-center mt-3">
+                                                        <p>$60</p>
+                                                        <del>$120</del>
+                                                    </div>
+                                                    <button class="cart ms-auto d-flex align-items-center">
+                                                        <img src="./assets/CoursePage/shopping-cart.png" alt="">
+                                                        <span>Add to cart</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="course-card mb-4">
+                                            <div class="card-pic position-relative">
+                                                <img src="./assets/CoursePage/8th-card.png" alt="">
+                                                <!-- <a class="free position-absolute" href="">Free</a> -->
+                                            </div>
+                                            <div class="card-cntn">
+                                                <div class="course-review d-flex align-items-center">
+                                                    <div class="reviews me-auto my-3 d-flex align-items-center">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <img src="./assets/CoursePage/star.png" alt="">
+                                                        <span> (15 Reviews) </span>
+                                                    </div>
+                                                    <button class="bookmark">
+
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z"
+                                                                stroke="black" stroke-opacity="0.6"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+
+                                                    </button>
+                                                </div>
+                                                <h2 class="title2">
+                                                    Interactive Python Tutorial
+                                                </h2>
+                                                <div class="lessons-students d-flex align-items-center my-3">
+                                                    <div class="lessons">
+                                                        <a class="d-flex align-items-center" href="">
+                                                            <img src="./assets/CoursePage/book.png" alt="">
+                                                            <span>12 Lessons</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="students d-flex align-items-center">
+                                                        <img src="./assets/CoursePage/students.png" alt="">
+                                                        <span>50 Students</span>
+                                                    </div>
+                                                </div>
+                                                <p>It is a long established fact that a reader will be distracted.</p>
+                                                <div class="course-dev d-flex align-items-center">
+                                                    <a href="">
+                                                        <img src="./assets/CoursePage/round-pic.png" alt="">
+                                                    </a>
+                                                    <span>By <span>Aaron</span> In <span>Development</span></span>
+                                                </div>
+                                                <div class="price-cart mt-3 d-flex align-items-center">
+                                                    <div class="price d-flex align-items-center mt-3">
+                                                        <p>$60</p>
+                                                        <del>$120</del>
+                                                    </div>
+                                                    <button class="cart ms-auto d-flex align-items-center">
+                                                        <img src="./assets/CoursePage/shopping-cart.png" alt="">
+                                                        <span>Add to cart</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page-btns mt-5 d-flex align-items-center justify-content-between">
+                                <button class="course-category">PREV</button>
+                                <button class="course-category">NEXT</button>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="search-box">
+                                <h2 class="title2">Find Your Course</h2>
+                                <div class="search-bar d-flex align-items-center">
+                                    <input type="text" id="search" name="search" placeholder="Search Your Course"
+                                        required />
+                                    <button class="search-btn ms-auto">
+
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17 17L21 21" stroke="#141B34" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C15.4183 19 19 15.4183 19 11Z"
+                                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="category-box">
+                                <h2 class="title2">Category</h2>
+                                <ul>
+                                    <li class="categories">
+                                        <a href="">ALL</a>
+                                    </li>
+                                    <li class="categories">
+                                        <a href="">EDUCATION</a>
+                                    </li>
+                                    <li class="categories">
+                                        <a href="">TECHNOLOGY</a>
+                                    </li>
+                                    <li class="categories">
+                                        <a href="">BUSINESS</a>
+                                    </li>
+                                    <li class="categories">
+                                        <a href="">DEVELOPMENT</a>
+                                    </li>
+                                    <li class="categories">
+                                        <a href="">ENGINEERING</a>
+                                    </li>
+                                    <li class="categories">
+                                        <a href="">HISTORY</a>
+                                    </li>
+                                    <li class="categories">
+                                        <a href="">PHOTOGRAPHY</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="cost-box">
+                                <h2 class="title2">Cost</h2>
+                                <ul>
+                                    <li class="categories">
+                                        <a href="">ALL</a>
+                                    </li>
+                                    <li class="categories">
+                                        <a href="">FREE</a>
+                                    </li>
+                                    <li class="categories">
+                                        <a href="">PAID</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="level-box">
+                                <h2 class="title2">Level</h2>
+                                <ul>
+                                    <li class="categories">
+                                        <a href="">BEGINNER</a>
+                                    </li>
+                                    <li class="categories">
+                                        <a href="">INTERMEDIATE</a>
+                                    </li>
+                                    <li class="categories">
+                                        <a href="">ADVANCE</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="course-box">
+                                <h2 class="title2">Latest Courses</h2>
+                                <div class="latest-crse mt-3">
+                                    <div class="course d-flex align-items-center mb-3">
+                                        <a href="">
+                                            <img src="./assets/CoursePage/web.png" alt="">
+                                        </a>
+                                        <div class="latest-details">
+                                            <a href="">
+                                                <h3 class="mb-2 mt-2">Advance Web Development</h3>
+                                            </a>
+                                            <p>February 10, 2019</p>
+                                        </div>
+                                    </div>
+                                    <div class="course d-flex align-items-center mb-3">
+                                        <a href="">
+                                            <img src="./assets/CoursePage/history.png" alt="">
+                                        </a>
+                                        <div class="latest-details">
+                                            <a href="">
+                                                <h3 class="mb-2 mt-2">Learn About World History</h3>
+                                            </a>
+                                            <p>February 10, 2019</p>
+                                        </div>
+                                    </div>
+                                    <div class="course d-flex align-items-center">
+                                        <a href="">
+                                            <img src="./assets/CoursePage/sql.png" alt="">
+                                        </a>
+                                        <div class="latest-details">
+                                            <a href="">
+                                                <h3 class="mb-2 mt-2">SQL Beginner To Advanced</h3>
+                                            </a>
+                                            <p>February 10, 2019</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tag-box">
+                                <h2 class="title2">Popular Tags</h2>
+                                <div class="tag-cntn">
+                                    <div class="row">
+                                        <div class="tags">
+                                            <p>#education</p>
+                                        </div>
+                                        <div class="tags">
+                                            <p>#edtech</p>
+                                        </div>
+                                        <div class="tags">
+                                            <p>#ed</p>
+                                        </div>
+                                        <div class="tags">
+                                            <p>#digitaleducation</p>
+                                        </div>
+                                        <div class="tags">
+                                            <p>#onlinecourse</p>
+                                        </div>
+                                        <div class="tags">
+                                            <p>#skilldevelopment</p>
+                                        </div>
+                                        <div class="tags">
+                                            <p>#language</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="course-details mt-4">
-                  <div class="row">
-                    <div class="col-12 col-lg-6">
-                      <div class="course-card mb-4">
-                        <div class="card-pic position-relative">
-                          <img src="./assets/CoursePage/1st-card.png" alt="" />
-                          <a class="free position-absolute" href="">Free</a>
-                        </div>
-                        <div class="card-cntn">
-                          <div class="course-review d-flex align-items-center">
-                            <div
-                              class="reviews me-auto my-3 d-flex align-items-center"
-                            >
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <span> (15 Reviews) </span>
-                            </div>
-                            <button class="bookmark">
-                              <svg
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z"
-                                  stroke="black"
-                                  stroke-opacity="0.6"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                              </svg>
-                            </button>
-                          </div>
-                          <h2 class="title2">Angular Zero To Mastery</h2>
-                          <div
-                            class="lessons-students d-flex align-items-center my-3"
-                          >
-                            <div class="lessons">
-                              <a class="d-flex align-items-center" href="">
-                                <img
-                                  src="./assets/CoursePage/book.png"
-                                  alt=""
-                                />
-                                <span>12 Lessons</span>
-                              </a>
-                            </div>
-                            <div class="students d-flex align-items-center">
-                              <img
-                                src="./assets/CoursePage/students.png"
-                                alt=""
-                              />
-                              <span>50 Students</span>
-                            </div>
-                          </div>
-                          <p>
-                            It is a long established fact that a reader will be
-                            distracted.
-                          </p>
-                          <div class="course-dev d-flex align-items-center">
-                            <a href="">
-                              <img
-                                src="./assets/CoursePage/round-pic.png"
-                                alt=""
-                              />
-                            </a>
-                            <span
-                              >By <span>Angela</span> In
-                              <span>Development</span></span
-                            >
-                          </div>
-                          <div
-                            class="price-cart mt-3 d-flex align-items-center"
-                          >
-                            <div class="price d-flex align-items-center mt-3">
-                              <p>$60</p>
-                              <del>$120</del>
-                            </div>
-                            <button
-                              class="cart ms-auto d-flex align-items-center"
-                            >
-                              <img
-                                src="./assets/CoursePage/shopping-cart.png"
-                                alt=""
-                              />
-                              <span>Add to cart</span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                      <div class="course-card mb-4">
-                        <div class="card-pic position-relative">
-                          <img src="./assets/CoursePage/2nd-card.png" alt="" />
-                        </div>
-                        <div class="card-cntn">
-                          <div class="course-review d-flex align-items-center">
-                            <div
-                              class="reviews me-auto my-3 d-flex align-items-center"
-                            >
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <span> (15 Reviews) </span>
-                            </div>
-                            <button class="bookmark">
-                              <svg
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z"
-                                  stroke="black"
-                                  stroke-opacity="0.6"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                              </svg>
-                            </button>
-                          </div>
-                          <h2 class="title2">Business & Banking Studies</h2>
-                          <div
-                            class="lessons-students d-flex align-items-center my-3"
-                          >
-                            <div class="lessons">
-                              <a class="d-flex align-items-center" href="">
-                                <img
-                                  src="./assets/CoursePage/book.png"
-                                  alt=""
-                                />
-                                <span>12 Lessons</span>
-                              </a>
-                            </div>
-                            <div class="students d-flex align-items-center">
-                              <img
-                                src="./assets/CoursePage/students.png"
-                                alt=""
-                              />
-                              <span>50 Students</span>
-                            </div>
-                          </div>
-                          <p>
-                            It is a long established fact that a reader will be
-                            distracted.
-                          </p>
-                          <div class="course-dev d-flex align-items-center">
-                            <a href="">
-                              <img
-                                src="./assets/CoursePage/round-pic.png"
-                                alt=""
-                              />
-                            </a>
-                            <span
-                              >By <span>Aaron</span> In
-                              <span>Development</span></span
-                            >
-                          </div>
-                          <div
-                            class="price-cart mt-3 d-flex align-items-center"
-                          >
-                            <div class="price d-flex align-items-center mt-3">
-                              <p>$60</p>
-                              <del>$120</del>
-                            </div>
-                            <button
-                              class="cart ms-auto d-flex align-items-center"
-                            >
-                              <img
-                                src="./assets/CoursePage/shopping-cart.png"
-                                alt=""
-                              />
-                              <span>Add to cart</span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                      <div class="course-card mb-4">
-                        <div class="card-pic position-relative">
-                          <img src="./assets/CoursePage/3rd-card.png" alt="" />
-                          <!-- <a class="free position-absolute" href="">Free</a> -->
-                        </div>
-                        <div class="card-cntn">
-                          <div class="course-review d-flex align-items-center">
-                            <div
-                              class="reviews me-auto my-3 d-flex align-items-center"
-                            >
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <span> (15 Reviews) </span>
-                            </div>
-                            <button class="bookmark">
-                              <svg
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z"
-                                  stroke="black"
-                                  stroke-opacity="0.6"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                              </svg>
-                            </button>
-                          </div>
-                          <h2 class="title2">Learn About World History</h2>
-                          <div
-                            class="lessons-students d-flex align-items-center my-3"
-                          >
-                            <div class="lessons">
-                              <a class="d-flex align-items-center" href="">
-                                <img
-                                  src="./assets/CoursePage/book.png"
-                                  alt=""
-                                />
-                                <span>12 Lessons</span>
-                              </a>
-                            </div>
-                            <div class="students d-flex align-items-center">
-                              <img
-                                src="./assets/CoursePage/students.png"
-                                alt=""
-                              />
-                              <span>50 Students</span>
-                            </div>
-                          </div>
-                          <p>
-                            It is a long established fact that a reader will be
-                            distracted.
-                          </p>
-                          <div class="course-dev d-flex align-items-center">
-                            <a href="">
-                              <img
-                                src="./assets/CoursePage/round-pic.png"
-                                alt=""
-                              />
-                            </a>
-                            <span
-                              >By <span>Aaron</span> In
-                              <span>Development</span></span
-                            >
-                          </div>
-                          <div
-                            class="price-cart mt-3 d-flex align-items-center"
-                          >
-                            <div class="price d-flex align-items-center mt-3">
-                              <p>$60</p>
-                              <del>$120</del>
-                            </div>
-                            <button
-                              class="cart ms-auto d-flex align-items-center"
-                            >
-                              <img
-                                src="./assets/CoursePage/shopping-cart.png"
-                                alt=""
-                              />
-                              <span>Add to cart</span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                      <div class="course-card mb-4">
-                        <div class="card-pic position-relative">
-                          <img src="./assets/CoursePage/4th-card.png" alt="" />
-                          <a class="free position-absolute" href="">Free</a>
-                        </div>
-                        <div class="card-cntn">
-                          <div class="course-review d-flex align-items-center">
-                            <div
-                              class="reviews me-auto my-3 d-flex align-items-center"
-                            >
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <span> (15 Reviews) </span>
-                            </div>
-                            <button class="bookmark">
-                              <svg
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z"
-                                  stroke="black"
-                                  stroke-opacity="0.6"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                              </svg>
-                            </button>
-                          </div>
-                          <h2 class="title2">
-                            Zero to Hero with Advance Nodejs
-                          </h2>
-                          <div
-                            class="lessons-students d-flex align-items-center my-3"
-                          >
-                            <div class="lessons">
-                              <a class="d-flex align-items-center" href="">
-                                <img
-                                  src="./assets/CoursePage/book.png"
-                                  alt=""
-                                />
-                                <span>12 Lessons</span>
-                              </a>
-                            </div>
-                            <div class="students d-flex align-items-center">
-                              <img
-                                src="./assets/CoursePage/students.png"
-                                alt=""
-                              />
-                              <span>50 Students</span>
-                            </div>
-                          </div>
-                          <p>
-                            It is a long established fact that a reader will be
-                            distracted.
-                          </p>
-                          <div class="course-dev d-flex align-items-center">
-                            <a href="">
-                              <img
-                                src="./assets/CoursePage/round-pic.png"
-                                alt=""
-                              />
-                            </a>
-                            <span
-                              >By <span>Aaron</span> In
-                              <span>Development</span></span
-                            >
-                          </div>
-                          <div
-                            class="price-cart mt-3 d-flex align-items-center"
-                          >
-                            <div class="price d-flex align-items-center mt-3">
-                              <p>$60</p>
-                              <del>$120</del>
-                            </div>
-                            <button
-                              class="cart ms-auto d-flex align-items-center"
-                            >
-                              <img
-                                src="./assets/CoursePage/shopping-cart.png"
-                                alt=""
-                              />
-                              <span>Add to cart</span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                      <div class="course-card mb-4">
-                        <div class="card-pic position-relative">
-                          <img src="./assets/CoursePage/5th-card.png" alt="" />
-                          <!-- <a class="free position-absolute" href="">Free</a> -->
-                        </div>
-                        <div class="card-cntn">
-                          <div class="course-review d-flex align-items-center">
-                            <div
-                              class="reviews me-auto my-3 d-flex align-items-center"
-                            >
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <span> (15 Reviews) </span>
-                            </div>
-                            <button class="bookmark">
-                              <svg
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z"
-                                  stroke="black"
-                                  stroke-opacity="0.6"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                              </svg>
-                            </button>
-                          </div>
-                          <h2 class="title2">Advance Web Development</h2>
-                          <div
-                            class="lessons-students d-flex align-items-center my-3"
-                          >
-                            <div class="lessons">
-                              <a class="d-flex align-items-center" href="">
-                                <img
-                                  src="./assets/CoursePage/book.png"
-                                  alt=""
-                                />
-                                <span>12 Lessons</span>
-                              </a>
-                            </div>
-                            <div class="students d-flex align-items-center">
-                              <img
-                                src="./assets/CoursePage/students.png"
-                                alt=""
-                              />
-                              <span>50 Students</span>
-                            </div>
-                          </div>
-                          <p>
-                            It is a long established fact that a reader will be
-                            distracted.
-                          </p>
-                          <div class="course-dev d-flex align-items-center">
-                            <a href="">
-                              <img
-                                src="./assets/CoursePage/round-pic.png"
-                                alt=""
-                              />
-                            </a>
-                            <span
-                              >By <span>Aaron</span> In
-                              <span>Development</span></span
-                            >
-                          </div>
-                          <div
-                            class="price-cart mt-3 d-flex align-items-center"
-                          >
-                            <div class="price d-flex align-items-center mt-3">
-                              <p>$60</p>
-                              <del>$120</del>
-                            </div>
-                            <button
-                              class="cart ms-auto d-flex align-items-center"
-                            >
-                              <img
-                                src="./assets/CoursePage/shopping-cart.png"
-                                alt=""
-                              />
-                              <span>Add to cart</span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                      <div class="course-card mb-4">
-                        <div class="card-pic position-relative">
-                          <img src="./assets/CoursePage/6th-card.png" alt="" />
-                          <!-- <a class="free position-absolute" href="">Free</a> -->
-                        </div>
-                        <div class="card-cntn">
-                          <div class="course-review d-flex align-items-center">
-                            <div
-                              class="reviews me-auto my-3 d-flex align-items-center"
-                            >
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <span> (15 Reviews) </span>
-                            </div>
-                            <button class="bookmark">
-                              <svg
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z"
-                                  stroke="black"
-                                  stroke-opacity="0.6"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                              </svg>
-                            </button>
-                          </div>
-                          <h2 class="title2">Graphics Design, (UX/UI)</h2>
-                          <div
-                            class="lessons-students d-flex align-items-center my-3"
-                          >
-                            <div class="lessons">
-                              <a class="d-flex align-items-center" href="">
-                                <img
-                                  src="./assets/CoursePage/book.png"
-                                  alt=""
-                                />
-                                <span>12 Lessons</span>
-                              </a>
-                            </div>
-                            <div class="students d-flex align-items-center">
-                              <img
-                                src="./assets/CoursePage/students.png"
-                                alt=""
-                              />
-                              <span>50 Students</span>
-                            </div>
-                          </div>
-                          <p>
-                            It is a long established fact that a reader will be
-                            distracted.
-                          </p>
-                          <div class="course-dev d-flex align-items-center">
-                            <a href="">
-                              <img
-                                src="./assets/CoursePage/round-pic.png"
-                                alt=""
-                              />
-                            </a>
-                            <span
-                              >By <span>Aaron</span> In
-                              <span>Development</span></span
-                            >
-                          </div>
-                          <div
-                            class="price-cart mt-3 d-flex align-items-center"
-                          >
-                            <div class="price d-flex align-items-center mt-3">
-                              <p>$60</p>
-                              <del>$120</del>
-                            </div>
-                            <button
-                              class="cart ms-auto d-flex align-items-center"
-                            >
-                              <img
-                                src="./assets/CoursePage/shopping-cart.png"
-                                alt=""
-                              />
-                              <span>Add to cart</span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                      <div class="course-card mb-4">
-                        <div class="card-pic position-relative">
-                          <img src="./assets/CoursePage/7th-card.png" alt="" />
-                          <a class="free position-absolute" href="">Free</a>
-                        </div>
-                        <div class="card-cntn">
-                          <div class="course-review d-flex align-items-center">
-                            <div
-                              class="reviews me-auto my-3 d-flex align-items-center"
-                            >
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <span> (15 Reviews) </span>
-                            </div>
-                            <button class="bookmark">
-                              <svg
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z"
-                                  stroke="black"
-                                  stroke-opacity="0.6"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                              </svg>
-                            </button>
-                          </div>
-                          <h2 class="title2">
-                            Art of Black and White Photography
-                          </h2>
-                          <div
-                            class="lessons-students d-flex align-items-center my-3"
-                          >
-                            <div class="lessons">
-                              <a class="d-flex align-items-center" href="">
-                                <img
-                                  src="./assets/CoursePage/book.png"
-                                  alt=""
-                                />
-                                <span>12 Lessons</span>
-                              </a>
-                            </div>
-                            <div class="students d-flex align-items-center">
-                              <img
-                                src="./assets/CoursePage/students.png"
-                                alt=""
-                              />
-                              <span>50 Students</span>
-                            </div>
-                          </div>
-                          <p>
-                            It is a long established fact that a reader will be
-                            distracted.
-                          </p>
-                          <div class="course-dev d-flex align-items-center">
-                            <a href="">
-                              <img
-                                src="./assets/CoursePage/round-pic.png"
-                                alt=""
-                              />
-                            </a>
-                            <span
-                              >By <span>Aaron</span> In
-                              <span>Development</span></span
-                            >
-                          </div>
-                          <div
-                            class="price-cart mt-3 d-flex align-items-center"
-                          >
-                            <div class="price d-flex align-items-center mt-3">
-                              <p>$60</p>
-                              <del>$120</del>
-                            </div>
-                            <button
-                              class="cart ms-auto d-flex align-items-center"
-                            >
-                              <img
-                                src="./assets/CoursePage/shopping-cart.png"
-                                alt=""
-                              />
-                              <span>Add to cart</span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                      <div class="course-card mb-4">
-                        <div class="card-pic position-relative">
-                          <img src="./assets/CoursePage/8th-card.png" alt="" />
-                          <!-- <a class="free position-absolute" href="">Free</a> -->
-                        </div>
-                        <div class="card-cntn">
-                          <div class="course-review d-flex align-items-center">
-                            <div
-                              class="reviews me-auto my-3 d-flex align-items-center"
-                            >
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <img src="./assets/CoursePage/star.png" alt="" />
-                              <span> (15 Reviews) </span>
-                            </div>
-                            <button class="bookmark">
-                              <svg
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z"
-                                  stroke="black"
-                                  stroke-opacity="0.6"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                              </svg>
-                            </button>
-                          </div>
-                          <h2 class="title2">Interactive Python Tutorial</h2>
-                          <div
-                            class="lessons-students d-flex align-items-center my-3"
-                          >
-                            <div class="lessons">
-                              <a class="d-flex align-items-center" href="">
-                                <img
-                                  src="./assets/CoursePage/book.png"
-                                  alt=""
-                                />
-                                <span>12 Lessons</span>
-                              </a>
-                            </div>
-                            <div class="students d-flex align-items-center">
-                              <img
-                                src="./assets/CoursePage/students.png"
-                                alt=""
-                              />
-                              <span>50 Students</span>
-                            </div>
-                          </div>
-                          <p>
-                            It is a long established fact that a reader will be
-                            distracted.
-                          </p>
-                          <div class="course-dev d-flex align-items-center">
-                            <a href="">
-                              <img
-                                src="./assets/CoursePage/round-pic.png"
-                                alt=""
-                              />
-                            </a>
-                            <span
-                              >By <span>Aaron</span> In
-                              <span>Development</span></span
-                            >
-                          </div>
-                          <div
-                            class="price-cart mt-3 d-flex align-items-center"
-                          >
-                            <div class="price d-flex align-items-center mt-3">
-                              <p>$60</p>
-                              <del>$120</del>
-                            </div>
-                            <button
-                              class="cart ms-auto d-flex align-items-center"
-                            >
-                              <img
-                                src="./assets/CoursePage/shopping-cart.png"
-                                alt=""
-                              />
-                              <span>Add to cart</span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="page-btns mt-5 d-flex align-items-center justify-content-between"
-                >
-                  <button class="course-category">PREV</button>
-                  <button class="course-category">NEXT</button>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="search-box">
-                  <h2 class="title2">Find Your Course</h2>
-                  <div class="search-bar d-flex align-items-center">
-                    <input
-                      type="text"
-                      id="search"
-                      name="search"
-                      placeholder="Search Your Course"
-                      required
-                    />
-                    <button class="search-btn ms-auto">
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M17 17L21 21"
-                          stroke="#141B34"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C15.4183 19 19 15.4183 19 11Z"
-                          stroke="#141B34"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-                <div class="category-box">
-                  <h2 class="title2">Category</h2>
-                  <ul>
-                    <li class="categories">
-                      <a href="">ALL</a>
-                    </li>
-                    <li class="categories">
-                      <a href="">EDUCATION</a>
-                    </li>
-                    <li class="categories">
-                      <a href="">TECHNOLOGY</a>
-                    </li>
-                    <li class="categories">
-                      <a href="">BUSINESS</a>
-                    </li>
-                    <li class="categories">
-                      <a href="">DEVELOPMENT</a>
-                    </li>
-                    <li class="categories">
-                      <a href="">ENGINEERING</a>
-                    </li>
-                    <li class="categories">
-                      <a href="">HISTORY</a>
-                    </li>
-                    <li class="categories">
-                      <a href="">PHOTOGRAPHY</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="cost-box">
-                  <h2 class="title2">Cost</h2>
-                  <ul>
-                    <li class="categories">
-                      <a href="">ALL</a>
-                    </li>
-                    <li class="categories">
-                      <a href="">FREE</a>
-                    </li>
-                    <li class="categories">
-                      <a href="">PAID</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="level-box">
-                  <h2 class="title2">Level</h2>
-                  <ul>
-                    <li class="categories">
-                      <a href="">BEGINNER</a>
-                    </li>
-                    <li class="categories">
-                      <a href="">INTERMEDIATE</a>
-                    </li>
-                    <li class="categories">
-                      <a href="">ADVANCE</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="course-box">
-                  <h2 class="title2">Latest Courses</h2>
-                  <div class="latest-crse mt-3">
-                    <div class="course d-flex align-items-center mb-3">
-                      <a href="">
-                        <img src="./assets/CoursePage/web.png" alt="" />
-                      </a>
-                      <div class="latest-details">
-                        <a href="">
-                          <h3 class="mb-2 mt-2">Advance Web Development</h3>
-                        </a>
-                        <p>February 10, 2019</p>
-                      </div>
-                    </div>
-                    <div class="course d-flex align-items-center mb-3">
-                      <a href="">
-                        <img src="./assets/CoursePage/history.png" alt="" />
-                      </a>
-                      <div class="latest-details">
-                        <a href="">
-                          <h3 class="mb-2 mt-2">Learn About World History</h3>
-                        </a>
-                        <p>February 10, 2019</p>
-                      </div>
-                    </div>
-                    <div class="course d-flex align-items-center">
-                      <a href="">
-                        <img src="./assets/CoursePage/sql.png" alt="" />
-                      </a>
-                      <div class="latest-details">
-                        <a href="">
-                          <h3 class="mb-2 mt-2">SQL Beginner To Advanced</h3>
-                        </a>
-                        <p>February 10, 2019</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="tag-box">
-                  <h2 class="title2">Popular Tags</h2>
-                  <div class="tag-cntn">
-                    <div class="row">
-                      <div class="tags">
-                        <p>#education</p>
-                      </div>
-                      <div class="tags">
-                        <p>#edtech</p>
-                      </div>
-                      <div class="tags">
-                        <p>#ed</p>
-                      </div>
-                      <div class="tags">
-                        <p>#digitaleducation</p>
-                      </div>
-                      <div class="tags">
-                        <p>#onlinecourse</p>
-                      </div>
-                      <div class="tags">
-                        <p>#skilldevelopment</p>
-                      </div>
-                      <div class="tags">
-                        <p>#language</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
     </main>
     <!-- Footer Section -->
      <footer class="ftr-sec">

@@ -30,8 +30,8 @@ body {
   --section-bg: #dbf7f3;
   --roboto: "Roboto", sans-serif;
   --sec-hdr-color: #054645;
+  --free-color: #f8d468;
 }
-
 
 ul {
   list-style-type: none;
@@ -44,24 +44,6 @@ span {
 }
 
 /* 
-===================
-COURSE SECTION
-===================
-*/
-
-.course-sec {
-  background: #212343;
-  /* padding: 26.5px 0;   */
-}
-
-.course-sec a {
-  color: var(--defult-color);
-  font-size: 20px;
-  font-weight: 300;
-  text-decoration: none;
-}
-
-/* 
 =====================
 COURSE CNTN
 =====================
@@ -69,7 +51,7 @@ COURSE CNTN
 
 .course-cntn-sec {
   background: #dbf7f3;
-  padding: 60px 0;
+  /* padding: 60px 0; */
 }
 
 .course-category {
@@ -85,13 +67,13 @@ COURSE CNTN
 
 .course-category:hover,
 .page-btns .course-category:hover {
-  background: var(--course-btn-color);
+  background: var(--secondary-color);
   color: var(--defult-color);
   transition: 0.5s linear;
 }
 
 .active1 {
-  background: var(--course-btn-color);
+  background: var(--secondary-color);
   color: var(--defult-color);
 }
 
@@ -142,7 +124,7 @@ COURSE CNTN
   border: 2px solid rgba(0, 0, 0, 20%);
   background: var(--defult-color);
   max-width: 418.5px;
-  /* min-height: 627px; */
+  height: 627px;
   padding: 30px;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
@@ -262,9 +244,10 @@ COURSE CNTN
 }
 
 .page-btns .course-category {
+  margin: 0;
   padding: 15px 20px;
   border-radius: 10px;
-  border: 1px solid #08119b;
+  border: 2px solid rgba(8, 17, 155, 0.2);
   font-family: "Roboto";
   font-size: 18px;
   font-weight: 300;
@@ -329,6 +312,7 @@ COURSE CNTN
 .search-btn {
   border: none;
   background: transparent;
+  cursor: pointer;
 }
 
 .category-box ul,
@@ -468,6 +452,10 @@ MEDIA QUERIES
 }
 
 @media screen and (max-width: 768px) {
+  .course-card {
+    height: 609px;
+  }
+
   .course-cat-links {
     padding: 14.5px 28px;
   }
@@ -476,9 +464,39 @@ MEDIA QUERIES
     flex-direction: column;
     text-align: center;
   }
+
+  .search-box {
+    padding: 20px;
+  }
+
+  .search-box .title2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .search-bar {
+    border: none;
+    padding: 0;
+  }
+
+  .search-box input {
+    display: none;
+  }
+
+  .search-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    margin: 0 auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 576px) {
+  .course-card {
+    height: 558px;
+  }
   .course-cat-links {
     padding: 10px 20px;
   }
@@ -500,16 +518,24 @@ MEDIA QUERIES
     padding: 10px;
   }
 
-  .search-box .title2,
+  .search-box .title2 {
+    display: none;
+  }
+
   .category-box .title2,
   .cost-box .title2,
   .level-box .title2,
   .course-box .title2,
   .tag-box .title2 {
-    font-size: 14px;
+    font-size: 11px;
   }
 
-  .search-bar {
+  .search-btn {
+    height: 20px;
+    width: 20px;
+  }
+
+  /* .search-bar {
     padding: 3px 10px;
     flex-direction: column;
   }
@@ -517,11 +543,11 @@ MEDIA QUERIES
   .search-bar input {
     font-size: 8px;
     text-align: center;
-  }
+  } */
 
-  .search-bar a {
+  /* .search-bar a {
     margin-left: 0;
-  }
+  } */
 
   .tags p {
     font-size: 8px;
@@ -555,15 +581,31 @@ MEDIA QUERIES
   .course-dev span {
     font-size: 11px;
   }
+
+  .page-btns {
+    margin-top: 0 !important;
+  }
+
+  .page-btns .course-category {
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+   }
 }
 
 @media screen and (max-width: 425px) {
   .course-category {
-    font-size: 10px;
+    font-size: 7px;
   }
 
   .course-card {
-    padding: 8px;
+    padding: 14px;
+    height: 504px;
+  }
+
+  .free {
+    padding: 5px 10.5px;
+    font-size: 9px;
   }
 
   .reviews > span,
@@ -596,7 +638,6 @@ MEDIA QUERIES
     font-size: 9px;
   }
 
-  .search-box .title2,
   .category-box .title2,
   .cost-box .title2,
   .level-box .title2,
@@ -605,6 +646,11 @@ MEDIA QUERIES
     font-size: 12px;
     margin-bottom: 17px;
   }
+
+  /* .search-box .title2 {
+    font-size: 6px;
+    margin-bottom: 8px;
+  } */
 
   .categories > a {
     font-size: 9px;
@@ -627,4 +673,10 @@ MEDIA QUERIES
   .categories {
     margin-bottom: 10px;
   }
+
+  .page-btns .course-category {
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 11px;
+   }
 }
