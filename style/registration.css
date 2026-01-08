@@ -49,10 +49,10 @@
   position: relative;
   z-index: 1;
 }
-.reg-logo {
+.reg-logo > a {
   max-width: 356px;
 }
-.reg-logo > img {
+.reg-logo > a > img {
   width: 100%;
   height: 100%;
   object-fit: contain;
