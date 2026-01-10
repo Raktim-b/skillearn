@@ -52,8 +52,16 @@ PAYMENT SECTION
 */
 
 .payment-sec {
-  padding: 80px 0;
-  background: var(--secondary-color);
+  padding: 110px 0;
+  position: relative;
+  background: #d8f2ee;
+}
+
+.payment-curve {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
 }
 
 .payment-hdr h1 {
@@ -65,15 +73,17 @@ PAYMENT SECTION
 }
 
 .payment-cntn {
+  position: relative;
   max-width: 1320px;
   border-radius: 35px;
   color: var(--payment-text-color);
   background: var(--defult-color);
   padding-right: 79px;
+  z-index: 7;
 }
 
 .left-cntn {
-  background-color: #dff3f0;
+  background-color: #a9d0d0;
   border-radius: 50px;
 }
 
