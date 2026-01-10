@@ -110,8 +110,8 @@
             <h4 class="title4">1 Course in Cart</h4>
           </div>
           <div class="row">
-            <div class="col-9">
-              <div class="cart-left-sec d-flex">
+            <div class="col-9 col-sm-10 col-md-9">
+              <div class="cart-left-sec d-flex flex-column flex-sm-row">
                 <div class="cart-left-img">
                   <img src="./assets/AddtoCart/Cart-left-img.png" alt="" />
                 </div>
@@ -119,8 +119,10 @@
                   <h4 class="title4 fw-normal mb-0">
                     Business & Banking Studies
                   </h4>
-                  <p class="fw-light ">By James Carlson</p>
-                  <div class="cart-cntn-mid d-flex align-items-center">
+                  <p class="fw-light">By James Carlson</p>
+                  <div
+                    class="cart-cntn-mid d-flex align-items-lg-center align-items-start flex-column flex-lg-row"
+                  >
                     <span class="fw-semibold">Bestseller</span>
                     <span class="fw-medium mt-1">4.7</span>
                     <div class="course-d-review d-flex align-items-center">
@@ -199,15 +201,86 @@
                       <span class="fw-light"> (38 Reviews) </span>
                     </div>
                   </div>
-                  <ul class="cart-course-d d-flex p-0">
-                    <li>7.5 total hours </li>
+                  <ul class="cart-course-d d-flex p-0 ">
+                    <li>7.5 total hours</li>
                     <li>35 lectures</li>
                     <li>All levels</li>
                   </ul>
+                  <div class="prem-badge d-flex align-items-center">
+                    <span class="fw-semibold">
+                      <svg
+                        width="11"
+                        height="14"
+                        viewBox="0 0 11 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.5 6.67519L4.27036 7.61625C4.20174 7.66088 4.13574 7.66165 4.07236 7.61856C4.00898 7.57547 3.99038 7.51904 4.01657 7.44928L4.48171 5.92187L3.25757 5.05237C3.1921 5.00774 3.17507 4.94874 3.2065 4.87539C3.23793 4.80203 3.28926 4.7651 3.3605 4.76458H4.884L5.34914 3.24641C5.37533 3.17664 5.42562 3.14176 5.5 3.14176C5.57438 3.14176 5.62467 3.17664 5.65086 3.24641L6.11679 4.76458H7.63479C7.70655 4.76458 7.75893 4.80126 7.79193 4.87462C7.82493 4.94797 7.80843 5.00697 7.74243 5.0516L6.51436 5.92187L6.9795 7.44928C7.00569 7.51904 6.9871 7.57547 6.92371 7.61856C6.86033 7.66165 6.79433 7.66088 6.72571 7.61625L5.5 6.67519ZM5.5 13.0518L2.38621 13.9629C2.18455 14.0332 1.99833 14.0037 1.82757 13.8744C1.65681 13.7451 1.57143 13.5769 1.57143 13.3696V9.13443C1.07381 8.6553 0.6875 8.0941 0.4125 7.45082C0.1375 6.80754 0 6.11937 0 5.38632C0 3.88482 0.533238 2.61185 1.59971 1.56742C2.66619 0.522986 3.96629 0.00051336 5.5 3.77563e-07C7.03371 -0.000512605 8.33381 0.521703 9.40029 1.56665C10.4668 2.61159 11 3.88482 11 5.38632C11 6.11937 10.8625 6.80754 10.5875 7.45082C10.3125 8.0941 9.92619 8.65504 9.42857 9.13366V13.3688C9.42857 13.5761 9.34319 13.7443 9.17243 13.8736C9.00167 14.0029 8.81571 14.0324 8.61457 13.9621L5.5 13.0518ZM5.5 10.0032C6.80952 10.0032 7.92262 9.5543 8.83929 8.65658C9.75595 7.75886 10.2143 6.66877 10.2143 5.38632C10.2143 4.10386 9.75595 3.01377 8.83929 2.11605C7.92262 1.21833 6.80952 0.769474 5.5 0.769474C4.19048 0.769474 3.07738 1.21833 2.16071 2.11605C1.24405 3.01377 0.785714 4.10386 0.785714 5.38632C0.785714 6.66877 1.24405 7.75886 2.16071 8.65658C3.07738 9.5543 4.19048 10.0032 5.5 10.0032ZM2.35714 13.1149L5.5 12.2523L8.64286 13.1149V9.78309C8.20495 10.0986 7.71807 10.3422 7.18221 10.5141C6.6474 10.6865 6.08667 10.7726 5.5 10.7726C4.91333 10.7726 4.3526 10.6867 3.81779 10.5149C3.28298 10.343 2.7961 10.0991 2.35714 9.78309V13.1149Z"
+                          fill="white"
+                        />
+                      </svg>
+                      Premium</span
+                    >
+                  </div>
+                </div>
+                <div class="cart-left-offer ms-0 ms-sm-auto d-flex flex-column flex-sm-row">
+                  <ul class="text-end p-0 d-flex flex-row flex-sm-column">
+                    <li><a href="" class="fw-light">Remove</a></li>
+                    <li><a href="" class="fw-light">Save for Later</a></li>
+                    <li><a href="" class="fw-light">Move to Wishlist</a></li>
+                  </ul>
+                  <div class="price-w-offer d-flex flex-column">
+                    <span class="fw-semibold"
+                      >$ 299
+                      <svg
+                        width="17"
+                        height="17"
+                        viewBox="0 0 17 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2.975 4.25C2.63685 4.25 2.31255 4.11567 2.07344 3.87656C1.83433 3.63745 1.7 3.31315 1.7 2.975C1.7 2.63685 1.83433 2.31255 2.07344 2.07344C2.31255 1.83433 2.63685 1.7 2.975 1.7C3.31315 1.7 3.63745 1.83433 3.87656 2.07344C4.11567 2.31255 4.25 2.63685 4.25 2.975C4.25 3.31315 4.11567 3.63745 3.87656 3.87656C3.63745 4.11567 3.31315 4.25 2.975 4.25ZM16.4985 8.143L8.8485 0.493C8.5425 0.187 8.1175 0 7.65 0H1.7C0.7565 0 0 0.7565 0 1.7V7.65C0 8.1175 0.187 8.5425 0.5015 8.8485L8.143 16.4985C8.4575 16.8045 8.8825 17 9.35 17C9.8175 17 10.2425 16.8045 10.5485 16.4985L16.4985 10.5485C16.813 10.2425 17 9.8175 17 9.35C17 8.874 16.8045 8.449 16.4985 8.143Z"
+                          fill="#097877"
+                        />
+                      </svg> </span
+                    ><span><del class="fw-light">$ 499</del></span>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-3"></div>
+            <div class="col-3 col-sm-2 col-md-3">
+              <div class="cart-right ">
+                <div class="card-right-cntn">
+                  <h4 class="title4 fw-bold mb-0">Total:</h4>
+                  <div class="sec-top fw-semibold">$ 299</div>
+                  <div class="discount"><del class="fw-light">$ 499</del></div>
+                  <div class="discount">20% off</div>
+                </div>
+               <div class="cart-btn-sec"> <a href="" class="checkout-btn fw-bold text-white"
+                  >Proceed to Checkout
+                  <svg
+                    width="14"
+                    height="12"
+                    viewBox="0 0 14 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.163491 10.06C0.325108 10.34 0.591082 10.5444 0.902903 10.6282C1.21472 10.7121 1.54685 10.6686 1.82622 10.5074L10.1687 5.69079L9.00257 10.0606C8.93202 10.3681 8.98352 10.6912 9.1462 10.9618C9.30888 11.2325 9.57006 11.4296 9.8747 11.5115C10.1793 11.5935 10.5037 11.5539 10.7793 11.4012C11.055 11.2485 11.2605 10.9945 11.3526 10.6928L13.2764 3.48376C13.3594 3.17197 13.3154 2.83973 13.1539 2.56003C12.9924 2.28033 12.7267 2.07604 12.4152 1.99203L5.21005 0.0536517C5.05375 0.00562893 4.88944 -0.0104047 4.72692 0.00650715C4.56441 0.023419 4.40702 0.0729296 4.26414 0.152086C4.12126 0.231242 3.99582 0.338422 3.89531 0.467232C3.7948 0.596042 3.72127 0.743843 3.67911 0.901818C3.63695 1.05979 3.62703 1.2247 3.64993 1.38672C3.67283 1.54873 3.72808 1.70452 3.8124 1.8448C3.89672 1.98507 4.00837 2.10696 4.14069 2.20319C4.27301 2.29942 4.42329 2.36802 4.58257 2.4049L8.94999 3.57985L0.607465 8.39641C0.0260167 8.73211 -0.172884 9.47742 0.163491 10.06Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+                <p class="fw-light mb-0">You won’t be charged yet</p>
+                <div class="coupon-sec">
+                  <a href="" class="coupon-btn fw-bold text-center"
+                    >Apply Coupon
+                  </a>  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
