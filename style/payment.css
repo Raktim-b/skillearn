@@ -375,16 +375,28 @@ MEDIA QUERIES
 }
 
 @media screen and (max-width: 576px) {
+  .payment-sec {
+    padding: 29px 0;
+  }
+
   .payment-hdr h1 {
     font-size: 36px;
+  }
+
+  .payment-cntn {
+    padding: 0 13px;
   }
 
   .left-cntn {
     border-radius: 36px;
   }
 
+  .price-details {
+    margin-top: 24px;
+  }
+
   .payment-left {
-    padding: 30px 27px;
+    padding: 23px 16px;
   }
 
   .payment-logo {
@@ -432,19 +444,19 @@ MEDIA QUERIES
   }
 
   .form-control {
-    padding: 10px 21px;
-    font-size: 14px;
+    padding: 6px 14px;
+    font-size: 12px;
   }
 
   .card-wrpr > img {
-    top: 12px;
-    left: 20px;
-    height: 18px;
-    width: 30px;
+    top: 9px;
+    left: 14px;
+    height: 14px;
+    width: 22px;
   }
 
   .card-input {
-    padding-left: 64px !important;
+    padding-left: 46px !important;
   }
 
   .payment-right .banner-btn a {
@@ -465,12 +477,21 @@ MEDIA QUERIES
     padding: 30px 0;
   }
 
+  .left-cntn {
+    border-radius: 31px;
+  }
+
   .payment-hdr h1 {
     font-size: 30px;
+    margin-bottom: 30px !important;
   }
 
   .payment-left {
     padding: 20px 10px;
+  }
+
+  .payment-logo {
+    max-width: 55px;
   }
 
   .price-details h5 {
@@ -492,7 +513,11 @@ MEDIA QUERIES
   }
 
   .payment-right {
-    padding: 24px 0 38px 0;
+    padding: 24px 0 14px 0;
+  }
+
+  .payment-btn {
+    margin-right: 14px;
   }
 
   .payment-btn svg {
