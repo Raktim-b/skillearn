@@ -72,11 +72,18 @@ ul {
 }
 
 .title4 {
+  font-family: var(--roboto);
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+
+  color: var(--input-bg);
+}
+.title5 {
   font-size: 18px;
   color: var(--secondary-color);
   margin-bottom: 0;
 }
-
 .sec-hdr {
   font-family: "Playfair Display", serif;
   margin-block: 7px;
@@ -272,19 +279,7 @@ ul {
   transform: scaleX(1);
 }
 
-.dropdown-item {
-  transition: 0.5s ease-in-out;
-}
 
-.dropdown-item:hover {
-  background: var(--border-color);
-  color: var(--defult-color);
-}
-
-.dropdown-item.active {
-  background: var(--border-color);
-  border-radius: 20px;
-}
 
 .nav-link::before {
   content: "";
@@ -988,13 +983,9 @@ select:focus {
   transition: all 0.4s linear;
 }
 
-.browse-card-hdr {
+.browse-card .title4 {
   max-width: 279px;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 24px;
   margin-block: 22px 16px;
-  color: var(--input-bg);
 }
 
 .card-rating {
@@ -1750,7 +1741,7 @@ select:focus {
     height: 490px;
   }
 
-  .browse-card-hdr {
+  .browse-card .title4 {
     margin-block: 19px 13px;
   }
 
@@ -1805,6 +1796,9 @@ select:focus {
 }
 
 @media screen and (max-width: 1200px) {
+  .title4 {
+    font-size: 18px;
+  }
   .title3 {
     font-size: 22px;
     line-height: 40px;
@@ -1864,9 +1858,7 @@ select:focus {
     height: 440px;
     padding: 14px;
   }
-
-  .browse-card-hdr {
-    font-size: 18px;
+  .browse-card .title4 {
     margin-block: 12px 9px;
   }
 
@@ -1989,7 +1981,9 @@ select:focus {
     font-size: 20px;
     line-height: 34px;
   }
-
+  .title4 {
+    font-size: 18px;
+  }
   /* Navbar */
 
   .offcanvas {
@@ -2161,6 +2155,10 @@ select:focus {
     font-size: 18px;
     line-height: 28px;
   }
+  .browse-card .title4 {
+    max-width: 100%;
+    margin-block: 12px 9px;
+  }
 
   .search-wrpr {
     max-width: 536px;
@@ -2170,12 +2168,6 @@ select:focus {
   .browse-card {
     height: 460px;
     padding: 12px;
-  }
-
-  .browse-card-hdr {
-    max-width: 100%;
-    font-size: 16px;
-    margin-block: 12px 9px;
   }
 
   .card-author > p {
@@ -2355,9 +2347,11 @@ select:focus {
   .title2 {
     font-size: 30px;
   }
-
   .title4 {
-    font-size: 17px;
+    font-size: 16px;
+  }
+  .title5 {
+    font-size: 14px;
   }
 
   .sec-hdr {
@@ -2532,12 +2526,9 @@ select:focus {
     padding: 10px;
     margin-bottom: 20px;
   }
-
-  .browse-card-hdr {
-    font-size: 14px;
+  .browse-card .title4 {
     margin-block: 10px 6px;
   }
-
   .brows-card-btn > .btn-secondary {
     border-radius: 30px;
     font-size: 14px;
@@ -2821,9 +2812,12 @@ select:focus {
   .title3 {
     font-size: 16px;
   }
-
   .title4 {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .title5 {
+    font-size: 12px;
   }
 
   .sec-hdr {
@@ -2851,14 +2845,14 @@ select:focus {
   .navbar-brand {
     max-width: 200px;
   }
-/* Modal  */
-    .modal-content {
-        padding: 10px;
-        border-radius: 8px;
-    }
-.modal-right{
-  margin-bottom: 20px;
-}
+  /* Modal  */
+  .modal-content {
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .modal-right {
+    margin-bottom: 20px;
+  }
   /* Banner Section */
 
   .banner-gif {
@@ -2894,7 +2888,10 @@ select:focus {
     font-size: 14px;
     margin-block: 8px 5px;
   }
-
+  .icon-circle {
+    width: 28px;
+    height: 28.73px;
+  }
   .banner-img6 {
     max-width: 115.88px;
     left: 52.81px;
@@ -3035,7 +3032,9 @@ select:focus {
     font-size: 14px;
     line-height: 22px;
   }
-
+  .browse-card .title4 {
+    margin-block: 10px 6px;
+  }
   .search-form {
     max-width: 350px;
     margin: 0 auto;
@@ -3064,12 +3063,6 @@ select:focus {
 
   .browse-card {
     height: 420px;
-  }
-
-  .browse-card-hdr {
-    font-size: 12px;
-    line-height: 18px;
-    margin-block: 10px 6px;
   }
 
   .card-rating {
