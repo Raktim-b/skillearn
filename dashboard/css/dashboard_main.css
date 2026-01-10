@@ -533,6 +533,32 @@ Content Section
     right: 1%;
 }
 
+.common-box canvas:not(#gaugeChart) {
+    height: 300px !important;
+    width: 100% !important;
+}
+
+.gauge-wrapper {
+    position: relative;
+    width: 260px;
+    margin: auto;
+    height: 160px;
+}
+
+#gaugeChart {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.gauge-value {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 600;
+    font-size: 18px;
+}
+
 /* 
 ==========
 Responsive Section
