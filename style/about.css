@@ -36,7 +36,7 @@ body {
   color: var(--defult-color);
 }
 .about-about-wrpr {
-  padding: 64px 0 107px;
+  padding: 70px 0;
   background: var(--section-bg);
 }
 .about-about-img-wrpr {
@@ -176,7 +176,7 @@ body {
 }
 /* Skill Section */
 .skill-sec {
-  padding: 64px 0 144px;
+  padding: 70px 0 151px;
 }
 .skill-img {
   max-width: 449px;
@@ -240,7 +240,7 @@ body {
 }
 /* Tutor Section */
 .tutor-sec {
-  padding: 64px 0 112px;
+  padding: 70px 0;
   background-color: var(--section-bg);
 }
 
@@ -274,10 +274,10 @@ body {
 .tutor-btm {
   padding: 14px 24.97px 35px;
 }
-.name {
+/* .name {
   font-size: 20px;
   color: var(--input-bg);
-}
+} */
 .job-desc > p {
   color: var(--input-bg);
   margin-bottom: 0;
@@ -306,7 +306,7 @@ body {
 }
 /* Testimonial Section */
 .test-sec {
-  padding: 63px 0 64px;
+  padding: 70px 0;
   position: relative;
 }
 .testi-heading {
@@ -472,7 +472,7 @@ body {
 }
 /* JoinUs Section */
 .joinus-section {
-  padding: 64px 0;
+  padding: 70px 0;
 }
 .joinus-heading {
   margin-bottom: 64px;
@@ -776,9 +776,9 @@ body {
     margin-block: 20px 0;
   }
   /* Tutor Section */
-  .name {
+  /* .name {
     font-size: 18px;
-  }
+  } */
   /* Testimonial Section */
   .testi-heading {
     max-width: 100%;
@@ -911,9 +911,9 @@ body {
   .swiper {
     padding: 35px 0 54px;
   }
-  .name {
+  /* .name {
     font-size: 16px;
-  }
+  } */
   /* Testimonial Section */
   .test-sec {
     padding: 45px 0 47px;
@@ -1163,7 +1163,7 @@ body {
   }
   /* Tutor Section */
   .tutor-sec {
-    padding: 32px 0;
+    padding: 44px 0 51px;
   }
   .tutor-heading > p {
     font-size: 14px;
@@ -1172,9 +1172,9 @@ body {
   .swiper {
     padding: 25px 0 44px;
   }
-  .name {
+  /* .name {
     font-size: 14px;
-  }
+  } */
   .tutor-card {
     height: 365px;
   }
