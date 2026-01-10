@@ -148,6 +148,7 @@ COURSE CNTN
 .card-pic {
   max-width: 100%;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .free {
@@ -201,6 +202,7 @@ COURSE CNTN
 .card-cntn .title4 {
   font-family: "Playfair Display";
   margin-bottom: 15px;
+  cursor: pointer;
 }
 
 .lessons {
