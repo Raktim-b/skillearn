@@ -53,8 +53,8 @@ body {
   font-size: 18px;
   color: var(--input-bg);
 }
-.cart-cntn-mid{
-    margin-bottom: 13px;
+.cart-cntn-mid {
+  margin-bottom: 13px;
 }
 .cart-cntn-mid span:nth-child(1) {
   font-size: 12px;
@@ -65,18 +65,19 @@ body {
 .cart-cntn-mid span:nth-child(2) {
   margin-inline: 12px 5px;
 }
-.cart-course-d>li{
-    position: relative;
-    margin-right: 28px;
-    font-weight: 300;
+.cart-course-d > li {
+  position: relative;
+  margin-right: 28px;
+  font-weight: 300;
 }
-.cart-course-d li:nth-child(2):before,.cart-course-d li:nth-child(3):before{
-content: "";
-position: absolute;
-width: 8px;
-height: 8px;
-border-radius: 50%;
-background-color: var(--input-bg);
-bottom: 8px;
-right: 110%;
+.cart-course-d li:nth-child(2):before,
+.cart-course-d li:nth-child(3):before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--input-bg);
+  bottom: 8px;
+  right: 110%;
 }
