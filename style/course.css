@@ -110,7 +110,10 @@ COURSE CNTN
 .course-dropdown:hover {
   background-color: #2b2e5f;
 }
-
+.filter-toggler{
+  background: none;
+  border: none;
+}
 .course-dropdown:focus {
   outline: none;
   box-shadow: 0 0 0 2px rgba(77, 166, 255, 0.4);
@@ -120,6 +123,9 @@ COURSE CNTN
   font-family: "Roboto";
   font-size: 12px;
 }
+.filter-toggler{
+  display: none;
+}
 .course-details {
   margin-top: 20px;
 }
@@ -128,8 +134,8 @@ COURSE CNTN
   border: 2px solid rgba(0, 0, 0, 20%);
   background: var(--defult-color);
   max-width: 418.5px;
+  margin: 0 auto 20px;
   height: 627px;
-  margin-bottom: 20px;
   padding: 30px;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
@@ -530,10 +536,7 @@ MEDIA QUERIES
   }
 }
 @media screen and (max-width: 992px) {
-  .course-category {
-    margin-right: 30px;
-    font-size: 13px;
-  }
+ 
 
   .course-dropdown {
     padding: 9.5px 11px;
@@ -542,10 +545,10 @@ MEDIA QUERIES
   .course-dropdown span {
     font-size: 12px;
   }
-  .course-filter {
-    display: none;
-    margin: 0 auto 20px;
-  }
+  .filter-toggler{
+  display: block;
+}
+ 
   .course-card {
     height: 593px;
   }
@@ -554,6 +557,10 @@ MEDIA QUERIES
     border-radius: 8px;
 
     font-size: 16px;
+  }
+   .course-filter {
+    display: none;
+    margin: 0 auto 20px;
   }
   /* .search-bar input {
     font-size: 10px;
@@ -593,29 +600,67 @@ MEDIA QUERIES
 
 @media screen and (max-width: 768px) {
   .course-card {
-    height: 607px;
+    height: 495px;
+    padding: 14px;
   }
-
-  .reviews > img {
-    height: 18px;
-    width: 18px;
-  }
-
-  .reviews span {
+  .course-badge2 {
+    padding: 3px 6px;
     font-size: 13px;
+    bottom: 7px;
+    left: 7px;
   }
-
+  .course-badge3 {
+    padding: 3px 6px;
+    font-size: 13px;
+    bottom: 7px;
+    left: 118px;
+  }
+  .course-badge1 {
+    padding: 3px 6px;
+    font-size: 13px;
+    top: 7px;
+    left: 7px;
+  }
+  .free {
+    padding: 3px 10.5px;
+    top: 7px;
+    right: 7px;
+  }
+  .card-cntn .title4 {
+    font-family: "Playfair Display";
+    margin-bottom: 10px;
+  }
+  .card-cntn p {
+    font-size: 13px;
+    margin-block: 8px;
+  }
+  .card-cntn > .course-d-review {
+    margin-block: 7px 5px;
+  }
   .lessons span,
   .students span {
     font-size: 14px;
+    margin-left: 6px;
   }
-
+  .course-dev span {
+    font-size: 12px;
+  }
   .card-cntn p {
-    font-size: 15px;
+    font-size: 13px;
+    margin-block: 7px;
+    margin-right: 7px;
   }
-
-  .course-cat-links {
-    padding: 14.5px 28px;
+  .price del {
+    font-size: 13px;
+  }
+  .cart span {
+    font-size: 14px;
+  }
+  .price-cart {
+    margin-top: 8px;
+  }
+  .cart {
+    padding: 7px 8px;
   }
 
   .course {
@@ -625,7 +670,7 @@ MEDIA QUERIES
   .page-btns {
     margin-top: 18px;
   }
-  .search-box {
+  /* .search-box {
     padding: 20px;
   }
 
@@ -634,9 +679,9 @@ MEDIA QUERIES
     margin-bottom: 10px;
   }
 
- .search-bar input {
-  font-size: 18px;
- }
+  .search-bar input {
+    font-size: 18px;
+  }
 
   .search-btn {
     width: 42px;
@@ -646,22 +691,41 @@ MEDIA QUERIES
     display: flex;
     align-items: center;
     justify-content: center;
+  }  */
+  
+}
+@media screen and (max-width: 650px) {
+  .course-card {
+    height: 453px;
+    padding: 12px;
   }
 }
-
 @media screen and (max-width: 576px) {
   .course-dropdown {
     padding: 9px 11px;
     font-size: 11px;
   }
-
+  .course-category {
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  .filter-toggler{
+ margin-inline: 8px !important;
+}
+  .course-result {
+    margin-top: 12px;
+  }
   .course-result p {
     font-size: 13px;
   }
-
+  .course-dropdown {
+    font-size: 11px;
+    height: 35px;
+  }
   .course-card {
     height: 529px;
     padding: 12px;
+    margin-bottom: 10px;
   }
   .course-cat-links {
     padding: 10px 20px;
@@ -674,8 +738,10 @@ MEDIA QUERIES
   .course-category {
     margin-right: 8px;
   }
-
-  .search-box,
+  .course-details {
+    margin-top: 15px;
+  }
+  /* .search-box,
   .category-box,
   .cost-box,
   .level-box,
@@ -699,7 +765,7 @@ MEDIA QUERIES
   .search-btn {
     height: 20px;
     width: 20px;
-  }
+  } */
 
   /* .search-bar {
     padding: 3px 10px;
@@ -715,14 +781,14 @@ MEDIA QUERIES
     margin-left: 0;
   } */
 
-  .tags p {
+  /* .tags p {
     font-size: 8px;
   }
 
   .lessons span,
   .students span {
     font-size: 10px;
-  }
+  } */
 
   .card-cntn p {
     font-size: 12px;
@@ -766,46 +832,56 @@ MEDIA QUERIES
   }
 
   .page-btns .course-category {
-    padding: 12px;
-    border-radius: 8px;
-    font-size: 14px;
+    padding: 7px;
+    border-radius: 6px;
+    font-size: 12px;
   }
 }
 
-@media screen and (max-width: 425px) {
-  .course-category {
-    font-size: 7px;
-    border-radius: 5px;
-  }
-
+@media screen and (max-width: 400px) {
   .course-card {
     padding: 10px;
-    height: 406px;
+    height: 425px;
   }
-
+  .course-badge1 {
+    padding: 3px 5px;
+    font-size: 11px;
+    top: 6px;
+    left: 6px;
+  }
+  .course-badge2 {
+    padding: 3px 4px;
+    font-size: 11px;
+    bottom: 6px;
+    left: 6px;
+  }
+  .course-badge3 {
+    padding: 3px 5px;
+    font-size: 11px;
+    bottom: 6px;
+    left: 100px;
+  }
+  .course-badge2 svg,
+  .course-badge3 svg {
+    margin-right: 2px;
+  }
   .free {
     padding: 5px 10.5px;
     font-size: 9px;
   }
-
-  .reviews > img {
-    height: 12px;
-    width: 12px;
+  .card-cntn .title4 {
+    margin-bottom: 5px;
   }
 
   .reviews > span,
   .lessons span,
   .students span {
-    font-size: 7px;
+    font-size: 10px;
   }
 
   .course-dropdown {
     font-size: 11px;
     padding: 5px 7px;
-  }
-
-  .course-result p {
-    font-size: 10px;
   }
 
   .course-dev span {
@@ -821,14 +897,18 @@ MEDIA QUERIES
   }
 
   .card-cntn p {
-    font-size: 10px;
+    margin-block: 5px;
+    margin-right: 0;
   }
 
   .course-dev a img {
     height: 20px;
     width: 20px;
   }
-
+  .price del {
+    font-size: 12px;
+    margin-left: 4px;
+  }
   .cart {
     padding: 5px;
   }

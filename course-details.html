@@ -33,7 +33,7 @@
   </head>
   <body>
     <!-- Header Section -->
-    <header class="hdr-sec">
+     <header class="hdr-sec">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <div class="nav-logo">
@@ -66,7 +66,7 @@
             <ul class="navbar-nav mx-auto">
               <li class="nav-item">
                 <a
-                  class="nav-link active"
+                  class="nav-link "
                   aria-current="page"
                   href="./index.html"
                   >Home</a
@@ -76,75 +76,24 @@
                 <a class="nav-link" href="about.html">About Us</a>
               </li>
 
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href=""
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Courses
-                  <svg
-                    width="10"
-                    height="6"
-                    viewBox="0 0 10 6"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.201291 0.21959C0.330216 0.0789867 0.505053 0 0.687353 0C0.869654 0 1.04449 0.0789867 1.17342 0.21959L4.57654 3.93209L7.97967 0.21959C8.10933 0.0829714 8.28299 0.00737529 8.46325 0.00908411C8.64351 0.0107929 8.81595 0.0896698 8.94342 0.228726C9.07088 0.367782 9.14319 0.555891 9.14475 0.752539C9.14632 0.949186 9.07702 1.13864 8.95179 1.28009L5.0626 5.52284C4.93368 5.66344 4.75884 5.74243 4.57654 5.74243C4.39424 5.74243 4.2194 5.66344 4.09048 5.52284L0.201291 1.28009C0.0724043 1.13944 0 0.948713 0 0.74984C0 0.550967 0.0724043 0.360236 0.201291 0.21959Z"
-                      fill="black"
-                    />
-                  </svg>
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="./course.html">Courses</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#">Course Details</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Quiz
-                  <svg
-                    width="10"
-                    height="6"
-                    viewBox="0 0 10 6"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.201291 0.21959C0.330216 0.0789867 0.505053 0 0.687353 0C0.869654 0 1.04449 0.0789867 1.17342 0.21959L4.57654 3.93209L7.97967 0.21959C8.10933 0.0829714 8.28299 0.00737529 8.46325 0.00908411C8.64351 0.0107929 8.81595 0.0896698 8.94342 0.228726C9.07088 0.367782 9.14319 0.555891 9.14475 0.752539C9.14632 0.949186 9.07702 1.13864 8.95179 1.28009L5.0626 5.52284C4.93368 5.66344 4.75884 5.74243 4.57654 5.74243C4.39424 5.74243 4.2194 5.66344 4.09048 5.52284L0.201291 1.28009C0.0724043 1.13944 0 0.948713 0 0.74984C0 0.550967 0.0724043 0.360236 0.201291 0.21959Z"
-                      fill="black"
-                    />
-                  </svg>
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="./quiz.html">Quiz</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Mehedi Quiz Inner</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Mehedi</a>
-                  </li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="./course.html"> Courses </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Contact</a>
+                <a class="nav-link" href="quiz.html"> Quiz </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="">Contact</a>
               </li>
             </ul>
             <div class="nav-btn d-flex align-items-center ms-auto">
-              <a href="" class="btn-primary">Sign In</a>
+              <a
+                href=""
+                class="btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                >Sign In</a
+              >
               <a href="" class="btn-secondary">Register Now</a>
             </div>
           </div>
@@ -1399,243 +1348,295 @@
           <h2 class="title2">Courses You May Like</h2>
           <div class="rel-courses">
             <div class="row">
-              <div class="col-4">
-                <div class="course-card mb-4">
-                  <div class="card-pic position-relative">
-                    <img src="./assets/CoursePage/1st-card.png" alt="" />
-                    <a class="free position-absolute" href="">Free</a>
-                  </div>
-                  <div class="card-cntn">
-                    <div class="course-review d-flex align-items-center">
-                      <div
-                        class="reviews me-auto my-3 d-flex align-items-center"
-                      >
-                        <img src="./assets/CoursePage/star.png" alt="" />
-                        <img src="./assets/CoursePage/star.png" alt="" />
-                        <img src="./assets/CoursePage/star.png" alt="" />
-                        <img src="./assets/CoursePage/star.png" alt="" />
-                        <img src="./assets/CoursePage/star.png" alt="" />
-                        <span> (15 Reviews) </span>
+              <div class="col-12 col-sm-6 col-lg-4">
+               <div class="course-card">
+                        <div class="card-pic position-relative">
+                          <img src="./assets/CoursePage/1st-card.png" alt="">
+                          <span class="course-badge1 position-absolute">01 Jan To 15 Mar</span>
+                          <span class="course-badge2 position-absolute">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.24878 4.99955C1.24878 5.83828 6.30894 8.125 7.49106 8.125C8.67325 8.125 13.7334 5.83828 13.7334 4.99955C13.7334 4.16081 8.67325 1.87408 7.49106 1.87408C6.30894 1.87408 1.24878 4.16081 1.24878 4.99955Z" stroke="white" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M3.74512 6.875L4.52717 10.5001C4.58074 10.7484 4.70439 10.9804 4.9106 11.1284C6.29919 12.1249 8.68175 12.1249 10.0704 11.1284C10.2766 10.9804 10.4003 10.7484 10.4538 10.5001L11.2359 6.875" stroke="white" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M12.7984 5.93719V10.3129M12.7984 10.3129C12.304 11.2169 12.0854 11.7013 11.8633 12.5007C11.8151 12.7851 11.8534 12.9284 12.0491 13.0557C12.1287 13.1074 12.2242 13.1258 12.319 13.1258H13.2681C13.369 13.1258 13.4708 13.1047 13.5539 13.0473C13.7359 12.9217 13.7827 12.7838 13.7334 12.5007C13.5387 11.7584 13.2908 11.251 12.7984 10.3129Z" stroke="white" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                            20 Class</span>
+                          <span class="course-badge3 position-absolute">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.25 6.875C1.25 4.81261 1.25 3.78141 1.89071 3.14071C2.53141 2.5 3.56261 2.5 5.625 2.5H6.25C8.31237 2.5 9.34356 2.5 9.98431 3.14071C10.625 3.78141 10.625 4.81261 10.625 6.875V8.125C10.625 10.1874 10.625 11.2186 9.98431 11.8593C9.34356 12.5 8.31237 12.5 6.25 12.5H5.625C3.56261 12.5 2.53141 12.5 1.89071 11.8593C1.25 11.2186 1.25 10.1874 1.25 8.125V6.875Z" stroke="white" stroke-width="0.5"></path>
+                              <path d="M10.625 5.56616L10.7037 5.50123C12.0261 4.41015 12.6872 3.8646 13.2186 4.12801C13.75 4.39143 13.75 5.26472 13.75 7.01131V7.98869C13.75 9.73531 13.75 10.6086 13.2186 10.872C12.6872 11.1354 12.0261 10.5899 10.7037 9.49875L10.625 9.43381" stroke="white" stroke-width="0.5" stroke-linecap="round"></path>
+                              <path d="M7.1875 6.875C7.70527 6.875 8.125 6.45527 8.125 5.9375C8.125 5.41973 7.70527 5 7.1875 5C6.66973 5 6.25 5.41973 6.25 5.9375C6.25 6.45527 6.66973 6.875 7.1875 6.875Z" stroke="white" stroke-width="0.5"></path>
+                            </svg>
+                            55 Videos</span>
+                          <div class="free position-absolute" href="">Free</div>
+                        </div>
+                        <div class="card-cntn">
+                          <div class="course-d-review d-flex align-items-center">
+                            <ul class="stars d-flex p-0 m-0">
+                              <li>
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8.33333 0L10.9083 5.21667L16.6667 6.05833L12.5 10.1167L13.4833 15.85L8.33333 13.1417L3.18333 15.85L4.16667 10.1167L0 6.05833L5.75833 5.21667L8.33333 0Z" fill="#FE7E0F"></path>
+                                </svg>
+                              </li>
+                              <li>
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8.33333 0L10.9083 5.21667L16.6667 6.05833L12.5 10.1167L13.4833 15.85L8.33333 13.1417L3.18333 15.85L4.16667 10.1167L0 6.05833L5.75833 5.21667L8.33333 0Z" fill="#FE7E0F"></path>
+                                </svg>
+                              </li>
+                              <li>
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8.33333 0L10.9083 5.21667L16.6667 6.05833L12.5 10.1167L13.4833 15.85L8.33333 13.1417L3.18333 15.85L4.16667 10.1167L0 6.05833L5.75833 5.21667L8.33333 0Z" fill="#FE7E0F"></path>
+                                </svg>
+                              </li>
+                              <li>
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8.33333 0L10.9083 5.21667L16.6667 6.05833L12.5 10.1167L13.4833 15.85L8.33333 13.1417L3.18333 15.85L4.16667 10.1167L0 6.05833L5.75833 5.21667L8.33333 0Z" fill="#FE7E0F"></path>
+                                </svg>
+                              </li>
+                              <li>
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8.33333 0L10.9083 5.21667L16.6667 6.05833L12.5 10.1167L13.4833 15.85L8.33333 13.1417L3.18333 15.85L4.16667 10.1167L0 6.05833L5.75833 5.21667L8.33333 0Z" fill="#FE7E0F"></path>
+                                </svg>
+                              </li>
+                            </ul>
+                            <span class="fw-light"> (38 Reviews) </span>
+                          </div>
+                          <h2 class="title4">Angular Zero To Mastery</h2>
+                          <div class="lessons-students d-flex align-items-center">
+                            <div class="lessons">
+                              <div class="d-flex align-items-center" href="">
+                                <img src="./assets/CoursePage/book.png" alt="">
+                                <span>12 Lessons</span>
+                              </div>
+                            </div>
+                            <div class="students d-flex align-items-center">
+                              <img src="./assets/CoursePage/students.png" alt="">
+                              <span>50 Students</span>
+                            </div>
+                          </div>
+                          <p>
+                            It is a long established fact that a reader will be
+                            distracted.
+                          </p>
+                          <div class="course-dev d-flex align-items-center">
+                            <a href="">
+                              <img src="./assets/CoursePage/round-pic.png" alt="">
+                            </a>
+                            <span>By <span>Angela</span> In
+                              <span>Development</span></span>
+                          </div>
+                          <div class="price-cart d-flex align-items-center">
+                            <div class="price d-flex align-items-center">
+                              <p>$60</p>
+                              <del>$120</del>
+                            </div>
+                            <button class="cart ms-auto d-flex align-items-center">
+                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.66675 13.3333L13.9335 12.7277C16.2072 12.5383 16.7177 12.0417 16.9697 9.77408L17.5001 5" stroke="#141B34" stroke-opacity="0.8" stroke-linecap="round"></path>
+                                <path d="M5 5H18.3333" stroke="#141B34" stroke-opacity="0.8" stroke-linecap="round"></path>
+                                <path d="M4.99992 18.3333C5.92039 18.3333 6.66659 17.5871 6.66659 16.6667C6.66659 15.7462 5.92039 15 4.99992 15C4.07944 15 3.33325 15.7462 3.33325 16.6667C3.33325 17.5871 4.07944 18.3333 4.99992 18.3333Z" stroke="#141B34" stroke-opacity="0.8"></path>
+                                <path d="M14.1667 18.3333C15.0871 18.3333 15.8333 17.5871 15.8333 16.6667C15.8333 15.7462 15.0871 15 14.1667 15C13.2462 15 12.5 15.7462 12.5 16.6667C12.5 17.5871 13.2462 18.3333 14.1667 18.3333Z" stroke="#141B34" stroke-opacity="0.8"></path>
+                                <path d="M6.66675 16.6666H12.5001" stroke="#141B34" stroke-opacity="0.8" stroke-linecap="round"></path>
+                                <path d="M1.66675 1.66663H2.47175C3.25898 1.66663 3.9452 2.18712 4.13613 2.92907L6.61551 12.5637C6.74081 13.0506 6.63358 13.5664 6.32361 13.968L5.52686 15" stroke="#141B34" stroke-opacity="0.8" stroke-linecap="round"></path>
+                              </svg>
+
+                              <span>Add to cart</span>
+                            </button>
+                          </div>
+                        </div>
                       </div>
-                      <button class="bookmark">
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z"
-                            stroke="black"
-                            stroke-opacity="0.6"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          ></path>
-                        </svg>
-                      </button>
-                    </div>
-                    <h2 class="title2">Angular Zero To Mastery</h2>
-                    <div
-                      class="lessons-students d-flex align-items-center my-3"
-                    >
-                      <div class="lessons">
-                        <a class="d-flex align-items-center" href="">
-                          <img src="./assets/CoursePage/book.png" alt="" />
-                          <span>12 Lessons</span>
-                        </a>
-                      </div>
-                      <div class="students d-flex align-items-center">
-                        <img src="./assets/CoursePage/students.png" alt="" />
-                        <span>50 Students</span>
-                      </div>
-                    </div>
-                    <p>
-                      It is a long established fact that a reader will be
-                      distracted.
-                    </p>
-                    <div class="course-dev d-flex align-items-center">
-                      <a href="">
-                        <img src="./assets/CoursePage/round-pic.png" alt="" />
-                      </a>
-                      <span
-                        >By <span>Angela</span> In
-                        <span>Development</span></span
-                      >
-                    </div>
-                    <div class="price-cart mt-3 d-flex align-items-center">
-                      <div class="price d-flex align-items-center mt-3">
-                        <p>$60</p>
-                        <del>$120</del>
-                      </div>
-                      <button class="cart ms-auto d-flex align-items-center">
-                        <img
-                          src="./assets/CoursePage/shopping-cart.png"
-                          alt=""
-                        />
-                        <span>Add to cart</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
               </div>
-              <div class="col-4">
-                <div class="course-card mb-4">
-                  <div class="card-pic position-relative">
-                    <img src="./assets/CoursePage/5th-card.png" alt="" />
-                    <!-- <a class="free position-absolute" href="">Free</a> -->
-                  </div>
-                  <div class="card-cntn">
-                    <div class="course-review d-flex align-items-center">
-                      <div
-                        class="reviews me-auto my-3 d-flex align-items-center"
-                      >
-                        <img src="./assets/CoursePage/star.png" alt="" />
-                        <img src="./assets/CoursePage/star.png" alt="" />
-                        <img src="./assets/CoursePage/star.png" alt="" />
-                        <img src="./assets/CoursePage/star.png" alt="" />
-                        <img src="./assets/CoursePage/star.png" alt="" />
-                        <span> (15 Reviews) </span>
+              <div class="col-12 col-sm-6 col-lg-4">
+               <div class="course-card">
+                        <div class="card-pic position-relative">
+                          <img src="./assets/CoursePage/5th-card.png" alt="">
+                          <span class="course-badge1 position-absolute">01 Jan To 15 Mar</span>
+                          <span class="course-badge2 position-absolute">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.24878 4.99955C1.24878 5.83828 6.30894 8.125 7.49106 8.125C8.67325 8.125 13.7334 5.83828 13.7334 4.99955C13.7334 4.16081 8.67325 1.87408 7.49106 1.87408C6.30894 1.87408 1.24878 4.16081 1.24878 4.99955Z" stroke="white" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M3.74512 6.875L4.52717 10.5001C4.58074 10.7484 4.70439 10.9804 4.9106 11.1284C6.29919 12.1249 8.68175 12.1249 10.0704 11.1284C10.2766 10.9804 10.4003 10.7484 10.4538 10.5001L11.2359 6.875" stroke="white" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M12.7984 5.93719V10.3129M12.7984 10.3129C12.304 11.2169 12.0854 11.7013 11.8633 12.5007C11.8151 12.7851 11.8534 12.9284 12.0491 13.0557C12.1287 13.1074 12.2242 13.1258 12.319 13.1258H13.2681C13.369 13.1258 13.4708 13.1047 13.5539 13.0473C13.7359 12.9217 13.7827 12.7838 13.7334 12.5007C13.5387 11.7584 13.2908 11.251 12.7984 10.3129Z" stroke="white" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                            20 Class</span>
+                          <span class="course-badge3 position-absolute">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.25 6.875C1.25 4.81261 1.25 3.78141 1.89071 3.14071C2.53141 2.5 3.56261 2.5 5.625 2.5H6.25C8.31237 2.5 9.34356 2.5 9.98431 3.14071C10.625 3.78141 10.625 4.81261 10.625 6.875V8.125C10.625 10.1874 10.625 11.2186 9.98431 11.8593C9.34356 12.5 8.31237 12.5 6.25 12.5H5.625C3.56261 12.5 2.53141 12.5 1.89071 11.8593C1.25 11.2186 1.25 10.1874 1.25 8.125V6.875Z" stroke="white" stroke-width="0.5"></path>
+                              <path d="M10.625 5.56616L10.7037 5.50123C12.0261 4.41015 12.6872 3.8646 13.2186 4.12801C13.75 4.39143 13.75 5.26472 13.75 7.01131V7.98869C13.75 9.73531 13.75 10.6086 13.2186 10.872C12.6872 11.1354 12.0261 10.5899 10.7037 9.49875L10.625 9.43381" stroke="white" stroke-width="0.5" stroke-linecap="round"></path>
+                              <path d="M7.1875 6.875C7.70527 6.875 8.125 6.45527 8.125 5.9375C8.125 5.41973 7.70527 5 7.1875 5C6.66973 5 6.25 5.41973 6.25 5.9375C6.25 6.45527 6.66973 6.875 7.1875 6.875Z" stroke="white" stroke-width="0.5"></path>
+                            </svg>
+                            55 Videos</span>
+                        </div>
+                        <div class="card-cntn">
+                          <div class="course-d-review d-flex align-items-center">
+                            <ul class="stars d-flex p-0 m-0">
+                              <li>
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8.33333 0L10.9083 5.21667L16.6667 6.05833L12.5 10.1167L13.4833 15.85L8.33333 13.1417L3.18333 15.85L4.16667 10.1167L0 6.05833L5.75833 5.21667L8.33333 0Z" fill="#FE7E0F"></path>
+                                </svg>
+                              </li>
+                              <li>
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8.33333 0L10.9083 5.21667L16.6667 6.05833L12.5 10.1167L13.4833 15.85L8.33333 13.1417L3.18333 15.85L4.16667 10.1167L0 6.05833L5.75833 5.21667L8.33333 0Z" fill="#FE7E0F"></path>
+                                </svg>
+                              </li>
+                              <li>
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8.33333 0L10.9083 5.21667L16.6667 6.05833L12.5 10.1167L13.4833 15.85L8.33333 13.1417L3.18333 15.85L4.16667 10.1167L0 6.05833L5.75833 5.21667L8.33333 0Z" fill="#FE7E0F"></path>
+                                </svg>
+                              </li>
+                              <li>
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8.33333 0L10.9083 5.21667L16.6667 6.05833L12.5 10.1167L13.4833 15.85L8.33333 13.1417L3.18333 15.85L4.16667 10.1167L0 6.05833L5.75833 5.21667L8.33333 0Z" fill="#FE7E0F"></path>
+                                </svg>
+                              </li>
+                              <li>
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8.33333 0L10.9083 5.21667L16.6667 6.05833L12.5 10.1167L13.4833 15.85L8.33333 13.1417L3.18333 15.85L4.16667 10.1167L0 6.05833L5.75833 5.21667L8.33333 0Z" fill="#FE7E0F"></path>
+                                </svg>
+                              </li>
+                            </ul>
+                            <span class="fw-light"> (38 Reviews) </span>
+                          </div>
+                          <h2 class="title4">Angular Zero To Mastery</h2>
+                          <div class="lessons-students d-flex align-items-center">
+                            <div class="lessons">
+                              <div class="d-flex align-items-center" href="">
+                                <img src="./assets/CoursePage/book.png" alt="">
+                                <span>12 Lessons</span>
+                              </div>
+                            </div>
+                            <div class="students d-flex align-items-center">
+                              <img src="./assets/CoursePage/students.png" alt="">
+                              <span>50 Students</span>
+                            </div>
+                          </div>
+                          <p>
+                            It is a long established fact that a reader will be
+                            distracted.
+                          </p>
+                          <div class="course-dev d-flex align-items-center">
+                            <a href="">
+                              <img src="./assets/CoursePage/round-pic.png" alt="">
+                            </a>
+                            <span>By <span>Angela</span> In
+                              <span>Development</span></span>
+                          </div>
+                          <div class="price-cart d-flex align-items-center">
+                            <div class="price d-flex align-items-center">
+                              <p>$60</p>
+                              <del>$120</del>
+                            </div>
+                            <button class="cart ms-auto d-flex align-items-center">
+                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.66675 13.3333L13.9335 12.7277C16.2072 12.5383 16.7177 12.0417 16.9697 9.77408L17.5001 5" stroke="#141B34" stroke-opacity="0.8" stroke-linecap="round"></path>
+                                <path d="M5 5H18.3333" stroke="#141B34" stroke-opacity="0.8" stroke-linecap="round"></path>
+                                <path d="M4.99992 18.3333C5.92039 18.3333 6.66659 17.5871 6.66659 16.6667C6.66659 15.7462 5.92039 15 4.99992 15C4.07944 15 3.33325 15.7462 3.33325 16.6667C3.33325 17.5871 4.07944 18.3333 4.99992 18.3333Z" stroke="#141B34" stroke-opacity="0.8"></path>
+                                <path d="M14.1667 18.3333C15.0871 18.3333 15.8333 17.5871 15.8333 16.6667C15.8333 15.7462 15.0871 15 14.1667 15C13.2462 15 12.5 15.7462 12.5 16.6667C12.5 17.5871 13.2462 18.3333 14.1667 18.3333Z" stroke="#141B34" stroke-opacity="0.8"></path>
+                                <path d="M6.66675 16.6666H12.5001" stroke="#141B34" stroke-opacity="0.8" stroke-linecap="round"></path>
+                                <path d="M1.66675 1.66663H2.47175C3.25898 1.66663 3.9452 2.18712 4.13613 2.92907L6.61551 12.5637C6.74081 13.0506 6.63358 13.5664 6.32361 13.968L5.52686 15" stroke="#141B34" stroke-opacity="0.8" stroke-linecap="round"></path>
+                              </svg>
+
+                              <span>Add to cart</span>
+                            </button>
+                          </div>
+                        </div>
                       </div>
-                      <button class="bookmark">
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z"
-                            stroke="black"
-                            stroke-opacity="0.6"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          ></path>
-                        </svg>
-                      </button>
-                    </div>
-                    <h2 class="title2">Advance Web Development</h2>
-                    <div
-                      class="lessons-students d-flex align-items-center my-3"
-                    >
-                      <div class="lessons">
-                        <a class="d-flex align-items-center" href="">
-                          <img src="./assets/CoursePage/book.png" alt="" />
-                          <span>12 Lessons</span>
-                        </a>
-                      </div>
-                      <div class="students d-flex align-items-center">
-                        <img src="./assets/CoursePage/students.png" alt="" />
-                        <span>50 Students</span>
-                      </div>
-                    </div>
-                    <p>
-                      It is a long established fact that a reader will be
-                      distracted.
-                    </p>
-                    <div class="course-dev d-flex align-items-center">
-                      <a href="">
-                        <img src="./assets/CoursePage/round-pic.png" alt="" />
-                      </a>
-                      <span
-                        >By <span>Aaron</span> In <span>Development</span></span
-                      >
-                    </div>
-                    <div class="price-cart mt-3 d-flex align-items-center">
-                      <div class="price d-flex align-items-center mt-3">
-                        <p>$60</p>
-                        <del>$120</del>
-                      </div>
-                      <button class="cart ms-auto d-flex align-items-center">
-                        <img
-                          src="./assets/CoursePage/shopping-cart.png"
-                          alt=""
-                        />
-                        <span>Add to cart</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
               </div>
-              <div class="col-4">
-                <div class="course-card mb-4">
-                  <div class="card-pic position-relative">
-                    <img src="./assets/CoursePage/4th-card.png" alt="" />
-                    <a class="free position-absolute" href="">Free</a>
-                  </div>
-                  <div class="card-cntn">
-                    <div class="course-review d-flex align-items-center">
-                      <div
-                        class="reviews me-auto my-3 d-flex align-items-center"
-                      >
-                        <img src="./assets/CoursePage/star.png" alt="" />
-                        <img src="./assets/CoursePage/star.png" alt="" />
-                        <img src="./assets/CoursePage/star.png" alt="" />
-                        <img src="./assets/CoursePage/star.png" alt="" />
-                        <img src="./assets/CoursePage/star.png" alt="" />
-                        <span> (15 Reviews) </span>
+              <div class="col-12 col-sm-6 col-lg-4">
+                <div class="course-card">
+                        <div class="card-pic position-relative">
+                          <img src="./assets/CoursePage/4th-card.png" alt="">
+                          <span class="course-badge1 position-absolute">01 Jan To 15 Mar</span>
+                          <span class="course-badge2 position-absolute">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.24878 4.99955C1.24878 5.83828 6.30894 8.125 7.49106 8.125C8.67325 8.125 13.7334 5.83828 13.7334 4.99955C13.7334 4.16081 8.67325 1.87408 7.49106 1.87408C6.30894 1.87408 1.24878 4.16081 1.24878 4.99955Z" stroke="white" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M3.74512 6.875L4.52717 10.5001C4.58074 10.7484 4.70439 10.9804 4.9106 11.1284C6.29919 12.1249 8.68175 12.1249 10.0704 11.1284C10.2766 10.9804 10.4003 10.7484 10.4538 10.5001L11.2359 6.875" stroke="white" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M12.7984 5.93719V10.3129M12.7984 10.3129C12.304 11.2169 12.0854 11.7013 11.8633 12.5007C11.8151 12.7851 11.8534 12.9284 12.0491 13.0557C12.1287 13.1074 12.2242 13.1258 12.319 13.1258H13.2681C13.369 13.1258 13.4708 13.1047 13.5539 13.0473C13.7359 12.9217 13.7827 12.7838 13.7334 12.5007C13.5387 11.7584 13.2908 11.251 12.7984 10.3129Z" stroke="white" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                            20 Class</span>
+                          <span class="course-badge3 position-absolute">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.25 6.875C1.25 4.81261 1.25 3.78141 1.89071 3.14071C2.53141 2.5 3.56261 2.5 5.625 2.5H6.25C8.31237 2.5 9.34356 2.5 9.98431 3.14071C10.625 3.78141 10.625 4.81261 10.625 6.875V8.125C10.625 10.1874 10.625 11.2186 9.98431 11.8593C9.34356 12.5 8.31237 12.5 6.25 12.5H5.625C3.56261 12.5 2.53141 12.5 1.89071 11.8593C1.25 11.2186 1.25 10.1874 1.25 8.125V6.875Z" stroke="white" stroke-width="0.5"></path>
+                              <path d="M10.625 5.56616L10.7037 5.50123C12.0261 4.41015 12.6872 3.8646 13.2186 4.12801C13.75 4.39143 13.75 5.26472 13.75 7.01131V7.98869C13.75 9.73531 13.75 10.6086 13.2186 10.872C12.6872 11.1354 12.0261 10.5899 10.7037 9.49875L10.625 9.43381" stroke="white" stroke-width="0.5" stroke-linecap="round"></path>
+                              <path d="M7.1875 6.875C7.70527 6.875 8.125 6.45527 8.125 5.9375C8.125 5.41973 7.70527 5 7.1875 5C6.66973 5 6.25 5.41973 6.25 5.9375C6.25 6.45527 6.66973 6.875 7.1875 6.875Z" stroke="white" stroke-width="0.5"></path>
+                            </svg>
+                            55 Videos</span>
+                          <div class="free position-absolute" href="">Free</div>
+                        </div>
+                        <div class="card-cntn">
+                          <div class="course-d-review d-flex align-items-center">
+                            <ul class="stars d-flex p-0 m-0">
+                              <li>
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8.33333 0L10.9083 5.21667L16.6667 6.05833L12.5 10.1167L13.4833 15.85L8.33333 13.1417L3.18333 15.85L4.16667 10.1167L0 6.05833L5.75833 5.21667L8.33333 0Z" fill="#FE7E0F"></path>
+                                </svg>
+                              </li>
+                              <li>
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8.33333 0L10.9083 5.21667L16.6667 6.05833L12.5 10.1167L13.4833 15.85L8.33333 13.1417L3.18333 15.85L4.16667 10.1167L0 6.05833L5.75833 5.21667L8.33333 0Z" fill="#FE7E0F"></path>
+                                </svg>
+                              </li>
+                              <li>
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8.33333 0L10.9083 5.21667L16.6667 6.05833L12.5 10.1167L13.4833 15.85L8.33333 13.1417L3.18333 15.85L4.16667 10.1167L0 6.05833L5.75833 5.21667L8.33333 0Z" fill="#FE7E0F"></path>
+                                </svg>
+                              </li>
+                              <li>
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8.33333 0L10.9083 5.21667L16.6667 6.05833L12.5 10.1167L13.4833 15.85L8.33333 13.1417L3.18333 15.85L4.16667 10.1167L0 6.05833L5.75833 5.21667L8.33333 0Z" fill="#FE7E0F"></path>
+                                </svg>
+                              </li>
+                              <li>
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8.33333 0L10.9083 5.21667L16.6667 6.05833L12.5 10.1167L13.4833 15.85L8.33333 13.1417L3.18333 15.85L4.16667 10.1167L0 6.05833L5.75833 5.21667L8.33333 0Z" fill="#FE7E0F"></path>
+                                </svg>
+                              </li>
+                            </ul>
+                            <span class="fw-light"> (38 Reviews) </span>
+                          </div>
+                          <h2 class="title4">Angular Zero To Mastery</h2>
+                          <div class="lessons-students d-flex align-items-center">
+                            <div class="lessons">
+                              <div class="d-flex align-items-center" href="">
+                                <img src="./assets/CoursePage/book.png" alt="">
+                                <span>12 Lessons</span>
+                              </div>
+                            </div>
+                            <div class="students d-flex align-items-center">
+                              <img src="./assets/CoursePage/students.png" alt="">
+                              <span>50 Students</span>
+                            </div>
+                          </div>
+                          <p>
+                            It is a long established fact that a reader will be
+                            distracted.
+                          </p>
+                          <div class="course-dev d-flex align-items-center">
+                            <a href="">
+                              <img src="./assets/CoursePage/round-pic.png" alt="">
+                            </a>
+                            <span>By <span>Angela</span> In
+                              <span>Development</span></span>
+                          </div>
+                          <div class="price-cart d-flex align-items-center">
+                            <div class="price d-flex align-items-center">
+                              <p>$60</p>
+                              <del>$120</del>
+                            </div>
+                            <button class="cart ms-auto d-flex align-items-center">
+                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.66675 13.3333L13.9335 12.7277C16.2072 12.5383 16.7177 12.0417 16.9697 9.77408L17.5001 5" stroke="#141B34" stroke-opacity="0.8" stroke-linecap="round"></path>
+                                <path d="M5 5H18.3333" stroke="#141B34" stroke-opacity="0.8" stroke-linecap="round"></path>
+                                <path d="M4.99992 18.3333C5.92039 18.3333 6.66659 17.5871 6.66659 16.6667C6.66659 15.7462 5.92039 15 4.99992 15C4.07944 15 3.33325 15.7462 3.33325 16.6667C3.33325 17.5871 4.07944 18.3333 4.99992 18.3333Z" stroke="#141B34" stroke-opacity="0.8"></path>
+                                <path d="M14.1667 18.3333C15.0871 18.3333 15.8333 17.5871 15.8333 16.6667C15.8333 15.7462 15.0871 15 14.1667 15C13.2462 15 12.5 15.7462 12.5 16.6667C12.5 17.5871 13.2462 18.3333 14.1667 18.3333Z" stroke="#141B34" stroke-opacity="0.8"></path>
+                                <path d="M6.66675 16.6666H12.5001" stroke="#141B34" stroke-opacity="0.8" stroke-linecap="round"></path>
+                                <path d="M1.66675 1.66663H2.47175C3.25898 1.66663 3.9452 2.18712 4.13613 2.92907L6.61551 12.5637C6.74081 13.0506 6.63358 13.5664 6.32361 13.968L5.52686 15" stroke="#141B34" stroke-opacity="0.8" stroke-linecap="round"></path>
+                              </svg>
+
+                              <span>Add to cart</span>
+                            </button>
+                          </div>
+                        </div>
                       </div>
-                      <button class="bookmark">
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z"
-                            stroke="black"
-                            stroke-opacity="0.6"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          ></path>
-                        </svg>
-                      </button>
-                    </div>
-                    <h2 class="title2">Zero to Hero with Advance Nodejs</h2>
-                    <div
-                      class="lessons-students d-flex align-items-center my-3"
-                    >
-                      <div class="lessons">
-                        <a class="d-flex align-items-center" href="">
-                          <img src="./assets/CoursePage/book.png" alt="" />
-                          <span>12 Lessons</span>
-                        </a>
-                      </div>
-                      <div class="students d-flex align-items-center">
-                        <img src="./assets/CoursePage/students.png" alt="" />
-                        <span>50 Students</span>
-                      </div>
-                    </div>
-                    <p>
-                      It is a long established fact that a reader will be
-                      distracted.
-                    </p>
-                    <div class="course-dev d-flex align-items-center">
-                      <a href="">
-                        <img src="./assets/CoursePage/round-pic.png" alt="" />
-                      </a>
-                      <span
-                        >By <span>Aaron</span> In <span>Development</span></span
-                      >
-                    </div>
-                    <div class="price-cart mt-3 d-flex align-items-center">
-                      <div class="price d-flex align-items-center mt-3">
-                        <p>$60</p>
-                        <del>$120</del>
-                      </div>
-                      <button class="cart ms-auto d-flex align-items-center">
-                        <img
-                          src="./assets/CoursePage/shopping-cart.png"
-                          alt=""
-                        />
-                        <span>Add to cart</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

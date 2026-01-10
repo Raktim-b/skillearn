@@ -279,19 +279,7 @@ ul {
   transform: scaleX(1);
 }
 
-.dropdown-item {
-  transition: 0.5s ease-in-out;
-}
 
-.dropdown-item:hover {
-  background: var(--border-color);
-  color: var(--defult-color);
-}
-
-.dropdown-item.active {
-  background: var(--border-color);
-  border-radius: 20px;
-}
 
 .nav-link::before {
   content: "";

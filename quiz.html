@@ -37,7 +37,7 @@
 
   <body>
     <!-- Header Section -->
-    <header class="hdr-sec">
+     <header class="hdr-sec">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <div class="nav-logo">
@@ -69,7 +69,10 @@
             </button>
             <ul class="navbar-nav mx-auto">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./index.html"
+                <a
+                  class="nav-link "
+                  aria-current="page"
+                  href="./index.html"
                   >Home</a
                 >
               </li>
@@ -77,75 +80,24 @@
                 <a class="nav-link" href="about.html">About Us</a>
               </li>
 
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href=""
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Courses
-                  <svg
-                    width="10"
-                    height="6"
-                    viewBox="0 0 10 6"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.201291 0.21959C0.330216 0.0789867 0.505053 0 0.687353 0C0.869654 0 1.04449 0.0789867 1.17342 0.21959L4.57654 3.93209L7.97967 0.21959C8.10933 0.0829714 8.28299 0.00737529 8.46325 0.00908411C8.64351 0.0107929 8.81595 0.0896698 8.94342 0.228726C9.07088 0.367782 9.14319 0.555891 9.14475 0.752539C9.14632 0.949186 9.07702 1.13864 8.95179 1.28009L5.0626 5.52284C4.93368 5.66344 4.75884 5.74243 4.57654 5.74243C4.39424 5.74243 4.2194 5.66344 4.09048 5.52284L0.201291 1.28009C0.0724043 1.13944 0 0.948713 0 0.74984C0 0.550967 0.0724043 0.360236 0.201291 0.21959Z"
-                      fill="black"
-                    />
-                  </svg>
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="./course.html">Courses</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#">Course Details</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="./course.html"> Courses </a>
               </li>
-              <li class="nav-item active dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Quiz
-                  <svg
-                    width="10"
-                    height="6"
-                    viewBox="0 0 10 6"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.201291 0.21959C0.330216 0.0789867 0.505053 0 0.687353 0C0.869654 0 1.04449 0.0789867 1.17342 0.21959L4.57654 3.93209L7.97967 0.21959C8.10933 0.0829714 8.28299 0.00737529 8.46325 0.00908411C8.64351 0.0107929 8.81595 0.0896698 8.94342 0.228726C9.07088 0.367782 9.14319 0.555891 9.14475 0.752539C9.14632 0.949186 9.07702 1.13864 8.95179 1.28009L5.0626 5.52284C4.93368 5.66344 4.75884 5.74243 4.57654 5.74243C4.39424 5.74243 4.2194 5.66344 4.09048 5.52284L0.201291 1.28009C0.0724043 1.13944 0 0.948713 0 0.74984C0 0.550967 0.0724043 0.360236 0.201291 0.21959Z"
-                      fill="black"
-                    />
-                  </svg>
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item active" href="./quiz.html">Quiz</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Mehedi Quiz Inner</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Mehedi</a>
-                  </li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link active" href="quiz.html"> Quiz </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#">Contact</a>
               </li>
             </ul>
             <div class="nav-btn d-flex align-items-center ms-auto">
-              <a href="" class="btn-primary">Sign In</a>
+              <a
+                href=""
+                class="btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                >Sign In</a
+              >
               <a href="" class="btn-secondary">Register Now</a>
             </div>
           </div>
