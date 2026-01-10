@@ -19,11 +19,31 @@
   padding: 0 6px;
 }
 /* Register Modal */
+.teacher-reg-sec {
+  padding: 70px 0;
+  position: relative;
+}
+.teacher-reg-eclipse-1,.teacher-reg-eclipse-2 {
+  width: 376px;
+  height: 398px;
+  border-radius: 50%;
+  background-color: #09787780;
+  position: absolute;
 
+  filter: blur(250px);
+}
+.teacher-reg-eclipse-1 {
+  top: 53px;
+  right: -157px;
+}
+.teacher-reg-eclipse-2 {
+  left: -188px;
+  bottom: -25px;
+}
 .register-modal {
   max-width: 1150px;
   height: 982px;
-  margin: 40px auto;
+  margin: 0 auto;
   border-radius: 20px;
   background-color: #daf8f4;
   padding: 30px;
@@ -234,6 +254,10 @@
   .col55 {
     width: 100%;
   }
+  /* Register Modal */
+  .teacher-reg-sec {
+    padding: 50px 0;
+  }
   .register-modal {
     border-radius: 15px;
     height: 840px;
@@ -296,14 +320,18 @@
   }
 }
 @media screen and (max-width: 576px) {
+  /* Register Modal */
+  .teacher-reg-sec {
+    padding: 30px 0;
+  }
   .register-modal {
     border-radius: 8px;
-    height: 720px;
+    height: 710px;
     padding: 13px;
   }
   .reg-modal-left {
     border-radius: 8px;
-    height: 694px;
+    height: 675px;
     padding: 12px;
   }
   .reg-modal-left > h2,
@@ -337,7 +365,7 @@
   .pass-wrpr {
     border-radius: 7px;
     padding: 1px 7px;
-    margin-bottom: 8px;
+    margin-bottom: 3px;
   }
   .reg-form input::placeholder {
     font-size: 9px;
