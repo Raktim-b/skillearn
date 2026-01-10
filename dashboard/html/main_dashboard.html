@@ -18,7 +18,7 @@
         <section class="dashboard">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-xl-3">
+                    <div class="col-12 col-xl-2">
                         <aside class="left-sideNav bg-white z-3">
                             <button class="close-btn" onclick="clickClose()">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -158,7 +158,7 @@
                             </nav>
                         </aside>
                     </div>
-                    <div class="col-12 col-xl-9">
+                    <div class="col-12 col-xl-10 box-1">
                         <div class="dashboard-top bg-white d-flex align-items-center">
                             <div
                                 class="dashboard-hdr d-flex align-items-center justify-content-between flex-wrap w-100">
@@ -208,7 +208,7 @@
                             </div>
                         </div>
                         <div class="dashboard-grid">
-                            <div class="common-box">
+                            <div class="common-box box-1">
                                 <h2 class="title3 text-capitalize">
                                     fundamentals
                                 </h2>
@@ -275,12 +275,12 @@
                                 </div>
                             </div>
 
-                            <div class="common-box">
+                            <div class="common-box box-2">
                                 <div class="progress-cntn d-flex align-items-center">
                                     <h2 class="title3">
                                         Progress
                                     </h2>
-                                    <select class="week-dropdown">
+                                    <select class="weak-dropdown">
                                         <option value="">Weekly</option>
                                         <option value="monday">Monday</option>
                                         <option value="tuesday">tuesday</option>
@@ -338,7 +338,7 @@
                                 </ul>
                             </div>
 
-                            <div class="common-box activity-cntn">
+                            <div class="common-box box-3">
                                 <h2 class="title3">
                                     Activity
                                 </h2>
@@ -354,6 +354,8 @@
                                     <span class="dot full-dot"></span>
                                     <span class="dot full-dot"></span>
                                     <span class="dot full-dot"></span>
+                                    <span class="dot full-dot"></span>
+                                    <span class="dot full-dot"></span>
                                     <span class="dot border-dot"></span>
                                     <span class="dot border-dot"></span>
                                     <span class="dot border-dot"></span>
@@ -364,7 +366,7 @@
                                 </div>
                             </div>
 
-                            <div class="common-box right-box">
+                            <div class="common-box box-4">
                                 <h2 class="title2">
                                     Keep learning new
                                     thing everyday
@@ -376,17 +378,60 @@
                                     quis nostrud exercitation ullamco laboris nisi ut
                                     aliquip ex ea commodo .</p>
                                 <a href="" class="community-btn">
-                                    Join Community
+                                    <span>Join Community</span>
+                                    <span>+</span>
                                 </a>
                                 <div class="dashboard-img">
                                     <img src="/assets/dashboard-assets/dashboard-img.png" alt="">
                                 </div>
                             </div>
 
-                            <div class="common-box wide-box">
+                            <div class="common-box box-5">
+                                <h2 class="title2 mb-3">
+                                    Study Statistic
+
+                                </h2>
+                                <select class="box5-dropdown weak-dropdown">
+                                    <option value="">Weekly</option>
+                                    <option value="monday">Monday</option>
+                                    <option value="tuesday">tuesday</option>
+                                    <option value="wednessday">wednessday</option>
+                                    <option value="thursday">thursday</option>
+                                    <option value="friday">friday</option>
+                                </select>
                                 <div>
                                     <canvas id="myChart"></canvas>
                                 </div>
+                            </div>
+                            <div class="common-box box-6">
+                                <h2 class="title2">
+                                    Keep learning new
+                                    thing everyday
+
+                                </h2>
+                                <div class="chart-box d-flex align-items-center justify-content-between">
+                                    <div class="gauge-wrapper">
+                                        <canvas id="gaugeChart"></canvas>
+                                        <div class="gauge-value">75%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="common-box box-7">
+                                <h2 class="title2">
+                                    Keep learning new
+                                    thing everyday
+
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur voluptas
+                                    labore nulla iste numquam nihil ipsam. Et, facilis similique? Aliquam esse vel,
+                                    laborum temporibus unde sed cum! Libero, non. Illo corporis odio doloribus et.
+                                    Cupiditate, rem veniam. Debitis non, reprehenderit quae quos eum fuga necessitatibus
+                                    magni dolor voluptatem magnam tempora. A est cum pariatur, aliquam error odio, autem
+                                    voluptate sapiente facere sed esse ut quis, perspiciatis ipsum quia. Quasi
+                                    voluptatibus et aperiam rerum, velit ex tenetur placeat amet laboriosam accusamus
+                                    suscipit blanditiis. Soluta omnis dicta doloremque, accusantium fuga hic repellendus
+                                    voluptate molestiae, tenetur labore accusamus harum laboriosam odit quaerat
+                                    asperiores.</p>
                             </div>
                         </div>
                     </div>

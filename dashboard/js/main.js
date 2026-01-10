@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Hamberger SideBar Toggle
+  // ===============================
+  // Sidebar Toggle
+  // ===============================
   const navBar = document.querySelector(".left-sideNav");
-  //   const menuButton = document.querySelector(".menu-btn");
-  //   const closeBtn = document.querySelector(".close-btn");
 
   window.hamberger = () => {
     navBar.classList.add("open");
@@ -12,39 +12,145 @@ document.addEventListener("DOMContentLoaded", function () {
     navBar.classList.remove("open");
   };
 
-  // Course Complete Range
-
+  // ===============================
+  // Course Range
+  // ===============================
   const rangeInput = document.getElementById("range4");
   const rangeOutput = document.getElementById("rangeValue");
 
-  // Set initial value
   rangeOutput.textContent = rangeInput.value + "%";
 
   rangeInput.addEventListener("input", function () {
     rangeOutput.textContent = this.value + "%";
   });
 
-  // Chart JS
-  const ctx = document.getElementById("myChart");
+  // ===============================
+  // BAR CHART
+  // ===============================
+  const barCanvas = document.getElementById("myChart");
 
-  new Chart(ctx, {
+  const activeData = [2, 8, 5, 8, 6, 10, 9];
+  const goalData = [5, 5, 6, 4, 5, 3, 4];
+
+  const remainingData = goalData.map((g, i) =>
+    Math.max(g - activeData[i], 0)
+  );
+
+  new Chart(barCanvas, {
     type: "bar",
     data: {
-      labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+      labels: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
       datasets: [
         {
-          label: "# of Votes",
-          data: [12, 19, 3, 5, 2, 3],
-          borderWidth: 1,
+          label: "Active",
+          data: activeData,
+          backgroundColor: "#6CD1C3",
+          borderRadius: 6,
+          barThickness: 28,
+          stack: "stack1",
+        },
+        {
+          label: "Goal",
+          data: remainingData,
+          backgroundColor: "#D9D9D9",
+          borderRadius: 6,
+          barThickness: 28,
+          stack: "stack1",
         },
       ],
     },
     options: {
+      responsive: true,
+      maintainAspectRatio: false,
       scales: {
+        x: { stacked: true, grid: { display: false } },
         y: {
+          stacked: true,
           beginAtZero: true,
+          ticks: { callback: (v) => v + "h" },
+        },
+      },
+      plugins: {
+        legend: {
+          position: window.innerWidth < 576 ? "bottom" : "right",
+          labels: { boxWidth: 18, boxHeight: 10 },
         },
       },
     },
+  });
+
+  // ===============================
+  // GAUGE CHART
+  // ===============================
+  const gaugeCanvas = document.getElementById("gaugeChart");
+  if (!gaugeCanvas) return;
+
+  const gaugeValue = 75; // 0–100
+
+  const gaugeNeedlePlugin = {
+    id: "gaugeNeedlePlugin",
+    afterDatasetsDraw(chart) {
+      const { ctx } = chart;
+      const meta = chart.getDatasetMeta(0);
+      if (!meta.data.length) return;
+
+      const centerX = meta.data[0].x;
+      const centerY = meta.data[0].y;
+
+      // Correct angle for half gauge
+      const angle = (-Math.PI / 2) + (Math.PI * gaugeValue) / 100;
+
+      ctx.save();
+      ctx.translate(centerX, centerY);
+      ctx.rotate(angle);
+
+      // Needle
+      ctx.beginPath();
+      ctx.moveTo(0, 0);
+      ctx.lineTo(chart.outerRadius - 15, 0);
+      ctx.strokeStyle = "#000";
+      ctx.lineWidth = 4;
+      ctx.lineCap = "round";
+      ctx.stroke();
+
+      // Center dot
+      ctx.beginPath();
+      ctx.arc(0, 0, 6, 0, Math.PI * 2);
+      ctx.fillStyle = "#000";
+      ctx.fill();
+
+      ctx.restore();
+    },
+  };
+
+  new Chart(gaugeCanvas, {
+    type: "doughnut",
+    data: {
+      datasets: [
+        {
+          data: [20, 20, 20, 20, 20],
+          backgroundColor: [
+            "#3fd18b",
+            "#6fe7d8",
+            "#ffe066",
+            "#ffb703",
+            "#ff4d4f",
+          ],
+          borderWidth: 0,
+          cutout: "65%",
+          rotation: -90,
+          circumference: 180,
+        },
+      ],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: { enabled: false },
+      },
+    },
+    plugins: [gaugeNeedlePlugin],
   });
 });
