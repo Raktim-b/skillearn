@@ -27,22 +27,63 @@ document.addEventListener("DOMContentLoaded", function () {
   // Chart JS
   const ctx = document.getElementById("myChart");
 
+  // Original data
+  const activeData = [2, 8, 5, 8, 6, 10, 9];
+  const goalData = [5, 5, 6, 4, 5, 3, 4];
+
+  // Calculate remaining goal (gray part)
+  const remainingData = goalData.map((goal, i) =>
+    Math.max(goal - activeData[i], 0)
+  );
+
   new Chart(ctx, {
     type: "bar",
     data: {
-      labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+      labels: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
       datasets: [
         {
-          label: "# of Votes",
-          data: [12, 19, 3, 5, 2, 3],
-          borderWidth: 1,
+          label: "Active",
+          data: activeData,
+          backgroundColor: "#6CD1C3",
+          borderRadius: 6,
+          barThickness: 28,
+          stack: "stack1",
+        },
+        {
+          label: "Goal",
+          data: remainingData,
+          backgroundColor: "#D9D9D9",
+          borderRadius: 6,
+          barThickness: 28,
+          stack: "stack1",
         },
       ],
     },
     options: {
+      responsive: true,
+      maintainAspectRatio: false,
       scales: {
+        x: {
+          stacked: true,
+          grid: {
+            display: false,
+          },
+        },
         y: {
+          stacked: true,
           beginAtZero: true,
+          ticks: {
+            callback: (value) => value + "h",
+          },
+        },
+      },
+      plugins: {
+        legend: {
+          position: window.innerWidth < 576 ? "bottom" : "right",
+          labels: {
+            boxWidth: 18,
+            boxHeight: 10,
+          },
         },
       },
     },
