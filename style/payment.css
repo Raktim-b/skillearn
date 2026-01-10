@@ -1,0 +1,524 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: var(--roboto);
+  overflow-x: hidden;
+}
+
+:root {
+  --defult-color: #fff;
+  --primary-color: #000;
+  --secondary-color: #097877;
+  --tertiary-color: #6ccdbf;
+  --light-bg-color: #f2f0f4;
+  --input-bg: #212343;
+  --border-color: #7d7878;
+  --heading-color: #422c9b;
+  --btn-bg: #173433;
+  --design-bg: #6dcec0;
+  --section-bg: #dbf7f3;
+  --roboto: "Roboto", sans-serif;
+  --sec-hdr-color: #054645;
+  --free-color: #f8d468;
+  --payment-text-color: #100f0f;
+  --input-bg-color: #d0d2eb;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a,
+span {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* 
+====================
+PAYMENT SECTION
+====================
+*/
+
+.payment-sec {
+  padding: 80px 0;
+  background: var(--secondary-color);
+}
+
+.payment-hdr h1 {
+  font-family: "Playfair Display";
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 46px !important;
+  color: var(--payment-text-color);
+}
+
+.payment-cntn {
+  max-width: 1320px;
+  border-radius: 35px;
+  color: var(--payment-text-color);
+  background: var(--defult-color);
+  padding-right: 79px;
+}
+
+.left-cntn {
+  background-color: #dff3f0;
+  border-radius: 50px;
+}
+
+.payment-left {
+  padding: 50px 80px;
+}
+
+.payment-logo {
+  max-width: 108px;
+}
+
+.payment-logo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pdf-btn {
+  margin-top: 37px;
+  border: none;
+  background: transparent;
+}
+
+.pdf-btn p {
+  font-size: 14px;
+  margin: 0 16px;
+}
+
+.price-details {
+  margin-top: 38px;
+}
+
+.price-details h5 {
+  font-family: "Playfair Display";
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.price-details span {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.small-text {
+  font-size: 14px;
+  margin-left: 30px;
+}
+
+.pay-price:nth-child(4) {
+  margin-bottom: 68px;
+}
+
+.pay-price:last-child > h5,
+.pay-price:last-child span {
+  font-size: 30px;
+}
+
+.payment-right {
+  padding: 145px 0 83px 0;
+}
+
+.payment-btn {
+  padding: 22px 31px;
+  margin-right: 30px;
+  border-radius: 20px;
+  border: 1px solid var(--payment-text-color);
+  background: transparent;
+}
+
+.payment-btn.active1 {
+  border: 2px solid var(--payment-text-color);
+  background-color: var(--input-bg-color);
+}
+
+.payment-btn span {
+  font-family: "Playfair Display";
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 15px;
+}
+
+.card-details .form-label,
+.form-check {
+  font-family: "Playfair Display";
+  font-size: 19px;
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+.form-control {
+  width: 100%;
+  padding: 24px 30px;
+  background: var(--input-bg-color);
+  border-radius: 20px;
+  font-size: 25px;
+}
+
+.form-check-input {
+  border: 1px solid var(--payment-text-color);
+}
+
+.form-check-label {
+  margin-left: 26px;
+}
+
+.card-wrpr {
+  position: relative;
+}
+
+.card-wrpr > img {
+  position: absolute;
+  top: 23px;
+  left: 31px;
+}
+
+.card-input {
+  padding-left: 114px !important;
+}
+
+hr {
+  margin: 0 !important;
+  opacity: 0.8 !important;
+}
+
+.payment-right .banner-btn {
+  border-radius: 20px;
+  padding: 24.5px 0;
+}
+
+.payment-right .banner-btn a {
+  width: 100%;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 
+=====================
+MEDIA QUERIES
+=====================
+*/
+
+@media screen and (max-width: 1200px) {
+  .payment-btn {
+    padding: 15px 20px;
+  }
+
+  .payment-btn span {
+    font-size: 12px;
+  }
+
+  .payment-btn svg {
+    height: 25px;
+    width: 25px;
+  }
+
+  .form-control {
+    padding: 18px 30px;
+    font-size: 20px;
+  }
+
+  .card-wrpr > img {
+    top: 15px;
+    left: 25px;
+  }
+
+  .payment-right .banner-btn a {
+    font-size: 30px;
+  }
+
+  .pdf-btn p {
+    font-size: 12px;
+  }
+
+  .price-details h5 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .price-details span {
+    font-size: 16px;
+  }
+
+  .small-text {
+    font-size: 11px;
+    margin-left: 14px;
+  }
+
+  .total,
+  .pay-price:last-child span {
+    font-size: 20px !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .payment-hdr h1 {
+    font-size: 50px;
+  }
+
+  .payment-cntn {
+    padding: 0 50px;
+  }
+
+  .payment-left {
+    padding: 50px 60px;
+  }
+
+  .card-wrpr > img {
+    top: 19px;
+    left: 29px;
+    height: 30px;
+    width: 44px;
+  }
+
+  .card-input {
+    padding-left: 98px !important;
+  }
+
+  .payment-right {
+    padding: 47px 0 38px 0;
+  }
+
+  .payment-right .banner-btn a {
+    font-size: 25px;
+  }
+
+  .price-details h5 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .price-details span {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .payment-hdr h1 {
+    font-size: 42px;
+  }
+
+  .payment-cntn {
+    padding: 0 18px;
+  }
+
+  .payment-logo {
+    max-width: 80px;
+  }
+
+  .pdf-btn {
+    margin-top: 21px;
+    border: none;
+    background: transparent;
+  }
+
+  .payment-left {
+    padding: 30px 40px;
+  }
+
+  .pdf-btn svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .price-details {
+    margin-top: 32px;
+  }
+
+  .payment-btn {
+    padding: 10px 15px;
+  }
+
+  .card-details .form-label,
+  .form-check {
+    font-size: 16px;
+  }
+
+  .form-control {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+
+  .card-wrpr > img {
+    top: 14px;
+    left: 29px;
+    height: 22px;
+    width: 36px;
+  }
+
+  .card-input {
+    padding-left: 84px !important;
+  }
+
+  .payment-right .banner-btn a {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .payment-hdr h1 {
+    font-size: 36px;
+  }
+
+  .left-cntn {
+    border-radius: 36px;
+  }
+
+  .payment-left {
+    padding: 30px 27px;
+  }
+
+  .payment-logo {
+    max-width: 68px;
+  }
+
+  .pdf-btn p {
+    font-size: 9px;
+  }
+
+  .price-details h5 {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .price-details span {
+    font-size: 14px;
+  }
+
+  .small-text {
+    font-size: 9px;
+  }
+
+  .total,
+  .pay-price:last-child span {
+    font-size: 16px !important;
+  }
+
+  .payment-btn span {
+    font-size: 9px;
+  }
+
+  .payment-btn svg {
+    height: 18px;
+    width: 18px;
+  }
+
+  .payment-btn {
+    padding: 7px 12px;
+  }
+
+  .card-details .form-label,
+  .form-check {
+    font-size: 14px;
+  }
+
+  .form-control {
+    padding: 10px 21px;
+    font-size: 14px;
+  }
+
+  .card-wrpr > img {
+    top: 12px;
+    left: 20px;
+    height: 18px;
+    width: 30px;
+  }
+
+  .card-input {
+    padding-left: 64px !important;
+  }
+
+  .payment-right .banner-btn a {
+    font-size: 20px;
+  }
+
+  .form-check-label {
+    margin-left: 9px;
+  }
+
+  .pay-price:nth-child(4) {
+    margin-bottom: 47px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .payment-sec {
+    padding: 30px 0;
+  }
+
+  .payment-hdr h1 {
+    font-size: 30px;
+  }
+
+  .payment-left {
+    padding: 20px 10px;
+  }
+
+  .price-details h5 {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .small-text {
+    font-size: 7px;
+    margin-bottom: 0 !important;
+  }
+
+  .price-details span {
+    font-size: 12px;
+  }
+
+  .pay-price:nth-child(4) {
+    margin-bottom: 30px;
+  }
+
+  .payment-right {
+    padding: 24px 0 38px 0;
+  }
+
+  .payment-btn svg {
+    height: 12px;
+    width: 12px;
+  }
+
+  .payment-btn span {
+    font-size: 6px;
+    margin-left: 7px;
+  }
+
+  .form-control {
+    font-size: 12px;
+  }
+
+  .card-wrpr > img {
+    height: 14px;
+    width: 23px;
+  }
+
+  .card-input {
+    padding-left: 52px !important;
+  }
+
+  .payment-right .banner-btn a {
+    font-size: 16px;
+  }
+}
