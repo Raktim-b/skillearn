@@ -155,7 +155,18 @@ body {
   border-radius: 10px;
   border: 1px solid var(--secondary-color);
 }
+/* Maylike Section */
+.maylike-hdr{
+  margin-bottom: 54px;
+}
+.cart-prev-btn>.swiper-button-prev,.cart-next-btn>.swiper-button-next{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--defult-color);
+  box-shadow: 0px 3px 10px 0px rgba(5, 0, 0, 0.5);
 
+}
 @media screen and (max-width: 1400px) {
   /* Cart Section */
   .checkout-btn {

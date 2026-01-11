@@ -404,8 +404,8 @@ body {
 .btn-bg2 {
   margin-left: 70px;
 }
-.swiper-button-next,
-.swiper-button-prev {
+.btn-bg2 > .swiper-button-next,
+.btn-bg > .swiper-button-prev {
   background-color: #efe5e5;
   padding: 7px;
   inset: 0;
