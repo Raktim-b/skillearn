@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const swiper = new Swiper(".cartSwiper", {
-    slidesPerView: 3,
+    slidesPerView: 1,
+    loop: "true",
     spaceBetween: 10,
     navigation: {
       nextEl: ".swiper-button-next",
@@ -9,6 +10,14 @@ document.addEventListener("DOMContentLoaded", () => {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+    },
+    breakpoints: {
+      576: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      },
     },
   });
 });
