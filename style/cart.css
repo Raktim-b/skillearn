@@ -19,7 +19,7 @@ body {
 /* Cart Section */
 .cart-sec {
   padding: 60px 0 70px;
-   position: relative;
+  position: relative;
   overflow-x: clip;
 }
 .card-eclipse-1 {
@@ -162,8 +162,8 @@ body {
   padding-bottom: 40px;
   position: relative;
 }
-.cart-eclipse2{
-   width: 500px;
+.cart-eclipse2 {
+  width: 500px;
   height: 500px;
   border-radius: 50%;
   background-color: #09787759;
@@ -172,7 +172,7 @@ body {
   left: -193px;
   filter: blur(250px);
 }
-.mayLike-design{
+.mayLike-design {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -441,6 +441,10 @@ body {
 
 @media screen and (max-width: 576px) {
   /* Cart Section */
+  .card-eclipse-1,
+  .cart-eclipse2 {
+    display: none;
+  }
   .cart-hdr > .title4 {
     margin-block: 19px 9px;
   }
