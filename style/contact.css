@@ -60,7 +60,7 @@ CONTACT SECTION
 }
 
 .left-part {
-  padding: 61px 76px;
+  padding: 61px 66px;
   background: var(--defult-color);
   border-radius: 30px;
 }
@@ -107,7 +107,12 @@ hr {
   border: none !important;
 }
 
-.form-coghtntrol::placeholder {
+.form-control:focus {
+  box-shadow: none !important;
+  background-color: none !important;
+}
+
+.form-control::placeholder {
   font-weight: 400;
 }
 
@@ -130,6 +135,10 @@ hr {
   color: #097877;
 }
 
+.form-check-input {
+  margin-top: 0 !important;
+}
+
 .form-check {
   position: relative;
   margin-bottom: 32px;
@@ -146,17 +155,31 @@ hr {
 }
 
 .contact-pic {
+  position: relative;
+  width: 100%;
   max-width: 644px;
+  height: 454px;
   border-radius: 34px;
-  background: url("../assets/ContactusPage/contact-pic.png") no-repeat
-    center/cover;
-  margin-bottom: 50px;
+  /* background: url("../assets/ContactusPage/contact-pic.png") no-repeat center/cover; */
+  margin-bottom: 23px;
 }
 
-.contact-pic > img {
+.frame-bg {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 34px;
+  overflow: hidden;
+}
+
+.frame-inner {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 35%;
+  z-index: 2;
 }
 
 .contact-info {
@@ -209,7 +232,15 @@ MAP SECTION
 
 .map-location {
   max-width: 1320px;
+  height: 592px;
   position: relative;
+  overflow: hidden;
+}
+
+.map-location iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 .map-location > img {
@@ -224,9 +255,10 @@ MAP SECTION
   border-radius: 20px;
   border: 1px solid var(--payment-text-color);
   background: var(--tertiary-color);
-  /* width: fit-content; */
-  bottom: 55%;
-  right: 13%;
+  top: 55%;
+  left: 72%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
 }
 
 .address a:hover {
@@ -242,9 +274,10 @@ MAP SECTION
 
 .arrow-loc {
   position: absolute;
-  bottom: 56%;
-  right: 417px;
-  max-width: 100px;
+  top: 56%;
+  left: 56%;
+  transform: rotate(-12deg);
+  z-index: 2;
 }
 
 /* 
@@ -255,23 +288,23 @@ MEDIA QUERIES
 
 @media screen and (max-width: 1250px) {
   .contact-pic {
-    margin-bottom: 100px;
+    margin-bottom: 26px;
   }
 
-  .address {
-    right: 10%;
-  }
-
-  .arrow-loc {
-    bottom: 56%;
-    right: 364px;
-  }
+  /* .frame-inner {
+    top: 53%;
+  } */
 }
 
 @media screen and (max-width: 1200px) {
   .left-part {
     padding: 36px 28px;
   }
+
+  /* .frame-inner {
+    top: 61%;
+    width: 85%;
+  } */
 
   .info {
     padding: 17px 20px;
@@ -281,18 +314,18 @@ MEDIA QUERIES
   }
 
   .address {
-    padding: 19px 22px;
-    right: 8%;
+    padding: 19px 15px;
+    left: 70%;
   }
 
   .arrow-loc {
-    bottom: 55%;
-    right: 285px;
+    left: 58%;
+    top: 56%;
   }
 
   .address .small,
   .address a {
-    font-size: 19px;
+    font-size: 14px;
   }
 }
 
@@ -316,8 +349,9 @@ MEDIA QUERIES
 
   .address {
     padding: 10px 15px;
-    right: 7%;
-    bottom: 57%;
+    top: 53%;
+    left: 77%;
+    border-radius: 12px;
   }
 
   .address .small,
@@ -326,7 +360,8 @@ MEDIA QUERIES
   }
 
   .arrow-loc {
-    right: 200px;
+    left: 60%;
+    top: 57%;
   }
 }
 
@@ -358,7 +393,7 @@ MEDIA QUERIES
   }
 
   .arrow-loc {
-    right: 122px;
+    left: 63%;
   }
 
   .address .small,
@@ -367,8 +402,8 @@ MEDIA QUERIES
   }
 
   .address {
-    right: 6px;
-    bottom: 59%;
+    top: 54%;
+    left: 74%;
   }
 }
 
@@ -431,16 +466,16 @@ MEDIA QUERIES
   }
 
   .arrow-loc {
-    right: 149px;
-    top: 125px;
-    transform: rotate(170deg) !important;
+    left: 51%;
+    top: 67%;
+    transform: rotate(148deg) !important;
   }
 
   .address {
-    right: 242px;
-    bottom: 7%;
+    left: 52%;
+    top: 81%;
     padding: 4px 10px;
-    border-radius: 14px;
+    border-radius: 9px;
   }
 }
 
@@ -509,14 +544,14 @@ MEDIA QUERIES
   }
 
   .arrow-loc {
-    right: 121px;
-    top: 84px;
-    transform: rotate(193deg) !important;
+    top: 66%;
+    left: 49%;
+    transform: rotate(159deg) !important;
   }
 
   .address {
-    right: 213px;
-    bottom: 27%;
+    left: 47%;
+    top: 79%;
     padding: 3px 5px;
     border-radius: 7px;
   }
