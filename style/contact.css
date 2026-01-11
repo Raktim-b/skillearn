@@ -109,7 +109,8 @@ hr {
 
 .form-control:focus {
   box-shadow: none !important;
-  background-color: none !important;
+  background-color: var(--input-form) !important;
+  border: none !important;
 }
 
 .form-control::placeholder {
