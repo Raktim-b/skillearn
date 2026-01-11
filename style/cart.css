@@ -19,17 +19,19 @@ body {
 /* Cart Section */
 .cart-sec {
   padding: 60px 0 70px;
+   position: relative;
+  overflow-x: clip;
 }
-/* .card-eclipse-1 {
+.card-eclipse-1 {
   width: 500px;
   height: 500px;
   border-radius: 50%;
   background-color: #09787759;
   position: absolute;
-  top: -19px;
+  top: -240px;
   right: -52px;
-  filter: blur(150px);
-} */
+  filter: blur(250px);
+}
 .cart-hdr > .title4 {
   margin-block: 34px 14px;
 }
@@ -155,7 +157,84 @@ body {
   border-radius: 10px;
   border: 1px solid var(--secondary-color);
 }
+/* Maylike Section */
+.maylike-sec {
+  padding-bottom: 40px;
+  position: relative;
+}
+.cart-eclipse2{
+   width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: #09787759;
+  position: absolute;
+  top: -264px;
+  left: -193px;
+  filter: blur(250px);
+}
+.mayLike-design{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.maylike-hdr {
+  margin-bottom: 54px;
+}
+.cartSwiper {
+  padding: 0;
+}
+.cart-prev-btn > .swiper-button-prev,
+.cart-next-btn > .swiper-button-next {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--defult-color);
+  box-shadow: 0px 3px 10px 0px rgba(5, 0, 0, 0.5);
+}
 
+.cart-prev-btn,
+.cart-next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+}
+
+.cart-prev-btn {
+  left: 200px;
+}
+
+.cart-next-btn {
+  right: 200px;
+}
+
+.cart-next-btn svg,
+.cart-prev-btn svg {
+  width: 32px;
+  height: 37px;
+}
+@media screen and (max-width: 1700px) {
+  /* MayLike Section */
+  .cart-prev-btn {
+    left: 8px;
+  }
+
+  .cart-next-btn {
+    right: 8px;
+  }
+  .cart-prev-btn > .swiper-button-prev,
+  .cart-next-btn > .swiper-button-next {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .cart-next-btn svg,
+  .cart-prev-btn svg {
+    width: 22px;
+    height: 26px;
+  }
+}
 @media screen and (max-width: 1400px) {
   /* Cart Section */
   .checkout-btn {
@@ -163,6 +242,11 @@ body {
   }
   .checkout-btn svg {
     margin-left: 2px;
+  }
+  /* MayLike Section */
+  .cart-prev-btn,
+  .cart-next-btn {
+    display: none;
   }
 }
 @media screen and (max-width: 1200px) {
