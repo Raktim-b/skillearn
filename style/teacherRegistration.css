@@ -31,7 +31,7 @@
   background-color: #09787780;
   position: absolute;
 
-  filter: blur(250px);
+  filter: blur(200px);
 }
 .teacher-reg-eclipse-1 {
   top: 53px;
@@ -148,7 +148,7 @@
   padding: 4px 8px 4px 10px;
   background-color: #fff;
 }
-.reg-form input[type="password"] {
+.reg-form input[type="password"],.reg-form input[type="number"] {
   margin-bottom: 0;
   background: none;
   border: none;
@@ -213,7 +213,7 @@
   padding-block: 12px;
   font-size: 14px;
   background-color: #fff;
-  margin-top: 28px;
+  margin-top: 10px;
 }
 .back-btn > a {
   font-size: 12px;
@@ -327,7 +327,7 @@
   .reg-modal-left {
     border-radius: 8px;
     height: 675px;
-    padding: 12px;
+    padding: 12px 8px;
   }
   .reg-modal-left > h2,
   .reg-right > h2 {

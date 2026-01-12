@@ -1,3 +1,18 @@
+.lang-btn {
+  font-size: 14px;
+  background: none;
+
+  padding: 0;
+  border: none;
+}
+.lang-btn > img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+.lang-btn > span {
+  margin-left: -9px;
+}
 /* Register Section */
 .reg-sec {
   padding: 70px 0;
@@ -100,6 +115,9 @@
 }
 
 @media screen and (max-width: 1040px) {
+  .regm-right-wrpr > .lang-btn {
+    margin-top: -70px;
+  }
   .reg-wrpr {
     height: 785px;
     border-radius: 17px;
@@ -107,10 +125,24 @@
   }
 }
 @media screen and (max-width: 992px) {
+  .lang-btn {
+    font-size: 12px;
+  }
+  .lang-btn > img {
+    width: 35px;
+    height: 35px;
+  }
+  .lang-btn > span {
+    margin-left: -7px;
+  }
+  /* Registration Section */
   .reg-wrpr {
     height: 739px;
     border-radius: 17px;
     padding: 23px;
+  }
+  .regm-right-wrpr > .lang-btn {
+    margin-top: -25px;
   }
   .reg-cntn > p {
     margin-bottom: 22px;
@@ -156,6 +188,18 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .lang-btn {
+    font-size: 10px;
+  }
+  .lang-btn > img {
+    width: 25px;
+    height: 25px;
+  }
+  .lang-btn > span {
+    margin-left: -5px;
+  }
+
+  /* Registration Section */
   .reg-sec {
     padding: 50px 0;
   }
@@ -174,7 +218,7 @@
     line-height: 16px;
   }
   .reg-option-card {
-    padding: 10px 6px;
+    padding: 10px 12px;
     border-radius: 6px;
     height: 160px;
   }
@@ -207,16 +251,36 @@
 }
 
 @media screen and (max-width: 576px) {
+  .lang-btn {
+    font-size: 8px;
+  }
+  .lang-btn > img {
+    width: 20px;
+    height: 20px;
+  }
+  .lang-btn > span {
+    margin-left: -3px;
+  }
+  /* Registration Section */
   .reg-sec {
     padding: 30px 0;
   }
+  .regm-right-wrpr > .lang-btn {
+    margin-top: -10px;
+  }
   .reg-wrpr {
-    height: 1070px;
+    height: 1240px;
     padding: 14px;
   }
 
   .reg-img {
     margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .reg-wrpr {
+    height: 1100px;
+    padding: 14px;
   }
 }
 @media screen and (max-width: 400px) {
