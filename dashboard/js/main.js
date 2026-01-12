@@ -3,13 +3,19 @@ document.addEventListener("DOMContentLoaded", function () {
   // Sidebar Toggle
   // ===============================
   const navBar = document.querySelector(".left-sideNav");
-
+  const close = document.querySelector(".close-btn");
   window.hamberger = () => {
-    navBar.classList.add("open");
+    let isOpen = navBar.classList.add("open");
+
+    if (isOpen !== true) {
+      close.style.display = "block";
+    }
+    return isOpen;
   };
 
   window.clickClose = () => {
     navBar.classList.remove("open");
+    close.style.display = "none";
   };
 
   // ===============================
@@ -32,9 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const activeData = [2, 8, 5, 8, 6, 10, 9];
   const goalData = [5, 5, 6, 4, 5, 3, 4];
 
-  const remainingData = goalData.map((g, i) =>
-    Math.max(g - activeData[i], 0)
-  );
+  const remainingData = goalData.map((g, i) => Math.max(g - activeData[i], 0));
 
   new Chart(barCanvas, {
     type: "bar",
@@ -98,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const centerY = meta.data[0].y;
 
       // Correct angle for half gauge
-      const angle = (-Math.PI / 2) + (Math.PI * gaugeValue) / 100;
+      const angle = -Math.PI / 2 + (Math.PI * gaugeValue) / 100;
 
       ctx.save();
       ctx.translate(centerX, centerY);
