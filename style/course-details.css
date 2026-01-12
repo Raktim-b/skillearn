@@ -145,6 +145,21 @@ h3 {
   font-size: 18px;
   color: rgba(0, 0, 0, 0.7);
 }
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+.accordion-button:not(.collapsed) {
+  background: none !important;
+  box-shadow: none !important;
+}
+.accordion-body {
+  padding: 10px 10px 14px;
+  margin-top: 20px;
+}
+.accordion-body li {
+  color: #100f0f80;
+  margin-bottom: 20px;
+}
 .course-d-right {
   max-width: 521px;
   position: relative;
@@ -560,6 +575,10 @@ h3 {
   .course-d-topcard {
     margin-block: 0 20px;
   }
+  .accordion-body li {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
   .course-price {
     border-radius: 6px;
     padding-block: 9px;
@@ -606,8 +625,7 @@ h3 {
   /* Related Section */
   .rel-sec {
     padding: 50px 0 40px;
-   
-}
+  }
 }
 @media screen and (max-width: 576px) {
   /* Banner Section */
@@ -684,6 +702,10 @@ h3 {
     padding: 5px 6px 7px;
     font-size: 14px;
   }
+  .accordion-body li {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
   .course-d-right {
     margin: 20px auto;
   }
@@ -741,23 +763,28 @@ h3 {
   .pro-wrpr {
     margin-bottom: 10px;
   }
-  .progress {
-    width: 150px;
-  }
+     .progress {
+        width: 260px;
+    }
   .pro-wrpr span {
     margin-left: 10px;
     font-size: 12px;
   }
   /* Related Section */
-   .rel-sec {
+  .rel-sec {
     padding: 30px 0 20px;
-   
-}
-.rel-sec .title2 {
+  }
+  .rel-sec .title2 {
     margin-bottom: 25px;
-}
+  }
   .rel-sec .sec-top {
     font-size: 14px;
     margin-bottom: 6px;
+  }
 }
+
+@media screen and (max-width:400px) {
+      .progress {
+        width: 150px;
+    }
 }

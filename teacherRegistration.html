@@ -24,7 +24,8 @@
     <!-- Common Custom Css -->
     <link rel="stylesheet" href="./style/Index.css" />
     <link rel="stylesheet" href="./style/about.css" />
-    <link rel="stylesheet" href="./style/registration.css" />
+    <link rel="stylesheet" href="./style/register.css" />
+    <link rel="stylesheet" href="./style/teacherRegistration.css" />
   </head>
   <body class="">
     <!-- Header Section -->
@@ -60,10 +61,7 @@
             </button>
             <ul class="navbar-nav mx-auto">
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="./index.html"
+                <a class="nav-link" aria-current="page" href="./index.html"
                   >Home</a
                 >
               </li>
@@ -78,7 +76,9 @@
                 <a class="nav-link" href="quiz.html"> Quiz </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Contact</a>
+                <a class="nav-link" aria-current="page" href="contact.html"
+                  >Contact</a
+                >
               </li>
             </ul>
             <div class="nav-btn d-flex align-items-center ms-auto">
@@ -89,7 +89,7 @@
                 data-bs-target="#exampleModal"
                 >Sign In</a
               >
-              <a href="" class="btn-secondary">Register Now</a>
+              <a href="register.html" class="btn-secondary">Register Now</a>
             </div>
           </div>
         </div>
@@ -106,7 +106,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="reg-btm-img">
-            <img src="./assets/ModalPage/Reg-modal-img1.png" alt="" />
+            <img src="./assets/TeacherRegistration/Reg-modal-img1.png" alt="" />
           </div>
           <div class="row align-items-center flex-column-reverse flex-sm-row">
             <div class="col-12 col-sm-5">
@@ -115,10 +115,14 @@
               </div>
             </div>
             <div class="col-12 col-sm-7">
+               <button class="lang-btn d-flex align-items-center ms-auto">
+                  <img src="./assets/CommonAssets/Lang-img.png" alt="" />
+                  <span class="fw-medium">EN</span>
+                </button>
               <div class="modal-right">
                 <div class="modal-logo">
                   <a href=""
-                    ><img src="./assets/ModalPage/Logo.png" alt=""
+                    ><img src="./assets/TeacherRegistration/Logo.png" alt=""
                   /></a>
                 </div>
                 <div class="modal-hdr fw-medium">Let the Journey Begin!</div>
@@ -187,7 +191,7 @@
                 </form>
                 <div class="sign-up-op">
                   Don’t have an account?
-                  <a href="registration.html" class="fw-medium text-black"
+                  <a href="register.html" class="fw-medium text-black"
                     >Sign Up For Free</a
                   >
                 </div>
@@ -210,16 +214,20 @@
         <div class="teacher-reg-sec">
           <div class="teacher-reg-eclipse-1"></div>
           <div class="teacher-reg-eclipse-2"></div>
-          <div class="register-modal">
+        <div class="container">
+            <div class="register-modal">
             <div class="reg-btm-img">
-              <img src="./assets/ModalPage/Reg-modal-img1.png" alt="" />
+              <img
+                src="./assets/TeacherRegistration/Reg-modal-img1.png"
+                alt=""
+              />
             </div>
             <div class="row">
-              <div class="col-6">
+              <div class="col-12 col-sm-6">
                 <div class="reg-modal-left text-center">
                   <div class="reg-logo mx-auto">
                     <a href="index.html"
-                      ><img src="./assets/ModalPage/Logo.png" alt=""
+                      ><img src="./assets/TeacherRegistration/Logo.png" alt=""
                     /></a>
                   </div>
                   <h2 class="fw-semibold">Inspire the Next Generations</h2>
@@ -229,7 +237,7 @@
                     platform.
                   </p>
                   <div
-                    class="teacher-box d-flex flex-column flex-md-row align-items-center"
+                    class="teacher-box d-flex  align-items-center"
                   >
                     <ul class="d-flex p-0 m-0">
                       <li>
@@ -261,7 +269,11 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6">
+              <div class="col-12 col-sm-6">
+                <button class="lang-btn d-flex align-items-center ms-auto">
+                  <img src="./assets/CommonAssets/Lang-img.png" alt="" />
+                  <span class="fw-medium">EN</span>
+                </button>
                 <div class="reg-right mx-auto">
                   <h2 class="fw-semibold text-center">
                     Start Your Teaching Journey
@@ -346,7 +358,7 @@
                           <input
                             type="password"
                             name="pass"
-                            id=""
+                            id="pass"
                             placeholder="Enter a Password"
                           />
 
@@ -367,7 +379,7 @@
                         </div>
                       </div>
                       <div class="col-12">
-                        <label for="pass">Confirm Password</label>
+                        <label for="rpass">Confirm Password</label>
                         <div class="pass-wrpr align-items-center d-flex">
                           <button class="lock-btn">
                             <svg
@@ -387,7 +399,7 @@
                           <input
                             type="password"
                             name="pass"
-                            id=""
+                            id="rpass"
                             placeholder="Retype Password"
                           />
 
@@ -430,7 +442,7 @@
                     </div>
                   </form>
                   <div class="back-btn">
-                    <a href="" class="fw-light">
+                    <a href="register.html" class="fw-light">
                       <svg
                         width="12"
                         height="10"
@@ -451,6 +463,7 @@
             </div>
           </div>
         </div>
+        </div>
       </section>
     </main>
     <footer class="ftr-sec">
@@ -459,7 +472,9 @@
           <div class="row align-items-center">
             <div class="col-12 col-md-6">
               <div class="ftr-logo">
-                <img src="" alt="" />
+                <a href=""
+                  ><img src="./assets/CommonAssets/Ftr-logo.png" alt=""
+                /></a>
               </div>
             </div>
             <div class="col-12 col-md-6">
@@ -470,7 +485,7 @@
                   >
                     <input
                       type="email"
-                      title4=""
+                      name=""
                       id=""
                       placeholder="Your email address"
                     />
