@@ -204,7 +204,7 @@
     padding: 50px 0;
   }
   .reg-wrpr {
-    height: 565px;
+    height: 566px;
     border-radius: 15px;
     padding: 20px;
   }
@@ -251,16 +251,7 @@
 }
 
 @media screen and (max-width: 576px) {
-  .lang-btn {
-    font-size: 8px;
-  }
-  .lang-btn > img {
-    width: 20px;
-    height: 20px;
-  }
-  .lang-btn > span {
-    margin-left: -3px;
-  }
+
   /* Registration Section */
   .reg-sec {
     padding: 30px 0;
