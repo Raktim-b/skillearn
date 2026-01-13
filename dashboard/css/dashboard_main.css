@@ -303,6 +303,7 @@ Dashboard Left Side Content Section
     overflow-y: auto;
     padding: 40px 10px;
     max-width: 300px;
+    min-height: 1440px;
     width: 100%;
     border-radius: 20px;
     overflow-x: hidden;
@@ -458,6 +459,7 @@ Content Section
 
 .box-6 {
     grid-column: span 3;
+    height: 255px;
 }
 
 .box-7 {
@@ -554,7 +556,7 @@ Content Section
 }
 
 .common-box canvas {
-    height: 300px !important;
+    /* height: 300px !important; */
     width: 100% !important;
 }
 
@@ -566,7 +568,7 @@ Content Section
 
 .box-5 {
     position: relative;
-    min-height: 350px;
+    height: 725px;
 
 }
 
@@ -575,10 +577,13 @@ Content Section
     top: 2%;
     right: 1%;
 }
-
+.bar-chart{
+    margin-top: 90px;
+}
 .common-box canvas:not(#gaugeChart) {
-    height: 300px !important;
+    /* height: 300px !important; */
     width: 100% !important;
+    
 }
 
 .gauge-wrapper {
