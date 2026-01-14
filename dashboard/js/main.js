@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", ()=> {
   // ===============================
   // Sidebar Toggle
   // ===============================
@@ -161,4 +161,8 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     plugins: [gaugeNeedlePlugin],
   });
+ 
+ 
 });
+
+
