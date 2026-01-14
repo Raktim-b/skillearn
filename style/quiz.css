@@ -65,10 +65,30 @@ button {
 Banner Section
 ===================
 */
-.quizBnr-wrpr {
-  background: url(../assets/QuizPage/bnr-bg.png) no-repeat center/cover;
-  overflow: hidden;
+
+.hdr-sec {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+
+.nav-link {
+  color: var(--defult-color);
+}
+
+.quiz-sec {
+  background: url(../assets/QuizPage/quizBg5.jpg) no-repeat center/cover;
+  height: 100vh;
   padding: 140px 0 60px;
+  display: flex;
+}
+
+.quizBnr-wrpr {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
 }
 
 .quiz-cntn {
