@@ -25,3 +25,149 @@
     --p-16px: clamp(1rem, 0.95rem + 0.4vw, 1.143rem);
 
 }
+
+/* Button Section */
+
+.filter-btn {
+    padding: 11px;
+    background: var(--default-color);
+    border-radius: 20px;
+    font-size: var(--p-16px);
+}
+
+/* Course Card Section */
+.student-box {
+    background: rgba(255, 255, 255, 0.3);
+    margin-top: 24px;
+}
+
+.filter-list {
+    margin-bottom: 20px;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+}
+
+.course-card {
+    max-width: 486px;
+    height: 456px;
+    position: relative;
+    border-radius: 20px;
+
+}
+
+.course-1 {
+    background: url(/assets/dashboard-course/card1.png) no-repeat center/cover;
+}
+
+.course-2 {
+    background: url(/assets/dashboard-course/card2.png) no-repeat center/cover;
+}
+
+.course-3 {
+    background: url(/assets/dashboard-course/card3.png) no-repeat center/cover;
+}
+
+.course-4 {
+    background: url(/assets/dashboard-course/card4.png) no-repeat center/cover;
+}
+
+.course-5 {
+    background: url(/assets/dashboard-course/card5.png) no-repeat center/cover;
+}
+
+.course-6 {
+    background: url(/assets/dashboard-course/card6.png) no-repeat center/cover;
+}
+
+.courseCard-cntn {
+    background: var(--default-color);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 18px 17px;
+    border-radius: 20px;
+}
+
+.card-hdr p {
+    font-size: var(--p-20px);
+    font-weight: bold;
+    color: #B20606;
+}
+
+.courseCard-cntn>.progress-list {
+    margin: 20px 0;
+}
+
+.card-bottom>.mentor-img {
+    max-width: 30px;
+}
+
+.card-bottom>p {
+    font-size: var(--p-16px);
+}
+
+.course-swiper {
+    margin-top: 20px;
+}
+
+.mySwiper {
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
+
+}
+
+.slideImg {
+    
+    margin: 0 auto;
+    height: 180px;
+
+}
+
+/* Responsive Section */
+
+
+@media screen and (max-width:1200px) {
+
+    .course-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .course-card {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+@media screen and (max-width:576px) {
+    .filter-btn {
+        padding: 7px;
+    }
+
+    .courseCard-cntn {
+        padding: 18px 10px;
+    }
+
+    .courseCard-cntn>.progress-list {
+        justify-content: center !important;
+        flex-wrap: wrap;
+        margin: 8px 0;
+    }
+
+    .progress-timing :last-child {
+        margin-top: 10px;
+    }
+
+
+}
