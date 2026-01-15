@@ -67,8 +67,8 @@ Banner Section
 */
 
 .hdr-sec {
-  position: absolute;
-  width: 100%;
+  /* position: absolute; */
+  /* width: 100%; */
   top: 0;
 }
 
