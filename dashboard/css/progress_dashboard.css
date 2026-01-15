@@ -1,0 +1,322 @@
+:root {
+  --body-bg: radial-gradient(
+    circle at bottom left,
+    rgba(8, 17, 155, 1) 0%,
+    rgba(8, 17, 155, 1) 10%,
+    rgba(108, 205, 191, 0.58) 60%,
+    rgba(108, 205, 191, 0.58) 100%
+  );
+  --primary-color: #100f0f;
+  --secondary-color: #097877;
+  --tertiary-color: #d9d9d9;
+  --default-color: #ffffff;
+  --roboto: "Roboto", sans-serif;
+  --h1-40px: clamp(1.5rem, 2vw, 2.857rem);
+  --h2-24px: clamp(1.2rem, 2.8vw, 1.714rem);
+  --h3-20px: clamp(1rem, 1.5vw, 1.429rem);
+  --p-20px: clamp(1rem, 0.95rem + 0.6vw, 1.429rem);
+  --p-18px: clamp(1rem, 0.95rem + 0.6vw, 1.286rem);
+  --p-16px: clamp(1rem, 0.95rem + 0.4vw, 1.143rem);
+}
+
+.col60 {
+  width: 60%;
+  padding: 0 15px;
+}
+.col40 {
+  width: 40%;
+  padding: 0 15px;
+}
+/* Common Classes */
+.pro-box {
+  width: 100%;
+  background-color: var(--default-color);
+  border-radius: 15px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.title3 > span {
+  margin-left: 392px;
+}
+.bg-success {
+  border-radius: 20px !important;
+  background-color: #089082 !important;
+}
+.progress,
+.progress-stacked {
+  height: 20px !important;
+  border-radius: 20px !important;
+}
+/* Goal Box */
+.goal-box {
+  padding: 29px 26px 24px;
+  margin-block: 27px;
+}
+.goal-box > .pro-box-top {
+  margin-bottom: 60px;
+}
+
+/* Course Box */
+.course-box > .pro-box-top {
+  padding: 20px 28px;
+  border-bottom: 1px solid var(--primary-color);
+}
+.course-box > .pro-box-btm {
+  padding: 27px 23px 42px 28px;
+}
+.pro-course-img {
+  max-width: 289px;
+}
+.pro-course-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pro-course-card > .title2 {
+  margin-block: 20px 27px;
+}
+.course-pro-amount {
+  font-size: 32px;
+  color: var(--primary-color);
+  margin-bottom: 14px;
+}
+.course-pro-amount > span {
+  font-size: 20px;
+  margin-left: 10px;
+}
+/* Skill Box */
+.skill-box {
+  padding: 26px;
+  margin-block: 27px;
+}
+
+.skill-box-wrpr {
+  padding: 11px 8.07px 11px 17.14px;
+  border-radius: 15px;
+  background-color: var(--secondary-color);
+  margin-block: 22px 26px;
+}
+.box-wrpr-left > .title3 {
+  color: var(--default-color);
+  margin-bottom: 34px;
+}
+.box-wrpr-left .bg-success {
+  border-radius: 20px !important;
+  background-color: #08908280 !important;
+}
+.box-wrpr-left .progress,
+.progress-stacked {
+  width: 539.49px;
+}
+.box-wrpr-right {
+  width: 173.44px;
+  height: 100%;
+  background-color: var(--default-color);
+  border-top-right-radius: 15px;
+  padding: 16px 27px 21px;
+  border-bottom-right-radius: 15px;
+}
+.box-wrpr-right .course-pro-amount {
+  margin-bottom: 0;
+}
+.box-wrpr-right span {
+  font-size: 24px;
+  margin-left: 0;
+}
+.skill-name {
+  font-size: 24px;
+  color: var(--primary-color);
+}
+.skill-name svg {
+  margin-right: 10px;
+}
+.skill-box-btm .progress,
+.progress-stacked {
+  width: 364px !important;
+  margin-inline: 40px 30px;
+}
+.skill-box-btm p {
+  font-size: 20px;
+}
+/* Lesson Box */
+.lessons-box > .pro-box-top {
+  padding: 29px 22px 12px;
+  border-bottom: 1px solid var(--primary-color);
+}
+.lessons-box .pro-box-btm {
+  padding: 31px 22px;
+}
+.lessons-box .pro-box-btm li {
+  font-size: 24px;
+  color: var(--primary-color);
+  margin-bottom: 27px;
+}
+.lessons-box .pro-box-btm svg {
+  margin-right: 16px;
+}
+
+/* Activity Box */
+.activity-box > .pro-box-top {
+  padding: 22px 22px 12px;
+}
+.activity-box li {
+  font-size: 20px;
+}
+.activity-box li > span {
+  font-size: 20px;
+  font-weight: normal;
+}
+/* Total Box */
+.total-box {
+  padding: 24px 23px;
+  margin-block: 27px;
+}
+.total-box > .pro-box-top {
+  margin-bottom: 52px;
+}
+
+/* Learning Box */
+.learning-box {
+  padding: 24px 0 50px;
+}
+.learning-box > .pro-box-top {
+  padding-inline: 28px;
+}
+.learning-box > .pro-box-top {
+  margin-bottom: 20px;
+}
+.learning-box-mid {
+  padding: 28px 0 16px;
+  border-block: 1px solid var(--primary-color);
+}
+
+.progress-ring {
+  width: 505px;
+  height: 505px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background: conic-gradient(
+    from 205deg,
+    #097877 16deg 246deg,
+    #d9d9d9 129deg 247deg
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-inner {
+  width: 370px;
+  height: 370px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.learning-percent {
+  font-size: 64px;
+  margin: 0;
+  color: #000;
+}
+
+.progress-inner span {
+  width: 180px;
+  height: 4px;
+  background: var(--secondary-color);
+  margin-top: 34px;
+  border-radius: 2px;
+}
+
+.learning-box-mid p {
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.learning-box-end {
+  padding: 50px 60px 0 26px;
+}
+.progress-bar-wrpr {
+  margin-bottom: 35px;
+}
+.progress-bar-wrpr .title2 {
+  margin-bottom: 18px;
+}
+.progress-bar-wrpr .progress,
+.progress-stacked {
+  width: 415px;
+}
+.progress-bar-value span {
+  margin-left: 24px;
+}
+.bg-info {
+  border-radius: 20px;
+  background-color: #8a38f5 !important;
+}
+.bg-warning {
+  border-radius: 20px;
+  background-color: #fe7e0f;
+}
+
+@media screen and (max-width: 1800px) {
+  .left-sideNav {
+    min-height: 1396px;
+  }
+  /*Skill Box  */
+  .skill-box-btm .progress,
+  .progress-stacked {
+    width: 282px !important;
+    margin-inline: 5px 6px;
+  }
+  /* Lesson Box */
+  .lessons-box .pro-box-btm {
+    padding: 31px 11px;
+  }
+  .lessons-box .pro-box-btm svg {
+    margin-right: 3px;
+  }
+  /* Learning Box */
+  .learning-box {
+    padding: 24px 0 35px;
+  }
+  .progress-bar-wrpr {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  /* Skill Progress */
+  .box-wrpr-left .progress,
+  .progress-stacked {
+    width: 400px;
+  }
+  .skill-box-btm .progress,
+  .progress-stacked {
+    width: 200px !important;
+    margin-inline: 5px 6px;
+  }
+  /* Lesson Box */
+  .lessons-box .pro-box-btm li {
+    font-size: 20px;
+    color: var(--primary-color);
+    margin-bottom: 27px;
+  }
+  /* Activity Box */
+  .activity-box > .pro-box-top {
+    padding: 18px 22px 12px;
+  }
+  .activity-box li > span {
+    font-size: 17px;
+    font-weight: normal;
+  }
+  /* Learning Box */
+  .progress-ring {
+    width: 400px;
+    height: 400px;
+  }
+  .progress-inner {
+    width: 325px;
+    height: 325px;
+  }
+}
