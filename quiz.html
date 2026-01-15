@@ -34,7 +34,7 @@
         <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <i class="fa-solid fa-bars"></i>
         </button>
         <div class="offcanvas offcanvas-end align-items-center" id="navbarSupportedContent">
           <button class="offcanvas-header me-auto" data-bs-dismiss="offcanvas" aria-label="Close">
@@ -164,7 +164,16 @@
                   </svg> </span></a>
             </div>
           </div>
+          <div class="breadcrumb-box">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Quiz</li>
+              </ol>
+            </nav>
+          </div>
         </div>
+
       </div>
     </section>
     <!-- Popular Section -->
@@ -432,16 +441,19 @@
             <label for="range4" class="form-label">Keep growing. You are doing well!</label>
           </div>
           <div class="progress-level">
-            <output for="range4" id="rangeValue" aria-hidden="true"></output>
+            50%
           </div>
         </div>
-        <div class="progess-input">
-          <input type="range" class="form-range" min="0" max="100" value="50" id="range4" />
+        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0"
+          aria-valuemax="100">
+          <div class="progress-bar" style="width: 50%"></div>
         </div>
         <div class="cmplt">
           <p>3 of 6 Quizzes complete</p>
         </div>
+
       </div>
+
     </section>
 
     <!-- Achievement Section -->
