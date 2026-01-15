@@ -67,18 +67,18 @@ Banner Section
 */
 
 .hdr-sec {
-  position: absolute;
-  width: 100%;
+  /* position: absolute; */
+  /* width: 100%; */
   top: 0;
 }
 
 
 .nav-link {
-  color: var(--defult-color);
+  /* color: var(--defult-color); */
 }
 
 .quiz-sec {
-  background: url(../assets/QuizPage/quizBg5.jpg) no-repeat center/cover;
+  background: url(../assets/QuizPage/quizBg7.jpg) no-repeat center/cover;
   height: 100vh;
   padding: 140px 0 60px;
   display: flex;
