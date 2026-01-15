@@ -1,14 +1,17 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", ()=> {
   // ===============================
   // Sidebar Toggle
   // ===============================
   const navBar = document.querySelector(".left-sideNav");
   const close = document.querySelector(".close-btn");
+  const menu = document.querySelector(".menu-btn");
+
   window.hamberger = () => {
     let isOpen = navBar.classList.add("open");
 
     if (isOpen !== true) {
       close.style.display = "block";
+      menu.style.display = "none";
     }
     return isOpen;
   };
@@ -16,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.clickClose = () => {
     navBar.classList.remove("open");
     close.style.display = "none";
+    menu.style.display = "block";
   };
 
   // ===============================
@@ -157,4 +161,8 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     plugins: [gaugeNeedlePlugin],
   });
+ 
+ 
 });
+
+
