@@ -485,7 +485,7 @@
     cursor: pointer;
     z-index: 1200;
 
-    transition: transform 0.2s ease, background 0.2s ease;
+    transition: all 0.2s ease, background 0.2s ease;
   }
 
   .panel-close-btn i {
@@ -522,10 +522,7 @@
 }
 
 @media screen and (max-width: 576px) {
-  .col-4,
-  .col-12 {
-    padding: 0 8px;
-  }
+
   .live-cntn-wrpr {
     padding: 10px 16px;
   }
@@ -584,7 +581,7 @@
     height: 17px;
   }
   .control-card li {
-    margin-right: 23px;
+    margin-right: 20px;
   }
   .control-card > ul span {
     margin-top: 6px;
