@@ -4,7 +4,7 @@ body {
   overflow-x: hidden;
 }
 
-/* .polygon1 {
+.polygon1 {
   width: 685.73px;
   height: 714px;
   position: absolute;
@@ -15,7 +15,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-} */
+}
 /* Cart Section */
 .cart-sec {
   padding: 60px 0 70px;
