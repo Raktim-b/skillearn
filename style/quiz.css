@@ -67,8 +67,8 @@ Banner Section
 */
 
 .hdr-sec {
-  /* position: absolute; */
-  /* width: 100%; */
+  position: absolute;
+  width: 100%;
   top: 0;
 }
 
@@ -100,8 +100,8 @@ Banner Section
 
 .quiz-sec {
   background:
-    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../assets/QuizPage/quizBg1.jpg) no-repeat center/cover;
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../assets/QuizPage/quizBg7.jpg) no-repeat center/cover;
   height: 100vh;
   padding: 140px 0 0px;
   display: flex;

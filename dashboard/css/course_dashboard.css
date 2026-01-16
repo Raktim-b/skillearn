@@ -18,6 +18,10 @@
 
 }
 
+body {
+    color: var(--primary-color);
+}
+
 /* Button Section */
 
 .filter-btn {
@@ -113,7 +117,7 @@
 }
 
 .slideImg {
-    
+
     margin: 0 auto;
     height: 180px;
 
