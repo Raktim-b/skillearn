@@ -503,6 +503,7 @@
   }
 
   .chat-box {
+    min-height: 100vh;
     display: none;
   }
 
@@ -522,7 +523,6 @@
 }
 
 @media screen and (max-width: 576px) {
-
   .live-cntn-wrpr {
     padding: 10px 16px;
   }
