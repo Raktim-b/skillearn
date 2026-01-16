@@ -226,7 +226,7 @@ ul {
 .hdr-sec {
   padding: 32px 0 8px;
   position: relative;
-  
+  z-index: 11;
 }
 
 .navbar {
@@ -2804,9 +2804,11 @@ select:focus {
     bottom: 31px;
     left: 13px;
   }
-
+  .ftr-img-wrpr {
+    display: none;
+  }
   .copyright {
-    margin: 10px auto;
+    margin: 10px 0 20px;
   }
 }
 
@@ -3360,7 +3362,7 @@ select:focus {
   }
 
   .ftr-btm-top {
-    padding: 20px 0 30px;
+    padding: 20px 0 10px;
   }
 
   .list-hdr {
