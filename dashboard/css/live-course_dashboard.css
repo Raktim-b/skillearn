@@ -1,0 +1,614 @@
+:root {
+  --body-bg: radial-gradient(
+    circle at bottom left,
+    rgba(8, 17, 155, 1) 0%,
+    rgba(8, 17, 155, 1) 10%,
+    rgba(108, 205, 191, 0.58) 60%,
+    rgba(108, 205, 191, 0.58) 100%
+  );
+  --primary-color: #100f0f;
+  --secondary-color: #097877;
+  --tertiary-color: #d9d9d9;
+  --default-color: #ffffff;
+  --roboto: "Roboto", sans-serif;
+  --h1-40px: clamp(1.5rem, 2vw, 2.857rem);
+  --h2-24px: clamp(1.2rem, 2.8vw, 1.714rem);
+  --h3-20px: clamp(1rem, 1.5vw, 1.429rem);
+  --p-20px: clamp(1rem, 0.95rem + 0.6vw, 1.429rem);
+  --p-18px: clamp(1rem, 0.95rem + 0.6vw, 1.286rem);
+  --p-16px: clamp(1rem, 0.95rem + 0.4vw, 1.143rem);
+}
+.col70 {
+  width: 72%;
+  padding: 0 9px;
+}
+.col30 {
+  width: 28%;
+  padding: 0 9px;
+}
+.toggle-btns-wrpr {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  width: 90px;
+  background: var(--default-color);
+  border-radius: 10px;
+  padding-block: 8px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
+}
+.toggle-btns-wrpr button:first-child {
+  margin-right: 5px;
+}
+.live-cntn-wrpr {
+  width: 100%;
+  background-color: #ffffff80;
+  padding: 18px 19px 18px 22px;
+  border-radius: 20px;
+  margin-top: 18px;
+}
+.live-course-card {
+  width: 100%;
+  border-radius: 20px;
+}
+.live-course-img {
+  position: relative;
+  border-radius: 20px;
+  width: 100%;
+}
+.live-course-img > img {
+  width: 100%;
+  border-radius: 20px;
+  height: 100%;
+  object-fit: cover;
+}
+.live-controlls {
+  border-radius: 10px;
+  background-color: var(--default-color);
+}
+.live-controlls li {
+  margin-right: 30px;
+}
+.live-controlls li:last-child {
+  margin-right: 0;
+}
+.chat-box {
+  background-color: var(--default-color);
+  border-radius: 20px;
+}
+.chat-hdr {
+  font-size: 32px;
+  color: var(--primary-color);
+  margin-bottom: 18px;
+}
+.grey-box {
+  padding: 14px;
+  border-radius: 10px;
+  background-color: var(--tertiary-color);
+  margin-bottom: 18px;
+}
+.grey-box-left > img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  object-fit: cover;
+}
+/* Live-course-card 1*/
+.live-course1 {
+  margin-bottom: 18px;
+}
+.live-course1 > .live-course-img {
+  height: 778px;
+}
+.bigger-controlls {
+  width: 368px;
+  padding: 15px 36px;
+  position: absolute;
+  bottom: 37px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Live-course-card 2 */
+.live-course2 > .live-course-img {
+  height: 302px;
+}
+.smaller-controlls {
+  padding: 9px 35px 6px 46px;
+  width: 290px;
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* Control-card */
+
+.control-card {
+  margin-top: 19px;
+  background-color: var(--default-color);
+  padding: 28px 50px 22px 24px;
+}
+.control-card li {
+  margin-right: 100px;
+}
+.control-card li:last-child {
+  margin-right: 0;
+}
+.control-card > ul span {
+  margin-top: 23px;
+}
+.control-card ul li:last-child span {
+  margin-top: 41px;
+}
+
+/* Participated Box */
+.panel-close-btn {
+  display: none;
+}
+.participated-box {
+  padding: 18px 18px 23px;
+  margin-bottom: 18px;
+}
+.video-btn {
+  margin-left: 10px;
+}
+
+/* Live Box */
+.live-box {
+  margin-bottom: 0;
+  padding: 18px 16px 7px 18px;
+}
+.img-name {
+  font-size: 18px;
+}
+.img-cntn p {
+  color: var(--primary-color);
+}
+.grey-card-right > p {
+  color: var(--primary-color);
+}
+.grey-card-right > span {
+  width: 25px;
+  height: 25px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  margin-top: 1px;
+}
+.chat-input-wrpr {
+  width: 100%;
+  padding: 5px 17px 6px 14px;
+  border-radius: 10px;
+  background-color: var(--tertiary-color);
+  margin-top: 11px;
+}
+.chat-input-wrpr > input {
+  background: none;
+  width: 85%;
+  border: none;
+}
+.chat-input-wrpr > input:focus {
+  box-shadow: none;
+  outline: none;
+}
+@media screen and (max-width: 1800px) {
+  .left-sideNav {
+    min-height: 1440px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .live-controlls li {
+    margin-right: 20px;
+  }
+  .smaller-controlls {
+    width: 230px;
+  }
+  /* Controll Box */
+  .control-card {
+    padding: 22px 50px 17px 24px;
+  }
+  .control-card li {
+    margin-right: 70px;
+  }
+  /* Participate Box */
+  .chat-hdr {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .live-cntn-wrpr {
+    padding: 12px 14px 0px 14px;
+    border-radius: 12px;
+  }
+  .live-course-img > img {
+    border-radius: 12px;
+  }
+  .chat-hdr {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .chat-box {
+    background-color: var(--default-color);
+    border-radius: 12px;
+  }
+  .live-course-card {
+    border-radius: 12px;
+  }
+  .grey-box {
+    padding: 6px 8px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+  }
+  .title3 {
+    font-size: 14px;
+  }
+  .grey-box-left > img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    object-fit: cover;
+  }
+  /* Live Course 1 */
+
+  .live-course1 > .live-course-img {
+    height: 515px;
+    border-radius: 12px;
+  }
+  .bigger-controlls {
+    width: 320px;
+    padding: 14px 31px;
+  }
+  .bigger-controlls svg {
+    width: 40px;
+    height: 40px;
+  }
+  /* Live Course 2 */
+  .live-course2 > .live-course-img {
+    height: 210px;
+    border-radius: 12px;
+  }
+  .smaller-controlls {
+    padding: 7px 26px 6px 36px;
+    width: 150px;
+    border-radius: 8px;
+  }
+  .smaller-controlls svg {
+    width: 24px;
+    height: 18px;
+  }
+  .smaller-controlls li {
+    margin-right: 10px;
+  }
+  /* Control Card */
+  .control-card svg {
+    width: 35px;
+    height: 35px;
+  }
+  .control-card li {
+    margin-right: 47px;
+  }
+  .control-card > ul span {
+    margin-top: 16px;
+  }
+  .control-card ul li:last-child span {
+    margin-top: 17px;
+  }
+  /* Participate Box */
+  .participated-box {
+    padding: 11px 10px 15px;
+    margin-bottom: 15px;
+  }
+  .grey-box svg {
+    width: 16px;
+    height: 16px;
+  }
+  .video-btn {
+    margin-left: 5px;
+  }
+  /* Live Box */
+  .img-name {
+    font-size: 14px;
+  }
+  .img-cntn p {
+    font-size: 12px;
+  }
+  .grey-card-right > p {
+    font-size: 12px;
+  }
+  .grey-card-right > span {
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+  }
+  .chat-input-wrpr {
+    margin-top: 8px;
+  }
+  .chat-input-wrpr > input {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .col70,
+  .col30 {
+    padding: 0 7px;
+  }
+  .chat-hdr {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .grey-box-left > img {
+    width: 30px;
+    height: 30px;
+    margin-right: 6px;
+  }
+  /* Live Course 1 */
+  .live-course1 > .live-course-img {
+    height: 470px;
+    border-radius: 12px;
+  }
+  .bigger-controlls {
+    width: 222px;
+    bottom: 25px;
+    padding: 9px 11px;
+  }
+  /* Live Course 2 */
+  .live-course2 > .live-course-img {
+    height: 183px;
+    border-radius: 12px;
+  }
+  .smaller-controlls li {
+    margin-right: 7px;
+  }
+  .smaller-controlls {
+    padding: 3px 17px 3px 18px;
+    width: 121px;
+    bottom: 14px;
+    border-radius: 8px;
+  }
+  .smaller-controlls svg {
+    width: 18px;
+    height: 14px;
+  }
+
+  .bigger-controlls svg {
+    width: 30px;
+    height: 30px;
+  }
+  /* Controll Box */
+  .control-card {
+    padding: 15px 20px 13px 16px;
+  }
+  .control-card svg {
+    width: 22px;
+    height: 25px;
+  }
+  .control-card li {
+    margin-right: 35px;
+  }
+  .control-card > ul span {
+    margin-top: 8px;
+    font-size: 14px;
+  }
+  .control-card ul li:last-child span {
+    margin-top: 9px;
+  }
+  /* Partcipate Box */
+  .participated-box {
+    padding: 10px 8px 10px;
+    margin-bottom: 15px;
+  }
+  /* Live Box */
+  .grey-card-right > p {
+    font-size: 10px;
+  }
+  .grey-card-right > span {
+    width: 14px;
+    height: 14px;
+    font-size: 10px;
+  }
+  .chat-input-wrpr {
+    width: 100%;
+    padding: 3px 9px 4px 10px;
+    border-radius: 7px;
+  }
+  .chat-input-wrpr > input {
+    width: 75%;
+  }
+  .chat-input-wrpr > input::placeholder {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .col70 {
+    width: 100%;
+  }
+  .toggle-btns-wrpr {
+    display: block;
+  }
+  .chat-hdr {
+    font-size: 16px;
+    margin-bottom: 35px;
+  }
+  .grey-box {
+    padding: 6px 8px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+  }
+  .live-cntn-wrpr {
+    padding: 14px;
+  }
+  .live-course1 {
+    margin-bottom: 14px;
+  }
+  .control-card {
+    margin-top: 14px;
+  }
+  /* Participate Box */
+  .live-dashboard-right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 85%;
+    max-width: 360px;
+    height: 100vh;
+    background: #fff;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: all 0.35s ease-in-out;
+    box-shadow: -6px 0 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .live-dashboard-right.active {
+    transform: translateX(0);
+  }
+
+  .panel-close-btn {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+    border: none;
+    background: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    z-index: 1200;
+
+    transition: all 0.2s ease, background 0.2s ease;
+  }
+
+  .panel-close-btn i {
+    font-size: 18px;
+    color: #100f0f;
+  }
+
+  .panel-close-btn:hover {
+    background: #f2f2f2;
+    transform: scale(1.05);
+  }
+
+  .panel-close-btn:active {
+    transform: scale(0.92);
+  }
+
+  .chat-box {
+    min-height: 100vh;
+    display: none;
+  }
+
+  .chat-box.active {
+    display: block;
+  }
+  .chat-input-wrpr > input {
+    width: 85%;
+  }
+  .participated-box {
+    padding: 30px 12px 10px;
+    margin-bottom: 15px;
+  }
+  .chat-input-wrpr {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .live-cntn-wrpr {
+    padding: 10px 16px;
+  }
+  /* Live Course 1 */
+  .live-course1 {
+    margin-bottom: 10px;
+  }
+  .live-course1 > .live-course-img {
+    height: 450px;
+    border-radius: 8px;
+  }
+  .bigger-controlls {
+    width: 170px;
+    bottom: 21px;
+    padding: 7px 9px;
+    border-radius: 6px;
+  }
+  .live-controlls li {
+    margin-right: 14px;
+  }
+
+  .bigger-controlls svg {
+    width: 25px;
+    height: 25px;
+  }
+  /* Live Course 2 */
+  .live-course2 > .live-course-img {
+    height: 150px;
+    border-radius: 8px;
+  }
+  .smaller-controlls {
+    padding: 1px 13px 1px 15px;
+    width: 90px;
+    bottom: 9px;
+    border-radius: 6px;
+  }
+  .smaller-controlls svg {
+    width: 14px;
+    height: 12px;
+  }
+  .smaller-controlls li {
+    margin-right: 5px;
+  }
+  .live-course-3 {
+    max-width: 190px;
+    margin: 10px auto 0;
+  }
+
+  /* Controlls Card */
+  .control-card {
+    margin-top: 10px;
+    padding: 8px 14px 9px 11px;
+  }
+  .control-card svg {
+    width: 20px;
+    height: 17px;
+  }
+  .control-card li {
+    margin-right: 20px;
+  }
+  .control-card > ul span {
+    margin-top: 6px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .toggle-btns-wrpr {
+    bottom: 14px;
+    right: 14px;
+  }
+  /* Control Card */
+  .control-card {
+    margin-top: 10px;
+    padding: 6px 8px;
+    border-radius: 6px;
+  }
+  .control-card svg {
+    width: 15px;
+    height: 14px;
+  }
+  .control-card > ul span {
+    margin-top: 4px;
+    font-size: 10px;
+  }
+  .control-card li {
+    margin-right: 8px;
+  }
+}
