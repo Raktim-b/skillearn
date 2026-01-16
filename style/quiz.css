@@ -67,21 +67,46 @@ Banner Section
 */
 
 .hdr-sec {
-  /* position: absolute; */
-  /* width: 100%; */
+  position: absolute;
+  width: 100%;
   top: 0;
 }
 
 
 .nav-link {
-  /* color: var(--defult-color); */
+  color: var(--defult-color);
+
+  &:hover {
+    color: var(--defult-color);
+
+  }
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: var(--defult-color);
+
+}
+
+.active::after {
+  background: var(--defult-color);
+
+}
+
+.nav-link::before {
+  background: var(--defult-color);
+
 }
 
 .quiz-sec {
-  background: url(../assets/QuizPage/quizBg7.jpg) no-repeat center/cover;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../assets/QuizPage/quizBg7.jpg) no-repeat center/cover;
   height: 100vh;
-  padding: 140px 0 60px;
+  padding: 140px 0 0px;
   display: flex;
+  background-attachment: fixed;
+
 }
 
 .quizBnr-wrpr {
@@ -89,6 +114,7 @@ Banner Section
   align-items: center;
   overflow: hidden;
   width: 100%;
+  position: relative;
 }
 
 .quiz-cntn {
@@ -96,12 +122,12 @@ Banner Section
 }
 
 .quiz-title1 {
-  color: var(--secondary-color);
+  color: var(--defult-color);
   font-size: var(--size-48px);
 }
 
 .quiz-cntn>p {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.8);
   font-size: var(--size-24px-p);
   margin-top: 10px;
 
@@ -111,6 +137,36 @@ Banner Section
 .quiz-btnBox {
   margin-top: 40px;
 }
+
+.offcanvas-header {
+  color: var(--defult-color);
+
+}
+
+.navbar-toggler {
+  color: var(--defult-color);
+  font-size: 1.5rem;
+}
+
+.breadcrumb-box {
+  position: absolute;
+  bottom: 2%;
+  right: 50%;
+  transform: translate(50%, 50%);
+}
+
+.breadcrumb-item,
+.breadcrumb-item a {
+  color: rgba(255, 255, 255, 0.5) !important;
+  font-size: 1.5rem;
+  font-weight: 400 !important;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  color: rgba(255, 255, 255, 0.5) !important;
+  float: none;
+}
+
 
 /* 
 =================
@@ -286,7 +342,7 @@ Progress Bar Section
   color: rgba(31, 30, 30, 0.6);
 }
 
-#rangeValue {
+.progress-level {
   font-family: var(--playfair);
   font-size: var(--size-48px);
   font-weight: 600;
@@ -299,6 +355,10 @@ Progress Bar Section
 .cmplt p {
   font-size: var(--size-20px);
   color: var(--defult-color);
+}
+
+.progress-bar {
+  background: var(--secondary-color);
 }
 
 /* 
@@ -365,8 +425,8 @@ Responsive Section
 @media screen and (max-width: 1200px) {
 
   /* Banner Section */
-  .quizBnr-wrpr {
-    background-position: 83%;
+  .quiz-sec {
+    height: 70vh;
   }
 
   /* Category Section */

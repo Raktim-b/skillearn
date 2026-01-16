@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Student Dashboard</title>
+    <title>Student Calender</title>
     <!-- Bootstrap CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -13,14 +13,14 @@
     />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/dashboard/css/dashboard_main.css" />
+    <link rel="stylesheet" href="/dashboard/css/calender_dashboard.css" />
   </head>
 
   <body>
-    <!-- Header Section -->
     <main>
       <section class="dashboard">
         <div class="container">
-          <div class="row align-items-stretch">
+          <div class="row">
             <div class="col-2">
               <aside class="left-sideNav bg-white z-3">
                 <button class="close-btn" onclick="clickClose()">
@@ -46,10 +46,7 @@
                       <h3 class="title3">MAIN MENU</h3>
                       <ul class="nav-item">
                         <li class="item-list">
-                          <a
-                            href="main_dashboard.html"
-                            class="list-link active"
-                          >
+                          <a href="main_dashboard.html" class="list-link">
                             <span class="icons">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -154,7 +151,7 @@
                                 />
                               </svg>
                             </span>
-                            <span class="titles">Live Class</span>
+                            <span class="titles">Live Courses</span>
                           </a>
                         </li>
                         <li class="item-list">
@@ -199,7 +196,10 @@
                           </a>
                         </li>
                         <li class="item-list">
-                          <a href="calender_dashboard.html" class="list-link">
+                          <a
+                            href="calender_dashboard.html"
+                            class="list-link active"
+                          >
                             <span class="icons">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -288,8 +288,8 @@
                   class="dashboard-hdr d-flex align-items-center justify-content-between flex-wrap w-100"
                 >
                   <div class="hdr-cntn">
-                    <h1 class="title1">Hi Avik, Welcome Back</h1>
-                    <p>Lets learn something new today.</p>
+                    <h1 class="title1">Assignments</h1>
+                    <p>Dashboard / Assignment</p>
                   </div>
                   <ul class="hdr-menu d-flex align-items-center">
                     <li class="button-list">
@@ -402,452 +402,11 @@
                   </ul>
                 </div>
               </div>
-              <div class="dashboard-grid">
-                <div class="common-box box-1">
-                  <h2 class="title3 text-capitalize">fundamentals</h2>
-                  <ul class="progress-list d-flex align-items-center">
-                    <li
-                      class="progress-timing d-flex align-items-center gap-1 me-2"
-                    >
-                      <span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="14"
-                          height="14"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9,9,0,0,1,12,21Z"
-                          />
-                          <rect
-                            width="2"
-                            height="7"
-                            x="11"
-                            y="6"
-                            fill="currentColor"
-                            rx="1"
-                          >
-                            <animateTransform
-                              attributeName="transform"
-                              dur="9s"
-                              repeatCount="indefinite"
-                              type="rotate"
-                              values="0 12 12;360 12 12"
-                            />
-                          </rect>
-                          <rect
-                            width="2"
-                            height="9"
-                            x="11"
-                            y="11"
-                            fill="currentColor"
-                            rx="1"
-                          >
-                            <animateTransform
-                              attributeName="transform"
-                              dur="0.75s"
-                              repeatCount="indefinite"
-                              type="rotate"
-                              values="0 12 12;360 12 12"
-                            />
-                          </rect>
-                        </svg>
-                      </span>
-                      <span>1hr 40min</span>
-                    </li>
-                    <li
-                      class="progress-timing d-flex align-items-center gap-1 me-2"
-                    >
-                      <span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="14"
-                          height="14"
-                          viewBox="0 0 26 26"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="M9.875 0a1 1 0 0 0-.406.156S8.204.952 6.844 1.813c-1.36.86-2.873 1.808-3.219 2l-.063.03C2.306 4.618 2.045 5.884 2 6.594c-.003.033 0 .06 0 .095c-.011.266 0 .437 0 .437v13.063C2 22.087 4.213 23 6.313 23c.7 0 1.4-.113 2-.313c.4-.2.687-.6.687-1v-10.5c0-2.3.5-3.38 2-4.28c.4-.2 4.594-3.095 4.594-3.095c.2-.2.406-.606.406-.906v-.094c0-.4-.2-.706-.5-.906s-.7-.2-1 0c-.1.1-6.2 4.207-7.5 4.907c-1.3.8-2.513.993-2.813.593c-.093-.093-.174-.378-.187-.656v-.063c.001-.272.071-.784.625-1.125c.562-.313 1.957-1.204 3.313-2.062c.573-.363.644-.402 1.093-.688A1 1 0 0 0 11 2.5V1a1 1 0 0 0-1.125-1m8 3.5a1 1 0 0 0-.438.188s-5.034 3.387-5.906 3.968l-.031.032c-.724.543-1.153 1.189-1.344 1.78A3.3 3.3 0 0 0 10 10.5v.313a1 1 0 0 0 0 .093V23c0 1.9 2.188 3 4.188 3c.9 0 1.712-.194 2.312-.594c1.2-.7 7-5.218 7-5.218c.3-.2.5-.482.5-.782v-13c0-.5-.194-.8-.594-1c-.3-.2-.793-.106-1.093.094c-1.6 1.2-5.907 4.588-6.907 5.188c-1.4.8-2.719 1-3.219.5c-.2-.2-.187-.388-.187-.688q.008-.26.063-.438c.056-.174.17-.388.593-.718c.02-.016.01-.015.031-.031c.723-.483 2.934-1.99 4.376-2.97A1 1 0 0 0 19 6V4.5a1 1 0 0 0-1.125-1M22 10.813v2l-5 3.874v-2z"
-                          />
-                        </svg>
-                      </span>
-                      <span>10 Chapters</span>
-                    </li>
-                    <li
-                      class="progress-timing d-flex align-items-center gap-1 me-2"
-                    >
-                      <span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="14"
-                          height="14"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="M4 8H2v12a2 2 0 0 0 2 2h12v-2H4z"
-                          />
-                          <path
-                            fill="currentColor"
-                            d="M20 2H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2m-9 12V6l7 4z"
-                          />
-                        </svg>
-                      </span>
-                      <span>15 Videos</span>
-                    </li>
-                  </ul>
-                  <div class="cmplt-input mt-2">
-                    <div class="complete-label d-flex justify-content-between">
-                      <label for="range4" class="form-label"
-                        >Example range</label
-                      >
-                      <output
-                        for="range4"
-                        id="rangeValue"
-                        aria-hidden="true"
-                      ></output>
-                    </div>
-                    <input
-                      type="range"
-                      class="form-range"
-                      min="0"
-                      max="100"
-                      value="50"
-                      id="range4"
-                    />
-                  </div>
-                  <div class="cmplt-btnBox">
-                    <a
-                      href=""
-                      class="cmplt-btn d-flex justify-content-center align-items-center"
-                    >
-                      <span>Continue Learning</span>
-                      <span
-                        ><svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="14"
-                          height="14"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="1.5"
-                            d="M6.906 4.537A.6.6 0 0 0 6 5.053v13.894a.6.6 0 0 0 .906.516l11.723-6.947a.6.6 0 0 0 0-1.032z"
-                          /></svg
-                      ></span>
-                    </a>
-                  </div>
-                </div>
-
-                <div class="common-box box-2">
-                  <div class="progress-cntn d-flex align-items-center">
-                    <h2 class="title3">Progress</h2>
-                    <select class="weak-dropdown">
-                      <option value="">Weekly</option>
-                      <option value="monday">Monday</option>
-                      <option value="tuesday">tuesday</option>
-                      <option value="wednessday">wednessday</option>
-                      <option value="thursday">thursday</option>
-                      <option value="friday">friday</option>
-                    </select>
-                  </div>
-                  <ul class="progress-list">
-                    <li class="progress-timing mb-4 align-items-center">
-                      <span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="14"
-                          height="14"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9,9,0,0,1,12,21Z"
-                          />
-                          <rect
-                            width="2"
-                            height="7"
-                            x="11"
-                            y="6"
-                            fill="currentColor"
-                            rx="1"
-                          >
-                            <animateTransform
-                              attributeName="transform"
-                              dur="9s"
-                              repeatCount="indefinite"
-                              type="rotate"
-                              values="0 12 12;360 12 12"
-                            />
-                          </rect>
-                          <rect
-                            width="2"
-                            height="9"
-                            x="11"
-                            y="11"
-                            fill="currentColor"
-                            rx="1"
-                          >
-                            <animateTransform
-                              attributeName="transform"
-                              dur="0.75s"
-                              repeatCount="indefinite"
-                              type="rotate"
-                              values="0 12 12;360 12 12"
-                            />
-                          </rect>
-                        </svg>
-                      </span>
-                      <span>40 Hours</span>
-                    </li>
-                    <li class="progress-timing mb-4 align-items-center">
-                      <span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="14"
-                          height="14"
-                          viewBox="0 0 26 26"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="M9.875 0a1 1 0 0 0-.406.156S8.204.952 6.844 1.813c-1.36.86-2.873 1.808-3.219 2l-.063.03C2.306 4.618 2.045 5.884 2 6.594c-.003.033 0 .06 0 .095c-.011.266 0 .437 0 .437v13.063C2 22.087 4.213 23 6.313 23c.7 0 1.4-.113 2-.313c.4-.2.687-.6.687-1v-10.5c0-2.3.5-3.38 2-4.28c.4-.2 4.594-3.095 4.594-3.095c.2-.2.406-.606.406-.906v-.094c0-.4-.2-.706-.5-.906s-.7-.2-1 0c-.1.1-6.2 4.207-7.5 4.907c-1.3.8-2.513.993-2.813.593c-.093-.093-.174-.378-.187-.656v-.063c.001-.272.071-.784.625-1.125c.562-.313 1.957-1.204 3.313-2.062c.573-.363.644-.402 1.093-.688A1 1 0 0 0 11 2.5V1a1 1 0 0 0-1.125-1m8 3.5a1 1 0 0 0-.438.188s-5.034 3.387-5.906 3.968l-.031.032c-.724.543-1.153 1.189-1.344 1.78A3.3 3.3 0 0 0 10 10.5v.313a1 1 0 0 0 0 .093V23c0 1.9 2.188 3 4.188 3c.9 0 1.712-.194 2.312-.594c1.2-.7 7-5.218 7-5.218c.3-.2.5-.482.5-.782v-13c0-.5-.194-.8-.594-1c-.3-.2-.793-.106-1.093.094c-1.6 1.2-5.907 4.588-6.907 5.188c-1.4.8-2.719 1-3.219.5c-.2-.2-.187-.388-.187-.688q.008-.26.063-.438c.056-.174.17-.388.593-.718c.02-.016.01-.015.031-.031c.723-.483 2.934-1.99 4.376-2.97A1 1 0 0 0 19 6V4.5a1 1 0 0 0-1.125-1M22 10.813v2l-5 3.874v-2z"
-                          />
-                        </svg>
-                      </span>
-                      <span>1 Course </span>
-                    </li>
-                    <li class="progress-timing align-items-center">
-                      <span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="14"
-                          height="14"
-                          viewBox="0 0 24 24"
-                        >
-                          <g
-                            fill="none"
-                            stroke="#292929"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="1.5"
-                          >
-                            <path
-                              d="M20 15c0 1.864 0 2.796-.304 3.53a4 4 0 0 1-2.165 2.165C16.796 21 15.864 21 14 21h-3c-3.772 0-5.658 0-6.83-1.172C3 18.657 3 16.771 3 13V7a4 4 0 0 1 4-4"
-                            />
-                            <path
-                              d="m10 8.5l.434 3.969a.94.94 0 0 0 .552.753c.686.295 1.971.778 3.014.778s2.328-.483 3.014-.778a.94.94 0 0 0 .553-.753L18 8.5m2.5-1v3.77M14 4L7 7l7 3l7-3z"
-                            />
-                          </g>
-                        </svg>
-                      </span>
-                      <span>05 course enrolled</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="common-box box-3">
-                  <h2 class="title3">Activity</h2>
-                  <p><span>17</span> days</p>
-                  <p>65h 20m</p>
-                  <div class="activity-dots">
-                    <span class="dot full-dot"></span>
-                    <span class="dot full-dot"></span>
-                    <span class="dot full-dot"></span>
-                    <span class="dot full-dot"></span>
-                    <span class="dot full-dot"></span>
-                    <span class="dot full-dot"></span>
-                    <span class="dot full-dot"></span>
-                    <span class="dot full-dot"></span>
-                    <span class="dot full-dot"></span>
-                    <span class="dot full-dot"></span>
-                    <span class="dot full-dot"></span>
-                    <span class="dot border-dot"></span>
-                    <span class="dot border-dot"></span>
-                    <span class="dot border-dot"></span>
-                    <span class="dot border-dot"></span>
-                    <span class="dot border-dot"></span>
-                    <span class="dot border-dot"></span>
-                    <span class="dot border-dot"></span>
-                  </div>
-                </div>
-
-                <div class="common-box box-4">
-                  <h2 class="title2">Keep learning new thing everyday</h2>
-                  <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo .
-                  </p>
-                  <a href="" class="community-btn">
-                    <span>Join Community</span>
-                    <span>+</span>
-                  </a>
-                  <div class="dashboard-img">
-                    <img
-                      src="/assets/dashboard-assets/dashboard-img.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-
-                <div class="common-box box-5">
-                  <h2 class="title2 mb-3">Study Statistic</h2>
-                  <select class="box5-dropdown weak-dropdown">
-                    <option value="">Weekly</option>
-                    <option value="monday">Monday</option>
-                    <option value="tuesday">tuesday</option>
-                    <option value="wednessday">wednessday</option>
-                    <option value="thursday">thursday</option>
-                    <option value="friday">friday</option>
-                  </select>
-                  <div class="bar-chart">
-                    <canvas id="myChart"></canvas>
-                  </div>
-                </div>
-                <div class="common-box box-6">
-                  <h2 class="title2">Learning Progress</h2>
-                  <div
-                    class="chart-box d-flex align-items-center justify-content-between"
-                  >
-                    <div class="gauge-details d-flex align-items-center gap-4">
-                      <button
-                        class="guage-btn align-items-center d-flex justify-content-center"
-                      >
-                        <span>75.3%</span>
-                        <span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="20"
-                            height="20"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              fill="#8A38F5"
-                              d="m12 10.828l-4.95 4.95l-1.414-1.414L12 8l6.364 6.364l-1.414 1.414z"
-                              stroke-width="0.3"
-                              stroke="#8A38F5"
-                            />
-                          </svg>
-                        </span>
-                      </button>
-                      <p>Compared to last month</p>
-                    </div>
-                    <div class="gauge-wrapper">
-                      <canvas id="gaugeChart"></canvas>
-                      <div class="gauge-value">75%</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="common-box box-7">
-                  <h2 class="title2">Top Mentors</h2>
-                  <ul class="mentors">
-                    <li class="mentor-list d-flex justify-content-between">
-                      <div class="mentor-leftSide d-flex align-items-center">
-                        <div class="mentor-img">
-                          <img
-                            src="/assets/dashboard-assets/mentor1.png"
-                            alt=""
-                          />
-                        </div>
-                        <ul class="mentor-details">
-                          <li class="mentor-name">Abraham Colin</li>
-                          <li class="mentor-name">UI/UX development</li>
-                        </ul>
-                      </div>
-                      <a href="" class="details-button"> View Details </a>
-                    </li>
-                    <li class="mentor-list d-flex justify-content-between">
-                      <div class="mentor-leftSide d-flex align-items-center">
-                        <div class="mentor-img">
-                          <img
-                            src="/assets/dashboard-assets/mentor2.png"
-                            alt=""
-                          />
-                        </div>
-                        <ul class="mentor-details">
-                          <li class="mentor-name">Abraham Colin</li>
-                          <li class="mentor-name">UI/UX development</li>
-                        </ul>
-                      </div>
-                      <a href="" class="details-button"> View Details </a>
-                    </li>
-                    <li class="mentor-list d-flex justify-content-between">
-                      <div class="mentor-leftSide d-flex align-items-center">
-                        <div class="mentor-img">
-                          <img
-                            src="/assets/dashboard-assets/mentor3.png"
-                            alt=""
-                          />
-                        </div>
-                        <ul class="mentor-details">
-                          <li class="mentor-name">Abraham Colin</li>
-                          <li class="mentor-name">UI/UX development</li>
-                        </ul>
-                      </div>
-                      <a href="" class="details-button"> View Details </a>
-                    </li>
-                    <li class="mentor-list d-flex justify-content-between">
-                      <div class="mentor-leftSide d-flex align-items-center">
-                        <div class="mentor-img">
-                          <img
-                            src="/assets/dashboard-assets/mentor4.png"
-                            alt=""
-                          />
-                        </div>
-                        <ul class="mentor-details">
-                          <li class="mentor-name">Abraham Colin</li>
-                          <li class="mentor-name">UI/UX development</li>
-                        </ul>
-                      </div>
-                      <a href="" class="details-button"> View Details </a>
-                    </li>
-                    <li class="mentor-list d-flex justify-content-between">
-                      <div class="mentor-leftSide d-flex align-items-center">
-                        <div class="mentor-img">
-                          <img
-                            src="/assets/dashboard-assets/mentor5.png"
-                            alt=""
-                          />
-                        </div>
-                        <ul class="mentor-details">
-                          <li class="mentor-name">Abraham Colin</li>
-                          <li class="mentor-name">UI/UX development</li>
-                        </ul>
-                      </div>
-                      <a href="" class="details-button"> View Details </a>
-                    </li>
-                    <li class="mentor-list d-flex justify-content-between">
-                      <div class="mentor-leftSide d-flex align-items-center">
-                        <div class="mentor-img">
-                          <img
-                            src="/assets/dashboard-assets/mentor6.png"
-                            alt=""
-                          />
-                        </div>
-                        <ul class="mentor-details">
-                          <li class="mentor-name">Abraham Colin</li>
-                          <li class="mentor-name">UI/UX development</li>
-                        </ul>
-                      </div>
-                      <a href="" class="details-button"> View Details </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-
-    <!-- Chart JS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
     <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
