@@ -15,9 +15,74 @@
     --p-20px: clamp(1rem, 0.95rem + 0.6vw, 1.429rem);
     --p-18px: clamp(1rem, 0.95rem + 0.6vw, 1.286rem);
     --p-16px: clamp(1rem, 0.95rem + 0.4vw, 1.143rem);
+    --box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    --date-color: #F3EEEE;
 }
 
 html,
 body {
     color: var(--primary-color);
+}
+
+/* Calender Section */
+.left-sideNav {
+    min-height: auto;
+}
+
+.common-box {
+    margin-top: 20px;
+}
+
+.dateBox {
+    border-bottom: 1px solid #989797;
+    padding-bottom: 20px;
+}
+
+.dateTIme {
+    font-size: var(--p-18px);
+    color: #989797;
+}
+
+
+.calender-top {
+    margin: 30px 0;
+}
+
+.changeBtn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #F3EEEE;
+    box-shadow: var(--box-shadow);
+}
+
+.calender-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+    padding: 10px 24px;
+}
+
+.day,
+.date {
+    background: var(--date-color);
+    height: 80px;
+    box-shadow: var(--box-shadow);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--p-18px);
+    text-transform: capitalize;
+
+}
+
+.day {
+    font-weight: bold;
+}
+
+@media screen and (max-width:1600px) {
+    .left-sideNav {
+        min-height: 100vh;
+    }
 }
