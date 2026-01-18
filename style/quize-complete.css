@@ -22,6 +22,14 @@
 .box > p {
   font-size: 20px;
 }
+/* Header Section */
+.hdr-sec {
+  position: relative;
+}
+.nav-link:hover {
+  color: var(--input-bg);
+  font-weight: 500;
+}
 /* Quize Card */
 .quiz-c-wrpr {
   padding: 70px 0 130px;
