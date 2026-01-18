@@ -1,31 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Skillearn - Add to cart</title>
-     <!-- Tab Icon -->
-     <link rel="icon" type="image/x-icon" href="./assets/CommonAssets/TabLogo.ico">
-    <!-- Font Awsome Cdn -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Swiper Js -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-    />
-    <!-- Bootstrap css -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skillearn - Add to cart</title>
+  <!-- Tab Icon -->
+  <link rel="icon" type="image/x-icon" href="./assets/CommonAssets/TabLogo.ico">
+  <!-- Font Awsome Cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Swiper Js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <!-- Bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
 
   <!-- Common Custom Css -->
   <link rel="stylesheet" href="./style/Index.css" />
@@ -61,125 +51,102 @@
               <a class="nav-link" href="about.html">About Us</a>
             </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="./course.html"> Courses </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="quiz.html"> Quiz </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="contact.html"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-            <div class="nav-btn d-flex align-items-center ms-auto">
-              <a
-                href=""
-                class="btn-primary"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-                >Sign In</a
-              >
-              <a href="register.html" class="btn-secondary">Register Now</a>
-            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="./course.html"> Courses </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quiz.html"> Quiz </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="nav-btn d-flex align-items-center ms-auto">
+            <a href="" class="btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign In</a>
+            <a href="register.html" class="btn-secondary">Register Now</a>
           </div>
         </div>
-      </nav>
-    </header>
-    <!-- Modal Section -->
-      <div
-        class="modal fade"
-        id="exampleModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="reg-btm-img">
-              <img
-                src="./assets/TeacherRegistration/Reg-modal-img1.png"
-                alt=""
-              />
+      </div>
+    </nav>
+  </header>
+  <!-- Modal Section -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="reg-btm-img">
+          <img src="./assets/TeacherRegistration/Reg-modal-img1.png" alt="" />
+        </div>
+        <div class="row align-items-center flex-column-reverse flex-sm-row">
+          <div class="col-12 col-sm-5">
+            <div class="modal-img">
+              <img src="./assets/LandingPage/Modal-img.png" alt="" />
             </div>
-            <div class="row align-items-center flex-column-reverse flex-sm-row">
-              <div class="col-12 col-sm-5">
-                <div class="modal-img">
-                  <img src="./assets/LandingPage/Modal-img.png" alt="" />
-                </div>
+          </div>
+          <div class="col-12 col-sm-7">
+            <button class="lang-btn d-flex align-items-center ms-auto">
+              <img src="./assets/CommonAssets/Lang-img.png" alt="" />
+              <span class="fw-medium">EN</span>
+            </button>
+            <div class="modal-right">
+              <div class="modal-logo">
+                <a href=""><img src="./assets/TeacherRegistration/Logo.png" alt="" /></a>
               </div>
-              <div class="col-12 col-sm-7">
-                <button class="lang-btn d-flex align-items-center ms-auto">
-                  <img src="./assets/CommonAssets/Lang-img.png" alt="" />
-                  <span class="fw-medium">EN</span>
-                </button>
-                <div class="modal-right">
-                  <div class="modal-logo">
-                    <a href=""
-                      ><img src="./assets/TeacherRegistration/Logo.png" alt=""
-                    /></a>
-                  </div>
-                  <div class="modal-hdr fw-medium">Let the Journey Begin!</div>
-                  <p class="m-0">
-                    Unlock a world of education with a single click! Please
-                    login in to your account
-                  </p>
-                  <form action="" class="login-form">
-                    <div class="row">
-                      <div class="col-12">
-                        <label for="ename" class="fw-medium"
-                          >Email Adress
-                        </label>
-                        <div
-                          class="login-input-wrpr d-flex align-items-center justify-content-between"
-                        >
-                          <input type="email" name="" id="ename" />
-                          <svg
-                            width="20"
-                            height="16"
-                            viewBox="0 0 20 16"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M17.37 0H2.5C1.83696 0 1.20107 0.263392 0.732233 0.732233C0.263392 1.20107 0 1.83696 0 2.5V13.37C0 14.033 0.263392 14.6689 0.732233 15.1378C1.20107 15.6066 1.83696 15.87 2.5 15.87H17.37C18.033 15.87 18.6689 15.6066 19.1378 15.1378C19.6066 14.6689 19.87 14.033 19.87 13.37V2.5C19.87 1.83696 19.6066 1.20107 19.1378 0.732233C18.6689 0.263392 18.033 0 17.37 0ZM2.5 1H17.37C17.7484 0.999147 18.113 1.14233 18.3898 1.40048C18.6665 1.65863 18.8346 2.01241 18.86 2.39C16.39 3.71 13.91 5.02 11.43 6.34C11.095 6.55121 10.74 6.72875 10.37 6.87C10.0799 6.92744 9.78091 6.92237 9.49294 6.85512C9.20496 6.78787 8.93464 6.65999 8.7 6.48C7.28 5.73 5.86 4.97 4.45 4.22C3.31 3.62 2.15 3.01 1.01 2.4C1.03296 2.02063 1.20002 1.66437 1.477 1.40412C1.75398 1.14387 2.11994 0.999306 2.5 1ZM18.87 13.37C18.87 13.7678 18.712 14.1494 18.4307 14.4307C18.1494 14.712 17.7678 14.87 17.37 14.87H2.5C2.10218 14.87 1.72064 14.712 1.43934 14.4307C1.15804 14.1494 1 13.7678 1 13.37V3.535C3.36 4.775 5.71 6.035 8.07 7.285C8.49153 7.54374 8.94548 7.74549 9.42 7.885C10.1144 7.99809 10.8261 7.85218 11.42 7.475C12.87 6.715 14.31 5.945 15.76 5.185C16.8 4.625 17.83 4.085 18.87 3.535V13.37Z"
-                              fill="black"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                      <div class="col-12">
-                        <label for="pass" class="fw-medium">Password </label>
-                        <div
-                          class="login-input-wrpr pass-wrpr d-flex align-items-center justify-content-between"
-                        >
-                          <input type="password" name="" id="pass" />
-
-                        <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M5.25 7.75V5.75C5.25 2.989 6.489 0.75 9.25 0.75C12.011 0.75 13.25 2.989 13.25 5.75V7.75M9.25 13.5V13M13.25 13.5V13M5.25 13.5V13M0.75 15.55V10.95C0.75 9.83 0.75 9.27 0.968 8.843C1.15957 8.46632 1.46554 8.16 1.842 7.968C2.27 7.751 2.83 7.751 3.95 7.751H14.55C15.67 7.751 16.23 7.751 16.658 7.968C17.0343 8.15974 17.3403 8.46569 17.532 8.842C17.75 9.27 17.75 9.83 17.75 10.95V15.55C17.75 16.67 17.75 17.23 17.532 17.658C17.3403 18.0343 17.0343 18.3403 16.658 18.532C16.23 18.75 15.67 18.75 14.55 18.75H3.95C2.83 18.75 2.27 18.75 1.842 18.532C1.46569 18.3403 1.15974 18.0343 0.968 17.658C0.75 17.231 0.75 16.671 0.75 15.55Z"
-                            stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                      </div>
-                    </div>
-
-                    <a href="" class="forgot-pass fw-medium">Forgot Password?</a>
-                    <div class="col-12">
-                      <input type="submit" value="Login" class="fw-medium text-center login-btn" />
+              <div class="modal-hdr fw-medium">Let the Journey Begin!</div>
+              <p class="m-0">
+                Unlock a world of education with a single click! Please
+                login in to your account
+              </p>
+              <form action="" class="login-form">
+                <div class="row">
+                  <div class="col-12">
+                    <label for="ename" class="fw-medium">Email Adress
+                    </label>
+                    <div class="login-input-wrpr d-flex align-items-center justify-content-between">
+                      <input type="email" name="" id="ename" />
+                      <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M17.37 0H2.5C1.83696 0 1.20107 0.263392 0.732233 0.732233C0.263392 1.20107 0 1.83696 0 2.5V13.37C0 14.033 0.263392 14.6689 0.732233 15.1378C1.20107 15.6066 1.83696 15.87 2.5 15.87H17.37C18.033 15.87 18.6689 15.6066 19.1378 15.1378C19.6066 14.6689 19.87 14.033 19.87 13.37V2.5C19.87 1.83696 19.6066 1.20107 19.1378 0.732233C18.6689 0.263392 18.033 0 17.37 0ZM2.5 1H17.37C17.7484 0.999147 18.113 1.14233 18.3898 1.40048C18.6665 1.65863 18.8346 2.01241 18.86 2.39C16.39 3.71 13.91 5.02 11.43 6.34C11.095 6.55121 10.74 6.72875 10.37 6.87C10.0799 6.92744 9.78091 6.92237 9.49294 6.85512C9.20496 6.78787 8.93464 6.65999 8.7 6.48C7.28 5.73 5.86 4.97 4.45 4.22C3.31 3.62 2.15 3.01 1.01 2.4C1.03296 2.02063 1.20002 1.66437 1.477 1.40412C1.75398 1.14387 2.11994 0.999306 2.5 1ZM18.87 13.37C18.87 13.7678 18.712 14.1494 18.4307 14.4307C18.1494 14.712 17.7678 14.87 17.37 14.87H2.5C2.10218 14.87 1.72064 14.712 1.43934 14.4307C1.15804 14.1494 1 13.7678 1 13.37V3.535C3.36 4.775 5.71 6.035 8.07 7.285C8.49153 7.54374 8.94548 7.74549 9.42 7.885C10.1144 7.99809 10.8261 7.85218 11.42 7.475C12.87 6.715 14.31 5.945 15.76 5.185C16.8 4.625 17.83 4.085 18.87 3.535V13.37Z"
+                          fill="black" />
+                      </svg>
                     </div>
                   </div>
-                </form>
-                <div class="sign-up-op">
-                  Don’t have an account?
-                  <a href="register.html" class="fw-medium text-black">Sign Up For Free</a>
+                  <div class="col-12">
+                    <label for="pass" class="fw-medium">Password </label>
+                    <div class="login-input-wrpr pass-wrpr d-flex align-items-center justify-content-between">
+                      <input type="password" name="" id="pass" />
+
+                      <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M5.25 7.75V5.75C5.25 2.989 6.489 0.75 9.25 0.75C12.011 0.75 13.25 2.989 13.25 5.75V7.75M9.25 13.5V13M13.25 13.5V13M5.25 13.5V13M0.75 15.55V10.95C0.75 9.83 0.75 9.27 0.968 8.843C1.15957 8.46632 1.46554 8.16 1.842 7.968C2.27 7.751 2.83 7.751 3.95 7.751H14.55C15.67 7.751 16.23 7.751 16.658 7.968C17.0343 8.15974 17.3403 8.46569 17.532 8.842C17.75 9.27 17.75 9.83 17.75 10.95V15.55C17.75 16.67 17.75 17.23 17.532 17.658C17.3403 18.0343 17.0343 18.3403 16.658 18.532C16.23 18.75 15.67 18.75 14.55 18.75H3.95C2.83 18.75 2.27 18.75 1.842 18.532C1.46569 18.3403 1.15974 18.0343 0.968 17.658C0.75 17.231 0.75 16.671 0.75 15.55Z"
+                          stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <a href="" class="forgot-pass fw-medium">Forgot Password?</a>
+                  <div class="col-12">
+                    <input type="submit" value="Login" class="fw-medium text-center login-btn" />
+                  </div>
                 </div>
+              </form>
+              <div class="sign-up-op">
+                Don’t have an account?
+                <a href="register.html" class="fw-medium text-black">Sign Up For Free</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  <button class="button">
+    <svg class="svgIcon" viewBox="0 0 384 512">
+      <path
+        d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z">
+      </path>
+    </svg>
+  </button>
+  <main>
     <!-- Cart Sec -->
     <section class="cart-sec">
       <div class="bgPolygon bgPolygon4">
