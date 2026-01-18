@@ -66,42 +66,50 @@ Banner Section
 ===================
 */
 
+
+
 .hdr-sec {
   position: absolute;
+  top: 2px;
   width: 100%;
-  top: 0;
+  z-index: 999;
+  pointer-events: none;
+  padding: 0;
 }
 
+.navbar {
+  max-width: 1415px;
+  margin: 20px auto 0;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 40px;
+  padding: 5px 0 !important;
+  pointer-events: auto;
+  box-shadow: 0 4px 30px 0 rgba(16, 15, 15, 0.4);
+}
+
+
+
+.nav-logo {
+  height: 80px;
+}
+
+.navbar-brand {
+  height: 100%;
+}
 
 .nav-link {
-  color: var(--defult-color);
-
-  &:hover {
-    color: var(--defult-color);
-
-  }
+  font-size: 1.3rem;
 }
 
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link.show {
-  color: var(--defult-color);
-
-}
-
-.active::after {
-  background: var(--defult-color);
-
-}
-
-.nav-link::before {
-  background: var(--defult-color);
-
+.navbar-toggler {
+  color: var(--input-bg) !important;
+  background: transparent;
+  border: none;
+  outline: none;
 }
 
 .quiz-sec {
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../assets/QuizPage/quizBg7.jpg) no-repeat center/cover;
+  background: url(../assets/QuizPage/quizBg9.png) no-repeat center/cover;
   height: 100vh;
   padding: 140px 0 0px;
   display: flex;
@@ -157,7 +165,7 @@ Banner Section
 
 .breadcrumb-item,
 .breadcrumb-item a {
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: rgba(255, 255, 255, 1) !important;
   font-size: 1.5rem;
   font-weight: 400 !important;
 }
@@ -474,8 +482,10 @@ Responsive Section
 
 
 @media screen and (max-width:576px) {
+  .nav-logo {
+    height: 60px;
+  }
 
-  
   .breadcrumb-item,
   .breadcrumb-item a {
     font-size: 1rem;

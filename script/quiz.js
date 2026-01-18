@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+
   const funnelList = document.querySelector(".category-list");
   const filterBtn = document.querySelector(".filter");
   console.log(filterBtn);
