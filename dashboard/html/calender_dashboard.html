@@ -236,15 +236,15 @@
             </div>
             <div class="common-box">
               <div class="dateBox d-flex justify-content-between align-items-center">
-                <div class="dateTIme">
+                <div class="dateTIme" id="currentDate">
                   Wednesday, January 8
                 </div>
-                <div class="dateTIme">
+                <div class="dateTIme" id="currentTime">
                   11:56 AM
                 </div>
               </div>
               <div class="calender-top d-flex justify-content-between align-items-center">
-                <button class="changeBtn">
+                <button class="changeBtn" id="prevMonth">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24">
                     <g fill="none" fill-rule="evenodd">
                       <path
@@ -255,8 +255,8 @@
                     </g>
                   </svg>
                 </button>
-                <h2 class="title2">January, 2025</h2>
-                <button class="changeBtn">
+                <h2 class="title2" id="monthYear"></h2>
+                <button class="changeBtn" id="nextMonth">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24">
                     <g fill="none" fill-rule="evenodd">
                       <path
@@ -268,18 +268,18 @@
                   </svg>
                 </button>
               </div>
-              <div class="calender-grid">
+              <div class="calender-grid" id="calendarGrid">
                 <!-- Weekday -->
-                <div class="day">sun</div>
+                <!-- <div class="day">sun</div>
                 <div class="day">mon</div>
                 <div class="day">tue</div>
                 <div class="day">wed</div>
                 <div class="day">thu</div>
                 <div class="day">fri</div>
-                <div class="day">sat</div>
+                <div class="day">sat</div> -->
 
                 <!-- Dates -->
-                <div class="date classColor4">28</div>
+                <!-- <div class="date classColor4">28</div>
                 <div class="date classColor4">29</div>
                 <div class="date classColor4">30</div>
                 <div class="date classColor4">31</div>
@@ -313,7 +313,7 @@
                 <div class="date ">28</div>
                 <div class="date classColor1">29</div>
                 <div class="date ">30</div>
-                <div class="date classColor1">31</div>
+                <div class="date classColor1">31</div> -->
               </div>
               <div class="indication-list">
                 <h5 class="title5">
@@ -346,6 +346,7 @@
     crossorigin="anonymous"></script>
   <!-- Vanilla Js -->
   <script src="/dashboard/js/main.js"></script>
+  <script src="/dashboard/js/calender.js"></script>
 </body>
 
 </html>

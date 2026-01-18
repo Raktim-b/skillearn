@@ -44,7 +44,11 @@ span {
   display: inline-block;
   text-decoration: none;
 }
-
+/* Header Section */
+.hdr-sec {
+  position: absolute;
+  width: 100%;
+}
 /* 
 ====================
 PAYMENT SECTION
@@ -52,7 +56,7 @@ PAYMENT SECTION
 */
 
 .payment-sec {
-  padding: 110px 0;
+  padding: 210px 0;
   position: relative;
   background: #d8f2ee;
 }
@@ -70,12 +74,8 @@ PAYMENT SECTION
   object-fit: contain;
 }
 
-.payment-hdr h1 {
-  font-family: "Playfair Display";
-  font-size: 64px;
-  font-weight: 700;
+.payment-hdr {
   margin-bottom: 46px !important;
-  color: var(--payment-text-color);
 }
 
 .payment-cntn {
@@ -84,17 +84,12 @@ PAYMENT SECTION
   border-radius: 35px;
   color: var(--payment-text-color);
   background: var(--defult-color);
-  padding-right: 79px;
-  z-index: 7;
-}
-
-.left-cntn {
-  background-color: #a9d0d0;
-  border-radius: 50px;
 }
 
 .payment-left {
-  padding: 50px 80px;
+  border-radius: 35px;
+  background-color: #a9d0d0;
+  padding: 55px 60px 70px 83px;
 }
 
 .payment-logo {
@@ -111,11 +106,12 @@ PAYMENT SECTION
   margin-top: 37px;
   border: none;
   background: transparent;
+  font-size: 14px;
+  color: var(--input-bg);
 }
 
-.pdf-btn p {
-  font-size: 14px;
-  margin: 0 16px;
+.pdf-btn svg {
+  margin-right: 16px;
 }
 
 .price-details {
@@ -149,7 +145,7 @@ PAYMENT SECTION
 }
 
 .payment-right {
-  padding: 145px 0 83px 0;
+  padding: 100px 79px 83px 0;
 }
 
 .payment-btn {
@@ -223,7 +219,7 @@ hr {
 
 .payment-right .banner-btn {
   border-radius: 20px;
-  padding: 24.5px 0;
+  margin: 24.5px 0;
 }
 
 .payment-right .banner-btn a {
@@ -241,6 +237,10 @@ MEDIA QUERIES
 */
 
 @media screen and (max-width: 1200px) {
+  .payment-left {
+    border-radius: 30px;
+    padding: 48px 56px 63px 64px;
+  }
   .payment-btn {
     padding: 15px 20px;
   }
@@ -263,7 +263,9 @@ MEDIA QUERIES
     top: 15px;
     left: 25px;
   }
-
+  .payment-right {
+    padding: 90px 60px 74px 0;
+  }
   .payment-right .banner-btn a {
     font-size: 30px;
   }
@@ -293,136 +295,189 @@ MEDIA QUERIES
 }
 
 @media screen and (max-width: 992px) {
-  .payment-sec {
-    padding: 57px 0;
-  }
-
-  .payment-hdr h1 {
-    font-size: 50px;
-  }
-
   .payment-cntn {
-    padding: 0 50px;
+    border-radius: 20px;
   }
-
   .payment-left {
-    padding: 50px 60px;
+    border-radius: 20px;
+    padding: 40px 30px;
   }
-
+  .pdf-btn {
+    margin-top: 30px;
+  }
   .card-wrpr > img {
     top: 19px;
     left: 29px;
     height: 30px;
     width: 44px;
   }
-
+  .pay-price:nth-child(4) {
+    margin-bottom: 40px;
+  }
+  .small-text {
+    margin-bottom: 0;
+  }
   .card-input {
     padding-left: 98px !important;
-  }
-
-  .payment-right {
-    padding: 47px 0 38px 0;
-  }
-
-  .payment-right .banner-btn a {
-    font-size: 25px;
   }
 
   .price-details h5 {
     font-size: 18px;
     margin-bottom: 5px;
   }
+  .price-details {
+    margin-top: 25px;
+  }
 
   .price-details span {
     font-size: 18px;
   }
+  .payment-right {
+    padding: 47px 25px 38px 0;
+  }
+  .payment-btn {
+    padding: 14px 14px;
+    border-radius: 15px;
+    margin-right: 14px;
+  }
+  .payment-btn span {
+    margin-left: 10px;
+  }
+  .pay-option-btns .payment-btn:last-child {
+    margin-right: 0;
+  }
+  .form-control {
+    border-radius: 12px;
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+  .card-wrpr > img {
+    top: 12px;
+    left: 23px;
+  }
+  .form-check-label {
+    margin-left: 20px;
+    font-size: 17px;
+  }
+  .payment-right .banner-btn a {
+    font-size: 22px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .payment-hdr h1 {
-    font-size: 42px;
+  .payment-sec {
+    padding: 200px 0 100px;
   }
-
   .payment-cntn {
-    padding: 0 18px;
+    border-radius: 14px;
   }
-
+  .payment-left {
+    padding: 30px 20px 30px 18px;
+    border-radius: 14px;
+  }
   .payment-logo {
     max-width: 80px;
   }
 
   .pdf-btn {
-    margin-top: 21px;
-    border: none;
-    background: transparent;
+    margin-top: 18px;
+    font-size: 12px;
   }
-
-  .payment-left {
-    padding: 30px 40px;
-  }
-
   .pdf-btn svg {
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 11px;
+    margin-right: 8px;
   }
 
   .price-details {
-    margin-top: 32px;
+    margin-top: 30px;
   }
-
+  .price-details h5 {
+    font-size: 14px;
+  }
+  .price-details span {
+    font-size: 14px;
+  }
+  .small-text {
+    font-size: 10px;
+    margin-left: 12px;
+  }
   .payment-btn {
     padding: 10px 15px;
   }
-
+  .pay-price:nth-child(4) {
+    margin-bottom: 30px;
+  }
+  .total,
+  .pay-price:last-child span {
+    font-size: 16px !important;
+  }
+  .payment-right {
+    padding: 34px 15px 14px 0;
+  }
+  .payment-btn {
+    padding: 9px 8px;
+    border-radius: 10px;
+  }
+  .payment-btn svg {
+    width: 15px;
+    height: 15px;
+  }
+  .payment-btn span {
+    margin-left: 5px;
+    font-size: 10px;
+  }
   .card-details .form-label,
   .form-check {
-    font-size: 16px;
+    font-size: 14px;
+    margin: 12px 0;
   }
-
   .form-control {
-    padding: 12px 25px;
-    font-size: 16px;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 8px;
   }
-
+  .form-check-label {
+    margin-left: 10px;
+    font-size: 15px;
+  }
   .card-wrpr > img {
-    top: 14px;
-    left: 29px;
-    height: 22px;
-    width: 36px;
+    top: 11px;
+    left: 15px;
+    height: 17px;
+    width: 28px;
   }
 
   .card-input {
     padding-left: 84px !important;
   }
 
+  .payment-right .banner-btn {
+    margin: 18.5px 0;
+  }
   .payment-right .banner-btn a {
-    font-size: 22px;
+    font-size: 18px;
+    border-radius: 14px;
   }
 }
 
 @media screen and (max-width: 576px) {
   .payment-sec {
-    padding: 29px 0;
+    padding: 100px 0 70px;
   }
-
-  .payment-hdr h1 {
-    font-size: 36px;
+  .payment-hdr {
+    margin-bottom: 30px !important;
   }
-
   .payment-cntn {
-    padding: 0 13px;
-  }
-
-  .left-cntn {
-    border-radius: 36px;
-  }
-
-  .price-details {
-    margin-top: 24px;
+    border-radius: 8px;
   }
 
   .payment-left {
+    border-radius: 8px;
     padding: 23px 16px;
+  }
+  .price-details {
+    margin-top: 24px;
   }
 
   .payment-logo {
@@ -468,6 +523,9 @@ MEDIA QUERIES
   .form-check {
     font-size: 14px;
   }
+  .payment-right {
+    padding: 34px 15px 14px 14px;
+  }
 
   .form-control {
     padding: 6px 14px;
@@ -484,91 +542,13 @@ MEDIA QUERIES
   .card-input {
     padding-left: 46px !important;
   }
-
-  .payment-right .banner-btn a {
-    font-size: 20px;
-  }
-
   .form-check-label {
     margin-left: 9px;
+    font-size: 13px;
   }
-
-  .pay-price:nth-child(4) {
-    margin-bottom: 47px;
+  .payment-right .banner-btn {
+    margin: 14.5px 0;
   }
-}
-
-@media screen and (max-width: 425px) {
-  .payment-sec {
-    padding: 30px 0;
-  }
-
-  .left-cntn {
-    border-radius: 31px;
-  }
-
-  .payment-hdr h1 {
-    font-size: 30px;
-    margin-bottom: 30px !important;
-  }
-
-  .payment-left {
-    padding: 20px 10px;
-  }
-
-  .payment-logo {
-    max-width: 55px;
-  }
-
-  .price-details h5 {
-    font-size: 12px;
-    margin-bottom: 5px;
-  }
-
-  .small-text {
-    font-size: 7px;
-    margin-bottom: 0 !important;
-  }
-
-  .price-details span {
-    font-size: 12px;
-  }
-
-  .pay-price:nth-child(4) {
-    margin-bottom: 30px;
-  }
-
-  .payment-right {
-    padding: 24px 0 14px 0;
-  }
-
-  .payment-btn {
-    margin-right: 14px;
-  }
-
-  .payment-btn svg {
-    height: 12px;
-    width: 12px;
-  }
-
-  .payment-btn span {
-    font-size: 6px;
-    margin-left: 7px;
-  }
-
-  .form-control {
-    font-size: 12px;
-  }
-
-  .card-wrpr > img {
-    height: 14px;
-    width: 23px;
-  }
-
-  .card-input {
-    padding-left: 52px !important;
-  }
-
   .payment-right .banner-btn a {
     font-size: 16px;
   }

@@ -1,10 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Payment Page</title>
-
+    <title>Skillearn - Payment Page</title>
+    <!-- Font Awsome Cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -16,7 +23,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./style/Index.css" />
     <link rel="stylesheet" href="./style/payment.css" />
-    <link rel="stylesheet" href="./style/register.css">
+    <link rel="stylesheet" href="./style/register.css" />
   </head>
 
   <body>
@@ -107,10 +114,10 @@
               </div>
             </div>
             <div class="col-12 col-sm-7">
-               <button class="lang-btn d-flex align-items-center ms-auto">
-                  <img src="./assets/CommonAssets/Lang-img.png" alt="" />
-                  <span class="fw-medium">EN</span>
-                </button>
+              <button class="lang-btn d-flex align-items-center ms-auto">
+                <img src="./assets/CommonAssets/Lang-img.png" alt="" />
+                <span class="fw-medium">EN</span>
+              </button>
               <div class="modal-right">
                 <div class="modal-logo">
                   <a href=""
@@ -200,16 +207,16 @@
       </div>
       <div class="container">
         <div class="payment-hdr">
-          <h1>Payment Page</h1>
+          <h1 class="title1">Payment Page</h1>
         </div>
         <div class="payment-cntn">
           <div class="row">
-            <div class="col-12 col-lg-6 left-cntn">
+            <div class="col-12 col-sm-6">
               <div class="payment-left">
                 <div class="payment-logo">
                   <img src="./assets/PaymentPage/payment-logo.png" alt="" />
                 </div>
-                <button class="pdf-btn d-flex align-items-center">
+                <a href="" class="pdf-btn d-flex align-items-center">
                   <svg
                     width="20"
                     height="20"
@@ -227,8 +234,8 @@
                     />
                   </svg>
 
-                  <p>Download the Invoice in PDF Format</p>
-                </button>
+                  Download the Invoice in PDF Format
+                </a>
                 <div class="price-details">
                   <div class="pay-price">
                     <div
@@ -237,9 +244,7 @@
                       <h5>Business & Data Analytics:</h5>
                       <span>$60.00</span>
                     </div>
-                    <p class="small-text text-muted">
-                      Valid till 15th March 2026
-                    </p>
+                    <p class="small-text">Valid till 15th March 2026</p>
                   </div>
                   <div class="pay-price">
                     <div
@@ -248,9 +253,7 @@
                       <h5>Blockchain Technology:</h5>
                       <span>$60.00</span>
                     </div>
-                    <p class="small-text text-muted">
-                      Valid till 15th March 2026
-                    </p>
+                    <p class="small-text">Valid till 15th March 2026</p>
                   </div>
                   <div class="pay-price">
                     <div
@@ -259,9 +262,7 @@
                       <h5>Project Management:</h5>
                       <span>$60.00</span>
                     </div>
-                    <p class="small-text text-muted">
-                      Valid till 15th March 2026
-                    </p>
+                    <p class="small-text">Valid till 15th March 2026</p>
                   </div>
                   <div class="pay-price">
                     <div
@@ -293,7 +294,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-sm-6">
               <div class="payment-right">
                 <div class="pay-option-btns d-flex align-items-center">
                   <button class="payment-btn d-flex align-items-center active1">
@@ -356,7 +357,7 @@
                     <input
                       type="text"
                       class="form-control"
-                      placeholder="PAULINA CHATTERJEE"
+                      placeholder="Enter Your Full Name"
                     />
                   </div>
                   <div class="card-details">
@@ -364,27 +365,23 @@
                     <div class="card-wrpr">
                       <img src="./assets/PaymentPage/master-card.png" alt="" />
                       <input
-                        type="text"
+                        type="number"
                         class="form-control card-input"
-                        placeholder="9870 3546 2548 6457"
+                        placeholder="Enter Card Number"
                       />
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-md-6 card-details">
                       <label class="form-label">Expiry</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="03/26"
-                      />
+                      <input type="date" class="form-control" placeholder="" />
                     </div>
                     <div class="col-md-6 card-details">
                       <label class="form-label">CVV</label>
                       <input
-                        type="text"
+                        type="password"
                         class="form-control"
-                        placeholder="985"
+                        placeholder="***"
                       />
                     </div>
                   </div>
@@ -424,7 +421,7 @@
     </section>
 
     <!-- Footer Section -->
-      <footer class="ftr-sec">
+    <footer class="ftr-sec">
       <div class="container">
         <div class="ftr-top">
           <div class="row align-items-center">
