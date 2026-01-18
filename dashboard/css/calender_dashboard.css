@@ -123,24 +123,24 @@ body {
     background-color: #A9D0D0;
 }
 
-.classColor1 {
-    background-color: var(--secondary-color);
-
+.date.classColor1 {
+    background: var(--secondary-color);
+    color: #fff;
+    
 }
 
-.classColor2 {
-    background-color: var(--date-color);
+.date.classColor2 {
+    background: var(--date-color);
     border: 3px solid var(--secondary-color);
     font-weight: 700;
-
 }
 
-.classColor3 {
-    background-color: #A9D0D0;
-
+.date.classColor3 {
+    background: #A9D0D0;
 }
 
-.classColor4 {
+.date.classColor4 {
+    background: var(--date-color);
     color: #989797;
     box-shadow: inset var(--box-shadow);
 }
