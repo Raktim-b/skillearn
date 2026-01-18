@@ -24,6 +24,10 @@ body {
     color: var(--primary-color);
 }
 
+.title5 {
+    font-size: 1.1rem;
+}
+
 /* Calender Section */
 .left-sideNav {
     min-height: auto;
@@ -59,14 +63,14 @@ body {
 .calender-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 20px;
-    padding: 10px 24px;
+    gap: clamp(10px, 2vw, 20px);
+    padding: 10px clamp(12px, 3vw, 24px);
 }
 
 .day,
 .date {
     background: var(--date-color);
-    height: 80px;
+    min-height: 80px;
     box-shadow: var(--box-shadow);
     border-radius: 15px;
     display: flex;
@@ -74,15 +78,96 @@ body {
     justify-content: center;
     font-size: var(--p-18px);
     text-transform: capitalize;
-
+    font-weight: 500;
 }
 
 .day {
     font-weight: bold;
 }
 
+.indication-list {
+    margin-top: 30px;
+}
+
+.indication-colorList {
+    margin-right: 20px;
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.indication-colorList:last-child {
+    margin-right: 0;
+}
+
+
+.indication-colorList span:first-child {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    margin-right: 5px;
+    box-shadow: inset var(--box-shadow);
+}
+
+.color1 span:first-child {
+    background-color: var(--secondary-color);
+
+}
+
+.color2 span:first-child {
+    background-color: var(--date-color);
+    border: 3px solid var(--secondary-color);
+
+}
+
+.color3 span:first-child {
+    background-color: #A9D0D0;
+}
+
+.classColor1 {
+    background-color: var(--secondary-color);
+
+}
+
+.classColor2 {
+    background-color: var(--date-color);
+    border: 3px solid var(--secondary-color);
+    font-weight: 700;
+
+}
+
+.classColor3 {
+    background-color: #A9D0D0;
+
+}
+
+.classColor4 {
+    color: #989797;
+    box-shadow: inset var(--box-shadow);
+}
+
 @media screen and (max-width:1600px) {
     .left-sideNav {
         min-height: 100vh;
+    }
+}
+
+@media screen and (max-width:992px) {
+
+
+
+
+    .day,
+    .date {
+        font-size: 0.8rem;
+        border-radius: 12px;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+
+    .day,
+    .date {
+        min-height: auto;
     }
 }

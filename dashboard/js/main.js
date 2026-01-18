@@ -25,14 +25,14 @@ document.addEventListener("DOMContentLoaded", ()=> {
   // ===============================
   // Course Range
   // ===============================
-  const rangeInput = document.getElementById("range4");
-  const rangeOutput = document.getElementById("rangeValue");
+  // const rangeInput = document.getElementById("range4");
+  // const rangeOutput = document.getElementById("rangeValue");
 
-  rangeOutput.textContent = rangeInput.value + "%";
+  // rangeOutput.textContent = rangeInput.value + "%";
 
-  rangeInput.addEventListener("input", function () {
-    rangeOutput.textContent = this.value + "%";
-  });
+  // rangeInput.addEventListener("input", function () {
+  //   rangeOutput.textContent = this.value + "%";
+  // });
 
   // ===============================
   // BAR CHART

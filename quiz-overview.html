@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -19,8 +19,9 @@
     <!-- Custom Css -->
     <link rel="stylesheet" href="./style/Index.css" />
     <link rel="stylesheet" href="./style/about.css" />
-    <link rel="stylesheet" href="./style/register.css" />
-    <link rel="stylesheet" href="/style/quiz-qstn.css" />
+    <link rel="stylesheet" href="./style/register.css">
+    <link rel="stylesheet" href="./style/quiz.css" />
+    <link rel="stylesheet" href="./style/quiz-overview.css">
 </head>
 
 <body>
@@ -139,42 +140,171 @@
             </div>
         </div>
     </div>
-
     <main>
-        <section class="question-sec">
-            <div class="about-about-hdr">
+        <!-- Banner Section -->
+        <section class="quiz-sec">
+
+            <div class="quizBnr-wrpr">
                 <div class="container">
-                    <ul class="list-unstyled d-flex">
-                        <li><a href="index.html" class="brdcrumb fw-light me-1">Home></a></li>
-                        <li><a href="quiz.html" class="brdcrumb fw-light me-1">Quiz></a></li>
-                        <li class="brdcrumb fw-light">Quiz Test</li>
-                    </ul>
+                    <div class="quiz-cntn">
+                        <h1 class="quiz-title1">Quiz of the Day</h1>
+
+                        <p>
+                            Play our daily 10- question general SkillLearn quiz. Today’s
+                            quiz is Quiz of the Day no. 86.
+                        </p>
+                        <div class="quiz-btnBox d-flex">
+                            <a href="quiz-qstn.html" class="btn-secondary section-btn text-capitalize">Play Now
+                                <span class="d-flex align-items-center justify-content-center">
+                                    <svg width="13" height="17" viewBox="0 0 13 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12.0637 0.0004902C12.2625 0.000613962 12.453 0.0796219 12.5936 0.22016C12.7341 0.360698 12.8131 0.551272 12.8132 0.750023L12.8132 9.23531C12.8168 9.33596 12.8 9.4363 12.764 9.53034C12.7279 9.62438 12.6733 9.71019 12.6033 9.78265C12.5334 9.85512 12.4495 9.91275 12.3568 9.95211C12.2641 9.99148 12.1644 10.0118 12.0637 10.0118C11.963 10.0118 11.8633 9.99148 11.7706 9.95211C11.6779 9.91275 11.5941 9.85512 11.5241 9.78265C11.4542 9.71019 11.3995 9.62438 11.3634 9.53034C11.3274 9.4363 11.3106 9.33596 11.3142 9.2353L11.3142 2.56022L1.28033 12.5941C1.13968 12.7347 0.948911 12.8137 0.749999 12.8137C0.551087 12.8137 0.360322 12.7347 0.21967 12.5941C0.0790175 12.4534 -1.01666e-07 12.2626 -4.30457e-07 12.0637C-7.59249e-07 11.8648 0.0790178 11.6741 0.21967 11.5334L10.2535 1.49956L3.57843 1.49956C3.47777 1.50311 3.37743 1.48635 3.28339 1.45028C3.18935 1.41422 3.10354 1.35958 3.03108 1.28963C2.95861 1.21967 2.90098 1.13584 2.86162 1.04314C2.82226 0.950428 2.80197 0.850741 2.80197 0.750022C2.80197 0.649304 2.82226 0.549617 2.86162 0.456909C2.90098 0.364201 2.95861 0.280371 3.03108 0.21042C3.10354 0.140469 3.18935 0.0858291 3.28339 0.0497613C3.37743 0.0136935 3.47777 -0.00306335 3.57843 0.0004896L12.0637 0.0004902Z"
+                                            fill="black" />
+                                    </svg> </span></a>
+                        </div>
+                    </div>
+                    <div class="breadcrumb-box">
+                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="quiz.html">Quiz</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Quiz Overview</li>
+                            </ol>
+                        </nav>
+                    </div>
                 </div>
+
             </div>
-            <div class="about-about-wrpr">
-                <div class="container">
-                    <div class="question-progress">
-                        <div class="progress-hdr d-flex align-items-center justify-content-between">
-                            <h4 class="title4">Web Devolpoment</h4>
-                            <p>Quescation 1 Out Of 08</p>
+        </section>
+
+        <!-- Overview Section -->
+        <section class="overview-sec">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-xl-9 mb-4 mb-xl-0">
+                        <div class="switch-quiz d-flex align-items-center justify-content-between">
+                            <button class="switch-btn active">
+                                Overview
+                            </button>
+                            <button class="switch-btn">
+                                Leaderboard
+                            </button>
+                            <button class="switch-btn">
+                                Reviews
+                            </button>
                         </div>
-                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25"
-                            aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 25%"></div>
+
+                        <!-- Overview Tab -->
+
+                        <div class="overview-tab active">
+                            <h2 class="title2">
+                                Overview
+                            </h2>
+                            <p>Test your knowledge of the Space Exploration with this comprehensive trivia quiz. From
+                                Iron Man to the latest releases, this quiz covers characters, plot points, Easter eggs,
+                                and behind-the-scenes facts that only true fans would know.</p>
+                            <h2 class="title2">
+                                Requirements
+                            </h2>
+                            <p>Basic knowledge of Marvel movies and TV shows. No specific preparation needed.</p>
+                            <h2 class="title2">
+                                Tags
+                            </h2>
+                            <div class="tags-bar">
+                                <button class="topic-tags active">Marvel</button>
+                                <button class="topic-tags">Web Design</button>
+                                <button class="topic-tags">Graphics</button>
+                                <button class="topic-tags">AI</button>
+                                <button class="topic-tags">Coding</button>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 mb-3 mb-lg-0 col-lg-6">
+                                    <div
+                                        class="concept-topic topic1 d-flex justify-content-center align-items-center flex-column">
+                                        <h3 class="title3">
+                                            Java Script Advanced Concepts
+                                        </h3>
+                                        <a href="quiz-qstn.html" class="btn-secondary section-btn text-capitalize">Play Now
+                                            <span class="d-flex align-items-center justify-content-center">
+                                                <svg width="13" height="17" viewBox="0 0 13 13" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M12.0637 0.0004902C12.2625 0.000613962 12.453 0.0796219 12.5936 0.22016C12.7341 0.360698 12.8131 0.551272 12.8132 0.750023L12.8132 9.23531C12.8168 9.33596 12.8 9.4363 12.764 9.53034C12.7279 9.62438 12.6733 9.71019 12.6033 9.78265C12.5334 9.85512 12.4495 9.91275 12.3568 9.95211C12.2641 9.99148 12.1644 10.0118 12.0637 10.0118C11.963 10.0118 11.8633 9.99148 11.7706 9.95211C11.6779 9.91275 11.5941 9.85512 11.5241 9.78265C11.4542 9.71019 11.3995 9.62438 11.3634 9.53034C11.3274 9.4363 11.3106 9.33596 11.3142 9.2353L11.3142 2.56022L1.28033 12.5941C1.13968 12.7347 0.948911 12.8137 0.749999 12.8137C0.551087 12.8137 0.360322 12.7347 0.21967 12.5941C0.0790175 12.4534 -1.01666e-07 12.2626 -4.30457e-07 12.0637C-7.59249e-07 11.8648 0.0790178 11.6741 0.21967 11.5334L10.2535 1.49956L3.57843 1.49956C3.47777 1.50311 3.37743 1.48635 3.28339 1.45028C3.18935 1.41422 3.10354 1.35958 3.03108 1.28963C2.95861 1.21967 2.90098 1.13584 2.86162 1.04314C2.82226 0.950428 2.80197 0.850741 2.80197 0.750022C2.80197 0.649304 2.82226 0.549617 2.86162 0.456909C2.90098 0.364201 2.95861 0.280371 3.03108 0.21042C3.10354 0.140469 3.18935 0.0858291 3.28339 0.0497613C3.37743 0.0136935 3.47777 -0.00306335 3.57843 0.0004896L12.0637 0.0004902Z"
+                                                        fill="black" />
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div
+                                        class="concept-topic topic2 d-flex justify-content-center align-items-center flex-column">
+                                        <h3 class="title3">
+                                            CSS Flex Box & Grid Mastery
+                                        </h3>
+                                        <a href="quiz-qstn.html" class="btn-secondary section-btn text-capitalize">Play Now
+                                            <span class="d-flex align-items-center justify-content-center">
+                                                <svg width="13" height="17" viewBox="0 0 13 13" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M12.0637 0.0004902C12.2625 0.000613962 12.453 0.0796219 12.5936 0.22016C12.7341 0.360698 12.8131 0.551272 12.8132 0.750023L12.8132 9.23531C12.8168 9.33596 12.8 9.4363 12.764 9.53034C12.7279 9.62438 12.6733 9.71019 12.6033 9.78265C12.5334 9.85512 12.4495 9.91275 12.3568 9.95211C12.2641 9.99148 12.1644 10.0118 12.0637 10.0118C11.963 10.0118 11.8633 9.99148 11.7706 9.95211C11.6779 9.91275 11.5941 9.85512 11.5241 9.78265C11.4542 9.71019 11.3995 9.62438 11.3634 9.53034C11.3274 9.4363 11.3106 9.33596 11.3142 9.2353L11.3142 2.56022L1.28033 12.5941C1.13968 12.7347 0.948911 12.8137 0.749999 12.8137C0.551087 12.8137 0.360322 12.7347 0.21967 12.5941C0.0790175 12.4534 -1.01666e-07 12.2626 -4.30457e-07 12.0637C-7.59249e-07 11.8648 0.0790178 11.6741 0.21967 11.5334L10.2535 1.49956L3.57843 1.49956C3.47777 1.50311 3.37743 1.48635 3.28339 1.45028C3.18935 1.41422 3.10354 1.35958 3.03108 1.28963C2.95861 1.21967 2.90098 1.13584 2.86162 1.04314C2.82226 0.950428 2.80197 0.850741 2.80197 0.750022C2.80197 0.649304 2.82226 0.549617 2.86162 0.456909C2.90098 0.364201 2.95861 0.280371 3.03108 0.21042C3.10354 0.140469 3.18935 0.0858291 3.28339 0.0497613C3.37743 0.0136935 3.47777 -0.00306335 3.57843 0.0004896L12.0637 0.0004902Z"
+                                                        fill="black" />
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="question-card text-center text-capitalize">
-                        <h2 class="title3">
-                            Which hook is used to manage state in a functional ?
-                        </h2>
-                        <div class="answer-grid">
-                            <button class="answer-btn">UseEffects</button>
-                            <button class="answer-btn">UseContent</button>
-                            <button class="answer-btn">UseState</button>
-                            <button class="answer-btn">UseRef</button>
-                        </div>
-                        <div class="submit-button text-end">
-                            <a href="" class="btn-secondary section-btn text-capitalize">Submit answer
+                    <div class="col-12 col-xl-3">
+                        <div class="spot-box">
+                            <div class="spot-hdr d-flex justify-content-between align-items-center">
+                                <h3 class="title3">
+                                    Spot Fill
+                                </h3>
+                                <p>09/10</p>
+                            </div>
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                            <p>Almost Full only 01 spots left</p>
+                            <div class="spotCategory-box">
+                                <div class="spot-category">
+                                    <h4 class="title4">Category</h4>
+                                    <p>Web Development</p>
+                                </div>
+                                <div class="spot-category">
+                                    <h4 class="title4">Question</h4>
+                                    <p>08</p>
+                                </div>
+                                <div class="spot-category">
+                                    <h4 class="title4">Time Limit</h4>
+                                    <p>20 Minute</p>
+                                </div>
+                                <div class="spot-category">
+                                    <h4 class="title4">Difficulty</h4>
+                                    <p>Medium</p>
+                                </div>
+                            </div>
+                            <div class="quiz-mentor">
+                                <div class="mentor-top d-flex align-items-center gap-2">
+                                    <div class="mentor-img">
+                                        <img src="/assets/QuizOverview/mentor1.png" alt="">
+                                    </div>
+                                    <div class="mentor-details">
+                                        <h4 class="title4">David Calvin</h4>
+                                        <p>Expert quiz creator</p>
+                                    </div>
+                                </div>
+                                <div class="mentor-bottom d-flex justify-content-between align-items-center">
+                                    <p>Quizzes: <span>42</span></p>
+                                    <p>Updated: <span>2025-10-15</span></p>
+                                </div>
+                            </div>
+                            <a href="quiz-qstn.html" class="btn-secondary section-btn text-capitalize">Play Now
                                 <span class="d-flex align-items-center justify-content-center">
                                     <svg width="13" height="17" viewBox="0 0 13 13" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -184,175 +314,211 @@
                                     </svg>
                                 </span>
                             </a>
-                        </div>
-                    </div>
-                    <div class="question-card text-center text-capitalize">
-                        <h2 class="title3">
-                            Which hook is used to perfrom side effects in Reacts ?
-                        </h2>
-                        <div class="answer-grid">
-                            <button class="answer-btn">UseEffects</button>
-                            <button class="answer-btn">UseContent</button>
-                            <button class="answer-btn">UseState</button>
-                            <button class="answer-btn">UseRef</button>
-                        </div>
-                        <div class="submit-button text-end">
-                            <a href="" class="btn-secondary section-btn text-capitalize">Submit answer
-                                <span class="d-flex align-items-center justify-content-center">
-                                    <svg width="13" height="17" viewBox="0 0 13 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M12.0637 0.0004902C12.2625 0.000613962 12.453 0.0796219 12.5936 0.22016C12.7341 0.360698 12.8131 0.551272 12.8132 0.750023L12.8132 9.23531C12.8168 9.33596 12.8 9.4363 12.764 9.53034C12.7279 9.62438 12.6733 9.71019 12.6033 9.78265C12.5334 9.85512 12.4495 9.91275 12.3568 9.95211C12.2641 9.99148 12.1644 10.0118 12.0637 10.0118C11.963 10.0118 11.8633 9.99148 11.7706 9.95211C11.6779 9.91275 11.5941 9.85512 11.5241 9.78265C11.4542 9.71019 11.3995 9.62438 11.3634 9.53034C11.3274 9.4363 11.3106 9.33596 11.3142 9.2353L11.3142 2.56022L1.28033 12.5941C1.13968 12.7347 0.948911 12.8137 0.749999 12.8137C0.551087 12.8137 0.360322 12.7347 0.21967 12.5941C0.0790175 12.4534 -1.01666e-07 12.2626 -4.30457e-07 12.0637C-7.59249e-07 11.8648 0.0790178 11.6741 0.21967 11.5334L10.2535 1.49956L3.57843 1.49956C3.47777 1.50311 3.37743 1.48635 3.28339 1.45028C3.18935 1.41422 3.10354 1.35958 3.03108 1.28963C2.95861 1.21967 2.90098 1.13584 2.86162 1.04314C2.82226 0.950428 2.80197 0.850741 2.80197 0.750022C2.80197 0.649304 2.82226 0.549617 2.86162 0.456909C2.90098 0.364201 2.95861 0.280371 3.03108 0.21042C3.10354 0.140469 3.18935 0.0858291 3.28339 0.0497613C3.37743 0.0136935 3.47777 -0.00306335 3.57843 0.0004896L12.0637 0.0004902Z"
-                                            fill="black" />
+                            <div class="overview-iconBox text-center">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px"
+                                        viewBox="0 0 24 24">
+                                        <path fill="#fff"
+                                            d="M21 7v12q0 .825-.587 1.413T19 21H5q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h12zm-9 11q1.25 0 2.125-.875T15 15t-.875-2.125T12 12t-2.125.875T9 15t.875 2.125T12 18m-6-8h9V6H6z"
+                                            stroke-width="0.3" stroke="#fff" />
                                     </svg>
                                 </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="question-card text-center text-capitalize">
-                        <h2 class="title3">
-                            What does JSX stand for ?
-                        </h2>
-                        <div class="answer-grid">
-                            <button class="answer-btn">Java Syntax Extension</button>
-                            <button class="answer-btn">JavaScript XML</button>
-                            <button class="answer-btn">JSON XML</button>
-                            <button class="answer-btn">Java Source Extension</button>
-                        </div>
-                        <div class="submit-button text-end">
-                            <a href="" class="btn-secondary section-btn text-capitalize">Submit answer
-                                <span class="d-flex align-items-center justify-content-center">
-                                    <svg width="13" height="17" viewBox="0 0 13 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M12.0637 0.0004902C12.2625 0.000613962 12.453 0.0796219 12.5936 0.22016C12.7341 0.360698 12.8131 0.551272 12.8132 0.750023L12.8132 9.23531C12.8168 9.33596 12.8 9.4363 12.764 9.53034C12.7279 9.62438 12.6733 9.71019 12.6033 9.78265C12.5334 9.85512 12.4495 9.91275 12.3568 9.95211C12.2641 9.99148 12.1644 10.0118 12.0637 10.0118C11.963 10.0118 11.8633 9.99148 11.7706 9.95211C11.6779 9.91275 11.5941 9.85512 11.5241 9.78265C11.4542 9.71019 11.3995 9.62438 11.3634 9.53034C11.3274 9.4363 11.3106 9.33596 11.3142 9.2353L11.3142 2.56022L1.28033 12.5941C1.13968 12.7347 0.948911 12.8137 0.749999 12.8137C0.551087 12.8137 0.360322 12.7347 0.21967 12.5941C0.0790175 12.4534 -1.01666e-07 12.2626 -4.30457e-07 12.0637C-7.59249e-07 11.8648 0.0790178 11.6741 0.21967 11.5334L10.2535 1.49956L3.57843 1.49956C3.47777 1.50311 3.37743 1.48635 3.28339 1.45028C3.18935 1.41422 3.10354 1.35958 3.03108 1.28963C2.95861 1.21967 2.90098 1.13584 2.86162 1.04314C2.82226 0.950428 2.80197 0.850741 2.80197 0.750022C2.80197 0.649304 2.82226 0.549617 2.86162 0.456909C2.90098 0.364201 2.95861 0.280371 3.03108 0.21042C3.10354 0.140469 3.18935 0.0858291 3.28339 0.0497613C3.37743 0.0136935 3.47777 -0.00306335 3.57843 0.0004896L12.0637 0.0004902Z"
-                                            fill="black" />
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px"
+                                        viewBox="0 0 24 24">
+                                        <path fill="#fff"
+                                            d="M17 22q-1.25 0-2.125-.875T14 19q0-.15.075-.7L7.05 14.2q-.4.375-.925.588T5 15q-1.25 0-2.125-.875T2 12t.875-2.125T5 9q.6 0 1.125.213t.925.587l7.025-4.1q-.05-.175-.062-.337T14 5q0-1.25.875-2.125T17 2t2.125.875T20 5t-.875 2.125T17 8q-.6 0-1.125-.213T14.95 7.2l-7.025 4.1q.05.175.063.338T8 12t-.012.363t-.063.337l7.025 4.1q.4-.375.925-.587T17 16q1.25 0 2.125.875T20 19t-.875 2.125T17 22"
+                                            stroke-width="0.3" stroke="#fff" />
                                     </svg>
                                 </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="question-card text-center text-capitalize">
-                        <h2 class="title3">
-                            Which hook is used to manage state in a functional ?
-                        </h2>
-                        <div class="answer-grid">
-                            <button class="answer-btn">UseEffects</button>
-                            <button class="answer-btn">UseContent</button>
-                            <button class="answer-btn">UseState</button>
-                            <button class="answer-btn">UseRef</button>
-                        </div>
-                        <div class="submit-button text-end">
-                            <a href="" class="btn-secondary section-btn text-capitalize">Submit answer
-                                <span class="d-flex align-items-center justify-content-center">
-                                    <svg width="13" height="17" viewBox="0 0 13 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M12.0637 0.0004902C12.2625 0.000613962 12.453 0.0796219 12.5936 0.22016C12.7341 0.360698 12.8131 0.551272 12.8132 0.750023L12.8132 9.23531C12.8168 9.33596 12.8 9.4363 12.764 9.53034C12.7279 9.62438 12.6733 9.71019 12.6033 9.78265C12.5334 9.85512 12.4495 9.91275 12.3568 9.95211C12.2641 9.99148 12.1644 10.0118 12.0637 10.0118C11.963 10.0118 11.8633 9.99148 11.7706 9.95211C11.6779 9.91275 11.5941 9.85512 11.5241 9.78265C11.4542 9.71019 11.3995 9.62438 11.3634 9.53034C11.3274 9.4363 11.3106 9.33596 11.3142 9.2353L11.3142 2.56022L1.28033 12.5941C1.13968 12.7347 0.948911 12.8137 0.749999 12.8137C0.551087 12.8137 0.360322 12.7347 0.21967 12.5941C0.0790175 12.4534 -1.01666e-07 12.2626 -4.30457e-07 12.0637C-7.59249e-07 11.8648 0.0790178 11.6741 0.21967 11.5334L10.2535 1.49956L3.57843 1.49956C3.47777 1.50311 3.37743 1.48635 3.28339 1.45028C3.18935 1.41422 3.10354 1.35958 3.03108 1.28963C2.95861 1.21967 2.90098 1.13584 2.86162 1.04314C2.82226 0.950428 2.80197 0.850741 2.80197 0.750022C2.80197 0.649304 2.82226 0.549617 2.86162 0.456909C2.90098 0.364201 2.95861 0.280371 3.03108 0.21042C3.10354 0.140469 3.18935 0.0858291 3.28339 0.0497613C3.37743 0.0136935 3.47777 -0.00306335 3.57843 0.0004896L12.0637 0.0004902Z"
-                                            fill="black" />
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px"
+                                        viewBox="0 0 1024 1024">
+                                        <path fill="#fff"
+                                            d="M1021.06 839.968L833.798 493.664c19.104-43.36 29.792-91.28 29.792-141.696C863.59 157.664 706.07.16 511.782.16c-194.336 0-351.84 157.52-351.84 351.808c0 51.632 11.216 100.624 31.184 144.784L3.03 839.808c-6.065 11.024-5.057 24.624 2.527 34.688c7.6 10.033 20.432 14.752 32.687 11.873l160.624-36.848l54.976 153.12c4.288 11.904 15.152 20.16 27.744 21.088c.817.064 1.6.096 2.368.096a32 32 0 0 0 28.192-16.88L475.844 701.97a355 355 0 0 0 35.92 1.808c11.12 0 22.095-.576 32.943-1.6l167.248 305.008a31.98 31.98 0 0 0 30.56 16.527c12.56-1.008 23.376-9.248 27.631-21.088l54.976-153.12l160.624 36.848c12.32 2.975 25.024-1.809 32.624-11.809c7.632-9.984 8.656-23.52 2.688-34.576zm-731.282 73.376L249.52 801.183c-5.504-15.248-21.471-24.128-37.28-20.368l-118.8 27.248l135.41-246.976c44.592 60.24 107.952 105.68 181.44 127.793zm-65.553-561.377c0-158.544 129.009-287.536 287.568-287.536c158.544 0 287.536 128.992 287.536 287.536S670.337 639.535 511.793 639.535c-158.576 0-287.568-129.024-287.568-287.568m587.52 428.847c-15.872-3.744-31.776 5.12-37.28 20.367l-40.529 112.976l-123.152-224.56c75.44-22.096 140.337-68.735 185.505-130.735L931.137 808.19z"
+                                            stroke-width="25.5" stroke="#fff" />
                                     </svg>
                                 </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="question-card text-center text-capitalize">
-                        <h2 class="title3">
-                            Which hook is used to manage state in a functional ?
-                        </h2>
-                        <div class="answer-grid">
-                            <button class="answer-btn">UseEffects</button>
-                            <button class="answer-btn">UseContent</button>
-                            <button class="answer-btn">UseState</button>
-                            <button class="answer-btn">UseRef</button>
-                        </div>
-                        <div class="submit-button text-end">
-                            <a href="" class="btn-secondary section-btn text-capitalize">Submit answer
-                                <span class="d-flex align-items-center justify-content-center">
-                                    <svg width="13" height="17" viewBox="0 0 13 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M12.0637 0.0004902C12.2625 0.000613962 12.453 0.0796219 12.5936 0.22016C12.7341 0.360698 12.8131 0.551272 12.8132 0.750023L12.8132 9.23531C12.8168 9.33596 12.8 9.4363 12.764 9.53034C12.7279 9.62438 12.6733 9.71019 12.6033 9.78265C12.5334 9.85512 12.4495 9.91275 12.3568 9.95211C12.2641 9.99148 12.1644 10.0118 12.0637 10.0118C11.963 10.0118 11.8633 9.99148 11.7706 9.95211C11.6779 9.91275 11.5941 9.85512 11.5241 9.78265C11.4542 9.71019 11.3995 9.62438 11.3634 9.53034C11.3274 9.4363 11.3106 9.33596 11.3142 9.2353L11.3142 2.56022L1.28033 12.5941C1.13968 12.7347 0.948911 12.8137 0.749999 12.8137C0.551087 12.8137 0.360322 12.7347 0.21967 12.5941C0.0790175 12.4534 -1.01666e-07 12.2626 -4.30457e-07 12.0637C-7.59249e-07 11.8648 0.0790178 11.6741 0.21967 11.5334L10.2535 1.49956L3.57843 1.49956C3.47777 1.50311 3.37743 1.48635 3.28339 1.45028C3.18935 1.41422 3.10354 1.35958 3.03108 1.28963C2.95861 1.21967 2.90098 1.13584 2.86162 1.04314C2.82226 0.950428 2.80197 0.850741 2.80197 0.750022C2.80197 0.649304 2.82226 0.549617 2.86162 0.456909C2.90098 0.364201 2.95861 0.280371 3.03108 0.21042C3.10354 0.140469 3.18935 0.0858291 3.28339 0.0497613C3.37743 0.0136935 3.47777 -0.00306335 3.57843 0.0004896L12.0637 0.0004902Z"
-                                            fill="black" />
-                                    </svg>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="question-card text-center text-capitalize">
-                        <h2 class="title3">
-                            Which hook is used to manage state in a functional ?
-                        </h2>
-                        <div class="answer-grid">
-                            <button class="answer-btn">UseEffects</button>
-                            <button class="answer-btn">UseContent</button>
-                            <button class="answer-btn">UseState</button>
-                            <button class="answer-btn">UseRef</button>
-                        </div>
-                        <div class="submit-button text-end">
-                            <a href="" class="btn-secondary section-btn text-capitalize">Submit answer
-                                <span class="d-flex align-items-center justify-content-center">
-                                    <svg width="13" height="17" viewBox="0 0 13 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M12.0637 0.0004902C12.2625 0.000613962 12.453 0.0796219 12.5936 0.22016C12.7341 0.360698 12.8131 0.551272 12.8132 0.750023L12.8132 9.23531C12.8168 9.33596 12.8 9.4363 12.764 9.53034C12.7279 9.62438 12.6733 9.71019 12.6033 9.78265C12.5334 9.85512 12.4495 9.91275 12.3568 9.95211C12.2641 9.99148 12.1644 10.0118 12.0637 10.0118C11.963 10.0118 11.8633 9.99148 11.7706 9.95211C11.6779 9.91275 11.5941 9.85512 11.5241 9.78265C11.4542 9.71019 11.3995 9.62438 11.3634 9.53034C11.3274 9.4363 11.3106 9.33596 11.3142 9.2353L11.3142 2.56022L1.28033 12.5941C1.13968 12.7347 0.948911 12.8137 0.749999 12.8137C0.551087 12.8137 0.360322 12.7347 0.21967 12.5941C0.0790175 12.4534 -1.01666e-07 12.2626 -4.30457e-07 12.0637C-7.59249e-07 11.8648 0.0790178 11.6741 0.21967 11.5334L10.2535 1.49956L3.57843 1.49956C3.47777 1.50311 3.37743 1.48635 3.28339 1.45028C3.18935 1.41422 3.10354 1.35958 3.03108 1.28963C2.95861 1.21967 2.90098 1.13584 2.86162 1.04314C2.82226 0.950428 2.80197 0.850741 2.80197 0.750022C2.80197 0.649304 2.82226 0.549617 2.86162 0.456909C2.90098 0.364201 2.95861 0.280371 3.03108 0.21042C3.10354 0.140469 3.18935 0.0858291 3.28339 0.0497613C3.37743 0.0136935 3.47777 -0.00306335 3.57843 0.0004896L12.0637 0.0004902Z"
-                                            fill="black" />
-                                    </svg>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="question-card text-center text-capitalize">
-                        <h2 class="title3">
-                            Which hook is used to manage state in a functional ?
-                        </h2>
-                        <div class="answer-grid">
-                            <button class="answer-btn">UseEffects</button>
-                            <button class="answer-btn">UseContent</button>
-                            <button class="answer-btn">UseState</button>
-                            <button class="answer-btn">UseRef</button>
-                        </div>
-                        <div class="submit-button text-end">
-                            <a href="" class="btn-secondary section-btn text-capitalize">Submit answer
-                                <span class="d-flex align-items-center justify-content-center">
-                                    <svg width="13" height="17" viewBox="0 0 13 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M12.0637 0.0004902C12.2625 0.000613962 12.453 0.0796219 12.5936 0.22016C12.7341 0.360698 12.8131 0.551272 12.8132 0.750023L12.8132 9.23531C12.8168 9.33596 12.8 9.4363 12.764 9.53034C12.7279 9.62438 12.6733 9.71019 12.6033 9.78265C12.5334 9.85512 12.4495 9.91275 12.3568 9.95211C12.2641 9.99148 12.1644 10.0118 12.0637 10.0118C11.963 10.0118 11.8633 9.99148 11.7706 9.95211C11.6779 9.91275 11.5941 9.85512 11.5241 9.78265C11.4542 9.71019 11.3995 9.62438 11.3634 9.53034C11.3274 9.4363 11.3106 9.33596 11.3142 9.2353L11.3142 2.56022L1.28033 12.5941C1.13968 12.7347 0.948911 12.8137 0.749999 12.8137C0.551087 12.8137 0.360322 12.7347 0.21967 12.5941C0.0790175 12.4534 -1.01666e-07 12.2626 -4.30457e-07 12.0637C-7.59249e-07 11.8648 0.0790178 11.6741 0.21967 11.5334L10.2535 1.49956L3.57843 1.49956C3.47777 1.50311 3.37743 1.48635 3.28339 1.45028C3.18935 1.41422 3.10354 1.35958 3.03108 1.28963C2.95861 1.21967 2.90098 1.13584 2.86162 1.04314C2.82226 0.950428 2.80197 0.850741 2.80197 0.750022C2.80197 0.649304 2.82226 0.549617 2.86162 0.456909C2.90098 0.364201 2.95861 0.280371 3.03108 0.21042C3.10354 0.140469 3.18935 0.0858291 3.28339 0.0497613C3.37743 0.0136935 3.47777 -0.00306335 3.57843 0.0004896L12.0637 0.0004902Z"
-                                            fill="black" />
-                                    </svg>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="question-card text-center text-capitalize">
-                        <h2 class="title3">
-                            Which hook is used to manage state in a functional ?
-                        </h2>
-                        <div class="answer-grid">
-                            <button class="answer-btn">UseEffects</button>
-                            <button class="answer-btn">UseContent</button>
-                            <button class="answer-btn">UseState</button>
-                            <button class="answer-btn">UseRef</button>
-                        </div>
-                        <div class="submit-button text-end">
-                            <a href="" class="btn-secondary section-btn text-capitalize">Submit answer
-                                <span class="d-flex align-items-center justify-content-center">
-                                    <svg width="13" height="17" viewBox="0 0 13 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M12.0637 0.0004902C12.2625 0.000613962 12.453 0.0796219 12.5936 0.22016C12.7341 0.360698 12.8131 0.551272 12.8132 0.750023L12.8132 9.23531C12.8168 9.33596 12.8 9.4363 12.764 9.53034C12.7279 9.62438 12.6733 9.71019 12.6033 9.78265C12.5334 9.85512 12.4495 9.91275 12.3568 9.95211C12.2641 9.99148 12.1644 10.0118 12.0637 10.0118C11.963 10.0118 11.8633 9.99148 11.7706 9.95211C11.6779 9.91275 11.5941 9.85512 11.5241 9.78265C11.4542 9.71019 11.3995 9.62438 11.3634 9.53034C11.3274 9.4363 11.3106 9.33596 11.3142 9.2353L11.3142 2.56022L1.28033 12.5941C1.13968 12.7347 0.948911 12.8137 0.749999 12.8137C0.551087 12.8137 0.360322 12.7347 0.21967 12.5941C0.0790175 12.4534 -1.01666e-07 12.2626 -4.30457e-07 12.0637C-7.59249e-07 11.8648 0.0790178 11.6741 0.21967 11.5334L10.2535 1.49956L3.57843 1.49956C3.47777 1.50311 3.37743 1.48635 3.28339 1.45028C3.18935 1.41422 3.10354 1.35958 3.03108 1.28963C2.95861 1.21967 2.90098 1.13584 2.86162 1.04314C2.82226 0.950428 2.80197 0.850741 2.80197 0.750022C2.80197 0.649304 2.82226 0.549617 2.86162 0.456909C2.90098 0.364201 2.95861 0.280371 3.03108 0.21042C3.10354 0.140469 3.18935 0.0858291 3.28339 0.0497613C3.37743 0.0136935 3.47777 -0.00306335 3.57843 0.0004896L12.0637 0.0004902Z"
-                                            fill="black" />
-                                    </svg>
-                                </span>
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Result Section -->
+        <section class="result-sec">
+            <div class="container">
+                <div class="result-hdr d-flex justify-content-between align-items-center">
+                    <h3 class="title3">Live Result</h3>
+                    <a href="" class="btn-secondary section-btn text-capitalize">View All
+                        <span class="d-flex align-items-center justify-content-center">
+                            <svg width="13" height="17" viewBox="0 0 13 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.0637 0.0004902C12.2625 0.000613962 12.453 0.0796219 12.5936 0.22016C12.7341 0.360698 12.8131 0.551272 12.8132 0.750023L12.8132 9.23531C12.8168 9.33596 12.8 9.4363 12.764 9.53034C12.7279 9.62438 12.6733 9.71019 12.6033 9.78265C12.5334 9.85512 12.4495 9.91275 12.3568 9.95211C12.2641 9.99148 12.1644 10.0118 12.0637 10.0118C11.963 10.0118 11.8633 9.99148 11.7706 9.95211C11.6779 9.91275 11.5941 9.85512 11.5241 9.78265C11.4542 9.71019 11.3995 9.62438 11.3634 9.53034C11.3274 9.4363 11.3106 9.33596 11.3142 9.2353L11.3142 2.56022L1.28033 12.5941C1.13968 12.7347 0.948911 12.8137 0.749999 12.8137C0.551087 12.8137 0.360322 12.7347 0.21967 12.5941C0.0790175 12.4534 -1.01666e-07 12.2626 -4.30457e-07 12.0637C-7.59249e-07 11.8648 0.0790178 11.6741 0.21967 11.5334L10.2535 1.49956L3.57843 1.49956C3.47777 1.50311 3.37743 1.48635 3.28339 1.45028C3.18935 1.41422 3.10354 1.35958 3.03108 1.28963C2.95861 1.21967 2.90098 1.13584 2.86162 1.04314C2.82226 0.950428 2.80197 0.850741 2.80197 0.750022C2.80197 0.649304 2.82226 0.549617 2.86162 0.456909C2.90098 0.364201 2.95861 0.280371 3.03108 0.21042C3.10354 0.140469 3.18935 0.0858291 3.28339 0.0497613C3.37743 0.0136935 3.47777 -0.00306335 3.57843 0.0004896L12.0637 0.0004902Z"
+                                    fill="black" />
+                            </svg> </span></a>
+                </div>
+                <div class="result-cardGrid">
+                    <div class="result-card">
+                        <div class="mentor-top d-flex align-items-center gap-2">
+                            <div class="mentor-img">
+                                <img src="/assets/QuizOverview/mentor1.png" alt="">
+                            </div>
+                            <div class="mentor-details">
+                                <h4 class="title4">David Calvin</h4>
+                                <p>1 Month ago</p>
+                            </div>
+                        </div>
+                        <div class="mentor-bottom d-flex align-items-center gap-3">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 14 14">
+                                    <path fill="#08119B" fill-rule="evenodd"
+                                        d="M13.463 9.692C13.463 12.664 10.77 14 7 14S.537 12.664.537 9.713c0-3.231 1.616-4.868 4.847-6.505L4.24 1.077A.7.7 0 0 1 4.843 0H9.41a.7.7 0 0 1 .603 1.023L8.616 3.208c3.23 1.615 4.847 3.252 4.847 6.484M7.625 4.887a.625.625 0 1 0-1.25 0v.627a1.74 1.74 0 0 0-.298 3.44l1.473.322a.625.625 0 0 1-.133 1.236h-.834a.625.625 0 0 1-.59-.416a.625.625 0 1 0-1.178.416a1.88 1.88 0 0 0 1.56 1.239v.636a.625.625 0 1 0 1.25 0v-.636a1.876 1.876 0 0 0 .192-3.696l-1.473-.322a.49.49 0 0 1 .105-.97h.968a.62.62 0 0 1 .59.416a.625.625 0 0 0 1.178-.417a1.87 1.87 0 0 0-1.56-1.238z"
+                                        clip-rule="evenodd" stroke-width="0.3" stroke="#08119B" />
+                                </svg>
+                            </span>
+                            <span>
+                                Won $5.75 Playing from “Science Trivia” by answering quescation correctly and useing
+                                knowledge to earn real money.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="result-card">
+                        <div class="mentor-top d-flex align-items-center gap-2">
+                            <div class="mentor-img">
+                                <img src="/assets/QuizOverview/mentor2.png" alt="">
+                            </div>
+                            <div class="mentor-details">
+                                <h4 class="title4">David Calvin</h4>
+                                <p>1 Month ago</p>
+                            </div>
+                        </div>
+                        <div class="mentor-bottom d-flex align-items-center gap-3">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 14 14">
+                                    <path fill="#08119B" fill-rule="evenodd"
+                                        d="M13.463 9.692C13.463 12.664 10.77 14 7 14S.537 12.664.537 9.713c0-3.231 1.616-4.868 4.847-6.505L4.24 1.077A.7.7 0 0 1 4.843 0H9.41a.7.7 0 0 1 .603 1.023L8.616 3.208c3.23 1.615 4.847 3.252 4.847 6.484M7.625 4.887a.625.625 0 1 0-1.25 0v.627a1.74 1.74 0 0 0-.298 3.44l1.473.322a.625.625 0 0 1-.133 1.236h-.834a.625.625 0 0 1-.59-.416a.625.625 0 1 0-1.178.416a1.88 1.88 0 0 0 1.56 1.239v.636a.625.625 0 1 0 1.25 0v-.636a1.876 1.876 0 0 0 .192-3.696l-1.473-.322a.49.49 0 0 1 .105-.97h.968a.62.62 0 0 1 .59.416a.625.625 0 0 0 1.178-.417a1.87 1.87 0 0 0-1.56-1.238z"
+                                        clip-rule="evenodd" stroke-width="0.3" stroke="#08119B" />
+                                </svg>
+                            </span>
+                            <span>
+                                Won $5.75 Playing from “Science Trivia” by answering quescation correctly and useing
+                                knowledge to earn real money.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="result-card">
+                        <div class="mentor-top d-flex align-items-center gap-2">
+                            <div class="mentor-img">
+                                <img src="/assets/QuizOverview/mentor3.png" alt="">
+                            </div>
+                            <div class="mentor-details">
+                                <h4 class="title4">David Calvin</h4>
+                                <p>1 Month ago</p>
+                            </div>
+                        </div>
+                        <div class="mentor-bottom d-flex align-items-center gap-3">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 14 14">
+                                    <path fill="#08119B" fill-rule="evenodd"
+                                        d="M13.463 9.692C13.463 12.664 10.77 14 7 14S.537 12.664.537 9.713c0-3.231 1.616-4.868 4.847-6.505L4.24 1.077A.7.7 0 0 1 4.843 0H9.41a.7.7 0 0 1 .603 1.023L8.616 3.208c3.23 1.615 4.847 3.252 4.847 6.484M7.625 4.887a.625.625 0 1 0-1.25 0v.627a1.74 1.74 0 0 0-.298 3.44l1.473.322a.625.625 0 0 1-.133 1.236h-.834a.625.625 0 0 1-.59-.416a.625.625 0 1 0-1.178.416a1.88 1.88 0 0 0 1.56 1.239v.636a.625.625 0 1 0 1.25 0v-.636a1.876 1.876 0 0 0 .192-3.696l-1.473-.322a.49.49 0 0 1 .105-.97h.968a.62.62 0 0 1 .59.416a.625.625 0 0 0 1.178-.417a1.87 1.87 0 0 0-1.56-1.238z"
+                                        clip-rule="evenodd" stroke-width="0.3" stroke="#08119B" />
+                                </svg>
+                            </span>
+                            <span>
+                                Won $5.75 Playing from “Science Trivia” by answering quescation correctly and useing
+                                knowledge to earn real money.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="result-card">
+                        <div class="mentor-top d-flex align-items-center gap-2">
+                            <div class="mentor-img">
+                                <img src="/assets/QuizOverview/mentor4.png" alt="">
+                            </div>
+                            <div class="mentor-details">
+                                <h4 class="title4">David Calvin</h4>
+                                <p>1 Month ago</p>
+                            </div>
+                        </div>
+                        <div class="mentor-bottom d-flex align-items-center gap-3">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 14 14">
+                                    <path fill="#08119B" fill-rule="evenodd"
+                                        d="M13.463 9.692C13.463 12.664 10.77 14 7 14S.537 12.664.537 9.713c0-3.231 1.616-4.868 4.847-6.505L4.24 1.077A.7.7 0 0 1 4.843 0H9.41a.7.7 0 0 1 .603 1.023L8.616 3.208c3.23 1.615 4.847 3.252 4.847 6.484M7.625 4.887a.625.625 0 1 0-1.25 0v.627a1.74 1.74 0 0 0-.298 3.44l1.473.322a.625.625 0 0 1-.133 1.236h-.834a.625.625 0 0 1-.59-.416a.625.625 0 1 0-1.178.416a1.88 1.88 0 0 0 1.56 1.239v.636a.625.625 0 1 0 1.25 0v-.636a1.876 1.876 0 0 0 .192-3.696l-1.473-.322a.49.49 0 0 1 .105-.97h.968a.62.62 0 0 1 .59.416a.625.625 0 0 0 1.178-.417a1.87 1.87 0 0 0-1.56-1.238z"
+                                        clip-rule="evenodd" stroke-width="0.3" stroke="#08119B" />
+                                </svg>
+                            </span>
+                            <span>
+                                Won $5.75 Playing from “Science Trivia” by answering quescation correctly and useing
+                                knowledge to earn real money.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="process-sec">
+            <div class="container">
+                <div class="process-hdrCntn text-center mb-4">
+                    <div class="process-box">
+                        Simple Process
+                    </div>
+                    <h2 class="title2">
+                        How It Works
+                    </h2>
+                    <p>
+                        Getting started with our quiz platform is easy. Follow these simple steps to begin your quiz
+                        journey.
+                    </p>
+                </div>
+                <div class="process-cardGrid">
+                    <div class="process-card process1">
+                        <div class="processCard-cntn">
+                            <h4 class="title4">Take Quizzes</h4>
+                            <p>
+                                Challenge yourself with quizzes of varying difficulty levels and formats.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="process-card process2">
+                        <div class="processCard-cntn">
+                            <h4 class="title4">Browse Categories</h4>
+                            <p>
+                                Explore our diverse range of quiz categories to find topics that interest you.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="process-card process3">
+                        <div class="processCard-cntn">
+                            <h4 class="title4">Earn Rewards</h4>
+                            <p>
+                                Collect points, badges, and climb the leaderboards as you complete quizzes.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="process-bottomCntn text-center">
+                    <p>
+                        Ready to start your quiz journey? Browse categories, find your interests, and begin challenging
+                        yourself today!
+                    </p>
+
+                    <div class="process-box">
+                        2500 + online Now
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
     </main>
-
-
     <!-- Footer Section -->
     <footer class="ftr-sec">
         <div class="container">
