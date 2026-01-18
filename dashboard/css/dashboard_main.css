@@ -494,6 +494,26 @@ Content Section
   float: right;
 }
 
+.courseProgress-barBox {
+  margin: 20px 0;
+
+}
+
+.progressBarBox-top {
+  font-size: var(--p-16px);
+}
+
+.main-progress {
+  margin-top: 15px;
+  height: 5px;
+  background: var(--tertiary-color);
+}
+
+.mainProgress-bar {
+  height: 5px;
+  background: var(--primary-color);
+}
+
 .progress-list {
   margin-top: 20px;
 }
