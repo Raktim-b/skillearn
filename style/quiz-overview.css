@@ -37,6 +37,9 @@ body {
 }
 
 /* Quiz Overview Section */
+.quiz-sec {
+    background: url(/assets/QuizPage/quizBg1.jpg) no-repeat center/cover;
+}
 
 .overview-sec {
     padding: 70px 0;
