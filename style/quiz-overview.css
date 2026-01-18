@@ -38,7 +38,7 @@ body {
 
 /* Quiz Overview Section */
 .quiz-sec {
-    background: url(/assets/QuizPage/quizBg1.jpg) no-repeat center/cover;
+    background: url(/assets/QuizPage/quizBg10.png) no-repeat center/cover;
 }
 
 .overview-sec {
@@ -402,6 +402,7 @@ body {
 
     .tags-bar {
         margin-bottom: 10px;
+        gap: 0 10px;
     }
 
     .result-cardGrid {
@@ -418,5 +419,15 @@ body {
 
     .processCard-cntn {
         padding: 15px 10px;
+    }
+
+    .switch-quiz {
+        flex-wrap: wrap;
+        justify-content: center !important;
+        padding: 5px 0;
+    }
+
+    .switch-btn:last-child {
+        margin-top: 5px;
     }
 }
