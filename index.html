@@ -10,6 +10,11 @@
       type="image/x-icon"
       href="./assets/CommonAssets/TabLogo.ico"
     />
+    <!-- Lenis Css-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.3.16/dist/lenis.css"
+    />
 
     <!-- Font Awsome Cdn -->
     <link
@@ -41,7 +46,6 @@
     <!-- Loading Screen-->
 
     <div class="loader-overlay">
-      
       <div class="loader-content">
         <img
           src="./assets/CommonAssets/Loader-logo.png"
@@ -55,7 +59,7 @@
         <span class="loader-line"></span>
       </div>
     </div>
-
+    <div class="cursor"></div>
     <div class="page-wrpr hidden">
       <!-- Header Section -->
       <header class="hdr-sec">
@@ -282,10 +286,8 @@
                 </p>
                 <div class="banner-btn d-flex">
                   <a
-                    href=""
+                    href="dashboard/html/main_dashboard.html"
                     class="btn-secondary section-btn"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
                     >Enroll Now
                     <span
                       class="d-flex align-items-center justify-content-center"
@@ -305,7 +307,7 @@
                         />
                       </svg> </span
                   ></a>
-                  <a href="" class="btn-tertiary">Learn More</a>
+                  <a href="course.html" class="btn-tertiary">Learn More</a>
                 </div>
                 <div class="reviews d-flex align-items-center">
                   <ul class="d-flex p-0 m-0">
@@ -2378,6 +2380,8 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <!-- Lenis Js -->
+    <script src="https://unpkg.com/lenis@1.3.16/dist/lenis.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <!-- Vanilla Js -->

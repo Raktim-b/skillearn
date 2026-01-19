@@ -39,6 +39,7 @@ body {
 /* Quiz Overview Section */
 .quiz-sec {
     background: url(/assets/QuizPage/quizBg10.png) no-repeat center/cover;
+    background-attachment: fixed;
 }
 
 .overview-sec {

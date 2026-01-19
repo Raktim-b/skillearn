@@ -7,7 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
       el: ".swiper-pagination",
       clickable: true,
     },
-
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     breakpoints: {
       1200: {
         slidesPerView: 4,
