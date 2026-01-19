@@ -128,7 +128,7 @@ Banner Section
   font-size: var(--size-48px);
 }
 
-.quiz-cntn > p {
+.quiz-cntn>p {
   color: rgba(255, 255, 255, 0.8);
   font-size: var(--size-24px-p);
   margin-top: 30px;
@@ -384,6 +384,7 @@ Responsive Section
 ========================
 */
 @media screen and (max-width: 1200px) {
+
   /* Banner Section */
   .quiz-sec {
     height: 70vh;
@@ -412,6 +413,10 @@ Responsive Section
 }
 
 @media screen and (max-width: 768px) {
+  .quizBnr-wrpr {
+    align-items: start;
+  }
+
   .popular-sec {
     padding: 40px 0;
   }
@@ -429,5 +434,4 @@ Responsive Section
   }
 }
 
-@media screen and (max-width: 576px) {
-}
+@media screen and (max-width: 576px) {}
