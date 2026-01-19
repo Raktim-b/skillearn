@@ -45,18 +45,9 @@ ul {
 .loader-overlay {
   position: fixed;
   inset: 0;
-  /* background: linear-gradient(-135deg, #dbf7f3, #ffffff); */
-  background-color: var(--input-bg);
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 99999;
-}
-/* ===== Curtain Loader ===== */
-
-.loader-overlay {
-  position: fixed;
-  inset: 0;
   background: transparent;
   z-index: 99999;
   overflow: hidden;
@@ -154,7 +145,23 @@ ul {
 .hidden {
   display: none;
 }
-
+/* Cursor */
+.cursor {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  mix-blend-mode: multiply;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  background: rgba(9, 120, 119, 0.45);
+  mix-blend-mode: multiply;
+  transition:
+    background-color 0.25s ease-out,
+    opacity 0.25s ease-out;
+  z-index: 999999;
+}
 /* BackTOTop */
 .button {
   width: 50px;
@@ -412,7 +419,7 @@ ul {
 
 /* Navbar Section */
 .hdr-sec {
-  padding: 32px 0 8px;
+  padding: 8px 0 10px;
   position: relative;
   z-index: 11;
 }
@@ -1791,7 +1798,10 @@ select:focus {
   color: var(--defult-color);
   padding: 0 !important;
 }
-
+.button-wrpr > input[type="submit"] :focus-visible {
+  outline: none !important;
+  border: none !important;
+}
 .arrow-wrpr {
   background-color: var(--design-bg);
   width: 32px;
@@ -3134,6 +3144,21 @@ select:focus {
 }
 
 @media screen and (max-width: 576px) {
+  /* Loading Screen */
+  .loader-text-img {
+    width: 150px;
+  }
+  .loader-logo-img {
+    width: 200px;
+  }
+  .loader-line {
+    left: 63%;
+  }
+  @keyframes lineGrow {
+    to {
+      width: 205px;
+    }
+  }
   .title1 {
     font-size: 30px;
     line-height: 37px;
