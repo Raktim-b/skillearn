@@ -2653,6 +2653,9 @@ select:focus {
 }
 
 @media screen and (max-width: 768px) {
+  .cursor{
+    display: none;
+  }
   .title1 {
     font-size: 42px;
     line-height: 45px;
