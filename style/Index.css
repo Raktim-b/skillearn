@@ -40,6 +40,121 @@ span {
 ul {
   list-style: none;
 }
+/* Loading Screen */
+
+.loader-overlay {
+  position: fixed;
+  inset: 0;
+  /* background: linear-gradient(-135deg, #dbf7f3, #ffffff); */
+  background-color: var(--input-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+/* ===== Curtain Loader ===== */
+
+.loader-overlay {
+  position: fixed;
+  inset: 0;
+  background: transparent;
+  z-index: 99999;
+  overflow: hidden;
+}
+
+/* Curtains */
+.loader-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--input-bg);
+  transform: translateY(0);
+  transition: transform 1.1s cubic-bezier(0.77, 0, 0.175, 1);
+  z-index: 1;
+}
+
+/* Content stays above curtains */
+.loader-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  z-index: 2;
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+/* Curtain animation trigger */
+.loader-overlay.curtain-up::before {
+  transform: translateY(-100%);
+}
+
+.loader-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+/* Hide loader content with curtain */
+.loader-overlay.curtain-up .loader-content {
+  opacity: 0;
+  transform: translateY(-30px) scale(0.8);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+.loader-text-img {
+  width: 180px;
+  opacity: 0;
+  transform: translateX(2000px);
+  animation: textSlideIn 1.2s ease forwards;
+}
+
+.loader-logo-img {
+  width: 250px;
+  opacity: 0;
+  transform: translateX(-2000px);
+  animation: logoSlideIn 1.2s ease forwards;
+  animation-delay: 0.2s;
+}
+.loader-line {
+  position: absolute;
+  bottom: 32px;
+  left: 68%;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(to right, #097877, #6ccdbf);
+  border-radius: 4px;
+  transform: translateX(-50%);
+  animation: lineGrow 0.8s ease forwards;
+  animation-delay: 0.6s;
+}
+@keyframes lineGrow {
+  to {
+    width: 290px;
+  }
+}
+@keyframes textSlideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes logoSlideIn {
+  to {
+    opacity: 1;
+    transform: translateX(-30px);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
 /* BackTOTop */
 .button {
   width: 50px;
@@ -308,7 +423,6 @@ ul {
 
 .nav-logo {
   max-width: 312px;
-
 }
 
 .navbar-brand {
@@ -522,7 +636,6 @@ ul {
 .bgPolygon {
   max-width: 630px;
   position: absolute;
-
 }
 
 .bgPolygon1 {
@@ -541,9 +654,7 @@ ul {
   z-index: 1;
 }
 
-
-
-.polygon1>img {
+.polygon1 > img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -1833,7 +1944,7 @@ select:focus {
   object-fit: cover;
 }
 
-@media screen and (max-width:1900px) {
+@media screen and (max-width: 1900px) {
   .bgPolygon1 {
     top: -37%;
     left: -19%;
@@ -1841,7 +1952,6 @@ select:focus {
 
   .bgPolygon2 {
     right: -35%;
-
   }
 
   .bgPolygon3 {
@@ -1966,13 +2076,11 @@ select:focus {
 
   .bgPolygon1 {
     top: -32%;
-    
   }
 
   .bgPolygon2 {
     display: none;
   }
-
 }
 
 @media screen and (max-width: 1200px) {
@@ -2154,7 +2262,6 @@ select:focus {
 }
 
 @media screen and (max-width: 992px) {
-
   .bgPolygon {
     display: none;
   }
