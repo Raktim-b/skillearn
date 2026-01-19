@@ -33,3 +33,21 @@ backToTopBtn.addEventListener("click", function () {
     behavior: "smooth",
   });
 });
+// Loader Screen
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader-overlay");
+  const content = document.querySelector(".page-wrpr");
+
+  // Let logo/text animation finish
+  setTimeout(() => {
+    loader.classList.add("curtain-up");
+
+    // Remove loader after curtain animation
+    setTimeout(() => {
+      loader.style.display = "none";
+      content.classList.remove("hidden");
+    }, 1000);
+  }, 2000);
+});
+
+
