@@ -33,12 +33,12 @@ const cursor = document.querySelector(".cursor");
     const loader = document.querySelector(".loader-overlay");
     const content = document.querySelector(".page-wrpr");
 
-    // setTimeout(() => {
-    //   loader.classList.add("curtain-up");
+    setTimeout(() => {
+      loader.classList.add("curtain-up");
 
-    //   setTimeout(() => {
-    //     loader.style.display = "none";
-    //     content.classList.remove("hidden");
+      setTimeout(() => {
+        loader.style.display = "none";
+        content.classList.remove("hidden");
 
         
         swiper = new Swiper(".cardSwiper", {
