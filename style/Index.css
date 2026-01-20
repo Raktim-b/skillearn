@@ -42,6 +42,27 @@ ul {
   list-style: none;
 }
 
+
+/* Custom Cursor */
+.cursor {
+    mix-blend-mode: difference;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    border: 10px solid var(--design-bg);
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+    z-index: 999999;
+}
+
+.hover {
+    border: 10px solid blueviolet;
+}
+
 /* Loading Screen */
 
 .loader-overlay {
@@ -153,7 +174,7 @@ ul {
 }
 
 /* Cursor */
-.cursor {
+/* .cursor {
   width: 30px;
   height: 30px;
   position: fixed;
@@ -168,7 +189,7 @@ ul {
     background-color 0.25s ease-out,
     opacity 0.25s ease-out;
   z-index: 999999;
-}
+} */
 
 /* BackTOTop */
 .button {
