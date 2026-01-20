@@ -1,32 +1,138 @@
 document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-  let smoother = ScrollSmoother.create({
-    wrapper: "#smooth-wrapper",
-    content: "#smooth-content",
-    smooth: 1.2,
-    effects: true,
-    normalizeScroll: true,
-  });
+  let smoother = null;
 
+  /* ===============================
+     Smooth Scroll (Desktop Only)
+  =============================== */
+  function initSmoothScroll() {
+    if (window.innerWidth > 768 && !smoother) {
+      smoother = ScrollSmoother.create({
+        wrapper: "#smooth-wrapper",
+        content: "#smooth-content",
+        smooth: 2,
+        effects: true,
+        normalizeScroll: true,
+      });
+    }
+
+    if (window.innerWidth <= 768 && smoother) {
+      smoother.kill(); // destroy smooth scrolling
+      smoother = null;
+
+      document.documentElement.style.overflow = "";
+      document.body.style.overflow = "";
+    }
+  }
+
+  initSmoothScroll();
+  window.addEventListener("resize", initSmoothScroll);
+
+  /* ===============================
+     Modal Scroll Handling
+  =============================== */
   const modal = document.getElementById("exampleModal");
 
-  modal.addEventListener("show.bs.modal", () => {
-    smoother.paused(true);
+  if (modal) {
+    modal.addEventListener("show.bs.modal", () => {
+      if (smoother) smoother.paused(true);
+      document.documentElement.style.overflow = "hidden";
+      document.body.style.overflow = "hidden";
+    });
 
-    // restore native scrolling context for modal
-    document.documentElement.style.overflow = "hidden";
-    document.body.style.overflow = "hidden";
+    modal.addEventListener("hidden.bs.modal", () => {
+      if (smoother) smoother.paused(false);
+      document.documentElement.style.overflow = "";
+      document.body.style.overflow = "";
+    });
+  }
+
+  /* ===============================
+     Loader + Swiper
+  =============================== */
+  window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader-overlay");
+    const content = document.querySelector(".page-wrpr");
+
+    setTimeout(() => {
+      loader.classList.add("curtain-up");
+
+      setTimeout(() => {
+        loader.style.display = "none";
+        content.classList.remove("hidden");
+
+        new Swiper(".cardSwiper", {
+          effect: "cards",
+          loop: true,
+          grabCursor: true,
+          pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+          },
+          scrollbar: {
+            el: ".swiper-scrollbar",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      }, 1000);
+    }, 2000);
   });
 
-  modal.addEventListener("hidden.bs.modal", () => {
-    smoother.paused(false);
+  /* ===============================
+     Back To Top Button
+  =============================== */
+  const backToTopBtn = document.querySelector(".button");
 
-    document.documentElement.style.overflow = "";
-    document.body.style.overflow = "";
+  window.addEventListener("scroll", () => {
+    backToTopBtn.classList.toggle("show", window.pageYOffset > 300);
   });
 
-  // Initialize Lenis
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: window.innerWidth > 768 ? "smooth" : "auto",
+    });
+  });
+});
+
+/* ===============================
+   Custom Cursor (Desktop Only)
+=============================== */
+if (window.innerWidth > 768) {
+  const cursor = document.querySelector(".cursor");
+  const anchor = document.querySelectorAll("a");
+  const cursorBtn = document.querySelectorAll("button");
+
+  document.addEventListener("mousemove", (e) => {
+    cursor.style.transform = `translate3d(
+      calc(${e.clientX}px - 50%),
+      calc(${e.clientY}px - 50%),
+      0
+    )`;
+  });
+
+  document.addEventListener("mousedown", () => {
+    cursor.classList.add("click");
+  });
+
+  document.addEventListener("mouseup", () => {
+    cursor.classList.remove("click");
+  });
+
+  anchor.forEach((item) => {
+    item.addEventListener("mouseenter", () => cursor.classList.add("hover"));
+    item.addEventListener("mouseleave", () => cursor.classList.remove("hover"));
+  });
+
+  cursorBtn.forEach((item) => {
+    item.addEventListener("mouseenter", () => cursor.classList.add("hover"));
+    item.addEventListener("mouseleave", () => cursor.classList.remove("hover"));
+  });
+   // Initialize Lenis
   // const lenis = new Lenis({
   //   duration: 2,
 
@@ -55,89 +161,4 @@ document.addEventListener("DOMContentLoaded", () => {
   //     requestAnimationFrame(MouseMove);
   //   }
   //   MouseMove();
-  window.addEventListener("load", () => {
-    const loader = document.querySelector(".loader-overlay");
-    const content = document.querySelector(".page-wrpr");
-
-    setTimeout(() => {
-      loader.classList.add("curtain-up");
-
-      setTimeout(() => {
-        loader.style.display = "none";
-        content.classList.remove("hidden");
-
-        let swiper = new Swiper(".cardSwiper", {
-          effect: "cards",
-          loop: true,
-          grabCursor: true,
-          pagination: {
-            el: ".swiper-pagination",
-            type: "fraction",
-          },
-          scrollbar: {
-            el: ".swiper-scrollbar",
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
-      }, 1000);
-    }, 2000);
-  });
-
-  // BackTOTop Button
-  const backToTopBtn = document.querySelector(".button");
-  window.addEventListener("scroll", function () {
-    if (window.pageYOffset > 300) {
-      backToTopBtn.classList.add("show");
-    } else {
-      backToTopBtn.classList.remove("show");
-    }
-  });
-  // Smooth scroll to top when button is clicked
-  backToTopBtn.addEventListener("click", function () {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  });
-});
-
-// Cursor Initialization
-const cursor = document.querySelector(".cursor");
-const anchor = document.querySelectorAll("a");
-const cursorBtn = document.querySelectorAll("button");
-
-document.addEventListener("mousemove", function (e) {
-  var x = e.clientX;
-  var y = e.clientY;
-  cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`;
-  requestAnimationFrame(mousemove);
-});
-mousemove();
-document.addEventListener("mousedown", function () {
-  cursor.classList.add("click");
-});
-
-document.addEventListener("mouseup", function () {
-  cursor.classList.remove("click");
-});
-
-anchor.forEach((item) => {
-  item.addEventListener("mouseover", () => {
-    cursor.classList.add("hover");
-  });
-  item.addEventListener("mouseleave", () => {
-    cursor.classList.remove("hover");
-  });
-});
-
-cursorBtn.forEach((item) => {
-  item.addEventListener("mouseover", () => {
-    cursor.classList.add("hover");
-  });
-  item.addEventListener("mouseleave", () => {
-    cursor.classList.remove("hover");
-  });
-});
+}
