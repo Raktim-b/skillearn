@@ -1,28 +1,31 @@
 document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-  let smoother = null;
+  let smoother;
 
   /* ===============================
      Smooth Scroll (Desktop Only)
   =============================== */
   function initSmoothScroll() {
-    if (window.innerWidth > 768 && !smoother) {
-      smoother = ScrollSmoother.create({
-        wrapper: "#smooth-wrapper",
-        content: "#smooth-content",
-        smooth: 2,
-        effects: true,
-        normalizeScroll: true,
-      });
-    }
+    if (window.matchMedia("(min-width: 769px)").matches) {
+      if (!smoother) {
+        smoother = ScrollSmoother.create({
+          wrapper: "#smooth-wrapper",
+          content: "#smooth-content",
+          smooth: 2,
+          effects: true,
+          normalizeScroll: true,
+        });
+      }
+    } else {
+      if (smoother) {
+        smoother.kill();
+        smoother = null;
+      }
 
-    if (window.innerWidth <= 768 && smoother) {
-      smoother.kill(); // destroy smooth scrolling
-      smoother = null;
-
-      document.documentElement.style.overflow = "";
-      document.body.style.overflow = "";
+      // Force native scrolling back
+      document.documentElement.style.overflow = "auto";
+      document.body.style.overflow = "auto";
     }
   }
 
@@ -132,7 +135,7 @@ if (window.innerWidth > 768) {
     item.addEventListener("mouseenter", () => cursor.classList.add("hover"));
     item.addEventListener("mouseleave", () => cursor.classList.remove("hover"));
   });
-   // Initialize Lenis
+  // Initialize Lenis
   // const lenis = new Lenis({
   //   duration: 2,
 
