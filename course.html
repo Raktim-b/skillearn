@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Skillearn - Course Page</title>
+    <title>Explore Courses – SkillLearn Online Programs</title>
+    <meta
+      name="description"
+      content="Browse all online courses at SkillLearn — from beginner to advanced skill programs designed to boost careers."
+    />
     <!-- Tab Icon -->
     <link
       rel="icon"
@@ -61,7 +65,7 @@
     <!-- Modal -->
     <div
       class="modal fade"
-      id="exampleModal"
+      id="loginModal"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
@@ -164,6 +168,178 @@
         </div>
       </div>
     </div>
+    <!-- Sort Modal -->
+    <div
+      class="modal fade"
+      id="funnalModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog funnel-modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Filter</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="course-filter modal-filter">
+              <div class="search-box mw-100">
+                <h2 class="title2">Find Your Course</h2>
+                <form action="">
+                  <div class="search-bar d-flex align-items-center">
+                    <input
+                      type="text"
+                      id="search"
+                      name="search"
+                      placeholder="Search Your Course"
+                      required
+                    />
+                    <button class="search-btn ms-auto">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M17 17L21 21"
+                          stroke="#141B34"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C15.4183 19 19 15.4183 19 11Z"
+                          stroke="#141B34"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="category-box mw-100">
+                <h2 class="title2">Category</h2>
+                <ul class="mb-0">
+                  <li class="categories">
+                    <button class="active-catagory">ALL</button>
+                  </li>
+                  <li class="categories">
+                    <button>EDUCATION</button>
+                  </li>
+                  <li class="categories">
+                    <button>TECHNOLOGY</button>
+                  </li>
+                  <li class="categories">
+                    <button>BUSINESS</button>
+                  </li>
+                  <li class="categories">
+                    <button>DEVELOPMENT</button>
+                  </li>
+                  <li class="categories">
+                    <button>ENGINEERING</button>
+                  </li>
+                  <li class="categories">
+                    <button>HISTORY</button>
+                  </li>
+                  <li class="categories">
+                    <button>PHOTOGRAPHY</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="cost-box mw-100">
+                <h2 class="title2">Cost</h2>
+                <ul class="mb-0">
+                  <li class="categories">
+                    <button>ALL</button>
+                  </li>
+                  <li class="categories">
+                    <button>FREE</button>
+                  </li>
+                  <li class="categories">
+                    <button>PAID</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="level-box mw-100">
+                <h2 class="title2">Level</h2>
+                <ul class="mb-0">
+                  <li class="categories">
+                    <button>BEGINNER</button>
+                  </li>
+                  <li class="categories">
+                    <button>INTERMEDIATE</button>
+                  </li>
+                  <li class="categories">
+                    <button>ADVANCE</button>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="tag-box mw-100">
+                <h2 class="title2">Popular Tags</h2>
+                <div class="tag-cntn">
+                  <div class="row">
+                    <div class="tags">
+                      <a href="">#education</a>
+                    </div>
+                    <div class="tags">
+                      <a href="">#edtech</a>
+                    </div>
+                    <div class="tags">
+                      <a href="">#ed</a>
+                    </div>
+                    <div class="tags">
+                      <a href="">#digitaleducation</a>
+                    </div>
+                    <div class="tags">
+                      <a href="">#onlinecourse</a>
+                    </div>
+                    <div class="tags">
+                      <a href="">#skilldevelopment</a>
+                    </div>
+                    <div class="tags">
+                      <a href="">#language</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="modal-btn-wrpr d-flex align-items-center ms-auto gap-2">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">Apply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- BacktoTop Button -->
+    <button class="button">
+      <svg class="svgIcon" viewBox="0 0 384 512">
+        <path
+          d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+        ></path>
+      </svg>
+    </button>
     <div id="smooth-wrapper">
       <div class="page-wrpr hidden" id="smooth-content">
         <!-- Header Section -->
@@ -226,7 +402,7 @@
                     href=""
                     class="btn-primary"
                     data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
+                    data-bs-target="#loginModal"
                     >Sign In</a
                   >
                   <a href="register.html" class="btn-secondary">Register Now</a>
@@ -236,14 +412,6 @@
           </nav>
         </header>
 
-        <!-- BacktoTop Button -->
-        <button class="button">
-          <svg class="svgIcon" viewBox="0 0 384 512">
-            <path
-              d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
-            ></path>
-          </svg>
-        </button>
         <main>
           <!-- Course Content Section -->
           <section class="course-cntn-sec">
@@ -280,24 +448,31 @@
                         <option value="price_low">History</option>
                         <option value="price_high">Photography</option>
                       </select>
-                      <button class="filter-toggler mx-3">
-                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                        <svg
-                          width="25px"
-                          height="25px"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
+                      <div class="filter-toggle-wrpr">
+                        <button
+                          class="filter-toggler fw-semibold d-flex align-items-center"
+                          data-bs-toggle="modal"
+                          data-bs-target="#funnalModal"
                         >
-                          <path
-                            d="M3 4.6C3 4.03995 3 3.75992 3.10899 3.54601C3.20487 3.35785 3.35785 3.20487 3.54601 3.10899C3.75992 3 4.03995 3 4.6 3H19.4C19.9601 3 20.2401 3 20.454 3.10899C20.6422 3.20487 20.7951 3.35785 20.891 3.54601C21 3.75992 21 4.03995 21 4.6V6.33726C21 6.58185 21 6.70414 20.9724 6.81923C20.9479 6.92127 20.9075 7.01881 20.8526 7.10828C20.7908 7.2092 20.7043 7.29568 20.5314 7.46863L14.4686 13.5314C14.2957 13.7043 14.2092 13.7908 14.1474 13.8917C14.0925 13.9812 14.0521 14.0787 14.0276 14.1808C14 14.2959 14 14.4182 14 14.6627V17L10 21V14.6627C10 14.4182 10 14.2959 9.97237 14.1808C9.94787 14.0787 9.90747 13.9812 9.85264 13.8917C9.7908 13.7908 9.70432 13.7043 9.53137 13.5314L3.46863 7.46863C3.29568 7.29568 3.2092 7.2092 3.14736 7.10828C3.09253 7.01881 3.05213 6.92127 3.02763 6.81923C3 6.70414 3 6.58185 3 6.33726V4.6Z"
-                            stroke="#212343"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </button>
+                          <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                          <svg
+                            width="22px"
+                            height="22px"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect width="24" height="24" fill="white" />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M2 5C2 3.34315 3.34315 2 5 2H19C20.6569 2 22 3.34315 22 5V6.17157C22 6.96722 21.6839 7.73028 21.1213 8.29289L15.2929 14.1213C15.1054 14.3089 15 14.5632 15 14.8284V17.1716C15 17.9672 14.6839 18.7303 14.1213 19.2929L11.9193 21.4949C10.842 22.5722 9 21.8092 9 20.2857V14.8284C9 14.5632 8.89464 14.3089 8.70711 14.1213L2.87868 8.29289C2.31607 7.73028 2 6.96722 2 6.17157V5Z"
+                              fill="#100f0f"
+                            />
+                          </svg>
+                          Filter
+                        </button>
+                      </div>
                     </div>
                     <div class="course-details">
                       <div class="row">
@@ -2465,7 +2640,7 @@
               <div class="row align-items-center">
                 <div class="col-12 col-md-6">
                   <div class="ftr-logo">
-                    <a href=""
+                    <a href="index.html"
                       ><img src="./assets/CommonAssets/Ftr-logo.png" alt=""
                     /></a>
                   </div>
@@ -2517,7 +2692,9 @@
                           <div class="list-hdr fw-medium">About Us</div>
                           <ul class="list-unstyled">
                             <li class="ftr-list">
-                              <a href="" class="ftr-links">Contact</a>
+                              <a href="contact.html" class="ftr-links"
+                                >Contact</a
+                              >
                             </li>
                             <li class="ftr-list">
                               <a href="" class="ftr-links">Support</a>
@@ -2584,14 +2761,22 @@
                           <div class="col-12 col-xl-6">
                             <div class="addr-left">
                               <div class="contact ftr-links">
-                                Call us directly? <a href="">+91-9875465304</a>
+                                Call us directly?
+                                <a href="tel:+919875465304">+91-9875465304</a>
                               </div>
                             </div>
                           </div>
                           <div class="col-12 col-xl-6">
                             <div class="addr-right">
                               <div class="contact ftr-links">
-                                Address <a href="">123 Learning Point</a>
+                                Address
+                                <a
+                                  href="https://www.google.com/maps/search/?api=1&query=123+Learning+Point"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  123 Learning Point
+                                </a>
                               </div>
                             </div>
                           </div>
@@ -2603,7 +2788,10 @@
                     <div class="list-hdr fw-medium">Follow us on</div>
                     <ul class="scl-list d-flex p-0">
                       <li>
-                        <a href="" class="scl-links">
+                        <a
+                          href="https://www.instagram.com/skillearn2026/"
+                          class="scl-links"
+                        >
                           <svg
                             width="28"
                             height="28"
@@ -2631,7 +2819,10 @@
                         </a>
                       </li>
                       <li>
-                        <a href="" class="scl-links">
+                        <a
+                          href="https://www.facebook.com/profile.php?id=61586787550961"
+                          class="scl-links"
+                        >
                           <svg
                             width="28"
                             height="28"
