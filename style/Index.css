@@ -43,25 +43,25 @@ ul {
   list-style: none;
 }
 
-
 /* Custom Cursor */
 .cursor {
-    mix-blend-mode: difference;
-    width: 5px;
-    height: 5px;
-    border-radius: 100%;
-    border: 10px solid var(--design-bg);
-    transition: all 200ms ease-out;
-    position: fixed;
-    pointer-events: none;
-    left: 0;
-    top: 0;
-    transform: translate(calc(-50% + 15px), -50%);
-    z-index: 999999;
+  /* mix-blend-mode: difference; */
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  /* border: 10px solid var(--design-bg); */
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  background-color: #1c96947a;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 15px), -50%);
+  z-index: 999999;
 }
 
 .hover {
-    border: 10px solid blueviolet;
+  border: 10px solid rgba(205, 9, 249, 0.514);
 }
 
 /* Loading Screen */
@@ -104,13 +104,6 @@ ul {
 /* Curtain animation trigger */
 .loader-overlay.curtain-up::before {
   transform: translateY(-100%);
-}
-
-.loader-content {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 5px;
 }
 
 /* Hide loader content with curtain */
@@ -447,6 +440,10 @@ ul {
 
 .section-btn:hover path {
   fill: var(--defult-color);
+}
+.modal-body {
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
 }
 
 /* Navbar Section */
@@ -1882,16 +1879,20 @@ select:focus {
 .ftr-links::after {
   content: "";
   position: absolute;
-  width: 0;
-  transition: all 0.4s linear;
-  height: 2px;
+  width: 100%;
+  transition: transform 0.3s ease-out;
+  height: 1px;
   background: var(--primary-color);
-  top: 80%;
+  bottom: 0;
   left: 0;
+  transform-origin: bottom right;
+  transform: scaleX(0);
 }
 
 .ftr-links:hover::after {
   width: 100%;
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .addr-right > .ftr-links:hover::after,
@@ -1943,7 +1944,7 @@ select:focus {
 }
 
 .scl-links:hover svg {
-  fill: var(--secondary-color);
+  fill: var(--design-bg);
 }
 
 .scl-links:hover path {
@@ -3229,8 +3230,12 @@ select:focus {
   .sec-hdr {
     font-size: 20px;
   }
+  .btn-secondary {
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 10px 18.5px;
+  }
 
-  .btn-secondary,
   .btn-tertiary {
     border-radius: 10px;
     font-size: 14px;

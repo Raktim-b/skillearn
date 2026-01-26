@@ -35,21 +35,22 @@ document.addEventListener("DOMContentLoaded", () => {
   /* ===============================
      Modal Scroll Handling
   =============================== */
-  const modal = document.getElementById("exampleModal");
+ const modals = document.querySelectorAll(".modal");
 
-  if (modal) {
-    modal.addEventListener("show.bs.modal", () => {
-      if (smoother) smoother.paused(true);
-      document.documentElement.style.overflow = "hidden";
-      document.body.style.overflow = "hidden";
-    });
+modals.forEach((modal) => {
+  modal.addEventListener("show.bs.modal", () => {
+    if (smoother) smoother.paused(true);
+    document.documentElement.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
+  });
 
-    modal.addEventListener("hidden.bs.modal", () => {
-      if (smoother) smoother.paused(false);
-      document.documentElement.style.overflow = "";
-      document.body.style.overflow = "";
-    });
-  }
+  modal.addEventListener("hidden.bs.modal", () => {
+    if (smoother) smoother.paused(false);
+    document.documentElement.style.overflow = "";
+    document.body.style.overflow = "";
+  });
+});
+
 
   /* ===============================
      Loader + Swiper
