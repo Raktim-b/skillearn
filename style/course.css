@@ -788,7 +788,7 @@ MEDIA QUERIES
 @media screen and (max-width: 576px) {
   /* Filter Modal  */
   .funnel-modal-dialog {
-    margin-block: 8%;
+    /* margin-block: 8%; */
   }
   .funnel-modal-dialog .modal-body {
     padding: 10px;
