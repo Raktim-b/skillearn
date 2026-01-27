@@ -1883,7 +1883,7 @@ select:focus {
   transition: transform 0.3s ease-out;
   height: 1px;
   background: var(--primary-color);
-  bottom: 0;
+  bottom: 2px;
   left: 0;
   transform-origin: bottom right;
   transform: scaleX(0);
@@ -1898,6 +1898,7 @@ select:focus {
 .addr-right > .ftr-links:hover::after,
 .addr-left > .ftr-links:hover::after {
   width: 0%;
+  display: none;
 }
 
 .right-list {
