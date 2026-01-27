@@ -46,6 +46,35 @@
     <!-- Common Custom Css -->
     <link rel="stylesheet" href="./style/Index.css" />
     <link rel="stylesheet" href="./style/register.css" />
+     <!-- Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "SkillLearn",
+        "url": "https://skillearn-two.vercel.app/",
+        "logo": "https://skillearn-two.vercel.app/logo.png",
+        "sameAs": [
+          "https://www.facebook.com/",
+          "https://www.instagram.com/",
+          "https://www.linkedin.com/"
+        ]
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "SkillLearn",
+        "url": "https://skillearn-two.vercel.app/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://skillearn-two.vercel.app/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
   </head>
 
   <body>
@@ -175,13 +204,13 @@
       </div>
     </div>
     <!-- BacktoTop Button -->
-        <button class="button">
-          <svg class="svgIcon" viewBox="0 0 384 512">
-            <path
-              d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
-            ></path>
-          </svg>
-        </button>
+    <button class="button">
+      <svg class="svgIcon" viewBox="0 0 384 512">
+        <path
+          d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+        ></path>
+      </svg>
+    </button>
     <!-- Full Content -->
 
     <div id="smooth-wrapper">
@@ -256,8 +285,6 @@
             </div>
           </nav>
         </header>
-
-        
 
         <main>
           <!-- Banner Section -->
@@ -2326,18 +2353,17 @@
                           </div>
                           <div class="col-12 col-xl-6">
                             <div class="addr-right">
-                            <div class="contact ftr-links">
-  Address
-  <a
-    href="https://www.google.com/maps/search/?api=1&query=123+Learning+Point"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    123 Learning Point
-  </a>
-</div>
-
-                          </div>
+                              <div class="contact ftr-links">
+                                Address
+                                <a
+                                  href="https://www.google.com/maps/search/?api=1&query=123+Learning+Point"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  123 Learning Point
+                                </a>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -2482,7 +2508,7 @@
         </footer>
       </div>
     </div>
-
+    <!-- Gsap Js -->
     <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
     <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/gsap@3/dist/ScrollSmoother.min.js"></script>
@@ -2496,6 +2522,7 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
     <!-- Vanilla Js -->
     <script src="./script/CommonScript.js"></script>
   </body>

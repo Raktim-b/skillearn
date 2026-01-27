@@ -42,6 +42,112 @@
     <link rel="stylesheet" href="./style/course.css" />
     <link rel="stylesheet" href="./style/register.css" />
     <link rel="stylesheet" href="./style/course-details.css" />
+    <!-- Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://skillearn-two.vercel.app/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Courses",
+                "item": "https://skillearn-two.vercel.app/course.html"
+              }
+            ]
+          },
+          {
+            "@type": "CollectionPage",
+            "name": "SkillLearn Courses",
+            "url": "https://skillearn-two.vercel.app/course.html",
+            "description": "Explore all online courses offered by SkillLearn to build job-ready skills across technology, business, and education.",
+            "isPartOf": {
+              "@type": "WebSite",
+              "name": "SkillLearn",
+              "url": "https://skillearn-two.vercel.app/"
+            }
+          },
+          {
+            "@type": "ItemList",
+            "name": "Online Courses by SkillLearn",
+            "itemListOrder": "https://schema.org/ItemListOrderAscending",
+            "numberOfItems": 3,
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "url": "https://skillearn-two.vercel.app/course.html#angular",
+                "item": {
+                  "@type": "Course",
+                  "name": "Angular Zero To Mastery",
+                  "description": "Learn Angular from scratch with hands-on projects and real-world examples.",
+                  "educationalCredentialAwarded": "Certificate of Completion",
+                  "courseMode": "Online",
+                  "provider": {
+                    "@type": "Organization",
+                    "name": "SkillLearn",
+                    "url": "https://skillearn-two.vercel.app/"
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "url": "https://skillearn-two.vercel.app/course.html#business",
+                "item": {
+                  "@type": "Course",
+                  "name": "Business & Banking Studies",
+                  "description": "Develop core knowledge in business management and banking fundamentals.",
+                  "educationalCredentialAwarded": "Certificate of Completion",
+                  "courseMode": "Online",
+                  "provider": {
+                    "@type": "Organization",
+                    "name": "SkillLearn",
+                    "url": "https://skillearn-two.vercel.app/"
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "url": "https://skillearn-two.vercel.app/course.html#history",
+                "item": {
+                  "@type": "Course",
+                  "name": "Learn About World History",
+                  "description": "Understand major world history events with structured lessons and expert guidance.",
+                  "educationalCredentialAwarded": "Certificate of Completion",
+                  "courseMode": "Online",
+                  "provider": {
+                    "@type": "Organization",
+                    "name": "SkillLearn",
+                    "url": "https://skillearn-two.vercel.app/"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "@type": "Organization",
+            "name": "SkillLearn",
+            "url": "https://skillearn-two.vercel.app/",
+            "logo": "https://skillearn-two.vercel.app/logo.png",
+            "sameAs": [
+              "https://www.facebook.com/",
+              "https://www.instagram.com/",
+              "https://www.linkedin.com/"
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
 
   <body>
@@ -286,7 +392,7 @@
                   </li>
                 </ul>
               </div>
-              
+
               <div class="tag-box mw-100">
                 <h2 class="title2">Popular Tags</h2>
                 <div class="tag-cntn">
