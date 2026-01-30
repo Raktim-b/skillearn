@@ -128,7 +128,7 @@ Banner Section
   font-size: var(--size-48px);
 }
 
-.quiz-cntn>p {
+.quiz-cntn > p {
   color: rgba(255, 255, 255, 0.8);
   font-size: var(--size-24px-p);
   margin-top: 30px;
@@ -191,7 +191,7 @@ Popular Section
   transform: scale(0);
 }
 
-.quiz-card h2 {
+.quiz-card h4 {
   font-size: var(--size-24px-h2);
   color: var(--primary-color);
 }
@@ -268,7 +268,8 @@ Category Section
   max-width: 100%;
 }
 
-.category-card h3 {
+.category-card h5 {
+  font-family: "Playfair Display", serif;
   font-size: var(--size-22px-h3);
   font-weight: 500;
   margin: 15px 0 5px;
@@ -295,12 +296,6 @@ Progress Bar Section
 .progress-sec {
   padding: 40px 0;
   background: url(../assets/QuizPage/progress-bg.png) no-repeat center/cover;
-}
-
-.progress-cntn h2 {
-  font-size: var(--size-24px-h2);
-  font-weight: 600;
-  color: #121313;
 }
 
 .form-label {
@@ -368,7 +363,7 @@ Achievement Section
   margin-left: 30px;
 }
 
-.achv-card h3 {
+.achv-card h6 {
   font-size: var(--size-18px);
   font-weight: 600;
 }
@@ -384,7 +379,6 @@ Responsive Section
 ========================
 */
 @media screen and (max-width: 1200px) {
-
   /* Banner Section */
   .quiz-sec {
     height: 70vh;
@@ -434,4 +428,5 @@ Responsive Section
   }
 }
 
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+}
