@@ -499,6 +499,11 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.join-card>.title3{
+  font-family: var(--roboto);
+  line-height: 55px;
+  margin-bottom: 0;
+}
 .join-card > p {
   line-height: 28px;
   color: var(--input-bg);
