@@ -191,7 +191,7 @@ Popular Section
   transform: scale(0);
 }
 
-.quiz-card h4 {
+.quiz-card h2 {
   font-size: var(--size-24px-h2);
   color: var(--primary-color);
 }
@@ -268,7 +268,7 @@ Category Section
   max-width: 100%;
 }
 
-.category-card h5 {
+.category-card h3 {
   font-family: "Playfair Display", serif;
   font-size: var(--size-22px-h3);
   font-weight: 500;
@@ -363,7 +363,7 @@ Achievement Section
   margin-left: 30px;
 }
 
-.achv-card h6 {
+.achv-card h3 {
   font-size: var(--size-18px);
   font-weight: 600;
 }
