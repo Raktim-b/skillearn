@@ -709,7 +709,7 @@ ul {
 }
 
 .banner-hdr {
-  margin-right: -154px;
+  margin-right: -216px;
   position: relative;
 }
 
@@ -843,7 +843,8 @@ ul {
 .circle {
   position: relative;
   border-radius: 50%;
-  max-width: 733px;
+  max-width: 615px;
+  margin-left: auto;
 }
 
 .banner-img-top {
@@ -864,34 +865,34 @@ ul {
 }
 
 .banner-img1 {
-  max-width: 336px;
+  max-width: 282px;
   margin-right: 10px;
 }
 
 .banner-img2 {
-  max-width: 378px;
+  max-width: 317px;
   margin-right: 10px;
 }
 
 .banner-img3 {
-  max-width: 345px;
+  max-width: 290px;
 }
 
 .banner-img4 {
   position: relative;
-  max-width: 293px;
+  max-width: 246px;
 }
 
 .banner-img5 {
   position: absolute;
-  max-width: 293px;
+  max-width: 246px;
   top: 0;
   left: 0;
   right: 0;
 }
 
 .banner-img6 {
-  width: 206.88px;
+  width: 173.32px;
   position: absolute;
   left: 122.81px;
   bottom: 181.51px;
@@ -2037,10 +2038,9 @@ select:focus {
 
 @media screen and (max-width: 1400px) {
   /* Banner Section  */
-  .banner-hdr {
-    margin-right: -110px;
-  }
-
+ .bgPolygon2{
+  display: none;
+ }
   .banner-gif {
     max-width: 169px;
     position: absolute;
@@ -2459,7 +2459,7 @@ select:focus {
 
   /* Banner Section */
   .banner-sec {
-    padding: 0px 0 60px;
+    padding: 40px 0 60px;
   }
 
   .banner-hdr {
