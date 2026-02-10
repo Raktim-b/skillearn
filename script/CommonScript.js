@@ -67,8 +67,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
         new Swiper(".cardSwiper", {
           effect: "cards",
+          // effect: "coverflow",
           loop: true,
+          centeredSlides: true,
           grabCursor: true,
+          // coverflowEffect: {
+          //   rotate: 100,
+          //   stretch: 100,
+          //   depth: 1000,
+          //   modifier: 1,
+          //   slideShadows: true,
+          // },
           pagination: {
             el: ".swiper-pagination",
             type: "fraction",

@@ -1,6 +1,12 @@
+input {
+  outline: none !important;
+  border: none !important;
+}
+
 .col-12 {
   padding: 0 6px !important;
 }
+
 .col55 {
   width: 55%;
   padding: 0 6px;
@@ -10,19 +16,23 @@
   width: 52%;
   padding: 0 6px;
 }
+
 .col48 {
   width: 48%;
   padding: 0 6px;
 }
+
 .col45 {
   width: 45%;
   padding: 0 6px;
 }
+
 /* Register Modal */
 .teacher-reg-sec {
   padding: 70px 0;
   position: relative;
 }
+
 .teacher-reg-eclipse-1,
 .teacher-reg-eclipse-2 {
   width: 376px;
@@ -33,14 +43,17 @@
 
   filter: blur(150px);
 }
+
 .teacher-reg-eclipse-1 {
   top: -306px;
   right: -157px;
 }
+
 .teacher-reg-eclipse-2 {
   left: -188px;
   bottom: -25px;
 }
+
 .register-modal {
   max-width: 1150px;
   height: 1020px;
@@ -54,33 +67,36 @@
 .reg-modal-left {
   max-width: 503px;
   height: 960px;
-  background: linear-gradient(
-    29deg,
-    rgba(8, 144, 130, 0.27) 27%,
-    rgba(107, 200, 198, 0.32) 77%
-  );
+  background: linear-gradient(29deg,
+      rgba(8, 144, 130, 0.27) 27%,
+      rgba(107, 200, 198, 0.32) 77%);
   border-radius: 20px;
   padding: 33px 40px;
   position: relative;
   z-index: 1;
 }
-.reg-logo > a {
+
+.reg-logo>a {
   max-width: 356px;
 }
-.reg-logo > a > img {
+
+.reg-logo>a>img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-.reg-modal-left > h2 {
+
+.reg-modal-left>h2 {
   color: #0a24cd;
   font-size: 36px;
   margin-block: 121.15px 11px;
 }
-.reg-modal-left > p {
+
+.reg-modal-left>p {
   color: var(--input-bg);
   line-height: 24px;
 }
+
 .teacher-box {
   padding: 14px 33px 9px 23px;
   max-width: 293px;
@@ -88,38 +104,45 @@
   border-radius: 20px;
   background-color: #ffffff59;
 }
-.teacher-box > ul li:nth-child(2) {
+
+.teacher-box>ul li:nth-child(2) {
   transform: translateX(-8px);
 }
 
-.teacher-box > ul li:nth-child(3) {
+.teacher-box>ul li:nth-child(3) {
   transform: translateX(-16px);
 }
-.teacher-box-cntn > p {
+
+.teacher-box-cntn>p {
   line-height: 24px;
   color: var(--input-bg);
   margin-bottom: 0;
   width: 119px;
 }
+
 .teacher-box-cntn span {
   color: #0a24cd !important;
 }
+
 .reg-right {
   max-width: 372px;
   position: relative;
   z-index: 1;
 }
-.reg-right > h2 {
+
+.reg-right>h2 {
   font-size: 36px;
   color: var(--input-bg);
   line-height: 40px;
   margin-bottom: 0;
 }
-.reg-right > p {
+
+.reg-right>p {
   color: var(--input-bg);
   margin-block: 11px 30px;
 }
-.reg-right > p > a {
+
+.reg-right>p>a {
   color: #0a24cd;
 }
 
@@ -128,9 +151,11 @@
   line-height: 24px;
   margin-bottom: 6px;
 }
+
 .teacher-reg-sec .pass-wrpr {
   margin-bottom: 3px !important;
 }
+
 .reg-form input,
 .pass-wrpr {
   width: 100%;
@@ -139,23 +164,28 @@
   padding: 8px 16px;
   margin-bottom: 2px;
 }
+
 .reg-form input:focus {
   outline: none;
 }
+
 .reg-form input::placeholder {
   font-size: 14px;
   line-height: 24px;
 }
+
 .pass-wrpr {
   padding: 4px 8px 4px 10px;
   background-color: #fff;
 }
+
 .reg-form input[type="password"],
 .reg-form input[type="number"] {
   margin-bottom: 0;
   background: none;
   border: none;
 }
+
 .lock-btn {
   padding: 7.67px 8px 7.67px 0;
   border-right: 1px solid #8a8080;
@@ -163,6 +193,7 @@
   border-left: 0;
   background: none;
 }
+
 .eye-btn {
   background: none;
   border: none;
@@ -187,6 +218,7 @@
   flex-shrink: 0;
   position: relative;
 }
+
 .custom-check::after {
   content: "✓";
   position: absolute;
@@ -195,7 +227,8 @@
   font-size: 18px;
   display: none;
 }
-.terms-label input:checked + .custom-check::after {
+
+.terms-label input:checked+.custom-check::after {
   display: block;
 }
 
@@ -212,140 +245,169 @@
 .terms-text a:hover {
   text-decoration: underline;
 }
+
 .reg-form input[type="submit"] {
   padding-block: 12px;
   font-size: 14px;
   background-color: #fff;
   /* margin-top: 10px; */
 }
-.back-btn > a {
+
+.back-btn>a {
   font-size: 12px;
   color: var(--input-bg);
 }
+
 .back-btn svg {
   margin-right: 6px;
 }
 
 @media screen and (max-width: 992px) {
-  .reg-modal-left > h2,
-  .reg-right > h2 {
+
+  .reg-modal-left>h2,
+  .reg-right>h2 {
     font-size: 28px;
     line-height: 30px;
   }
-  .reg-modal-left > p,
-  .teacher-box-cntn > p,
-  .reg-right > p,
+
+  .reg-modal-left>p,
+  .teacher-box-cntn>p,
+  .reg-right>p,
   .reg-form label,
   .terms-text {
     font-size: 14px;
     line-height: 22px;
   }
+
   .reg-form input::placeholder {
     font-size: 12px;
     line-height: 18px;
   }
 }
+
 @media screen and (max-width: 768px) {
+
   .col45,
   .col48,
   .col52,
   .col55 {
     width: 100%;
   }
+
   /* Register Modal */
   .teacher-reg-sec {
     padding: 50px 0;
   }
+
   .register-modal {
     border-radius: 15px;
     height: 930px;
     padding: 16px;
   }
+
   .reg-modal-left {
     border-radius: 15px;
     height: 895px;
     padding: 20px 25px;
   }
+
   .teacher-box {
     padding: 11px 15px 8px 17px;
     margin: 150px auto 0;
     border-radius: 15px;
   }
-  .reg-modal-left > h2,
-  .reg-right > h2 {
+
+  .reg-modal-left>h2,
+  .reg-right>h2 {
     font-size: 21px;
     line-height: 26px;
   }
-  .reg-modal-left > p,
-  .teacher-box-cntn > p,
-  .reg-right > p,
+
+  .reg-modal-left>p,
+  .teacher-box-cntn>p,
+  .reg-right>p,
   .reg-form label,
   .terms-text {
     font-size: 12px;
     line-height: 16px;
   }
-  .reg-right > p {
+
+  .reg-right>p {
     margin-block: 10px 20px;
   }
+
   .reg-form input,
   .pass-wrpr {
     border-radius: 7px;
     padding: 3px 10px;
   }
+
   .reg-form input::placeholder {
     font-size: 10px;
     line-height: 14px;
   }
+
   .lock-btn {
     padding: 0px 5px 0 0;
   }
+
   .lock-btn svg {
     width: 10px;
     height: 14px;
   }
+
   .eye-btn svg {
     width: 14px;
     height: 11px;
   }
+
   .reg-form input[type="submit"] {
     padding-block: 8px;
     font-size: 12px;
     margin-top: 18px;
   }
-  .back-btn > a {
+
+  .back-btn>a {
     font-size: 10px;
   }
 }
+
 @media screen and (max-width: 576px) {
+
   /* Register Modal */
   .teacher-reg-sec {
     padding: 30px 0;
   }
+
   .register-modal {
     border-radius: 8px;
     height: 1280px;
     padding: 13px;
   }
+
   .reg-modal-left {
     border-radius: 8px;
     max-width: 100%;
     height: 390px;
     margin: 10px;
   }
-  .reg-modal-left > h2,
-  .reg-right > h2 {
+
+  .reg-modal-left>h2,
+  .reg-right>h2 {
     margin-block: 15px 9px;
     font-size: 18px;
     line-height: 20px;
   }
-  .reg-modal-left > p,
-  .teacher-box-cntn > p,
-  .reg-right > p,
+
+  .reg-modal-left>p,
+  .teacher-box-cntn>p,
+  .reg-right>p,
   .reg-form label,
   .terms-text {
     font-size: 12px;
     line-height: 14px;
   }
+
   .teacher-box {
     padding: 8px 9px 5px 15px;
     max-width: 190px;
@@ -353,31 +415,38 @@
     border-radius: 8px;
     align-items: start !important;
   }
+
   .teacher-box-cntn {
     margin-top: 5px;
   }
+
   .teacher-box img {
     width: 25px;
     height: 25px;
   }
-  .reg-right > p {
+
+  .reg-right>p {
     margin-block: 7px 10px;
   }
+
   .reg-form input,
   .pass-wrpr {
     border-radius: 7px;
     padding: 3px 7px;
     margin-bottom: 3px;
   }
+
   .reg-form input::placeholder {
     font-size: 10px;
     line-height: 12px;
   }
+
   .reg-form input[type="submit"] {
     padding-block: 6px;
     font-size: 10px;
     margin-top: 9px;
   }
+
   .custom-check {
     width: 14px;
     margin: 0px 4px 0 0;
