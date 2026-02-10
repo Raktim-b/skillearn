@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="./style/about.css" />
     <link rel="stylesheet" href="./style/register.css" />
     <link rel="stylesheet" href="./style/teacherRegistration.css" />
+    <link rel="stylesheet" href="./style/studentRegister.css">
   </head>
 
   <body>
@@ -59,7 +60,7 @@
     </div>
     <div class="cursor"></div>
     <!-- Modal -->
-    <div
+    <!-- <div
       class="modal fade"
       id="exampleModal"
       tabindex="-1"
@@ -163,7 +164,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div id="smooth-wrapper">
       <div class="page-wrpr hidden" id="smooth-content">
         <!-- Header Section -->
@@ -323,25 +324,31 @@
                           Enter Your Details to register as
                           <a href="">Teacher</a>
                         </p>
-                        <form action="" class="reg-form">
+                        <form
+                          action=""
+                          class="reg-form"
+                          onsubmit="techFrom(event)"
+                        >
                           <div class="row">
                             <div class="col52">
                               <label for="fname">First Name</label>
                               <input
                                 type="text"
-                                name=""
+                                name="fname"
                                 id="fname"
                                 placeholder="Jane"
                               />
+                              <span class="error" id="fnameError"></span>
                             </div>
                             <div class="col48">
                               <label for="lname">Last Name</label>
                               <input
                                 type="text"
-                                name=""
+                                name="lname"
                                 id="lname"
                                 placeholder="Austin"
                               />
+                              <span class="error" id="lnameError"></span>
                             </div>
                             <div class="col-12">
                               <label for="ename"
@@ -349,37 +356,41 @@
                               >
                               <input
                                 type="email"
-                                name=""
+                                name="ename"
                                 id="ename"
                                 placeholder="Enter your Email Address / Phone Number"
                               />
+                              <span class="error" id="emailError"></span>
                             </div>
                             <div class="col-12">
                               <label for="sname">Subject taught</label>
                               <input
                                 type="text"
-                                name=""
+                                name="sname"
                                 id="sname"
                                 placeholder="e.g  UI UX, Digital Marketing etc"
                               />
+                              <span class="error" id="subnameError"></span>
                             </div>
                             <div class="col55">
                               <label for="iname">Institutions</label>
                               <input
                                 type="text"
-                                name=""
+                                name="iname"
                                 id="iname"
                                 placeholder="e.g  St Joseph College"
                               />
+                              <span class="error" id="insError"></span>
                             </div>
                             <div class="col45">
                               <label for="yname">Years Of Experience</label>
                               <input
                                 type="text"
-                                name=""
+                                name="yname"
                                 id="yname"
                                 placeholder="e.g  5"
                               />
+                              <span class="error" id="yearError"></span>
                             </div>
                             <div class="col-12">
                               <label for="pass">Create a Password</label>
@@ -401,7 +412,7 @@
                                 </button>
                                 <input
                                   type="password"
-                                  name="pass"
+                                  name="cpass"
                                   id="pass"
                                   placeholder="Enter a Password"
                                 />
@@ -421,6 +432,7 @@
                                   </svg>
                                 </button>
                               </div>
+                              <span class="error" id="cpassError"></span>
                             </div>
                             <div class="col-12">
                               <label for="rpass">Confirm Password</label>
@@ -462,6 +474,7 @@
                                   </svg>
                                 </button>
                               </div>
+                              <span class="error" id="rpassError"></span>
                             </div>
                             <div class="col-12">
                               <label class="terms-label">
@@ -476,6 +489,7 @@
                                 </span>
                               </label>
                             </div>
+                            <p class="success message" id="message"></p>
                             <div class="col-12">
                               <input
                                 type="submit"
@@ -812,6 +826,7 @@
     ></script>
 
     <!-- Custom Script -->'
-    <script src="./script/CommonScript.js"></script>
+    <!-- <script src="./script/CommonScript.js"></script> -->
+    <script src="./script/auth.js"></script>
   </body>
 </html>

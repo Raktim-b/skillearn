@@ -60,7 +60,7 @@
     </div>
     <div class="cursor"></div>
     <!-- Modal Section-->
-    <div
+    <!-- <div
       class="modal fade"
       id="exampleModal"
       tabindex="-1"
@@ -164,7 +164,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div id="smooth-wrapper">
       <div class="page-wrpr hidden" id="smooth-content">
         <!-- Header Section -->
@@ -276,7 +276,9 @@
                           journey and grow your skills with guidance from top
                           experts.
                         </p>
-                        <div class="stud-stats justify-content-center gap-3 d-flex">
+                        <div
+                          class="stud-stats justify-content-center gap-3 d-flex"
+                        >
                           <div class="stud-stat d-flex flex-column">
                             5k+
                             <span>STUDENTS</span>
@@ -305,34 +307,41 @@
                           Enter Your Details to register as
                           <a href="">Student</a>
                         </p>
-                        <form action="" class="reg-form">
+                        <form
+                          action=""
+                          class="reg-form"
+                          onsubmit="studForm(event)"
+                        >
                           <div class="row">
                             <div class="col52">
                               <label for="fname">First Name</label>
                               <input
                                 type="text"
-                                name=""
+                                name="fname"
                                 id="fname"
                                 placeholder="Jane"
                               />
+                              <span class="error" id="fnameError"></span>
                             </div>
                             <div class="col48">
                               <label for="lname">Last Name</label>
                               <input
                                 type="text"
-                                name=""
+                                name="lname"
                                 id="lname"
                                 placeholder="Austin"
                               />
+                              <span class="error" id="lnameError"></span>
                             </div>
                             <div class="col-12">
                               <label for="ename">Email Adress</label>
                               <input
                                 type="email"
-                                name=""
+                                name="ename"
                                 id="ename"
                                 placeholder="Enter your Email Address...."
                               />
+                               <span class="error" id="emailError"></span>
                             </div>
                             <div class="col-12">
                               <label for="num">Mobile Number</label>
@@ -357,10 +366,11 @@
                                 <input
                                   type="number"
                                   name="num"
-                                  id=""
+                                  id="num"
                                   placeholder="Enter your Mobile Number...."
                                 />
                               </div>
+                              <span class="error" id="numError"></span>
                             </div>
 
                             <div class="col-12">
@@ -383,8 +393,8 @@
                                 </button>
                                 <input
                                   type="password"
-                                  name="pass"
-                                  id=""
+                                  name="cpass"
+                                  id="cpass"
                                   placeholder="Enter a Password"
                                 />
 
@@ -403,6 +413,7 @@
                                   </svg>
                                 </button>
                               </div>
+                              <span class="error" id="cpassError"></span>
                             </div>
                             <div class="col-12">
                               <label for="pass">Confirm Password</label>
@@ -424,8 +435,8 @@
                                 </button>
                                 <input
                                   type="password"
-                                  name="pass"
-                                  id=""
+                                  name="rpass"
+                                  id="rpass"
                                   placeholder="Retype Password"
                                 />
 
@@ -444,6 +455,7 @@
                                   </svg>
                                 </button>
                               </div>
+                              <span class="error" id="rpassError"></span>
                             </div>
                             <div class="col-12">
                               <label class="terms-label">
@@ -458,6 +470,7 @@
                                 </span>
                               </label>
                             </div>
+                             <p class="success message" id="message"></p>
                             <div class="col-12">
                               <input
                                 type="submit"
@@ -794,6 +807,7 @@
     ></script>
 
     <!-- Custom Script -->
-    <script src="./script/CommonScript.js"></script>
+    <!-- <script src="./script/CommonScript.js"></script> -->
+    <script src="./script/auth.js"></script>
   </body>
 </html>

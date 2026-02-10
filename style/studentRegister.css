@@ -4,7 +4,7 @@
 }
 .student-modal {
   max-width: 1150px;
-  height: 820px;
+  height: 880px;
   margin: 0 auto;
   border-radius: 20px;
   background-color: #daf8f4;
@@ -13,7 +13,7 @@
 }
 .stud-r-left {
   max-width: 503px;
-  height: 760px !important;
+  height: 820px !important;
   background: linear-gradient(
     29deg,
     rgba(8, 144, 130, 0.27) 27%,
@@ -51,7 +51,25 @@
 .stud-reg-right > p {
   margin-top: 9px;
 }
+.stud-reg-right .pass-wrpr {
+    margin-bottom: 3px !important;
+}
+.error,
+.success {
+  min-height: 18px;
+  color: #ff6b6b;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-bottom: 8px;
+  display: block;
+}
+.message.success {
+  color: #22c55e; /* green */
+}
 
+.message.error {
+  color: #ff6b6b; /* red */
+}
 @media screen and (max-width: 992px) {
   .stud-stat {
     font-size: 26px;
@@ -68,13 +86,13 @@
   }
   .student-modal {
     padding: 20px;
-    height: 725px;
+    height: 775px;
     border-radius: 15px;
   }
   .stud-r-left {
     padding: 20px 25px;
 
-    height: 680px !important;
+    height: 735px !important;
   }
   .stud-stat {
     font-size: 20px;
@@ -83,6 +101,14 @@
   .stud-stat > span {
     font-size: 11px;
   }
+  .error, .success {
+    min-height: 16px;
+    color: #ff6b6b;
+    font-size: 10px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    display: block;
+}
 }
 @media screen and (max-width: 576px) {
   .stud-reg-sec {
@@ -91,7 +117,7 @@
   .student-modal {
     padding: 13px;
     border-radius: 8px;
-    height: 980px;
+    height: 1100px;
   }
 
   .stud-r-left {
