@@ -550,7 +550,9 @@ ul {
 .nav-btn > .btn-primary {
   margin-right: 7px;
 }
-
+.user-menu {
+  padding: 0;
+}
 /* Modal */
 
 .login-sec {
@@ -2429,7 +2431,12 @@ select:focus {
     color: var(--defult-color);
     font-size: 1.1rem;
   }
-
+  .user-menu {
+    margin: -20px 0 0 -72px;
+  }
+  .dropdown-menu[data-bs-popper] {
+    left: 0px;
+  }
   /* Modal */
   .modal-content {
     padding: 20px;
