@@ -8,12 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const goToDetails = () => {
     window.location.href = "course-details.html";
   };
-  const goCart = () => {
-    window.location.href = "cart.html";
-  };
-  cartBtns.forEach((cartbtn) => {
-    cartbtn.addEventListener("click", goCart);
-  });
+ 
   images.forEach((img) => {
     img.addEventListener("click", goToDetails);
   });

@@ -35,22 +35,21 @@ document.addEventListener("DOMContentLoaded", () => {
   /* ===============================
      Modal Scroll Handling
   =============================== */
- const modals = document.querySelectorAll(".modal");
+  //  const modals = document.querySelectorAll(".modal");
 
-modals.forEach((modal) => {
-  modal.addEventListener("show.bs.modal", () => {
-    if (smoother) smoother.paused(true);
-    document.documentElement.style.overflow = "hidden";
-    document.body.style.overflow = "hidden";
-  });
+  // modals.forEach((modal) => {
+  //   modal.addEventListener("show.bs.modal", () => {
+  //     if (smoother) smoother.paused(true);
+  //     document.documentElement.style.overflow = "hidden";
+  //     document.body.style.overflow = "hidden";
+  //   });
 
-  modal.addEventListener("hidden.bs.modal", () => {
-    if (smoother) smoother.paused(false);
-    document.documentElement.style.overflow = "";
-    document.body.style.overflow = "";
-  });
-});
-
+  //   modal.addEventListener("hidden.bs.modal", () => {
+  //     if (smoother) smoother.paused(false);
+  //     document.documentElement.style.overflow = "";
+  //     document.body.style.overflow = "";
+  //   });
+  // });
 
   /* ===============================
      Loader + Swiper
@@ -85,6 +84,29 @@ modals.forEach((modal) => {
       }, 1000);
     }, 2000);
   });
+
+  const token = localStorage.getItem("token");
+  const user = localStorage.getItem("user");
+
+  const loginBtn = document.getElementById("loginBtn");
+  const registerBtn = document.getElementById("registerBtn");
+  const userMenu = document.getElementById("userMenu");
+
+  // Elements might not exist on every page
+  if (!loginBtn || !registerBtn || !userMenu) return;
+
+  if (token && user) {
+    // Logged in
+    loginBtn.classList.add("d-none");
+    registerBtn.classList.add("d-none");
+    userMenu.classList.remove("d-none");
+    userMenu.classList.add("d-flex");
+  } else {
+    // Logged out
+    loginBtn.classList.remove("d-none");
+    registerBtn.classList.remove("d-none");
+    userMenu.classList.add("d-none");
+  }
 
   /* ===============================
      Back To Top Button
@@ -165,4 +187,9 @@ if (window.innerWidth > 768) {
   //     requestAnimationFrame(MouseMove);
   //   }
   //   MouseMove();
+}
+function logout() {
+  localStorage.removeItem("token");
+  localStorage.removeItem("user");
+  window.location.href = "index.html";
 }

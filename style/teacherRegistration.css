@@ -43,7 +43,7 @@
 }
 .register-modal {
   max-width: 1150px;
-  height: 982px;
+  height: 1020px;
   margin: 0 auto;
   border-radius: 20px;
   background-color: #daf8f4;
@@ -53,7 +53,7 @@
 
 .reg-modal-left {
   max-width: 503px;
-  height: 923px;
+  height: 960px;
   background: linear-gradient(
     29deg,
     rgba(8, 144, 130, 0.27) 27%,
@@ -128,14 +128,16 @@
   line-height: 24px;
   margin-bottom: 6px;
 }
-
+.teacher-reg-sec .pass-wrpr {
+  margin-bottom: 3px !important;
+}
 .reg-form input,
 .pass-wrpr {
   width: 100%;
   border-radius: 10px;
   border: 1px solid #8a8080;
   padding: 8px 16px;
-  margin-bottom: 25px;
+  margin-bottom: 2px;
 }
 .reg-form input:focus {
   outline: none;
@@ -214,7 +216,7 @@
   padding-block: 12px;
   font-size: 14px;
   background-color: #fff;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 .back-btn > a {
   font-size: 12px;
@@ -256,12 +258,12 @@
   }
   .register-modal {
     border-radius: 15px;
-    height: 888px;
+    height: 930px;
     padding: 16px;
   }
   .reg-modal-left {
     border-radius: 15px;
-    height: 800px;
+    height: 895px;
     padding: 20px 25px;
   }
   .teacher-box {
@@ -289,7 +291,6 @@
   .pass-wrpr {
     border-radius: 7px;
     padding: 3px 10px;
-    margin-bottom: 15px;
   }
   .reg-form input::placeholder {
     font-size: 10px;
@@ -322,7 +323,7 @@
   }
   .register-modal {
     border-radius: 8px;
-    height: 1090px;
+    height: 1280px;
     padding: 13px;
   }
   .reg-modal-left {
@@ -365,16 +366,21 @@
   .reg-form input,
   .pass-wrpr {
     border-radius: 7px;
-    padding: 1px 7px;
+    padding: 3px 7px;
     margin-bottom: 3px;
   }
   .reg-form input::placeholder {
-    font-size: 9px;
+    font-size: 10px;
     line-height: 12px;
   }
   .reg-form input[type="submit"] {
     padding-block: 6px;
     font-size: 10px;
     margin-top: 9px;
+  }
+  .custom-check {
+    width: 14px;
+    margin: 0px 4px 0 0;
+    height: 14px;
   }
 }

@@ -519,11 +519,25 @@ ul {
   transform-origin: bottom right;
   transform: scaleX(0);
 }
-
+.dropdown-menu[data-bs-popper] {
+  left: -118px;
+  background: transparent;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(50px);
+}
+.dropdown-item.active,
+.dropdown-item:active {
+  color: var(--bs-dropdown-link-active-color);
+  text-decoration: none;
+  background-color: var(--secondary-color);
+}
 .nav-link:hover {
   font-weight: 500;
 }
 
+.user-menu .nav-link::before {
+  display: none;
+}
 .nav-link:hover::before {
   transform: scaleX(1);
   transform-origin: bottom left;
@@ -539,8 +553,8 @@ ul {
 
 /* Modal */
 
-.modal {
-  padding: 0;
+.login-sec {
+  padding: 40px 0 70px;
 }
 
 .modal-dialog {
@@ -549,6 +563,7 @@ ul {
 
 .modal-content {
   width: 100%;
+  margin: 0 auto;
   padding: 30px;
   border-radius: 20px;
   background-color: #daf8f4;
@@ -624,7 +639,7 @@ ul {
   background-color: var(--defult-color);
   border: 1px solid #8a8080;
   padding: 8px 16px;
-  margin-bottom: 27px;
+  margin-bottom: 10px;
 }
 
 .login-form input:focus {
@@ -644,7 +659,7 @@ ul {
   margin-left: auto;
   font-size: 14px;
   color: #08119b;
-  margin-bottom: 24px;
+  /* margin-bottom: 10px; */
 }
 
 .login-btn {
@@ -894,8 +909,8 @@ ul {
 .banner-img6 {
   width: 173.32px;
   position: absolute;
-  left: 122.81px;
-  bottom: 181.51px;
+  left: 90.81px;
+  bottom: 139.51px;
 }
 
 .banner-img6 > img {
@@ -2038,9 +2053,9 @@ select:focus {
 
 @media screen and (max-width: 1400px) {
   /* Banner Section  */
- .bgPolygon2{
-  display: none;
- }
+  .bgPolygon2 {
+    display: none;
+  }
   .banner-gif {
     max-width: 169px;
     position: absolute;
@@ -2124,7 +2139,7 @@ select:focus {
   }
 
   .bgPolygon1 {
-    top: -32%;
+    display: none;
   }
 
   .bgPolygon2 {
