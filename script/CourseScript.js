@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         window.location.href = "cart.html";
         return;
       }
-      toCartBtn.innerHTML = `Added To Cart 
+      toCartBtn.innerHTML = `Go To Cart
   <span class="cartIcon">
     <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
 	  <g fill="none" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">

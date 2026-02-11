@@ -248,9 +248,45 @@
                     </button>
                   </li>
                   <li class="button-list">
-                    <button class="user-btn rounded-circle">
+                    <ul class="user-menu align-items-center gap-3 mb-0" id="userMenu">
+                <li class="user-item dropdown list-unstyled">
+                  <a
+                    class="nav-link userLink dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <span class="userIcon">
                       <img src="/assets/LandingPage/user.png" alt="" />
-                    </button>
+                    </span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="./dashboard/html/main_dashboard.html"
+                        >Dashboard</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./cart.html"
+                        >Add to cart</a
+                      >
+                    </li>
+
+                    <li>
+                      <button
+                        class="text-danger border-0 dropdown-item"
+                        onclick="logout()"
+                      >
+                        Logout
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                      </button>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
                   </li>
                 </ul>
               </div>

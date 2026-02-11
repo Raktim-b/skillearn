@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  updtNavbar();
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
   let smoother;
@@ -94,29 +95,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 2000);
   });
 
-  const token = localStorage.getItem("token");
-  const user = localStorage.getItem("user");
-
-  const loginBtn = document.getElementById("loginBtn");
-  const registerBtn = document.getElementById("registerBtn");
-  const userMenu = document.getElementById("userMenu");
-
-  // Elements might not exist on every page
-  if (!loginBtn || !registerBtn || !userMenu) return;
-
-  if (token && user) {
-    // Logged in
-    loginBtn.classList.add("d-none");
-    registerBtn.classList.add("d-none");
-    userMenu.classList.remove("d-none");
-    userMenu.classList.add("d-flex");
-  } else {
-    // Logged out
-    loginBtn.classList.remove("d-none");
-    registerBtn.classList.remove("d-none");
-    userMenu.classList.add("d-none");
-  }
-
   /* ===============================
      Back To Top Button
   =============================== */
@@ -197,8 +175,33 @@ if (window.innerWidth > 768) {
   //   }
   //   MouseMove();
 }
+const updtNavbar = () => {
+  const token = localStorage.getItem("token");
+  const user = localStorage.getItem("user");
+
+  const loginBtn = document.getElementById("loginBtn");
+  const registerBtn = document.getElementById("registerBtn");
+  const userMenu = document.getElementById("userMenu");
+
+  // Elements might not exist on every page
+  if (!loginBtn || !registerBtn || !userMenu) return;
+
+  if (token && user) {
+    // Logged in
+    loginBtn.classList.add("d-none");
+    registerBtn.classList.add("d-none");
+    userMenu.classList.remove("d-none");
+    userMenu.classList.add("d-flex");
+  } else {
+    // Logged out
+    loginBtn.classList.remove("d-none");
+    registerBtn.classList.remove("d-none");
+    userMenu.classList.add("d-none");
+  }
+};
 function logout() {
   localStorage.removeItem("token");
   localStorage.removeItem("user");
-  window.location.href = "index.html";
+  updtNavbar();
+  // window.location.href = "index.html";
 }

@@ -59,7 +59,7 @@ body {
 .about-about-img-rec1 {
   max-width: 220px;
   position: absolute;
-  left: -112px;
+  left: -83px;
   top: 113px;
   border-radius: 15px;
   background: var(--defult-color);
@@ -623,10 +623,11 @@ body {
     max-width: 400px;
   }
   .skill-img2 {
-    max-width: 230px;
-    right: -160px;
-    bottom: -90px;
+    max-width: 198px;
+    right: -45px;
+    bottom: -72px;
   }
+
   .skill-box {
     left: -74px;
     max-width: 232px;
@@ -996,6 +997,9 @@ body {
   .arrow-2 {
     max-width: 32px;
     right: -36px;
+  }
+  .join-card > .title3 {
+    line-height: 40px;
   }
 }
 @media screen and (max-width: 576px) {
