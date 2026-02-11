@@ -296,7 +296,6 @@ MEDIA QUERIES
 }
 @media screen and (max-width: 1200px) {
   .payment-left {
-    border-radius: 30px;
     padding: 48px 56px 63px 64px;
   }
 

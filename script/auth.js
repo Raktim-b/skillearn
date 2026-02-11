@@ -159,9 +159,8 @@ fill="#100F0F" />
 `;
 
 const closedEyeSVG = `
-<svg width="22" height="15" viewBox="0 0 22 15" fill="none">
-<path d="M1 1L21 14" stroke="#100F0F" stroke-width="2"/>
-<path d="M11 0C6 0 1.73 3.11 0 7.5C1.73 11.89 6 15 11 15C16 15 20.27 11.89 22 7.5C20.27 3.11 16 0 11 0Z" fill="#100F0F"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 1200 1200">
+	<path fill="#100F0F" d="M669.727 273.516c-22.891-2.476-46.15-3.895-69.727-4.248c-103.025.457-209.823 25.517-310.913 73.536c-75.058 37.122-148.173 89.529-211.67 154.174C46.232 529.978 6.431 577.76 0 628.74c.76 44.162 48.153 98.67 77.417 131.764c59.543 62.106 130.754 113.013 211.67 154.174q4.126 2.003 8.276 3.955l-75.072 131.102l102.005 60.286l551.416-960.033l-98.186-60.008zm232.836 65.479l-74.927 129.857c34.47 44.782 54.932 100.006 54.932 159.888c0 149.257-126.522 270.264-282.642 270.264c-6.749 0-13.29-.728-19.922-1.172l-49.585 85.84c22.868 2.449 45.99 4.233 69.58 4.541c103.123-.463 209.861-25.812 310.84-73.535c75.058-37.122 148.246-89.529 211.743-154.174c31.186-32.999 70.985-80.782 77.417-131.764c-.76-44.161-48.153-98.669-77.417-131.763c-59.543-62.106-130.827-113.013-211.743-154.175c-2.731-1.324-5.527-2.515-8.276-3.807m-302.636 19.483c6.846 0 13.638.274 20.361.732l-58.081 100.561c-81.514 16.526-142.676 85.88-142.676 168.897c0 20.854 3.841 40.819 10.913 59.325c.008.021-.008.053 0 .074l-58.228 100.854c-34.551-44.823-54.932-100.229-54.932-160.182c.001-149.255 126.524-270.262 282.643-270.261m168.969 212.035L638.013 797.271c81.076-16.837 141.797-85.875 141.797-168.603c0-20.474-4.086-39.939-10.914-58.155" />
 </svg>
 `;
 
@@ -170,11 +169,11 @@ const studForm = (event) => {
 
   const form = event.target;
 
-  const fname = form.fname.value.trim();
-  const lname = form.lname.value.trim();
-  const ename = form.ename.value.trim();
-  const num = form.num.value.trim();
-  const cpass = form.cpass.value.trim();
+  const firstName = form.fname.value.trim();
+  const lastName = form.lname.value.trim();
+  const email = form.ename.value.trim();
+  const phone = form.num.value.trim();
+  const password = form.cpass.value.trim();
   const rpass = form.rpass.value.trim();
 
   const fnameError = document.getElementById("fnameError");
@@ -195,26 +194,26 @@ const studForm = (event) => {
   let isValid = true;
 
   // First Name
-  if (fname.length < 3) {
+  if (firstName.length < 3) {
     fnameError.textContent = "At least 3 characters";
     isValid = false;
   }
 
   // Last Name
-  if (lname.length < 3) {
+  if (lastName.length < 3) {
     lnameError.textContent = "At least 3 characters";
     isValid = false;
   }
 
   // Email
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailPattern.test(ename)) {
+  if (!emailPattern.test(email)) {
     emailError.textContent = "Enter a valid email address";
     isValid = false;
   }
 
   // Mobile Number
-  if (num.length !== 10) {
+  if (phone.length !== 10) {
     numError.textContent = "Mobile number must be 10 digits";
     isValid = false;
   }
@@ -223,14 +222,14 @@ const studForm = (event) => {
   const strongPass =
     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()\-=+*/]).{6,}$/;
 
-  if (!strongPass.test(cpass)) {
+  if (!strongPass.test(password)) {
     cpassError.textContent =
       "Password must include uppercase, lowercase, number, special character & greater than 6 characters";
     isValid = false;
   }
 
   // Confirm Password
-  if (cpass !== rpass) {
+  if (password !== rpass) {
     rpassError.textContent = "Passwords do not match";
     isValid = false;
   }
@@ -238,10 +237,12 @@ const studForm = (event) => {
   // If everything is valid
   if (!isValid) return;
   const studDetails = {
-    name: `${fname} ${lname}`,
-    email: ename,
-    phone: num,
-    password: cpass,
+    role: "student",
+    firstName: firstName,
+    lastName: lastName,
+    email: email,
+    phone: phone,
+    password: password,
   };
 
   studRegisterData(studDetails, form);
@@ -251,16 +252,13 @@ const studRegisterData = async (studDetails, form) => {
   success.textContent = "";
 
   try {
-    const response = await fetch(
-      "https://news-blog-api.onrender.com/api/auth/register",
-      {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify(studDetails),
+    const response = await fetch("https://sdlc3.onrender.com/api/register", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
       },
-    );
+      body: JSON.stringify(studDetails),
+    });
     const data = await response.json();
     console.log(response);
 
@@ -288,10 +286,10 @@ const techFrom = (event) => {
 
   const form = event.target;
 
-  const fname = form.fname.value.trim();
-  const lname = form.lname.value.trim();
-  const ename = form.ename.value.trim();
-  const cpass = form.cpass.value.trim();
+  const firstName = form.fname.value.trim();
+  const lastName = form.lname.value.trim();
+  const email = form.ename.value.trim();
+  const password = form.cpass.value.trim();
   const rpass = form.rpass.value.trim();
 
   const fnameError = document.getElementById("fnameError");
@@ -310,20 +308,20 @@ const techFrom = (event) => {
   let isValid = true;
 
   // First Name
-  if (fname.length < 3) {
+  if (firstName.length < 3) {
     fnameError.textContent = "At least 3 characters";
     isValid = false;
   }
 
   // Last Name
-  if (lname.length < 3) {
+  if (lastName.length < 3) {
     lnameError.textContent = "At least 3 characters";
     isValid = false;
   }
 
   // Email
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailPattern.test(ename)) {
+  if (!emailPattern.test(email)) {
     emailError.textContent = "Enter a valid email address";
     isValid = false;
   }
@@ -332,14 +330,14 @@ const techFrom = (event) => {
   const strongPass =
     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()\-=+*/]).{6,}$/;
 
-  if (!strongPass.test(cpass)) {
+  if (!strongPass.test(password)) {
     cpassError.textContent =
       "Password must include uppercase, lowercase, number & special character";
     isValid = false;
   }
 
   // Confirm Password
-  if (cpass !== rpass) {
+  if (password !== rpass) {
     rpassError.textContent = "Passwords do not match";
     isValid = false;
   }
@@ -347,9 +345,11 @@ const techFrom = (event) => {
   // If everything is valid
   if (!isValid) return;
   const techDetails = {
-    name: `${fname} ${lname}`,
-    email: ename,
-    password: cpass,
+    role: "teacher",
+    firstName: firstName,
+    lastName: lastName,
+    email: email,
+    password: password,
   };
   techRegisterData(techDetails, form);
 };
@@ -359,16 +359,13 @@ const techRegisterData = async (techDetails, form) => {
   success.textContent = "";
 
   try {
-    const response = await fetch(
-      "https://news-blog-api.onrender.com/api/auth/register",
-      {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify(techDetails),
+    const response = await fetch("https://sdlc3.onrender.com/api/register", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
       },
-    );
+      body: JSON.stringify(techDetails),
+    });
     const data = await response.json();
     console.log(response);
 
@@ -395,7 +392,8 @@ const formSubmitLog = (event) => {
   event.preventDefault();
   const form = event.target;
   const email = form.email.value;
-  const pass = form.pass.value;
+  const password = form.pass.value;
+
   const emailError = document.getElementById("emailError");
   const passError = document.getElementById("passError");
 
@@ -404,7 +402,7 @@ const formSubmitLog = (event) => {
 
   const logInDetails = {
     email: email,
-    password: pass,
+    password: password,
   };
   // Email
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -414,11 +412,11 @@ const formSubmitLog = (event) => {
   }
 
   // Password
-  if (pass.length < 6) {
+  if (password.length < 6) {
     passError.textContent = "Password must be at least 6 characters";
     isValid = false;
   }
-  //   console.log(userDetails);
+  // console.log(userDetails);
   loginData(logInDetails, form);
 };
 
@@ -426,22 +424,19 @@ const loginData = async (logInDetails, form) => {
   const success = document.getElementById("message");
   success.textContent = "";
   try {
-    const response = await fetch(
-      "https://news-blog-api.onrender.com/api/auth/login",
-      {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify(logInDetails),
+    const response = await fetch("https://sdlc3.onrender.com/api/login", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
       },
-    );
+      body: JSON.stringify(logInDetails),
+    });
     const data = await response.json();
     console.log(response);
     console.log(data);
 
     if (response?.status === 200) {
-      localStorage.setItem("token", data.accessToken);
+      localStorage.setItem("token", data.token);
       localStorage.setItem("user", JSON.stringify(data.user));
       success.textContent = data.message;
       success.className = "message success";

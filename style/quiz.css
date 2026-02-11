@@ -429,4 +429,13 @@ Responsive Section
 }
 
 @media screen and (max-width: 576px) {
+  .quiz-card p {
+    font-size: 14px;
+}
+  .category-card h3 {
+   font-size: 18px;
+}
+  .qstn p {
+    font-size: 14px;
+  }
 }
