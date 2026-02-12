@@ -401,6 +401,7 @@ Dashboard Left Side Content Section
   height: 60px;
   border-radius: 50%;
   border: 1px solid gray;
+filter: brightness(135%);
 }
 .hdr-cntn>.title1 {
   margin-bottom: 10px;

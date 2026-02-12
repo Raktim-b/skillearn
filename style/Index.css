@@ -516,7 +516,10 @@ ul {
   transform-origin: bottom right;
   transform: scaleX(0);
 }
-
+.nav-link:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 .dropdown-menu[data-bs-popper] {
   left: -118px;
   background: transparent;
@@ -552,11 +555,6 @@ ul {
   height: 100%;
   filter: brightness(135%);
   object-fit: cover;
-}
-
-.nav-link:hover::before {
-  transform: scaleX(1);
-  transform-origin: bottom left;
 }
 
 .dropdown-toggle::after {
@@ -683,30 +681,30 @@ ul {
 }
 
 .login-btn {
-    width: 100%;
-    padding-block: 12px;
-    font-size: 14px;
-    border-radius: 10px;
-    border: 1px solid #8a8080 !important;
-    background: var(--defult-color) !important;
-    color: #000;
-    transition: all 0.4s ease;
-    cursor: pointer;
+  width: 100%;
+  padding-block: 12px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 1px solid #8a8080 !important;
+  background: var(--defult-color) !important;
+  color: #000;
+  transition: all 0.4s ease;
+  cursor: pointer;
 }
 
 /* Hover State */
 .login-btn:hover {
-    background: linear-gradient(90deg, #B8F4EB, #0A9285) !important;
-    color: #fff;
-    border-color: var(--secondary-color) !important;
-    box-shadow: 0 8px 20px rgba(10, 146, 133, 0.25);
-    transform: translateY(-2px);
+  background: linear-gradient(90deg, #b8f4eb, #0a9285) !important;
+  color: #fff;
+  border-color: var(--secondary-color) !important;
+  box-shadow: 0 8px 20px rgba(10, 146, 133, 0.25);
+  transform: translateY(-2px);
 }
 
 /* Active (click) effect */
 .login-btn:active {
-    transform: translateY(0);
-    box-shadow: 0 4px 10px rgba(10, 146, 133, 0.2);
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(10, 146, 133, 0.2);
 }
 
 .sign-up-op {
@@ -1678,6 +1676,7 @@ select:focus {
 
 .cardSwiper .swiper-slide {
   max-width: 648px;
+  margin: 0 auto;
   height: 395px !important;
   border-radius: 50px;
   padding: 55px 42px 52px;
@@ -2404,7 +2403,7 @@ select:focus {
   }
 
   .navbar-nav {
-    margin: 60px 0 30px;
+    margin: 60px 0 10px;
   }
 
   .offcanvas-header {
@@ -2657,7 +2656,9 @@ select:focus {
     margin-block: 20px 0;
     line-height: 28px;
   }
-
+  .cardSwiper .swiper-slide {
+    max-width: 100%;
+  }
   /* .cardSwiper .swiper-slide {
     max-width: 560px;
     height: 330px !important;
@@ -2668,11 +2669,11 @@ select:focus {
     transform: translate3d(calc(-2.0501% - 1005px), 0px, -26.2735px) scale(1) !important;
   } */
 
-  .cardSwiper .swiper-slide > p {
+  /* .cardSwiper .swiper-slide > p {
     font-size: 20px;
     line-height: 34px;
     margin-block: 13px 23px;
-  }
+  } */
   /* 
   .cardSwiper .swiper-slide-next {
     transform: translate3d(calc(-13% + 175px), 60px, -298px) scale(1) !important;
@@ -2785,7 +2786,15 @@ select:focus {
     width: 1.1em;
     height: 1.1em;
   }
-
+  .nav-btn {
+    flex-direction: column;
+    align-items: start !important;
+    justify-content: start !important;
+    margin-left: 0 !important;
+  }
+  .nav-btn > .btn-primary {
+    margin: 0 0 10px 0;
+  }
   /* Modal */
   .modal-content {
     padding: 16px;
